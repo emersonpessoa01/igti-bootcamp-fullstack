@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho prático do módulo 1</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  
+  <body>
+    <h3>Gerador de cor RGB</h3>
+      
+      <div id="cor"></div>
+    
+    <div class="red">R: 
+      <input type="range" onchange="colorChange()" id="red" min="0" max="255" value="0">
+      <span id="textRed">0</span>
+      <!--<input type="text" id="txtRed" min="0" max="255" value="0" size="3" disabled>  -->
+    </div>
+    <div class="green">G:
+      <input type="range" onchange="colorChange()" id="green" min="0" max="255" value="0">
+      <span id="textGreen">0</span>
+    </div>
+    <div class="blue">B:
+      <input type="range" onchange="colorChange()" id="blue" min="0" max="255" value="0">
+      <span id="textBlue">0</span>
+    </div>
+  <script src="./js/script.js"></script>
+</body>
+</html>

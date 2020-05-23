@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Trabalho prático</title>
+</head>
+<body>
+  <br></br>
+  <div class="container">
+    <div class="item">
+      <div class="center">Red: 
+        <div class="center">
+          <input type="range" onchange="gerarCor()" id="red" min="0" max="255" value="0" >
+          <input type="text" size="5" disabled id="txtGreen" value="0" ></div>
+    </div>
+    <div class="item">
+      <div class="center">Green: 
+        <div class="center">
+          <input type="range" onchange="gerarCor()" id="green" min="0" max="255" value="0" >
+          <input type="text" size="5" disabled id="txtGreen" value="0" ></div>
+    </div>
+    <div class="item">
+      <div class="center">Blue: 
+        <div class="center">
+          <input type="range" onchange="gerarCor()" id="blue" in="0" max="255" value="0" >
+          <input type="text" size="5" disabled id="txtGreen" value="0" ></div>
+    </div>
+
+    <div class="container-cubo">
+      <div id="cubo"></div>
+    </div>
+  </div>
+  
+  <script src="./js/script.js"></script>
+</body>
+</html>

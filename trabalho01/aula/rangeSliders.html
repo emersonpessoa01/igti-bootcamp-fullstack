@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalho prático 1</title>
+    <link rel="stylesheet" href="./css/rangeSliders.css" />
+  </head>
+  <body>
+    <h1>Change Background Color Range</h1>
+    
+    <h2>Select Your Color <span id="colorOutput"></span></h2>
+    <div>
+      <label>red:</label>
+      <input type="range" id="rangeRed" value="0" min="0" max="255" />
+      <span id="textRed">0</span>
+    </div>
+    
+    <div>
+      <label>green:</label>
+      <input type="range" id="rangeGreen" value="0" min="0" max="255" />
+      <span id="textGreen">0</span>
+    </div>
+    
+    <div>
+      <label>blue:</label>
+      <input type="range" id="rangeBlue" value="0" min="0" max="255" />
+      <span id="textBlue">0</span>
+    </div>
+    <br></br>
+    
+    <div id="colorDiv"></div>
+    
+    <script src="./js/rangerSliders.js"></script>
+  </body>
+</html>
