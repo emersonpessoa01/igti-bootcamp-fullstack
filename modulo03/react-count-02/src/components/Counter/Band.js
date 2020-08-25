@@ -7,7 +7,7 @@ export default class Band extends Component {
     this.state = {
       bandName: "Rush",
       bandMembers: [
-        { id: 1, name: "Neil Pearl", instrument: "Batery" },
+        { id: 1, name: "Neil Peart", instrument: "Drums" },
         { id: 2, name: "Alex Lifeson", instrument: "Guitar" },
         { id: 3, name: "Geddy Lee", instrument: "Bass" },
       ],
