@@ -39,7 +39,6 @@ export default class App extends Component {
 
   render() {
     //return <div>{JSON.stringify(this.state.users)}</div>;
-
     const { showUsers, users } = this.state;
     console.log(showUsers);
 

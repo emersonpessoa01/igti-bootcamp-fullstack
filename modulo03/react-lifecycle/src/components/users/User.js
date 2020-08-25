@@ -9,7 +9,7 @@ export default class User extends Component {
       <div className={css.flexRow}>
         <img className={css.avatar} src={picture.large} alt={name.first} />
         <span>
-          {name.first} {name.last}
+          {name.first} {name.last} {login.uuid}
         </span>
       </div>
     );
