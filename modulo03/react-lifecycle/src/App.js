@@ -17,8 +17,7 @@ export default class App extends Component {
       "https://randomuser.me/api/?seed=rush&nat=br&results=10"
     );
     const json = await res.json();
-
-    console.log(json);
+    //console.log(json);
 
     this.setState({
       users: json.results,
@@ -27,8 +26,8 @@ export default class App extends Component {
   // componentDidUpdate() {
   //   console.log("componentDidUpdate de App.js");
   // }
-  // componentDidWillUnMount() {
-  //   console.log("componentDidWillUnMount de App.js");
+  // componentWillUnmount() {
+  //  console.log("componentWillUnmount de App.js");
   // }
 
   handleShowsUsers = (event) => {

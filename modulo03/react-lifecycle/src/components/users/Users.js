@@ -16,7 +16,6 @@ export default class Users extends Component {
 
     this.interval = setInterval(() => {
       const { secondsVisible } = this.state;
-
       this.setState({
         secondsVisible: secondsVisible + 1,
       });
@@ -41,9 +40,9 @@ export default class Users extends Component {
         <p>Components Users visível por {secondsVisible} segundos</p>
         <ul>
           {users.map((user) => {
-            const {login, name, picture} = user;
+            const { login, name, picture } = user;
             return (
-              <li key={login.uiid}>
+              <li key={login.uuid}>
                 <User user={user} />
               </li>
             );
