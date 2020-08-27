@@ -10,6 +10,6 @@
 
 Os alunos deverão desempenhar as seguintes atividades:
 
--	Criação de um app para listar países a partir da API https://rescountries.eu/rest/restv2/all;
+-	Criação de um app para listar países a partir da API https://rescountries.eu/rest/v2/all;
 -	Input para filtrar os países;
 -	Exibir quantidade de países e soma da população dos filtrados.
