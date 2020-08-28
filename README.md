@@ -3,7 +3,7 @@
 # igti-bootcamp-fullstack
 
 ## Bootcamp para Desenvolvedor Full Stack 
-:- IGTI 
+: IGTI 
 :- Repositório para armazenar conteúdos do Bootcamp de Desenvolvedor Full Stack da IGTI. 
 
 ### Conteúdo Programático: 
