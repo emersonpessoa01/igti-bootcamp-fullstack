@@ -1,7 +1,5 @@
- <div style="text-align:center; display:block;
-  margin: 0 auto">
-  Inline-Style:<img src="images/fullstack_1.png" width="99%" alt="fullstack-igti">
-  </div>
+ <img src="images/fullstack_1.png" width="99%" alt="fullstack-igti">
+
  
  
 # igti-bootcamp-fullstack - 1a turma 2020 **©**
