@@ -18,7 +18,7 @@
 
 ---
 
-``Módulo 1``
+**``Módulo 1``**
 
 
 - Fundamentos Introdução, instalação e configuração do Visual Studio Code (VSCode). 
@@ -33,7 +33,7 @@
 
 ---
 
-``Módulo 2``
+**``Módulo 2``**
 
 
 - Introdução ao desenvolvimento backend. 
@@ -48,7 +48,7 @@
 
 ---
 
-``Módulo 3``
+**``Módulo 3``**
 
 - Persistência de Dados em Arquivos. 
 - FrontEnd com React Instalação e configuração do React. 
@@ -67,7 +67,7 @@
 
 ---
 
-``Módulo 4``
+**``Módulo 4``**
 
 
 - Persistência de dados, versionamento de código e implantação e Introdução ao MongoDB. 
@@ -79,7 +79,7 @@
 
 ---
 
-``Módulo 5``
+**``Módulo 5``**
 
 
 - Introdução ao Heroku. 
