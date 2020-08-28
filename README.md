@@ -4,7 +4,7 @@
   </div>
  
  
-# igti-bootcamp-fullstack - 1a turma 2020
+# igti-bootcamp-fullstack - 1a turma 2020 **©**
 
 ----
 
