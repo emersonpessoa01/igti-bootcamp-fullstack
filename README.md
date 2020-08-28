@@ -1,5 +1,6 @@
  <div style="text-align:center; display:block;
-  margin: 0 auto"><img src="images/fullstack.png" width="40%" alt="fullstack-igti">
+  margin: 0 auto">
+  Inline-Style:<img src="images/fullstack.png" width="40%" alt="fullstack-igti">
   </div>
  
  
