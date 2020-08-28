@@ -16,7 +16,9 @@
  
 ---
 
-<center>*Conteúdo Programático:*</center>
+**Conteúdo Programático:**
+
+---
 
 ``Módulo 1``
 
