@@ -9,15 +9,18 @@
 ----
 
 ## Bootcamp para Desenvolvedor Full Stack 
+
 ---
 
  **Repositório para armazenar conteúdos do Bootcamp de Desenvolvedor Full Stack da IGTI.** 
+ 
 ---
 
-### *Conteúdo Programático:*
+<center>*Conteúdo Programático:*</center>
+
 ``Módulo 1``
 
-```
+
 - Fundamentos Introdução, instalação e configuração do Visual Studio Code (VSCode). 
 - Instalação do Node.js. 
 - Instalação da biblioteca live-server. 
@@ -32,7 +35,7 @@
 
 ``Módulo 2``
 
-```
+
 - Introdução ao desenvolvimento backend. 
 - Backend x frontend. 
 - Introdução ao desenvolvimento de APIs. 
@@ -47,7 +50,7 @@
 
 ``Módulo 3``
 
-```
+
 - Persistência de Dados em Arquivos. 
 - FrontEnd com React Instalação e configuração do React. 
 - Criação de projetos com o create-react-app. 
@@ -63,12 +66,12 @@
 - Criação de um pequeno projeto 
 - passo-a-passo com React. 
 
-```
+
 
 
 ``Módulo 4``
 
-```
+
 - Persistência de dados, versionamento de código e implantação e Introdução ao MongoDB. 
 - Utilização do serviço mLab. Integrando a API ao MongoDB no mLab. 
 - Introdução ao Git. 
@@ -80,11 +83,11 @@
 
 ``Módulo 5``
 
-```
+
 - Introdução ao Heroku. 
 - Instalação do Heroku CLI. 
 - Como implantar aplicações no Heroku.
 - Fechamento: 
   - Entrega do Desafio Final.
 
-```
+
