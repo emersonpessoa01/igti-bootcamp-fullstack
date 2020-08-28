@@ -1,4 +1,4 @@
-<img src="images/fullstack.png" width="40%">
+<img src="./fullstack.png" width="40%">
 
 
 # igti-bootcamp-fullstack
