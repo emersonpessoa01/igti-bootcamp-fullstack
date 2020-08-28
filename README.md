@@ -51,7 +51,7 @@
 - passo-a-passo com React. 
 
 ``Módulo 4``
-- Persistência de dados, versionamento de código e implantação e Introdução ao MongoDB. 
+- Persistência de dados, versionamento de código, implantação e Introdução ao MongoDB. 
 - Utilização do serviço mLab. Integrando a API ao MongoDB no mLab. 
 - Introdução ao Git. 
 - Instalação do git. 
