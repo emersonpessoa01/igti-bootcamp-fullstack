@@ -31,7 +31,6 @@
   funções, estruturas de decisão, estruturas de repetição e manipulação de eventos. 
 - Desenvolvimento de APIs 
 
-```
 
 ``Módulo 2``
 
@@ -46,10 +45,8 @@
 - Construção de APIs HTTP, utilizando as principais operações: GET, POST, PUT, e DELETE. 
 - Desenvolvimento das operações CRUD. 
 
-```
 
 ``Módulo 3``
-
 
 - Persistência de Dados em Arquivos. 
 - FrontEnd com React Instalação e configuração do React. 
@@ -79,7 +76,6 @@
 - Principais comandos do Git. 
 - Como publicar aplicações no Github. 
 
-```
 
 ``Módulo 5``
 
