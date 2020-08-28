@@ -1,6 +1,4 @@
-![fullstack](https://user-images.githubusercontent.com/60630092/91584159-a128f100-e928-11ea-9a30-89490187697f.png)
-
-
+<img src="images/fullstack.png" width="40%" justify-center="center">
 # igti-bootcamp-fullstack
 
 ## Bootcamp para Desenvolvedor Full Stack 
