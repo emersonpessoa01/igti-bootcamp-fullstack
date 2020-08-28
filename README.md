@@ -35,12 +35,12 @@
 - Introdução ao Ionic React. 
 - Criação de um pequeno projeto passo-a-passo com React. 
 - Persistência de dados, versionamento de código e implantação e Introdução ao MongoDB. 
-:- Utilização do serviço mLab. Integrando a API ao MongoDB no mLab. 
-:- Introdução ao Git. 
-:- Instalação do git. 
-:- Principais comandos do Git. 
-:- Como publicar aplicações no Github. 
-:- Introdução ao Heroku. 
-:- Instalação do Heroku CLI. 
-:- Como implantar aplicações no Heroku.
-:- Fechamento: Entrega do Desafio Final.
+- Utilização do serviço mLab. Integrando a API ao MongoDB no mLab. 
+- Introdução ao Git. 
+- Instalação do git. 
+- Principais comandos do Git. 
+- Como publicar aplicações no Github. 
+- Introdução ao Heroku. 
+- Instalação do Heroku CLI. 
+- Como implantar aplicações no Heroku.
+- Fechamento: Entrega do Desafio Final.
