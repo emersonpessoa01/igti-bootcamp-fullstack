@@ -1,4 +1,7 @@
- <div style="text-align:center"><img src="images/fullstack.png" width="40%" alt="fullstack-igti"></div>
+ <div style="text-align:center; display:block;
+  margin: 0 auto">
+  <img src="images/fullstack.png" width="40%" alt="fullstack-igti">
+  </div>
  
  
 # igti-bootcamp-fullstack
