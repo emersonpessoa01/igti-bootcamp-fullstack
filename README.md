@@ -1,4 +1,4 @@
-<img src="images/fullstack.png" width="40%" justify-center="center">
+
 # igti-bootcamp-fullstack
 
 ## Bootcamp para Desenvolvedor Full Stack 
