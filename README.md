@@ -1,4 +1,7 @@
  <img src="images/fullstack_1.png" width="99%" alt="fullstack-igti">
+ 
+ var s = "JavaScript syntax highlighting";
+alert(s);
 
  
  
