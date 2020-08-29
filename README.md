@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <hr>
- <div align="center">
+
+<hr>
      <img src="images/fullstack_1.png" width="99%" alt="fullstack-igti">
- </div>    
 <hr> 
 
 
@@ -97,5 +88,3 @@
 
 ---
 
-</body>
-</html>
