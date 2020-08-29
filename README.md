@@ -1,6 +1,5 @@
-
 <hr>
-     <img src="images/fullstack_1.png" width="99%" alt="fullstack-igti">
+     <img src="images/fullstack.png" width="99%" alt="fullstack-igti">
 <hr> 
 
 
