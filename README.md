@@ -3,25 +3,15 @@
      <img src="./image/images/fullstack_1.png" width="99%" alt="fullstack-igti">
      </p>
 <hr>
-
-<hr>
      <img src="./image/images/CRUD.gif" alt="crud">
-<hr>
-
 <hr>
      <p align="center">
      <img src="image/images/color-selector.gif" alt="color-selector">
      </p>
 <hr>
-
-<hr>
      <img src="./image/images/rangerColor.gif" alt="rangerColor">
 <hr>
-
-<hr>
      <img src="./image/images/jsperfomatico.gif" alt="jsperformatico">
-<hr>
-
 <hr>
      <p align="center">
      <img src="./image/images/radio-podcast.gif" alt="radio-podcast">
