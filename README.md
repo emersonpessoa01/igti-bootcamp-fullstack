@@ -38,7 +38,11 @@
 
 ---
 
-## Bootcamp para Desenvolvedor Full Stack
+<p align="center">
+</b>
+Bootcamp para Desenvolvedor Full Stack
+<b>
+</p>
 
 ---
 
@@ -46,7 +50,11 @@
 
 ---
 
-\***\*Conteúdo Programático:\*\***
+<p align="center">
+<b>
+Conteúdo Programático:
+</b>
+</p>
 
 ---
 
@@ -75,12 +83,12 @@
 - Introdução à ferramenta Insomnia.
 - Construção de APIs HTTP, utilizando as principais operações: GET, POST, PUT, e DELETE.
 - Desenvolvimento das operações CRUD.
+- Persistência de Dados em Arquivos.
 
 ---
 
 **`Módulo 3`**
 
-- Persistência de Dados em Arquivos.
 - FrontEnd com React Instalação e configuração do React.
 - Criação de projetos com o create-react-app.
 - Introdução ao React
