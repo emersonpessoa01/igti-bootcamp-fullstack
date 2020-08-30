@@ -1,8 +1,4 @@
-# igti-bootcamp-fullstack - 1a turma 2020 **©**
-<hr>
-     <p align="center">
-     <img src="./image/images/fullstack_1.png" width="99%" alt="fullstack-igti">
-     </p>
+# Visão geral das aplicações do módulo 01:
 <hr>
      <img src="./image/images/CRUD.gif" alt="crud">
 <hr>
