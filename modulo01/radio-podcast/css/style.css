@@ -4,6 +4,8 @@ body{
 #inputFrequency{
   width: 230px;
   text-align: center;
+  font-size:20px;
+  font-weight: bold;
   border: 1px solid lightgray;
   border-radius: 5px;
   
@@ -15,4 +17,10 @@ body{
 */
 .container{
   background-color: lightseagreen;
+}
+
+#divPodcast{
+  text-align: center;
+  font-size:20px;
+  font-weight: bold;
 }
