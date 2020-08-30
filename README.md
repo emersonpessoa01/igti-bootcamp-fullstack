@@ -2,8 +2,13 @@
      <p align="center">
      <img src="./image/images/fullstack_1.png" width="99%" alt="fullstack-igti">
      </p>
-     
-# igti-bootcamp-fullstack - 1a turma 2020 **©**
+
+<h1>
+     <p align="center">
+     igti-bootcamp-fullstack - 1a turma 2020 ©
+     </p>
+<h1>
+
 <hr>
      <img src="./image/images/CRUD.gif" alt="crud">
 <hr>
@@ -19,8 +24,6 @@
      <img src="./image/images/radio-podcast.gif" alt="radio-podcast">
      </p>
 <hr>
-
-# igti-bootcamp-fullstack - 1a turma 2020 **©**
 
 ---
 
