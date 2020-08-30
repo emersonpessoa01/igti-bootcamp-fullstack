@@ -9,7 +9,7 @@
      <img src="./image/gifs/CRUD.gif" alt="crud">
 <hr>
      <p align="center">
-     <img src="image/gifs/color-selector.gifs" alt="color-selector">
+     <img src="image/gifs/color-selector.gif" alt="color-selector">
      </p>
 <hr>
      <img src="./image/gifs/rangerColor.gif" alt="rangerColor">
