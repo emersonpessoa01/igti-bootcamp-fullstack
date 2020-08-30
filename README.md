@@ -1,22 +1,38 @@
 <hr>
-     <img src="image/images/fullstack_1.png" width="99%" alt="fullstack-igti">
-<hr> 
+     <p align="center">
+     <img src="./image/images/fullstack_1.png" width="99%" alt="fullstack-igti">
+     </p>
 <hr>
-     <img src="image/images/CRUD.gif" alt="crud">
-</hr>
-<hr>
-     <img src="image/images/color-selector.gif" alt="color-selector">
-</hr>
-<hr>
-     <img src="image/images/rangerColor.gif" alt="rangerColor">
-</hr>
-<hr>
-     <img src="image/images/jsperfomatico.gif" alt="jsperformatico">
-</hr>
-<hr>
-     <img src="image/images/radio-podcast.gif" alt="radio-podcast">
-</hr>
 
+<hr>
+     <p align="center">
+     <img src="./image/images/CRUD.gif" alt="crud">
+     </p>
+<hr>
+
+<hr>
+     <p align="center">
+     <img src="image/images/color-selector.gif" alt="color-selector">
+     </p>
+<hr>
+
+<hr>
+     <p align="center">
+     <img src="./image/images/rangerColor.gif" alt="rangerColor">
+     </p>
+<hr>
+
+<hr>
+     <p align="center">
+     <img src="./image/images/jsperfomatico.gif" alt="jsperformatico">
+     </p>
+<hr>
+
+<hr>
+     <p align="center">
+     <img src="./image/images/radio-podcast.gif" alt="radio-podcast">
+     </p>
+<hr>
 
 # igti-bootcamp-fullstack - 1a turma 2020 **©**
 
@@ -30,7 +46,7 @@
 
 ---
 
-****Conteúdo Programático:****
+\***\*Conteúdo Programático:\*\***
 
 ---
 
@@ -101,4 +117,3 @@
   - Entrega do Desafio Final.
 
 ---
-
