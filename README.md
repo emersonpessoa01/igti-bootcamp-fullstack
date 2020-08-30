@@ -1,8 +1,4 @@
-<h1>
-     <p align="center">
-     igti-bootcamp-fullstack - 1a turma 2020 ©
-     </p>
-<h1>
+##   igti-bootcamp-fullstack - 1a turma 2020 ©
 <hr>
      <p align="center">
      <img src="./image/images/fullstack_1.png" width="99%" alt="fullstack-igti">
@@ -27,9 +23,7 @@
 
 ---
 
-<b>
-Bootcamp para Desenvolvedor Full Stack
-</b>
+**Bootcamp para Desenvolvedor Full Stack**
 
 ---
 
@@ -42,6 +36,8 @@ Bootcamp para Desenvolvedor Full Stack
      Conteúdo Programático:
      </b>
 </p>
+
+
 
 ---
 
