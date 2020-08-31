@@ -1,7 +1,7 @@
 ##   igti-bootcamp-fullstack - 1a turma 2020©
 <hr>
 
-<img src="https://img.shields.io/static/v1?label=Update&message=passing&color=green&style=for-the-flatc&logo=GITHUB"/>
+<a href="https://github.com/emersonpessoa01"><img src="https://img.shields.io/static/v1?label=build&message=home&color=0000fff&style=flat&logo=github"/></a>
 
 ## Desenvolvedores:
 [<img src="image/images/EmePessoa.jpeg" width=90 ><br><sub> Emerson Pessoa </sub>](https://github.com/emersonpessoa01) | [<img src="image/images/githubman.jpg" width=90 ><br><sub> Git Ironman </sub>]() | [<img src="image/gifs/octocat.gif" width=90 ><br><sub> Octocat Nerd </sub>]() |
@@ -59,7 +59,8 @@
 funções, estruturas de decisão, estruturas de repetição e manipulação de eventos.<br>
 :heavy_check_mark: Desenvolvimento de APIs
 
----
+<a href="https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo01"><img src="https://img.shields.io/static/v1?label=javascript&message=modulo01&color=blue&style=for-the-badge&logo=JAVASCRIPT"/></a>
+<hr>
 
 **`Módulo 2`** :books:
 
