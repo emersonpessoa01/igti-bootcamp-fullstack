@@ -1,5 +1,13 @@
 ##   igti-bootcamp-fullstack - 1a turma 2020©
 <hr>
+
+<img src="https://img.shields.io/static/v1?label=Update&message=passing&color=green&style=for-the-flatc&logo=GITHUB"/>
+
+## Desenvolvedores:
+[<img src="image/images/EmePessoa.jpeg" width=90 ><br><sub> Emerson Pessoa </sub>](https://github.com/emersonpessoa01) | [<img src="image/images/githubman.jpg" width=90 ><br><sub> Git Ironman </sub>]() | [<img src="image/gifs/octocat.gif" width=90 ><br><sub> Octocat Nerd </sub>]() |
+| :---: | :---: | :---: |
+
+<hr>
      <p align="center">
      <img src="./image/images/fullstack_1.png" width="99%" alt="fullstack-igti">
      </p>
@@ -84,7 +92,7 @@ funções, estruturas de decisão, estruturas de repetição e manipulação de 
 :heavy_check_mark: Criação de um pequeno projeto.<br>
 :heavy_check_mark: passo-a-passo com React.<br>
 
-<a href="https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo03"><img src="https://img.shields.io/static/v1?label=react&message=modulo&color=blue&style=for-the-badge&logo=REACT"/></a>
+<a href="https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo03"><img src="https://img.shields.io/static/v1?label=react&message=modulo03&color=blue&style=for-the-badge&logo=REACT"/></a>
 <hr>
 
 **`Módulo 4`** :books:
@@ -107,11 +115,7 @@ funções, estruturas de decisão, estruturas de repetição e manipulação de 
 
 ---
 
-<img src="https://img.shields.io/static/v1?label=Update&message=passing&color=green&style=plastic&logo=github"/>
 
-## Desenvolvedores:
-[<img src="image/images/EmePessoa.jpeg" width=90 ><br><sub> Emerson Pessoa </sub>](https://github.com/emersonpessoa01) | [<img src="image/images/githubman.jpg" width=90 ><br><sub> Git Ironman </sub>]() | [<img src="image/gifs/octocat.gif" width=90 ><br><sub> Octocat Nerd </sub>]() |
-| :---: | :---: | :---: |
 
 
 
