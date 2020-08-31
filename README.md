@@ -4,8 +4,8 @@
 <a href="https://github.com/emersonpessoa01"><img src="https://img.shields.io/static/v1?label=build&message=home&color=0000fff&style=flat&logo=github"/></a>
 
 ## Desenvolvedores:
-[<img src="image/images/EmePessoa.jpeg" width=90 ><br><sub> Emerson Pessoa </sub>](https://github.com/emersonpessoa01) | [<img src="image/images/githubman.jpg" width=90 ><br><sub> Git Ironman </sub>]() | [<img src="image/gifs/octocat.gif" width=90 ><br><sub> Octocat Nerd </sub>]() |
-| :---: | :---: | :---: |
+[<img src="image/images/EmePessoa.jpeg" width=90 ><br><sub> Emerson Pessoa </sub>](https://github.com/emersonpessoa01) | [<img src="image/images/githubman.jpg" width=90 ><br><sub> Git Ironman </sub>]() | [<img src="image/gifs/octocat.gif" width=90 ><br><sub> Octocat Nerd </sub>]() | [<img src="image/gifs/sith.gif" width=115  heigth=70><br><sub> Jedi vs Sith </sub>]() |
+| :---: | :---: | :---: | :---: |
 
 <hr>
      <p align="center">
