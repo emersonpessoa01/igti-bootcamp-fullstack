@@ -31,9 +31,9 @@
 ---
 
 **Repositório para armazenar conteúdos do Bootcamp de Desenvolvedor Full Stack da IGTI.** :octocat: 
-<p align="center">
+<a href="https://github.com/emersonpessoa01/igti-bootcamp-fullstack"><p align="center">
      <img src="./image/images/githubman.jpg" width="100" alt="githubman">
-</p>
+</p></a>
 
 ---
  
