@@ -22,7 +22,7 @@
 
 
 
-**Bootcamp para Desenvolvedor Full Stack**
+**Bootcamp para Desenvolvedor Full Stack** :checkered_flag:
 
 ---
 
@@ -40,70 +40,74 @@
 
 ---
 
-**`Módulo 1`**
+**`Módulo 1`** :books: 
 
-- Fundamentos Introdução, instalação e configuração do Visual Studio Code (VSCode).
-- Instalação do Node.js.
-- Instalação da biblioteca live-server.
-- Noções de HTML e CSS.
-- Introdução ao JavaScript.
-- Integração do JavaScript com o HTML e CSS.
-- JavaScript básico, console, comentários, tipos primitivos, variáveis, APIs nativas de servidor e web,
-  funções, estruturas de decisão, estruturas de repetição e manipulação de eventos.
-- Desenvolvimento de APIs
-
----
-
-**`Módulo 2`**
-
-- Introdução ao desenvolvimento backend.
-- Backend x frontend.
-- Introdução ao desenvolvimento de APIs.
-- Introdução ao desenvolvimento com Node.js.
-- Introdução ao Express.
-- Criação de requisições HTTP, rotas e middlewares com Express.
-- Introdução à ferramenta Insomnia.
-- Construção de APIs HTTP, utilizando as principais operações: GET, POST, PUT, e DELETE.
-- Desenvolvimento das operações CRUD.
-- Persistência de Dados em Arquivos.
+:heavy_check_mark: Fundamentos Introdução, instalação e configuração do Visual Studio Code (VSCode).<br>
+:heavy_check_mark: Instalação do Node.js.<br>
+:heavy_check_mark: Instalação da biblioteca live-server.<br>
+:heavy_check_mark: Noções de HTML e CSS.<br>
+:heavy_check_mark: Introdução ao JavaScript.<br>
+:heavy_check_mark: Integração do JavaScript com o HTML e CSS.<br>
+:heavy_check_mark: JavaScript básico, console, comentários, tipos primitivos, variáveis, APIs nativas de servidor e web,
+funções, estruturas de decisão, estruturas de repetição e manipulação de eventos.<br>
+:heavy_check_mark: Desenvolvimento de APIs
 
 ---
 
-**`Módulo 3`**
+**`Módulo 2`** :books:
 
-- FrontEnd com React Instalação e configuração do React.
-- Criação de projetos com o create-react-app.
-- Introdução ao React
-  - JSX, Componentes de Funções;
-  - Componentes de Classe;
-  - State, Props, Binding e Interpolação.
-- Comunicação entre componentes.
-- Ciclo de vida de componentes de classe.
-- Introdução às requisições HTTP com React.
-  - Roteamento com react-router.
-  - Introdução ao Ionic React.
-- Criação de um pequeno projeto
-- passo-a-passo com React.
+:heavy_check_mark: Introdução ao desenvolvimento backend.<br>
+:heavy_check_mark: Backend x frontend.<br>
+:heavy_check_mark: Introdução ao desenvolvimento de APIs.<br>
+:heavy_check_mark: Introdução ao desenvolvimento com Node.js.<br>
+:heavy_check_mark: Introdução ao Express.<br>
+:heavy_check_mark: Criação de requisições HTTP, rotas e middlewares com Express.<br>
+:heavy_check_mark: Introdução à ferramenta Insomnia.<br>
+:heavy_check_mark: Construção de APIs HTTP, utilizando as principais operações: GET, POST, PUT, e DELETE.<br>
+:heavy_check_mark: Desenvolvimento das operações CRUD.<br>
+:heavy_check_mark: Persistência de Dados em Arquivos.<br>
 
 ---
 
-**`Módulo 4`**
+**`Módulo 3`** :books:
 
-- Persistência de dados, versionamento de código e implantação e Introdução ao MongoDB.
-- Utilização do serviço mLab. Integrando a API ao MongoDB no mLab.
-- Introdução ao Git.
-- Instalação do git.
-- Principais comandos do Git.
-- Como publicar aplicações no Github.
+:heavy_check_mark: FrontEnd com React Instalação e configuração do React.<br>
+:heavy_check_mark: Criação de projetos com o create-react-app.<br>
+:heavy_check_mark: Introdução ao React<br>
+:heavy_check_mark: JSX, Componentes de Funções<br>
+:heavy_check_mark: Componentes de Classe<br>
+:heavy_check_mark: State, Props, Binding e Interpolação.<br>
+:heavy_check_mark: Comunicação entre componentes.<br>
+:heavy_check_mark: Ciclo de vida de componentes de classe.<br>
+:heavy_check_mark: Introdução às requisições HTTP com React.<br>
+:heavy_check_mark: Roteamento com react-router.<br>
+:heavy_check_mark: Introdução ao Ionic React.<br>
+:heavy_check_mark: Criação de um pequeno projeto.<br>
+:heavy_check_mark: passo-a-passo com React.<br>
+
+<img src="https://img.shields.io/static/v1?label=react&message=framework&color=blue&style=for-the-badge&logo=REACT"/>
+<hr>
+
+**`Módulo 4`** :books:
+
+:heavy_check_mark: Persistência de dados, versionamento de código e implantação e Introdução ao MongoDB.<br>
+:heavy_check_mark: Utilização do serviço mLab. Integrando a API ao MongoDB no mLab.<br>
+:heavy_check_mark: Introdução ao Git.<br>
+:heavy_check_mark: Instalação do git.<br>
+:heavy_check_mark: Principais comandos do Git.<br>
+:heavy_check_mark: Como publicar aplicações no Github.<br>
 
 ---
 
-**`Módulo 5`**
+**`Módulo 5`** :books:
 
-- Introdução ao Heroku.
-- Instalação do Heroku CLI.
-- Como implantar aplicações no Heroku.
-- Fechamento:
-  - Entrega do Desafio Final.
+:heavy_check_mark: Introdução ao Heroku.<br>
+:heavy_check_mark: Instalação do Heroku CLI.<br>
+:heavy_check_mark: Como implantar aplicações no Heroku.<br>
+:heavy_check_mark: Fechamento:<br>
+:heavy_check_mark:  Entrega do Desafio Final. :trophy:
 
 ---
+
+<img src="https://img.shields.io/static/v1?label=build&message=done&color=green&style=flag"/>
+
