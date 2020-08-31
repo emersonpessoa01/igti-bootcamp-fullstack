@@ -84,7 +84,7 @@ funções, estruturas de decisão, estruturas de repetição e manipulação de 
 :heavy_check_mark: Criação de um pequeno projeto.<br>
 :heavy_check_mark: passo-a-passo com React.<br>
 
-<img src="https://img.shields.io/static/v1?label=react&message=framework&color=blue&style=for-the-badge&logo=REACT"/>
+<a href="https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo03"><img src="https://img.shields.io/static/v1?label=react&message=modulo&color=blue&style=for-the-badge&logo=REACT"/></a>
 <hr>
 
 **`Módulo 4`** :books:
