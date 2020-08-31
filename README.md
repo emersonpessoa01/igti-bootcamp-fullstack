@@ -110,8 +110,8 @@ funções, estruturas de decisão, estruturas de repetição e manipulação de 
 <img src="https://img.shields.io/static/v1?label=Update&message=passing&color=green&style=plastic&logo=github"/>
 
 ## Desenvolvedores:
-[<img src="image/images/EmePessoa.jpeg" width=90 ><br><sub> Emerson Pessoa </sub>](https://github.com/emersonpessoa01) | [<img src="image/images/githubman.jpg" width=90 ><br><sub> Git Ironman </sub>]() | 
-| :---: | :---: |
+[<img src="image/images/EmePessoa.jpeg" width=90 ><br><sub> Emerson Pessoa </sub>](https://github.com/emersonpessoa01) | [<img src="image/images/githubman.jpg" width=90 ><br><sub> Git Ironman </sub>]() | [<img src="image/gifs/octocat.gif" width=90 ><br><sub> Octocat Nerd </sub>]() |
+| :---: | :---: | :---: |
 
 
 
