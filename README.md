@@ -109,5 +109,5 @@ funções, estruturas de decisão, estruturas de repetição e manipulação de 
 
 ---
 
-<img src="https://img.shields.io/static/v1?label=build&message=done&color=green&style=flag"/>
+<img src="https://img.shields.io/static/v1?label=Update&message=passing&color=green&style=plastic&logo=github"/>
 
