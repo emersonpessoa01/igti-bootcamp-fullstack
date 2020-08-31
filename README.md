@@ -13,10 +13,9 @@
      <img src="./image/gifs/rangerColor.gif" alt="rangerColor">
 <hr>
      <img src="./image/gifs/jsperfomatico.gif" alt="jsperformatico">
-     
+<hr>     
      <img src="./image/gifs/radio-podcast_2.gif" alt="radio-podcast">
-     </p>
-
+<hr>
 
 
 **Bootcamp para Desenvolvedor Full Stack** :checkered_flag:
