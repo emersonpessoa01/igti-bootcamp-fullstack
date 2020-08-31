@@ -3,8 +3,6 @@
      <p align="center">
      <img src="./image/images/fullstack_1.png" width="99%" alt="fullstack-igti">
      </p>
-
-
 <hr>
      <img src="./image/gifs/CRUD.gif" alt="crud">
 <hr>
@@ -110,4 +108,11 @@ funções, estruturas de decisão, estruturas de repetição e manipulação de 
 ---
 
 <img src="https://img.shields.io/static/v1?label=Update&message=passing&color=green&style=plastic&logo=github"/>
+
+## Desenvolvedor:
+[<img src="image/images/EmePessoa.jpeg" width=115 ><br><sub> Emerson Pessoa </sub>](https://github.com/emersonpessoa01) | 
+| :---: |
+
+
+
 
