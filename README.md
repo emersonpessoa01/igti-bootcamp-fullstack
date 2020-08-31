@@ -103,8 +103,7 @@ funções, estruturas de decisão, estruturas de repetição e manipulação de 
 :heavy_check_mark: Introdução ao Heroku.<br>
 :heavy_check_mark: Instalação do Heroku CLI.<br>
 :heavy_check_mark: Como implantar aplicações no Heroku.<br>
-:heavy_check_mark: Fechamento:<br>
-:heavy_check_mark:  Entrega do Desafio Final. :trophy:
+:heavy_check_mark: Fechamento: Entrega do Desafio Final. :trophy:
 
 ---
 
