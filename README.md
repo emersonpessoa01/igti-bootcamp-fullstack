@@ -24,7 +24,7 @@
 
 ---
 
-**Repositório para armazenar conteúdos do Bootcamp de Desenvolvedor Full Stack da IGTI.**
+**Repositório para armazenar conteúdos do Bootcamp de Desenvolvedor Full Stack da IGTI.** <img src="./image/iimages/githubman.jpeg" alt="githubman">
 
 ---
 
