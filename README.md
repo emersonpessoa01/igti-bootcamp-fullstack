@@ -111,8 +111,8 @@ funções, estruturas de decisão, estruturas de repetição e manipulação de 
 <img src="https://img.shields.io/static/v1?label=Update&message=passing&color=green&style=plastic&logo=github"/>
 
 ## Desenvolvedor:
-[<img src="image/images/EmePessoa.jpeg" width=115 ><br><sub> Emerson Pessoa </sub>](https://github.com/emersonpessoa01) | 
-| :---: |
+[<img src="image/images/EmePessoa.jpeg" width=115 ><br><sub> Emerson Pessoa </sub>](https://github.com/emersonpessoa01) | [<img src="image/images/EmePessoa.jpeg" width=115 ><br><sub> Emerson Pessoa </sub>](https://github.com/emersonpessoa01) |
+| :---: | :---: |
 
 
 
