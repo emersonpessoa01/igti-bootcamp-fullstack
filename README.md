@@ -13,8 +13,7 @@
      <img src="./image/gifs/rangerColor.gif" alt="rangerColor">
 <hr>
      <img src="./image/gifs/jsperfomatico.gif" alt="jsperformatico">
-<hr>
-     <p align="center">
+     
      <img src="./image/gifs/radio-podcast_2.gif" alt="radio-podcast">
      </p>
 
@@ -24,10 +23,13 @@
 
 ---
 
-**Repositório para armazenar conteúdos do Bootcamp de Desenvolvedor Full Stack da IGTI.** <img src="./image/iimages/githubman.jpeg" alt="githubman">
+**Repositório para armazenar conteúdos do Bootcamp de Desenvolvedor Full Stack da IGTI.** 
+<p align="center">
+     <img src="./image/images/githubman.jpg" width="100" alt="githubman">
+</p>
 
----
 
+ 
 <p align="center">
      <b>
      Conteúdo Programático:
