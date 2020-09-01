@@ -1,9 +1,9 @@
 
 
 
-## Bootcamp FullStack Developer maio/2020 ©
+<h2 align="center">Bootcamp FullStack Developer maio/2020 <sup>©</sup> </h2>
 <hr> 
-     <p aling="center"
+     <p align="center">
      <img src="./image/images/fullstack_1.png" width="60%" alt="fullstack-igti">
      </p>
 <hr>
@@ -15,8 +15,7 @@
 | :---: | :---: | :---: | :---: |
      
 <hr>
-## Preview:
----
+<p><h2> Preview:</h2></p>
      <img src="./image/gifs/CRUD.gif" width="60%" alt="crud">
      
 <hr>
@@ -33,7 +32,11 @@
      
 <hr>
 
-- Bootcamp para Desenvolvedor Full Stac. :octocat:
+<p align="center">
+     <b>
+     Conteúdo Programático: :octocat:
+     </b>
+</p>
 
 <a href="https://github.com/emersonpessoa01/igti-bootcamp-fullstack"><p align="center">
      <img src="./image/images/githubman.jpg" width="100" alt="githubman">
@@ -41,11 +44,7 @@
 
 ---
  
-<p align="center">
-     <b>
-     Conteúdo Programático:
-     </b>
-</p>
+
 
 
 
