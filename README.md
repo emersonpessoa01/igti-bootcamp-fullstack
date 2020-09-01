@@ -16,20 +16,28 @@
 
 <hr>
      <p align="center">
-     <img src="./image/images/fullstack_1.png" width="99%" alt="fullstack-igti">
+     <img src="./image/images/fullstack_1.png" width="70%" alt="fullstack-igti">
      </p>
-<hr>
-     <img src="./image/gifs/CRUD.gif" alt="crud">
 <hr>
      <p align="center">
-     <img src="image/gifs/color-selector.gif" alt="color-selector">
+     <img src="./image/gifs/CRUD.gif" width="70%" alt="crud">
      </p>
 <hr>
-     <img src="./image/gifs/rangerColor.gif" alt="rangerColor">
+     <p align="center">
+     <img src="image/gifs/color-selector.gif" width="70%"  alt="color-selector">
+     </p>
 <hr>
-     <img src="./image/gifs/jsperfomatico.gif" alt="jsperformatico">
-<hr>     
-     <img src="./image/gifs/radio-podcast_2.gif" alt="radio-podcast">
+     <p align="center">
+     <img src="./image/gifs/rangerColor.gif" width="70%" alt="rangerColor">
+      </p>
+<hr>
+     <p align="center">
+     <img src="./image/gifs/jsperfomatico.gif" width="70%" alt="jsperformatico">
+     </p>
+<hr> 
+     <p align="center">
+     <img src="./image/gifs/radio-podcast_2.gif" width="70%" alt="radio-podcast">
+     </p>
 <hr>
 
 
