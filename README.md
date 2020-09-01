@@ -3,6 +3,11 @@
 <h2 sytle="align:center;font-family:Righteous Arial; font-color: blue"> igti-bootcamp-fullstack - 1a turma 2020© </h2>
 <hr>
 
+{c:red}texto vermelho.{/c}
+
+{c:#B81365}texto colorido com hexadecimal{/c}
+<hr>
+
 <a href="https://github.com/emersonpessoa01"><img src="https://img.shields.io/static/v1?label=build&message=home&color=0000fff&style=flat&logo=github"/></a>
 
 ## Desenvolvedores:
