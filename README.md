@@ -1,7 +1,5 @@
 
 
-
-
 <h2 align="center" font-family="Righteous" font-size=100> igti-bootcamp-fullstack - 1a turma 2020© </h2>
 <hr>
 
