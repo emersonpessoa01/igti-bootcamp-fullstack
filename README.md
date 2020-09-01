@@ -1,5 +1,7 @@
+```diff
++Bootcamp FullStack Developer maio/2020 ©
+```
 
-<h2 align="center">Bootcamp FullStack Developer maio/2020 <sup>©</sup> </h2>
 <hr> 
      <p align="center">
      <img src="./image/images/fullstack_1.png" width="60%" alt="fullstack-igti">
