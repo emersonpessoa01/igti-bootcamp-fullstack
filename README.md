@@ -11,13 +11,13 @@
 <a href="https://github.com/emersonpessoa01"><img src="https://img.shields.io/static/v1?label=build&message=home&color=0000fff&style=flat&logo=github"/></a>
 
 ## Desenvolvedores:
-[<img src="image/images/EmePessoa.jpeg" width=115% ><br><sub> Emerson Pessoa </sub>](https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo01/CRUD) | [<img src="image/images/githubman.jpg" width=95% ><br><sub> Git Ironman </sub>]() | [<img src="image/gifs/octocat.gif" width=90 ><br><sub> Octocat Nerd </sub>]() | [<img src="image/gifs/master-yoda.gif" width=115  heigth=120><br><sub> Mestre Yoda </sub>]() |
+[<img src="image/images/EmePessoa.jpeg" width=90 ><br><sub> Emerson Pessoa </sub>](https://github.com/emersonpessoa01) | [<img src="image/images/githubman.jpg" width=90 ><br><sub> Git Ironman </sub>]() | [<img src="image/gifs/octocat.gif" width=90 ><br><sub> Octocat Nerd </sub>]() | [<img src="image/gifs/master-yoda.gif" width=115  heigth=120><br><sub> Mestre Yoda </sub>]() |
 | :---: | :---: | :---: | :---: |
      
 <hr>
 <h2> Preview: </h2>
 
-[<img src="./image/gifs/CRUD.gif" width="115%" alt="crud"><br><sub> CRUD </sub>](https://github.com/emersonpessoa01) | [<img src="image/gifs/color-selector.gif" width="95%"  alt="color-selector"><br><sub> COLOR SELECTOR </sub>]() |
+[<img src="./image/gifs/CRUD.gif" width="115%" alt="crud"><br><sub> CRUD </sub>](https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo01/CRUD) | [<img src="image/gifs/color-selector.gif" width="95%"  alt="color-selector"><br><sub> COLOR SELECTOR </sub>]() |
 | :---: | :---: |
 
 [<img src="./image/gifs/rangerColor.gif" width="115%" alt="crud"><br><sub> RANGER COLOR </sub>](https://github.com/emersonpessoa01) | [<img src="image/gifs/jsperfomatico.gif" width="95%"  alt="color-selector"><br><sub>JS PERFORMÁTICO</sub>]() |
