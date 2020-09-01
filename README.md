@@ -56,7 +56,7 @@
 funções, estruturas de decisão, estruturas de repetição e manipulação de eventos.<br>
 :heavy_check_mark: Desenvolvimento de APIs
 
-<a href="https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo01"><img src="https://img.shields.io/static/v1?label=javascript&message=modulo 1&color=blue&style=for-the-badge&logo=JAVASCRIPT"/></a>
+<a href="https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo01"><img src="https://img.shields.io/static/v1?label=javascript&message=modulo1&color=blue&style=for-the-badge&logo=JAVASCRIPT"/></a>
 <hr>
 
 #### **Módulo 2** :books:
@@ -90,7 +90,7 @@ funções, estruturas de decisão, estruturas de repetição e manipulação de 
 :heavy_check_mark: Criação de um pequeno projeto.<br>
 :heavy_check_mark: passo-a-passo com React.<br>
 
-<a href="https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo03"><img src="https://img.shields.io/static/v1?label=react&message=modulo 3&color=blue&style=for-the-badge&logo=REACT"/></a>
+<a href="https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo03"><img src="https://img.shields.io/static/v1?label=react&message=modulo3&color=blue&style=for-the-badge&logo=REACT"/></a>
 <hr>
 
 
