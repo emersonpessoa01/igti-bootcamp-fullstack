@@ -17,7 +17,7 @@
 <hr>
 <h2> Preview: </h2>
 
-[<img src="./image/gifs/CRUD.gif" width="115%" alt="crud"><br><sub> CRUD </sub>](https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo01/CRUD) | [<img src="image/gifs/color-selector.gif" width="95%"  alt="color-selector"><br><sub> COLOR SELECTOR </sub>]() |
+[<img src="./image/gifs/CRUD.gif" width="120%" alt="crud"><br><sub> CRUD </sub>](https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo01/CRUD) | [<img src="image/gifs/color-selector.gif" width="90%"  alt="color-selector"><br><sub> COLOR SELECTOR </sub>]() |
 | :---: | :---: |
 
 [<img src="./image/gifs/rangerColor.gif" width="115%" alt="crud"><br><sub> RANGER COLOR </sub>](https://github.com/emersonpessoa01) | [<img src="image/gifs/jsperfomatico.gif" width="95%"  alt="color-selector"><br><sub>JS PERFORMÁTICO</sub>]() |
