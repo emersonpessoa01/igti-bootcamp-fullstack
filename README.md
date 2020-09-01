@@ -15,37 +15,27 @@
 | :---: | :---: | :---: | :---: |
 
 <hr>
-     <p align="center">
-     <img src="./image/images/fullstack_1.png" width="70%" alt="fullstack-igti">
-     </p>
+     <img src="./image/images/fullstack_1.png" width="60%" alt="fullstack-igti">
+     
 <hr>
-     <p align="center">
-     <img src="./image/gifs/CRUD.gif" width="70%" alt="crud">
-     </p>
+     <img src="./image/gifs/CRUD.gif" width="60%" alt="crud">
+     
 <hr>
-     <p align="center">
-     <img src="image/gifs/color-selector.gif" width="70%"  alt="color-selector">
-     </p>
+     <img src="image/gifs/color-selector.gif" width="60%"  alt="color-selector">
+     
 <hr>
-     <p align="center">
-     <img src="./image/gifs/rangerColor.gif" width="70%" alt="rangerColor">
-      </p>
+     <img src="./image/gifs/rangerColor.gif" width="60%" alt="rangerColor">
+     
 <hr>
-     <p align="center">
-     <img src="./image/gifs/jsperfomatico.gif" width="70%" alt="jsperformatico">
-     </p>
+     <img src="./image/gifs/jsperfomatico.gif" width="60%" alt="jsperformatico">
+     
 <hr> 
-     <p align="center">
-     <img src="./image/gifs/radio-podcast_2.gif" width="70%" alt="radio-podcast">
-     </p>
+     <img src="./image/gifs/radio-podcast_2.gif" width="60%" alt="radio-podcast">
+     
 <hr>
 
+- Bootcamp para Desenvolvedor Full Stac. :octocat:
 
-- [X] **Bootcamp para Desenvolvedor Full Stack** :checkered_flag:
-
----
-
-- [X] **Repositório para armazenar conteúdos do Bootcamp de Desenvolvedor Full Stack da IGTI.** :octocat: 
 <a href="https://github.com/emersonpessoa01/igti-bootcamp-fullstack"><p align="center">
      <img src="./image/images/githubman.jpg" width="100" alt="githubman">
 </p></a>
@@ -112,7 +102,7 @@ funções, estruturas de decisão, estruturas de repetição e manipulação de 
 <hr>
 
 
-#### **Módulo ** :books:
+#### **Módulo 4** :books:
 
 :heavy_check_mark: Persistência de dados, versionamento de código e implantação e Introdução ao MongoDB.<br>
 :heavy_check_mark: Utilização do serviço mLab. Integrando a API ao MongoDB no mLab.<br>
