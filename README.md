@@ -11,7 +11,7 @@
 <a href="https://github.com/emersonpessoa01"><img src="https://img.shields.io/static/v1?label=build&message=home&color=0000fff&style=flat&logo=github"/></a>
 
 ## Desenvolvedores:
-[<img src="image/images/EmePessoa.jpeg" width=90 ><br><sub> Emerson Pessoa </sub>](https://github.com/emersonpessoa01) | [<img src="image/images/githubman.jpg" width=90 ><br><sub> Git Ironman </sub>]() | [<img src="image/gifs/octocat.gif" width=90 ><br><sub> Octocat Nerd </sub>]() | [<img src="image/gifs/master-yoda.gif" width=115  heigth=120><br><sub> Mestre Yoda </sub>]() |
+[<img src="image/images/EmePessoa.jpeg" width=90 ><br><sub> Emerson Pessoa </sub>](https://github.com/emersonpessoa01) | [<img src="image/images/githubman.jpg" width=90 ><br><sub> Git Ironman </sub>](https://github.com/emersonpessoa01) | [<img src="image/gifs/octocat.gif" width=90 ><br><sub> Octocat Nerd </sub>](https://github.com/emersonpessoa01) | [<img src="image/gifs/master-yoda.gif" width=115  heigth=120><br><sub> Mestre Yoda </sub>](https://github.com/emersonpessoa01) |
 | :---: | :---: | :---: | :---: |
      
 <hr>
@@ -23,7 +23,7 @@
 [<img src="./image/gifs/rangerColor.gif" width="115%" alt="crud"><br><sub> RANGER SLIDERS </sub>](https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo01/rangerSliders) | [<img src="image/gifs/jsperfomatico.gif" width="95%"  alt="color-selector"><br><sub>JS PERFORMÁTICO</sub>](https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo03/javascript-perfomatico) |
 | :---: | :---: |
 
-[<img src="./image/gifs/radio-podcast_2.gif" width="95%" alt="radio-podcast"> <br><sub> RÁDIO PODCAST </sub>](https://github.com/emersonpessoa01) |
+[<img src="./image/gifs/radio-podcast_2.gif" width="95%" alt="radio-podcast"> <br><sub> RÁDIO PODCAST </sub>](https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo01/rangerSliders) |
 | :---:|
 
 <hr>
