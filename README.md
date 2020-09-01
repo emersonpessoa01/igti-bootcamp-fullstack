@@ -20,7 +20,7 @@
 [<img src="./image/gifs/CRUD.gif" width="150%" alt="crud"><br><sub> CRUD </sub>](https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo01/CRUD) | [<img src="image/gifs/color-selector.gif" width="95%"  alt="color-selector"><br><sub> COLOR SELECTOR </sub>](https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo01/color-selector) |
 | :---: | :---: |
 
-[<img src="./image/gifs/rangerColor.gif" width="115%" alt="crud"><br><sub> RANGER SLIDERS </sub>](https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo03/javascript-perfomatico) | [<img src="image/gifs/jsperfomatico.gif" width="95%"  alt="color-selector"><br><sub>JS PERFORMÁTICO</sub>]() |
+[<img src="./image/gifs/rangerColor.gif" width="115%" alt="crud"><br><sub> RANGER SLIDERS </sub>]() | [<img src="image/gifs/jsperfomatico.gif" width="95%"  alt="color-selector"><br><sub>JS PERFORMÁTICO</sub>](https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo03/javascript-perfomatico) |
 | :---: | :---: |
 
 [<img src="./image/gifs/radio-podcast_2.gif" width="95%" alt="radio-podcast"> <br><sub> RÁDIO PODCAST </sub>](https://github.com/emersonpessoa01) |
