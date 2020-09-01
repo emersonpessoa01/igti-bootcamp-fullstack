@@ -1,6 +1,4 @@
-```diff
-+Bootcamp FullStack Developer maio/2020 ©
-```
+<h2 align="center">Bootcamp FullStack Developer <sup>©</sup></h2>
 
 <hr> 
      <p align="center">
