@@ -1,10 +1,14 @@
-##   igti-bootcamp-fullstack - 1a turma 2020©
+
+
+
+
+<h2 align="center" font-family="Righteous" font-size=100> igti-bootcamp-fullstack - 1a turma 2020© </h2>
 <hr>
 
 <a href="https://github.com/emersonpessoa01"><img src="https://img.shields.io/static/v1?label=build&message=home&color=0000fff&style=flat&logo=github"/></a>
 
 ## Desenvolvedores:
-[<img src="image/images/EmePessoa.jpeg" width=90 ><br><sub> Emerson Pessoa </sub>](https://github.com/emersonpessoa01) | [<img src="image/images/githubman.jpg" width=90 ><br><sub> Git Ironman </sub>]() | [<img src="image/gifs/octocat.gif" width=90 ><br><sub> Octocat Nerd </sub>]() | [<img src="image/gifs/master-yoda.gif" width=115  heigth=120><br><sub> Master Yoda </sub>]() |
+[<img src="image/images/EmePessoa.jpeg" width=90 ><br><sub> Emerson Pessoa </sub>](https://github.com/emersonpessoa01) | [<img src="image/images/githubman.jpg" width=90 ><br><sub> Git Ironman </sub>]() | [<img src="image/gifs/octocat.gif" width=90 ><br><sub> Octocat Nerd </sub>]() | [<img src="image/gifs/master-yoda.gif" width=115  heigth=120><br><sub> Mestre Yoda </sub>]() |
 | :---: | :---: | :---: | :---: |
 
 <hr>
@@ -26,11 +30,11 @@
 <hr>
 
 
-**Bootcamp para Desenvolvedor Full Stack** :checkered_flag:
+- [X] **Bootcamp para Desenvolvedor Full Stack** :checkered_flag:
 
 ---
 
-**Repositório para armazenar conteúdos do Bootcamp de Desenvolvedor Full Stack da IGTI.** :octocat: 
+- [X] **Repositório para armazenar conteúdos do Bootcamp de Desenvolvedor Full Stack da IGTI.** :octocat: 
 <a href="https://github.com/emersonpessoa01/igti-bootcamp-fullstack"><p align="center">
      <img src="./image/images/githubman.jpg" width="100" alt="githubman">
 </p></a>
@@ -47,7 +51,7 @@
 
 ---
 
-**`Módulo 1`** :books: 
+#### **Módulo 1** :books: 
 
 :heavy_check_mark: Fundamentos Introdução, instalação e configuração do Visual Studio Code (VSCode).<br>
 :heavy_check_mark: Instalação do Node.js.<br>
@@ -62,7 +66,7 @@ funções, estruturas de decisão, estruturas de repetição e manipulação de 
 <a href="https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo01"><img src="https://img.shields.io/static/v1?label=javascript&message=modulo01&color=blue&style=for-the-badge&logo=JAVASCRIPT"/></a>
 <hr>
 
-**`Módulo 2`** :books:
+#### **Módulo 2** :books:
 
 :heavy_check_mark: Introdução ao desenvolvimento backend.<br>
 :heavy_check_mark: Backend x frontend.<br>
@@ -73,11 +77,11 @@ funções, estruturas de decisão, estruturas de repetição e manipulação de 
 :heavy_check_mark: Introdução à ferramenta Insomnia.<br>
 :heavy_check_mark: Construção de APIs HTTP, utilizando as principais operações: GET, POST, PUT, e DELETE.<br>
 :heavy_check_mark: Desenvolvimento das operações CRUD.<br>
-:heavy_check_mark: Persistência de Dados em Arquivos.<br>
+:heavy_check_mark: Persistência de Dados em Arqu3vos.<br>
 
 ---
 
-**`Módulo 3`** :books:
+#### **Módulo 3** :books:
 
 :heavy_check_mark: FrontEnd com React Instalação e configuração do React.<br>
 :heavy_check_mark: Criação de projetos com o create-react-app.<br>
@@ -96,7 +100,8 @@ funções, estruturas de decisão, estruturas de repetição e manipulação de 
 <a href="https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo03"><img src="https://img.shields.io/static/v1?label=react&message=modulo03&color=blue&style=for-the-badge&logo=REACT"/></a>
 <hr>
 
-**`Módulo 4`** :books:
+
+#### **Módulo ** :books:
 
 :heavy_check_mark: Persistência de dados, versionamento de código e implantação e Introdução ao MongoDB.<br>
 :heavy_check_mark: Utilização do serviço mLab. Integrando a API ao MongoDB no mLab.<br>
@@ -107,7 +112,7 @@ funções, estruturas de decisão, estruturas de repetição e manipulação de 
 
 ---
 
-**`Módulo 5`** :books:
+#### **Módulo 5** :books:
 
 :heavy_check_mark: Introdução ao Heroku.<br>
 :heavy_check_mark: Instalação do Heroku CLI.<br>
