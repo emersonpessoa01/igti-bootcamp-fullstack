@@ -1,17 +1,11 @@
 
 
 
-
-<hr>
+## Bootcamp FullStack Developer maio/2020 ©
+<hr> 
+     <p aling="center"
      <img src="./image/images/fullstack_1.png" width="60%" alt="fullstack-igti">
-<hr>
-     
-     <h2 sytle="align:center;font-family:Righteous Arial; font-color: blue"> igti-bootcamp-fullstack - 1a turma 2020© </h2>
-<hr>
-
-{c:red}texto vermelho.{/c}
-
-{c:#B81365}texto colorido com hexadecimal{/c}
+     </p>
 <hr>
 
 <a href="https://github.com/emersonpessoa01"><img src="https://img.shields.io/static/v1?label=build&message=home&color=0000fff&style=flat&logo=github"/></a>
@@ -21,7 +15,8 @@
 | :---: | :---: | :---: | :---: |
      
 <hr>
-Preview:
+## Preview:
+---
      <img src="./image/gifs/CRUD.gif" width="60%" alt="crud">
      
 <hr>
