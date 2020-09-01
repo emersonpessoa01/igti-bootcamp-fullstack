@@ -1,6 +1,12 @@
 
 
-<h2 sytle="align:center;font-family:Righteous Arial; font-color: blue"> igti-bootcamp-fullstack - 1a turma 2020© </h2>
+
+
+<hr>
+     <img src="./image/images/fullstack_1.png" width="60%" alt="fullstack-igti">
+<hr>
+     
+     <h2 sytle="align:center;font-family:Righteous Arial; font-color: blue"> igti-bootcamp-fullstack - 1a turma 2020© </h2>
 <hr>
 
 {c:red}texto vermelho.{/c}
@@ -13,11 +19,9 @@
 ## Desenvolvedores:
 [<img src="image/images/EmePessoa.jpeg" width=90 ><br><sub> Emerson Pessoa </sub>](https://github.com/emersonpessoa01) | [<img src="image/images/githubman.jpg" width=90 ><br><sub> Git Ironman </sub>]() | [<img src="image/gifs/octocat.gif" width=90 ><br><sub> Octocat Nerd </sub>]() | [<img src="image/gifs/master-yoda.gif" width=115  heigth=120><br><sub> Mestre Yoda </sub>]() |
 | :---: | :---: | :---: | :---: |
-
-<hr>
-     <img src="./image/images/fullstack_1.png" width="60%" alt="fullstack-igti">
      
 <hr>
+Preview:
      <img src="./image/gifs/CRUD.gif" width="60%" alt="crud">
      
 <hr>
