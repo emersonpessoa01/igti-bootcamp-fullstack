@@ -15,21 +15,17 @@
 | :---: | :---: | :---: | :---: |
      
 <hr>
-<p><h2> Preview:</h2></p>
-     <img src="./image/gifs/CRUD.gif" width="60%" alt="crud">
-     
-<hr>
-     <img src="image/gifs/color-selector.gif" width="60%"  alt="color-selector">
-     
-<hr>
-     <img src="./image/gifs/rangerColor.gif" width="60%" alt="rangerColor">
-     
-<hr>
-     <img src="./image/gifs/jsperfomatico.gif" width="60%" alt="jsperformatico">
-     
-<hr> 
-     <img src="./image/gifs/radio-podcast_2.gif" width="60%" alt="radio-podcast">
-     
+<h2> Preview: </h2>
+
+[<img src="./image/gifs/CRUD.gif" width="115%" alt="crud"><br><sub> CRUD </sub>](https://github.com/emersonpessoa01) | [<img src="image/gifs/color-selector.gif" width="95%"  alt="color-selector"><br><sub> COLOR SELECTOR </sub>]() |
+| :---: | :---: |
+
+[<img src="./image/gifs/rangerColor.gif" width="115%" alt="crud"><br><sub> RANGER COLOR </sub>](https://github.com/emersonpessoa01) | [<img src="image/gifs/jsperfomatico.gif" width="95%"  alt="color-selector"><br><sub>JS PERFORMÁTICO</sub>]() |
+| :---: | :---: |
+
+[<img src="./image/gifs/radio-podcast_2.gif" width="115%" alt="radio-podcast"> <br><sub> RÁDIO PODCAST </sub>](https://github.com/emersonpessoa01) |
+| :---:|
+
 <hr>
 
 <p align="center">
