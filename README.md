@@ -1,5 +1,5 @@
 <p align="center">
-     <b>Bootcamp FullStack Developer maio/2020©</b>
+     <b>Bootcamp FullStack Developer - IGTI maio/2020©</b>
 </p>
 
 <hr> 
