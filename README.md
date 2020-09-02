@@ -35,7 +35,7 @@
 </p>
 
 <a href="https://github.com/emersonpessoa01/igti-bootcamp-fullstack"><p align="center">
-     <img src="./image/images/githubman.jpg" width="100" alt="githubman">
+     <img src="./image/images/githubman.jpg" width="85" alt="githubman">
 </p></a>
 
 ---
