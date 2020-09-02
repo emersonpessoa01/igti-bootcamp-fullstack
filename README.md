@@ -1,5 +1,5 @@
 <p align="center">
-     <b>Bootcamp FullStack Developer - IGTI maio/2020©</b>:copyright:
+     <b>Bootcamp FullStack Developer - IGTI maio/2020</b>:copyright:
 </p>
 
 <hr> 
@@ -10,12 +10,12 @@
 
 <a href="https://github.com/emersonpessoa01"><img src="https://img.shields.io/static/v1?label=build&message=home&color=0000fff&style=flat&logo=github"/></a> <a href="https://github.com/emersonpessoa01/fundamentos-em-desenvolvimento-frontend" target="_blank"><img src="https://img.shields.io/static/v1?label=page&message=frontend&color=4c15dc&stype=for-the-badge&logo=JAVASCRIPT"></a> 
 
-## Desenvolvedores:
+#### Desenvolvedores:
 [<img src="image/images/EmePessoa.jpeg" width=90 ><br><sub> Emerson Pessoa </sub>](https://github.com/emersonpessoa01) | [<img src="image/images/githubman.jpg" width=90 ><br><sub> Git Ironman </sub>](https://github.com/emersonpessoa01) | [<img src="image/gifs/octocat.gif" width=90 ><br><sub> Octocat Nerd </sub>](https://github.com/emersonpessoa01) | [<img src="image/gifs/master-yoda.gif" width=115  heigth=120><br><sub> Mestre Yoda </sub>](https://github.com/emersonpessoa01) |
 | :---: | :---: | :---: | :---: |
      
 <hr>
-<h2> Preview: </h2>
+<h4> Preview: </h4>
 
 [<img src="./image/gifs/CRUD.gif" width="150%" alt="crud"><br><sub> CRUD </sub>](https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo01/CRUD) | [<img src="image/gifs/color-selector.gif" width="95%"  alt="color-selector"><br><sub> COLOR SELECTOR </sub>](https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo01/color-selector) |
 | :---: | :---: |
