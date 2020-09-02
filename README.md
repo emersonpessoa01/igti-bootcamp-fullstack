@@ -1,4 +1,6 @@
-<h2 align="center">Bootcamp FullStack Developer <sup>©</sup></h2>
+<p align="center">
+     <b>Bootcamp FullStack Developer maio/2020©</b>
+</p>
 
 <hr> 
      <p align="center">
