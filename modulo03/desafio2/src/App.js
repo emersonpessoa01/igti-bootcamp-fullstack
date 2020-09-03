@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Countries from "./components/coutries/Countries";
 import Header from "./components/header/Header";
+import css from "./components/coutries/countries.module.css"
 
 export default class App extends Component {
   constructor() {
@@ -76,7 +77,7 @@ export default class App extends Component {
     // console.log(allCountries)
     return (
       <div className="container">
-        <h1>React Countries</h1>
+        <h1 className={css.title}>React Countries</h1>
         <Header
           filter={filter}
           countryCount={filteredCountries.length}
@@ -88,3 +89,10 @@ export default class App extends Component {
     );
   }
 }
+
+// const styles= {
+//   centeredTitle:{
+//     textAlign: 'center',
+//     color: 'blueViolet',
+//   }
+// }
