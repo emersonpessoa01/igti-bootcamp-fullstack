@@ -1,4 +1,5 @@
-/*https://fonts.googleapis.com/css?family=Montserrat:wght@300;400;700&family=Righteous&display=swap*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Righteous&display=swap');
+
 
 .flexRow {
   display: flex;
@@ -8,6 +9,7 @@
   border: 1px solid blueviolet;
   border-radius:5px;
   padding: 5px;
+  font-family: Montserrat, sans-serif;
 }
 
 .population {

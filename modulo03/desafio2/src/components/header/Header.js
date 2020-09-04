@@ -37,5 +37,6 @@ const styles= {
   centeredTitle:{
     textAlign: 'left',
     color: 'blueViolet',
+    fontFamily: 'Montserrat'
   }
 }
