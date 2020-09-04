@@ -8,7 +8,7 @@
      </p>
 <hr>
 
-<a href="https://github.com/emersonpessoa01"><img src="https://img.shields.io/static/v1?label=build&message=home&color=0000fff&style=flat&logo=github"/></a> <a href="https://github.com/emersonpessoa01/fundamentos-em-desenvolvimento-frontend" target="_blank"><img src="https://img.shields.io/static/v1?label=page&message=frontend&color=4c15dc&stype=for-the-badge&logo=JAVASCRIPT"></a> 
+<a href="https://github.com/emersonpessoa01"><img src="https://img.shields.io/static/v1?label=build&message=home&color=0000fff&style=flat&logo=github"/></a> ![GitHub last commit](https://img.shields.io/github/last-commit/emersonpessoa01/fundamentos-em-desenvolvimento-frontend?color=%230000ff&logo=github&logoColor=%231f1f14&style=flat-square)</a> <a href="https://github.com/emersonpessoa01/igti-bootcamp-fullback" target="_blank"><img src="https://img.shields.io/static/v1?label=page&message=frontend&color=4c15dc&stype=for-the-badge&logo=JAVASCRIPT"></a> 
 
 #### Desenvolvedores:
 [<img src="image/images/EmePessoa.jpeg" width=90 ><br><sub> Emerson Pessoa </sub>](https://github.com/emersonpessoa01) | [<img src="image/images/githubman.jpg" width=90 ><br><sub> Git Ironman </sub>](https://github.com/emersonpessoa01) | [<img src="image/gifs/octocat.gif" width=90 ><br><sub> Octocat Nerd </sub>](https://github.com/emersonpessoa01) | [<img src="image/gifs/master-yoda.gif" width=115  heigth=120><br><sub> Mestre Yoda </sub>](https://github.com/emersonpessoa01) |
