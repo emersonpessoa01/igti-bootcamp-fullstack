@@ -117,6 +117,7 @@ const calc = () => {
   ageSum = sumAge();
   ageAverage = average();
 
+  // code change
   // totalFilteredMale = filteredUsers.filter((user)=> user.gender === "male").length;
   // totalFilteredMale = filteredUsers.filter((user)=> user.gender === "female").length;
   // ageSum = filteredUsers.reduce((acc, curr) => acc + curr.age, 0);
