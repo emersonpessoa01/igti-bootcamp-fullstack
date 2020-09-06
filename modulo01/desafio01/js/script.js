@@ -5,6 +5,7 @@ let filteredUsers = [];
 // elements
 let inputElement = null;
 let userListInfoElement = null;
+
 let totalFilteredUsersElement = null;
 let totalFilteredFemaleElement = null;
 let totalFilteredMaleElement = null;
@@ -77,8 +78,8 @@ const filterUsers = () => {
 };
 
 const render = () => {
-  statistics();
   list();
+  statistics();
 };
 
 const list = () => {
@@ -90,16 +91,14 @@ const list = () => {
     userListHTML += `
             <li>
                 <img class="photo" src="${user.thumbnail}" alt="User photo" />
-                <span class="name">${
-                  user.fullName
-                } <span><span class="age">| ${user.age} ${user.age > 1 ? "anos" : "ano"}</span>
-            
+                <span class="name">${user.fullName}</span>
+                <span class="age">| ${user.age} ${user.age > 1 ? "anos" : "ano"}
+                </span>
             </li>
       `;
   });
   userListHTML += "</ul>";
   userListInfoElement.innerHTML = userListHTML;
-  totalFilteredUsersElement.innerHTML = totalFilteredUsers;
 };
 
 const statistics = () => {
@@ -111,11 +110,16 @@ const statistics = () => {
 };
 
 const calc = () => {
+  //code clean
   totalFilteredUsers = filteredUsers.length;
   totalFilteredMale = totalByGender("male");
   totalFilteredFemale = totalByGender("female");
   ageSum = sumAge();
   ageAverage = average();
+
+  // totalFilteredMale = filteredUsers.filter((user)=> user.gender === "male").length;
+  // totalFilteredMale = filteredUsers.filter((user)=> user.gender === "female").length;
+  // ageSum = filteredUsers.reduce((acc, curr) => acc + curr.age, 0);
 };
 
 const totalByGender = (gender) =>
