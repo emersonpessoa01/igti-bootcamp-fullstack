@@ -1,49 +1,29 @@
-// lists
-let allUsers = [];
-let filteredUsers = [];
+let inputSearch = null,
+  buttonSearch = null,
+  panelUsers = null,
+  panelStats = null,
+  divInteraction = null,
+  divSpinner = null,
+  users = [];
+filteredUsers = [];
 
-// elements
-let inputElement = null;
-let userListInfoElement = null;
-
-let totalFilteredUsersElement = null;
-let totalFilteredFemaleElement = null;
-let totalFilteredMaleElement = null;
-let totalUsers = null;
-let ageSumElement = null;
-let ageAverageElement = null;
-let button = null;
-let showStatisticsElement = null;
-let statisticsElement = null;
-
-// statistics
-let totalFilteredUsers = 0;
-let totalFilteredMale = 0;
-let totalFilteredFemale = 0;
-let ageSum = 0;
-let showStatistics = false;
-
-let numberFormat = Intl.NumberFormat("pt-BR");
+const formatter = Intl.NumberFormat("pt-BR");
 
 window.addEventListener("load", () => {
-  selectElements();
+  mapElement();
   fetchUsers();
+  addEvents();
 });
 
-const selectElements = () => {
-  inputElement = document.querySelector("#name");
-  inputElement.focus();
-  inputElement.addEventListener("input", filterUsers);
-  userListInfoElement = document.querySelector("#listInfo");
-  totalFilteredUsersElement = document.querySelector("#totalFilteredUsers");
-  totalFilteredMaleElement = document.querySelector("#totalFilteredMale");
-  totalFilteredFemaleElement = document.querySelector("#totalFilteredFemale");
-  ageSumElement = document.querySelector("#ageSum");
-  ageAverageElement = document.querySelector("#ageAverage");
-  button = document.querySelector("button");
-  showStatisticsElement = document.querySelector("#showStatistics");
-  showStatisticsElement.addEventListener("click", toggleStatistics);
-  statisticsElement = document.querySelector("#statistics");
+const mapElement = () => {
+  inputSearch = document.querySelector("#inputSearch");
+  inputSearch.value = "";
+  inputSearch.focus();
+  buttonSearch = document.querySelector("#buttonSearch");
+  panelUsers = document.querySelector("#panelUsers");
+  panelStats = document.querySelector("#panelStats");
+  divInteraction = document.querySelector("#divInteraction");
+  divSpinner = document.querySelector("#divSpinner");
 };
 
 const fetchUsers = async () => {
@@ -51,100 +31,139 @@ const fetchUsers = async () => {
     "https://randomuser.me/api/?seed=javascript&results=100&nat=BR&noinfo"
   );
   const json = await res.json();
-  allUsers = json.results.map(({ name, dob,gender, picture }) => {
+  //console.log(json.results);
+  users = json.results.map(({ name, dob, gender, picture }) => {
     const fullName = `${name.first} ${name.last}`;
     return {
-      fullName,
+      name: fullName,
       age: dob.age,
-      gender,
-      thumbnail: picture.thumbnail,
+      gender: gender,
+      picture: picture.large,
     };
+  });
+
+  //console.log(users);
+  showInteraction();
+};
+
+const showInteraction = () => {
+  setTimeout(() => {
+    divSpinner.classList.add("hidden");
+    divInteraction.classList.remove("hidden");
+    inputSearch.focus();
+  }, 1000);
+};
+
+const addEvents = () => {
+  inputSearch.addEventListener("input", (evt) => {
+    const name = evt.target.value.trim();
+    if (name === "") {
+      renderEmptyUsers();
+      renderEmptyStats();
+    } else {
+      filteredUsers = users
+        .filter((user) => {
+          return user.name.toLowerCase().includes(name.toLowerCase());
+        })
+        .sort((a, b) => a.name.localeCompare(b.name));
+      renderUsers(filteredUsers);
+      renderStats(filteredUsers);
+    }
   });
 };
 
-const filterUsers = () => {
-  const name = event.target.value.trim();
-  if (!name) {
-    filteredUsers = [];
-  } else {
-    filteredUsers = allUsers.filter((user) => {
-      return user.fullName.toLowerCase().includes(name.toLowerCase());
-    }).sort((a, b) => {
-      return a.fullName.localeCompare(b.fullName);
-    });
-  }
-  calc();
-  render();
-};
-
-const render = () => {
-  list();
-  statistics();
-};
-
-const list = () => {
+const renderEmptyUsers = () => {
   if (!filteredUsers) {
     return;
   }
-  let userListHTML = "<ul>";
-  filteredUsers.forEach((user) => {
-    userListHTML += `
-            <li>
-                <img class="photo" src="${user.thumbnail}" alt="User photo" />
-                <span class="name">${user.fullName}</span>
-                <span class="age">| ${user.age} ${user.age > 1 ? "anos" : "ano"}
-                </span>
-            </li>
-      `;
-  });
-  userListHTML += "</ul>";
-  userListInfoElement.innerHTML = userListHTML;
+  let userlistHTML = "<div>";
+  userlistHTML += `
+    <h2>
+    <strong>Nenhum usuário filtrado</strong>
+    </strong>
+    </h2>
+  `;
+  userlistHTML += "</div>";
+  panelUsers.innerHTML = userlistHTML;
 };
-
-const statistics = () => {
-  totalFilteredMaleElement.innerHTML = totalFilteredMale;
-  totalFilteredFemaleElement.innerHTML = totalFilteredFemale;
-  totalFilteredUsersElement.innerHTML = totalFilteredUsers;
-  ageSumElement.innerHTML = formatNumber(ageSum);
-  ageAverageElement.innerHTML = formatNumber(ageAverage);
-};
-
-const calc = () => {
-  //code clean
-  totalFilteredUsers = filteredUsers.length;
-  totalFilteredMale = totalByGender("male");
-  totalFilteredFemale = totalByGender("female");
-  ageSum = sumAge();
-  ageAverage = average();
-
-  // code change
-  // totalFilteredMale = filteredUsers.filter((user)=> user.gender === "male").length;
-  // totalFilteredMale = filteredUsers.filter((user)=> user.gender === "female").length;
-  // ageSum = filteredUsers.reduce((acc, curr) => acc + curr.age, 0);
-};
-
-const totalByGender = (gender) =>
-  filteredUsers.filter((user) => user.gender === gender).length;
-
-const sumAge = () => filteredUsers.reduce((acc, curr) => acc + curr.age, 0);
-
-const average = () => {
-  if (totalFilteredUsers === 0) {
-    return 0;
+const renderEmptyStats = () => {
+  if (!filteredUsers) {
+    return;
   }
-  return ageSum / totalFilteredUsers;
+  let userStatsHTML = "<div>";
+  userStatsHTML += `
+    <h2>
+    <strong>Estatísticas</strong>
+    </strong>
+    </h2>
+  `;
+  userStatsHTML += "</div>";
+  panelStats.innerHTML = userStatsHTML;
+};
+
+const leftPad = (value, count = 2, char = "0") => {
+  let stringValue = value.toString();
+  let newValue = stringValue;
+
+  if (stringValue.length < count) {
+    for (let i = 0; i < count - stringValue.length; i++) {
+      newValue = char + stringValue;
+    }
+  }
+  return newValue;
+};
+
+
+const renderUsers = (users) => {
+  panelUsers.innerHTML = "";
+  const h2 = document.createElement("h2");
+  h2.innerHTML = `(${users.length < 1? 0: leftPad(users.length)}) ${
+    users.length > 1 ? "usuários encontrados" : "de usuário"
+  }`;
+
+  const ul = document.createElement("ul");
+
+  users.forEach(({ name, picture, age }) => {
+    const li = document.createElement("li");
+    li.classList.add("flex-row");
+    li.classList.add("margin-botton");
+
+    const img = `<img class="avatar" src="${picture}" alt="${name}"/>`;
+    const userData = `<span>${name} | ${age} ${age > 1 ? "anos" : "ano"}
+    </span>`;
+
+    li.innerHTML = `${img} ${userData}`;
+    ul.appendChild(li);
+  });
+
+  panelUsers.appendChild(h2);
+  panelUsers.appendChild(ul);
+};
+
+const renderStats = () => {
+  const countMale = filteredUsers.filter((user) => user.gender === "male")
+    .length;
+  const countFemale = filteredUsers.filter((user) => user.gender === "female")
+    .length;
+  const sumAge = filteredUsers.reduce((acc, curr) => acc + curr.age, 0);
+  const avgAge = sumAge / filteredUsers.length || 0;
+
+  panelStats.innerHTML = `
+  <h2>
+      <ul>
+        <li><strong>Sexo masculino: ${countMale}</strong></li>
+        <li><strong>Sexo feminino: ${countFemale}</strong></li>
+        <li><strong>Soma das idades: ${formatNumber(sumAge)}</strong></li>
+        <li><strong>Média das idades: ${formatAvg(avgAge)}</strong></li>
+      </ul>
+    </h2>
+  `;
 };
 
 const formatNumber = (number) => {
-  return numberFormat.format(Number(number).toFixed(2));
+  return formatter.format(number);
 };
 
-const toggleStatistics = () => {
-  showStatistics = !showStatistics;
-  const display = showStatistics ? "block" : "none";
-  const buttonAtivate = showStatistics
-    ? "Esconder estatísticas"
-    : "Mostrar estatísticas";
-  statisticsElement.style.display = display;
-  showStatisticsElement.innerHTML = buttonAtivate;
+const formatAvg = (number) => {
+  return number.toFixed(2).replace(".", ",");
 };
