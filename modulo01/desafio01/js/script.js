@@ -62,9 +62,7 @@ const addEvents = () => {
       renderEmptyStats();
     } else {
       filteredUsers = users
-        .filter((user) => {
-          return user.name.toLowerCase().includes(name.toLowerCase());
-        })
+        .filter((user) =>user.name.toLowerCase().includes(name.toLowerCase()))
         .sort((a, b) => a.name.localeCompare(b.name));
       renderUsers(filteredUsers);
       renderStats(filteredUsers);
@@ -118,8 +116,7 @@ const renderUsers = (users) => {
   panelUsers.innerHTML = "";
   const h2 = document.createElement("h2");
   h2.innerHTML = `(${users.length < 1? 0: leftPad(users.length)}) ${
-    users.length > 1 ? "usuários encontrados" : "de usuário"
-  }`;
+    users.length > 1 ? "usuários encontrados" : users.length < 1 ? "de usuário" : "usuário encontrado"}`;
 
   const ul = document.createElement("ul");
 
