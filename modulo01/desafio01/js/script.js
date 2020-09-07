@@ -5,7 +5,7 @@ let inputSearch = null,
   divInteraction = null,
   divSpinner = null,
   users = [];
-filteredUsers = [];
+  filteredUsers = [];
 
 const formatter = Intl.NumberFormat("pt-BR");
 
@@ -58,11 +58,10 @@ const addEvents = () => {
   inputSearch.addEventListener("input", (evt) => {
     const name = evt.target.value.trim();
     if (name === "") {
-      renderEmptyUsers();
-      renderEmptyStats();
+      renderEmptyUsers([]);
     } else {
       filteredUsers = users
-        .filter((user) =>user.name.toLowerCase().includes(name.toLowerCase()))
+        .filter((user) => user.name.toLowerCase().includes(name.toLowerCase()))
         .sort((a, b) => a.name.localeCompare(b.name));
       renderUsers(filteredUsers);
       renderStats(filteredUsers);
@@ -81,10 +80,11 @@ const renderEmptyUsers = () => {
     </strong>
     </h2>
   `;
-  userlistHTML += "</div>";
-  panelUsers.innerHTML = userlistHTML;
-};
-const renderEmptyStats = () => {
+  // userlistHTML += "</div>";
+  // panelUsers.innerHTML = userlistHTML;
+  // userlistHTML.appendChild(div);
+  panelUsers.appendChild(userlistHTML);
+
   if (!filteredUsers) {
     return;
   }
@@ -95,8 +95,10 @@ const renderEmptyStats = () => {
     </strong>
     </h2>
   `;
-  userStatsHTML += "</div>";
-  panelStats.innerHTML = userStatsHTML;
+  // userStatsHTML += "</div>";
+  // panelStats.innerHTML = userStatsHTML;
+  // userStatsHTML.appendChild(div);
+  panelStats.appendChild(userStatsHTML);
 };
 
 const leftPad = (value, count = 2, char = "0") => {
@@ -111,12 +113,16 @@ const leftPad = (value, count = 2, char = "0") => {
   return newValue;
 };
 
-
 const renderUsers = (users) => {
   panelUsers.innerHTML = "";
   const h2 = document.createElement("h2");
-  h2.innerHTML = `(${users.length < 1? 0: leftPad(users.length)}) ${
-    users.length > 1 ? "usuários encontrados" : users.length < 1 ? "de usuário" : "usuário encontrado"}`;
+  h2.innerHTML = `(${users.length < 1 ? 0 : leftPad(users.length)}) ${
+    users.length > 1
+      ? "usuários encontrados"
+      : users.length < 1
+      ? "de usuário"
+      : "usuário encontrado"
+  }`;
 
   const ul = document.createElement("ul");
 
