@@ -1,33 +1,32 @@
 let clickArray = [];
+button = null;
 
-window.addEventListener('load', () => {
-    document.querySelector('#clickButton').addEventListener('click', () => {
-        // const now = new Date();
-        // clickArray.push(now.toISOString());
-        const item = getNewTimestamp();
-        clickArray.push(item);
+window.addEventListener("load", () => {
+  button = document.querySelector("#clickButton");
+  button.addEventListener("click", () => {
+    // const now = new Date();
+    // clickArray.push(now.toISOString());
+    const item = getNewTimestamp();
+    clickArray.push(item);
 
-        // console.log(clickArray);
-        render(item);
-    });
+    // console.log(clickArray);
+    render(item);
+  });
 });
 
 const render = (item) => {
-    const ul = document.querySelector('#data');
+  const ul = document.querySelector("#data");
+  const li = document.createElement("li");
+  li.innerHTML = item;
+  ul.appendChild(li);
 
-    const li = document.createElement('li');
-    li.innerHTML = item;
+  // ul.innerHTML = '';
+  // let lis = '';
 
-    ul.appendChild(li);
+  // clickArray.map((item) => {
+  //     lis += `<li>${item}</li>`
+  // });
 
-
-    // ul.innerHTML = '';
-    // let lis = '';
-
-    // clickArray.map((item) => {
-    //     lis += `<li>${item}</li>`
-    // });
-
-    // ul.innerHTML = lis;
-    // document.title = clickArray.length;
-}
+  // ul.innerHTML = lis;
+  // document.title = clickArray.length;
+};
