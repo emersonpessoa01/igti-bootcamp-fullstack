@@ -80,10 +80,10 @@ const renderEmptyUsers = () => {
     </strong>
     </h2>
   `;
-  // userlistHTML += "</div>";
-  // panelUsers.innerHTML = userlistHTML;
+  userlistHTML += "</div>";
+  panelUsers.innerHTML = userlistHTML;
   // userlistHTML.appendChild(div);
-  panelUsers.appendChild(userlistHTML);
+  // panelUsers.appendChild(userlistHTML);
 
   if (!filteredUsers) {
     return;
@@ -95,10 +95,10 @@ const renderEmptyUsers = () => {
     </strong>
     </h2>
   `;
-  // userStatsHTML += "</div>";
-  // panelStats.innerHTML = userStatsHTML;
+  userStatsHTML += "</div>";
+  panelStats.innerHTML = userStatsHTML;
   // userStatsHTML.appendChild(div);
-  panelStats.appendChild(userStatsHTML);
+  // panelStats.appendChild(userStatsHTML);
 };
 
 const leftPad = (value, count = 2, char = "0") => {
@@ -112,6 +112,7 @@ const leftPad = (value, count = 2, char = "0") => {
   }
   return newValue;
 };
+
 
 const renderUsers = (users) => {
   panelUsers.innerHTML = "";
