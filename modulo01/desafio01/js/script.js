@@ -15,6 +15,7 @@ window.addEventListener("load", () => {
   addEvents();
 });
 
+
 const mapElement = () => {
   inputSearch = document.querySelector("#inputSearch");
   inputSearch.value = "";
