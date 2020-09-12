@@ -25,7 +25,7 @@
 [<img src="./image/gifs/rangerColor.gif" width="95%" alt="crud"><br><sub> RANGER SLIDERS </sub>](https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo01/rangerSliders) | [<img src="image/gifs/jsperfomatico.gif" width="95%"  alt="color-selector"><br><sub>JAVASCRIPT PERFORMÁTICO</sub>](https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo03/javascript-perfomatico) |
 | :---: | :---: |
 
-[<img src="./image/gifs/radio-podcast_2.gif" width="95%" alt="radio-podcast"> <br><sub> RÁDIO PODCAST </sub>](https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo01/rangerSliders) | [<img src="./image/gifs/CRUD.gif" width="150%" alt="crud"><br><sub> CRUD </sub>](https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo01/CRUD) |
+[<img src="./image/gifs/radio-podcast_2.gif" width="90%" alt="radio-podcast"> <br><sub> RÁDIO PODCAST </sub>](https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo01/rangerSliders) | [<img src="./image/gifs/CRUD.gif" width="150%" alt="crud"><br><sub> CRUD </sub>](https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo01/CRUD) |
 | :---: | :---: |
 
 
