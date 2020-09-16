@@ -37,7 +37,7 @@ export default class App extends Component {
     );
 
     this.setState({
-      //allConugtries: json,
+      //allCountries: json,
       // allCountries: allCountries,
       allCountries,
       filteredCountries: Object.assign([], allCountries),
