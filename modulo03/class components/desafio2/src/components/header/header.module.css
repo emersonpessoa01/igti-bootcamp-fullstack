@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Righteous&display=swap');
+
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid blueviolet;
+  border-radius:5px;
+  padding: 5px;
+  font-family: Montserrat, sans-serif;
+}
+
+.population {
+  min-width: 200px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: blueviolet;
+}
+
+.countries {
+  min-width: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: blueviolet;
+}
