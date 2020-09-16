@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Countries from "./components/coutries/Countries";
+import Countries from "./components/countries/Countries";
 import Header from "./components/header/Header";
-import css from "./components/coutries/countries.module.css"
+import css from "./components/countries/countries.module.css"
 
 export default class App extends Component {
   constructor() {
