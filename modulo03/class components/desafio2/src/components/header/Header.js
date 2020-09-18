@@ -24,7 +24,7 @@ export default class Header extends Component {
           onChange={onChangeFilter}
         /> |{" "}
         <span className={css.countries}>
-          Países: <strong>{countryCount}</strong>
+          {countryCount>1?"Países":"País"}: <strong>{countryCount}</strong>
         </span> |{" "}
         <span className={css.population}>
           População: <strong>{formatNumber(totalPopulation)} </strong>
