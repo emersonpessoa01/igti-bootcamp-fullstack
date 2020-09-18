@@ -6,18 +6,39 @@ const port = 3000;
 app.use(express.json());
 
 app.post("/account", (req, res) => {
-  let params = req.body;
-  console.log("post account");
-
+  let account = req.body;
+  // console.log("post account");
   fs.readFile("accounts.json", "utf8", (err, data) => {
-    console.log(err);
+    // console.log(err);
+    if (!err) {
+      try {
+        let json = JSON.parse(data);
+        // console.log(json);
+        account = {
+          id: json.nextId++,
+          ...account,
+        };
+        json.accounts.push(account);
 
-    try {
-      let json = JSON.parse(data);
-      console.log(json);
-      res.send("post account");
-    } catch (err) {
-      res.send("err");
+        fs.writeFile("accounts.json", JSON.stringify(json), (err) => {
+          if (err) {
+            console.log(err);
+          } else {
+            res.end();
+          }
+        });
+      } catch (err) {
+        res.status(400).send({
+          error: err.message
+        });
+      }
+
+    } else {
+      // console.log("erro na leitura");
+      // res.send("erro na leitura");
+      res.status(400).send({
+        error: err.message
+      });
     }
   });
 });
