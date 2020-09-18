@@ -22,23 +22,22 @@ app.post("/account", (req, res) => {
   });
 });
 
-app.listen(port,()=>{
+app.listen(port, () => {
   try {
-    fs.readFile('accounts.json', 'utf8',(err, data)=>{
-      if(err){
+    fs.readFile("accounts.json", "utf8", (err, data) => {
+      if (err) {
         const initialJson = {
-          nextId:1, 
+          nextId: 1,
           accounts: [],
         };
-        fs.writeFile('accounts.json',JSON.stringify(initialJson), err =>{
-          console.log(err)
-        })
+        fs.writeFile("accounts.json", JSON.stringify(initialJson), (err) => {
+          console.log(err);
+        });
       }
-    })
-  }catch (err){
-    console.log(err)
+    });
+  } catch (err) {
+    console.log(err);
   }
 
-
-  console.log('API started')
+  console.log("API started");
 });
