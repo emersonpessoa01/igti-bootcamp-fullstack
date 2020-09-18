@@ -36,7 +36,7 @@ export default class Header extends Component {
 const styles= {
   centeredTitle:{
     textAlign: 'left',
-    color: 'blueViolet',
+    color: 'blue',
     fontFamily: 'Montserrat'
   }
 }
