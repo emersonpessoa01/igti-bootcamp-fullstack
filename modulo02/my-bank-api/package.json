@@ -1,5 +1,5 @@
 {
-  "name": "my-bank-api1",
+  "name": "my-bank-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,5 +12,5 @@
   "dependencies": {
     "express": "^4.17.1"
   },
-  "type":"modules"
+  "type": "modules"
 }
