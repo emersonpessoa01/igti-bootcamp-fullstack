@@ -24,20 +24,20 @@ app.post("/account", (req, res) => {
           if (err) {
             console.log(err);
           } else {
-            res.end();
+            // res.end();
+            res.send("Tudo OK! DEV");
           }
         });
       } catch (err) {
         res.status(400).send({
-          error: err.message
+          error: err.message,
         });
       }
-
     } else {
       // console.log("erro na leitura");
       // res.send("erro na leitura");
       res.status(400).send({
-        error: err.message
+        error: err.message,
       });
     }
   });
@@ -60,5 +60,5 @@ app.listen(port, () => {
     console.log(err);
   }
 
-  console.log("API started");
+  console.log("Tudo OK! DEV");
 });
