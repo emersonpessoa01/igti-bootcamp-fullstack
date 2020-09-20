@@ -22,7 +22,10 @@ app.post("/account", (req, res) => {
 
         fs.writeFile("accounts.json", JSON.stringify(json), (err) => {
           if (err) {
-            console.log(err);
+            // console.log(err);
+            res.status(400).send({
+              error: err.message,
+            });
           } else {
             // res.end();
             res.send("Tudo OK! DEV");
@@ -52,7 +55,9 @@ app.listen(port, () => {
           accounts: [],
         };
         fs.writeFile("accounts.json", JSON.stringify(initialJson), (err) => {
-          console.log(err);
+          if (err) {
+            console.log(err);
+          }
         });
       }
     });
