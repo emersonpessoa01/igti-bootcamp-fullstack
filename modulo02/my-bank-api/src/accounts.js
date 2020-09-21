@@ -1,10 +1,11 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
+const fs = require("fs");
 
-router.post("/account", (req, res) => {
+router.post("/", (req, res) => {
   let account = req.body;
   // console.log("post account");
-  fs.readFile("accounts.json", "utf8", (err, data) => {
+  fs.readFile(global.fileName, "utf8", (err, data) => {
     // console.log(err);
     if (!err) {
       try {
@@ -16,7 +17,7 @@ router.post("/account", (req, res) => {
         };
         json.accounts.push(account);
 
-        fs.writeFile("accounts.json", JSON.stringify(json), (err) => {
+        fs.writeFile(global.fileName, JSON.stringify(json), (err) => {
           if (err) {
             // console.log(err);
             res.status(400).send({
@@ -42,13 +43,12 @@ router.post("/account", (req, res) => {
   });
 });
 
-router.get("/account", (_, res) => {
-  fs.readFile("accounts.json", "utf8", (err, data) => {
+router.get("/", (_, res) => {
+  fs.readFile(global.fileName, "utf8", (err, data) => {
     if (!err) {
-      let json = JSON.parse(data)
-      delete json.nextId
-      res.send(json)
-      
+      let json = JSON.parse(data);
+      delete json.nextId;
+      res.send(json);
     } else {
       res.status(400).send({
         error: err.message,
