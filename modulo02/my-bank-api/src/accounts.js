@@ -7,6 +7,7 @@ router.post("/", (req, res) => {
   // console.log("post account");
   fs.readFile(global.fileName, "utf8", (err, data) => {
     // console.log(err);
+    //if(err) throw err; inseri antes do try
     if (!err) {
       try {
         let json = JSON.parse(data);
@@ -45,11 +46,17 @@ router.post("/", (req, res) => {
 
 router.get("/", (_, res) => {
   fs.readFile(global.fileName, "utf8", (err, data) => {
-    if (!err) {
-      let json = JSON.parse(data);
-      delete json.nextId;
-      res.send(json);
-    } else {
+    try {
+      if (!err) {
+        let json = JSON.parse(data);
+        delete json.nextId;
+        res.send(json);
+      } else {
+        res.status(400).send({
+          error: err.message,
+        });
+      }
+    } catch (err) {
       res.status(400).send({
         error: err.message,
       });
@@ -61,15 +68,22 @@ router.get("/:id/", (req, res) => {
   // res.send('Tudo OK! DEV');
   // req.params.id;
   fs.readFile(global.fileName, "utf8", (err, data) => {
-    if (!err) {
-      let json = JSON.parse(data);
-      delete json.nextId;
-      const account = json.accounts.find((account) => {
-        return account.id === parseInt(req.params.id);
-      });
-      // res.send(json);
-      res.send(account);
-    } else {
+    try {
+      // throw new Error('teste de erro')
+      if (!err) {
+        let json = JSON.parse(data);
+        delete json.nextId;
+        const account = json.accounts.find((account) => {
+          return account.id === parseInt(req.params.id);
+        });
+        // res.send(json);
+        res.send(account);
+      } else {
+        res.status(400).send({
+          error: err.message,
+        });
+      }
+    } catch (err) {
       res.status(400).send({
         error: err.message,
       });
