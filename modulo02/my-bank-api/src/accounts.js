@@ -57,4 +57,24 @@ router.get("/", (_, res) => {
   });
 });
 
+router.get("/:id/", (req, res) => {
+  // res.send('Tudo OK! DEV');
+  // req.params.id;
+  fs.readFile(global.fileName, "utf8", (err, data) => {
+    if (!err) {
+      let json = JSON.parse(data);
+      delete json.nextId;
+      const account = json.accounts.find((account) => {
+        return account.id === parseInt(req.params.id);
+      });
+      // res.send(json);
+      res.send(account);
+    } else {
+      res.status(400).send({
+        error: err.message,
+      });
+    }
+  });
+});
+
 module.exports = router;
