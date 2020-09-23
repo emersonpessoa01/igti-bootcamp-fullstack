@@ -15,11 +15,11 @@ export default class Band extends Component {
   }
 
   render() {
-    const { bandName, bandMembers } = this.state;
+    const { bandMembers } = this.state;
 
     return (
-      <div>
-        <h4>~{bandName}~</h4>
+      <div align="center">
+        {/* <h5>~{bandName}~</h5> */}
 
         {bandMembers.map(({ id, name, instrument }) => {
           return (

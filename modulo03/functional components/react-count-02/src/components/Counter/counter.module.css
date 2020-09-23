@@ -1,9 +1,21 @@
-.counterContainer{
-    padding: 10px;
-    font-size: 1.2em;
-    font-family: Consolas, monospace
+.counterContainer {
+  padding: 10px;
+  font-size: 1.2em;
+  font-family: Consolas, monospace;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-.counterValue{
+.counterValue {
+  padding: 10px;
+}
+.counterBand{
     padding: 10px;
+    font-size: 1.2em;
+    font-family: Montserrat,"Helvetica Neue",;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;  
 }

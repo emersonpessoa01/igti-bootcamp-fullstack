@@ -3,6 +3,6 @@ import css from "./counter.module.css";
 
 export default function Steps({currentSteps}){
     return (
-      <span className={css.counterValue}>({currentSteps})</span>
+      <span className={css.counterValue}z>({currentSteps})</span>
     );
 }

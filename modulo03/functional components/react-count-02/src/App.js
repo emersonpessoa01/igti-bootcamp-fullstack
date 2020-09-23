@@ -27,15 +27,16 @@ export default class App extends Component {
     const { currentCounter, steps } = this.state;
 
     return (
-      <Fragment>
-        <h4>Band:</h4>
+      
+      <Fragment >
+        <h4 align="center">Band: Rush </h4>
         <Band />
-        <h3>Counter 1</h3>
+        <h3 align="center">Counter 1</h3>
         <Counter />
         <Counter />
         <Counter />
 
-        <h3>Counter 2</h3>
+        <h3 align="center">Counter 2</h3>
         <Counter2
           onCount={this.handleCount}
           countValue={currentCounter}
@@ -52,6 +53,13 @@ export default class App extends Component {
           currentStep={steps}
         />
       </Fragment>
+      
     );
   }
 }
+
+// const styles = {
+//   tileBand : {
+//     alignItems: 'center',
+//   }
+// }
