@@ -8,7 +8,7 @@
      </p>
 <hr>
 
-#### Desenvolvedores:
+#### Developers:
 [<img src="image/images/EmePessoa.jpeg" width=90 ><br><sub> Emerson Pessoa </sub>](https://github.com/emersonpessoa01) | [<img src="image/images/githubman.jpg" width=90 ><br><sub> Git Ironman </sub>](https://github.com/emersonpessoa01) | [<img src="image/gifs/octocat.gif" width=90 ><br><sub> Octocat Nerd </sub>](https://github.com/emersonpessoa01) | [<img src="image/gifs/master-yoda.gif" width=115  heigth=120><br><sub> Mestre Yoda </sub>](https://github.com/emersonpessoa01) |
 | :---: | :---: | :---: | :---: |
      
@@ -18,6 +18,9 @@
 
 <a href="https://github.com/emersonpessoa01"><img src="https://img.shields.io/static/v1?label=build&message=home&color=0000fff&style=flat&logo=github"/></a> <a href="https://github.com/emersonpessoa01/igti-bootcamp-fullstack"> ![Relative date](https://img.shields.io/date/1598663640)</a>  <a href="https://github.com/emersonpessoa01/fundamentos-em-desenvolvimento-frontend/blob/master/README.md#---fundamentos-front-end-developer---ffe203a---igti-julho2020-"><img src="https://img.shields.io/static/v1?label=page&message=frontend&color=4c15dc&stype=for-the-badge&logo=JAVASCRIPT"></a> 
 <h4> Preview: </h4>
+
+[<img src="./image/gifs/react-desafio-02.gif" width="95%" alt="react-desafio-02"> <br><sub> REACT-DESAFIO-02 </sub>](https://my-app-countries.netlify.app/) |
+| :---: |
 
 [<img src="./image/gifs/desafio_1.gif" width="95%" alt="desafio01"> <br><sub> DESAFIO01 </sub>](https://emersonpessoa01.github.io/desafio01/) | [<img src="image/gifs/desafio1.gif" width="95%"  alt="desafio1"><br><sub> DESAFIO1 </sub>](https://emersonpessoa01.github.io/desafio1/) |
 | :---: | :---: |
