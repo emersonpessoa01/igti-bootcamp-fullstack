@@ -26,7 +26,7 @@ router.post("/", (req, res) => {
             });
           } else {
             // res.end();
-            res.send("Tudo OK! DEV");
+            res.send("Inclusão confirmada");
           }
         });
       } catch (err) {
@@ -74,7 +74,7 @@ router.get("/:id/", (req, res) => {
         let json = JSON.parse(data);
         delete json.nextId;
         const account = json.accounts.find((account) => {
-          return account.id === parseInt(req.params.id);
+          return account.id === parseInt(req.params.id, 10);
         });
         // res.send(json);
         res.send(account);
@@ -83,6 +83,36 @@ router.get("/:id/", (req, res) => {
           error: err.message,
         });
       }
+    } catch (err) {
+      res.status(400).send({
+        error: err.message,
+      });
+    }
+  });
+});
+
+router.delete("/:id", (req, res) => {
+  fs.readFile(global.fileName, "utf8", (err, data) => {
+    try {
+      if(err) throw err;
+
+      let json = JSON.parse(data);
+      delete json.nextId;
+      const account = json.accounts.filter((account) => {
+        return account.id !== parseInt(req.params.id, 10);
+      });
+      json.accounts = account;
+      // res.send(account);
+
+      fs.writeFile(global.fileName, JSON.stringify(json), (err, data) => {
+        if (err) {
+          res.status(400).send({
+            error: err.message,
+          });
+        } else {
+          res.send("Exclusão confirmada");
+        }
+      });
     } catch (err) {
       res.status(400).send({
         error: err.message,
