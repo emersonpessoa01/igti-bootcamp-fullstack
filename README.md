@@ -22,7 +22,7 @@
 [<img src="./image/gifs/react-desafio-02.gif" width="95%" alt="react-desafio-02"> <br><sub> REACT-DESAFIO-02 </sub>](https://my-app-countries.netlify.app/) <br> [<sub>View code</sub>](https://github.com/emersonpessoa01/react-desafio-02) |
 | :---: |
 
-[<img src="./image/gifs/desafio_1.gif" width="95%" alt="desafio01"> <br><sub> DESAFIO01 </sub>](https://emersonpessoa01.github.io/desafio01/) | [<img src="image/gifs/desafio1.gif" width="95%"  alt="desafio1"><br><sub> DESAFIO1 </sub>](https://emersonpessoa01.github.io/desafio1/) |
+[<img src="./image/gifs/desafio_1.gif" width="95%" alt="desafio01"> <br><sub> DESAFIO01 </sub>](https://emersonpessoa01.github.io/desafio01/) <br> [<sub>View code</sub>](https://github.com/emersonpessoa01/desafio01) | [<img src="image/gifs/desafio1.gif" width="95%"  alt="desafio1"><br><sub> DESAFIO1 </sub>](https://emersonpessoa01.github.io/desafio1/)  |
 | :---: | :---: |
 
 [<img src="./image/gifs/rangerColor.gif" width="95%" alt="crud"><br><sub> RANGER SLIDERS </sub>](https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo01/rangerSliders) | [<img src="image/gifs/jsperfomatico.gif" width="95%"  alt="color-selector"><br><sub>JAVASCRIPT PERFORMÁTICO</sub>](https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo03/javascript-perfomatico) |
