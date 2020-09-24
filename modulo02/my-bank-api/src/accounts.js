@@ -136,7 +136,6 @@ router.put("/", (req, res) => {
       // res.send(oldIndex);
       json.accounts[oldIndex] = newAccount;
       // json.accounts[oldIndex].name = newAccount.name;
-      // json.accounts[oldIndex].balance = newAccount.balance;
 
       fs.writeFile(global.fileName, JSON.stringify(json), (err) => {
         if (err) {
