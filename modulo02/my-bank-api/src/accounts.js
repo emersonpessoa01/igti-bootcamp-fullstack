@@ -78,6 +78,7 @@ router.get("/:id/", (req, res) => {
         });
         // res.send(json);
         res.send(account);
+        
       } else {
         res.status(400).send({
           error: err.message,
@@ -94,7 +95,7 @@ router.get("/:id/", (req, res) => {
 router.delete("/:id", (req, res) => {
   fs.readFile(global.fileName, "utf8", (err, data) => {
     try {
-      if(err) throw err;
+      if (err) throw err;
 
       let json = JSON.parse(data);
       delete json.nextId;
@@ -102,15 +103,49 @@ router.delete("/:id", (req, res) => {
         return account.id !== parseInt(req.params.id, 10);
       });
       json.accounts = account;
-      // res.send(account);
+      res.send(account);
 
-      fs.writeFile(global.fileName, JSON.stringify(json), (err, data) => {
+      fs.writeFile(global.fileName, JSON.stringify(json), (err) => {
         if (err) {
           res.status(400).send({
             error: err.message,
           });
         } else {
           res.send("Exclusão confirmada");
+        }
+      });
+    } catch (err) {
+      res.status(400).send({
+        error: err.message,
+      });
+    }
+  });
+});
+
+router.put("/", (req, res) => {
+  let newAccount = req.body;
+
+  fs.readFile(global.fileName, "utf8", (err, data) => {
+    try {
+      if (err) throw err;
+
+      let json = JSON.parse(data);
+      let oldIndex = json.accounts.findIndex(
+        (account) => account.id === newAccount.id
+      );
+      // res.send(oldIndex);
+      json.accounts[oldIndex] = newAccount;
+      // json.accounts[oldIndex].name = newAccount.name;
+      // json.accounts[oldIndex].balance = newAccount.balance;
+
+      fs.writeFile(global.fileName, JSON.stringify(json), (err) => {
+        if (err) {
+          res.status(400).send({
+            error: err.message,
+          });
+        } else {
+          res.send('Atualização confirmada')
+          // res.end();
         }
       });
     } catch (err) {
