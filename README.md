@@ -81,6 +81,7 @@ funções, estruturas de decisão, estruturas de repetição e manipulação de 
 :heavy_check_mark: Desenvolvimento das operações CRUD.<br>
 :heavy_check_mark: Persistência de Dados em Arqu3vos.<br>
 
+<a href="https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo03"><img src="https://img.shields.io/static/v1?label=node&message=modulo2&color=blue&style=for-the-badge&logo=node"/></a>
 ---
 
 #### **Módulo 3** :books:
@@ -100,6 +101,7 @@ funções, estruturas de decisão, estruturas de repetição e manipulação de 
 :heavy_check_mark: passo-a-passo com React.<br>
 
 <a href="https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo03"><img src="https://img.shields.io/static/v1?label=react&message=modulo3&color=blue&style=for-the-badge&logo=REACT"/></a>
+
 <hr>
 
 
