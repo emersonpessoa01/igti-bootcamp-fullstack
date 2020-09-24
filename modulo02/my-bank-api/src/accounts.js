@@ -1,47 +1,24 @@
 const express = require("express");
 const router = express.Router();
-const fs = require("fs");
+const fs = require("fs").promises;
 
-router.post("/", (req, res) => {
+router.post("/", async (req, res) => {
   let account = req.body;
-  // console.log("post account");
-  fs.readFile(global.fileName, "utf8", (err, data) => {
-    // console.log(err);
-    //if(err) throw err; inseri antes do try
-    if (!err) {
-      try {
-        let json = JSON.parse(data);
-        // console.log(json);
-        account = {
-          id: json.nextId++,
-          ...account,
-        };
-        json.accounts.push(account);
-
-        fs.writeFile(global.fileName, JSON.stringify(json), (err) => {
-          if (err) {
-            // console.log(err);
-            res.status(400).send({
-              error: err.message,
-            });
-          } else {
-            // res.end();
-            res.send("Inclusão confirmada");
-          }
-        });
-      } catch (err) {
-        res.status(400).send({
-          error: err.message,
-        });
-      }
-    } else {
-      // console.log("erro na leitura");
-      // res.send("erro na leitura");
-      res.status(400).send({
-        error: err.message,
-      });
-    }
-  });
+  try {
+    let data = await fs.readFile(global.fileName, "utf8");
+    let json = JSON.parse(data);
+    account = {
+      id: json.nextId++,
+      ...account,
+    };
+    json.accounts.push(account);
+    await fs.writeFile(global.fileName, JSON.stringify(json));
+    res.send("Inclusão confirmada");
+  } catch (err) {
+    res.status(400).send({
+      error: err.message,
+    });
+  }
 });
 
 router.get("/", (_, res) => {
@@ -166,8 +143,8 @@ router.post("/transaction", (req, res) => {
         (account) => account.id === params.id
       );
 
-      if((params.value < 0) && ((json.accounts[index].balance + params.value)< 0)) {
-        throw new Error("Não há saldo suficiente")
+      if (params.value < 0 && json.accounts[index].balance + params.value < 0) {
+        throw new Error("Não há saldo suficiente");
       }
       // res.send(index);
       json.accounts[index].balance += params.value;
