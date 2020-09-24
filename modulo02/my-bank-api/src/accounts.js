@@ -78,7 +78,6 @@ router.get("/:id/", (req, res) => {
         });
         // res.send(json);
         res.send(account);
-        
       } else {
         res.status(400).send({
           error: err.message,
@@ -143,7 +142,45 @@ router.put("/", (req, res) => {
             error: err.message,
           });
         } else {
-          res.send('Atualização confirmada')
+          res.send("Atualização confirmada");
+          // res.end();
+        }
+      });
+    } catch (err) {
+      res.status(400).send({
+        error: err.message,
+      });
+    }
+  });
+});
+
+router.post("/transaction", (req, res) => {
+  let params = req.body;
+
+  fs.readFile(global.fileName, "utf8", (err, data) => {
+    try {
+      if (err) throw err;
+
+      let json = JSON.parse(data);
+      let index = json.accounts.findIndex(
+        (account) => account.id === params.id
+      );
+
+      // if ((params.value < 0) && (json.accounts[index].balance - params.value < 0)) {
+      //   throw new Error("Não há saldo suficiente");
+      // }
+      // res.send(index);
+      json.accounts[index].balance += params.value;
+      // json.accounts[index].age += params.value;
+      // json.accounts[index].altura = params.value;
+
+      fs.writeFile(global.fileName, JSON.stringify(json), (err) => {
+        if (err) {
+          res.status(400).send({
+            error: err.message,
+          });
+        } else {
+          res.send(json.accounts[index]);
           // res.end();
         }
       });
