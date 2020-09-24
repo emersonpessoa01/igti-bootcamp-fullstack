@@ -76,37 +76,29 @@ router.delete("/:id", async (req, res) => {
   }
 });
 
-router.put("/", (req, res) => {
-  let newAccount = req.body;
-
-  fs.readFile(global.fileName, "utf8", (err, data) => {
-    try {
-      if (err) throw err;
+router.put("/", async(req, res) => {
+  
+  try {
+    let newAccount = req.body;
+    let data = await fs.readFile(global.fileName, "utf8");
 
       let json = JSON.parse(data);
       let oldIndex = json.accounts.findIndex(
         (account) => account.id === newAccount.id
       );
       // res.send(oldIndex);
-      json.accounts[oldIndex] = newAccount;
+      json.accounts[oldIndex] = newAccount; //acrescenta em todos mediante o id
       // json.accounts[oldIndex].name = newAccount.name;
+      //acrescenta somente na propriedade name
 
-      fs.writeFile(global.fileName, JSON.stringify(json), (err) => {
-        if (err) {
-          res.status(400).send({
-            error: err.message,
-          });
-        } else {
+      await fs.writeFile(global.fileName, JSON.stringify(json));
           res.send("Atualização confirmada");
           // res.end();
-        }
-      });
     } catch (err) {
       res.status(400).send({
         error: err.message,
       });
     }
-  });
 });
 
 router.post("/transaction", (req, res) => {
