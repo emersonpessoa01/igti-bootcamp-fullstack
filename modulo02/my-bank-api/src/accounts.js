@@ -47,7 +47,6 @@ router.get("/:id/", async (req, res) => {
     });
     // res.send(json);
     res.send(account);
-    
   } catch (err) {
     res.status(400).send({
       error: err.message,
@@ -55,34 +54,26 @@ router.get("/:id/", async (req, res) => {
   }
 });
 
-router.delete("/:id", (req, res) => {
-  fs.readFile(global.fileName, "utf8", (err, data) => {
-    try {
-      if (err) throw err;
+router.delete("/:id", async (req, res) => {
+  try {
+    let data = await fs.readFile(global.fileName, "utf8");
+    let json = JSON.parse(data);
 
-      let json = JSON.parse(data);
-      delete json.nextId;
-      const account = json.accounts.filter((account) => {
-        return account.id !== parseInt(req.params.id, 10);
-      });
-      json.accounts = account;
-      res.send(account);
+    delete json.nextId;
+    let account = json.accounts.filter((account) => {
+      return account.id !== parseInt(req.params.id, 10);
+    });
+    json.accounts = account;
+    res.send(account);
 
-      fs.writeFile(global.fileName, JSON.stringify(json), (err) => {
-        if (err) {
-          res.status(400).send({
-            error: err.message,
-          });
-        } else {
-          res.send("Exclusão confirmada");
-        }
-      });
-    } catch (err) {
-      res.status(400).send({
-        error: err.message,
-      });
-    }
-  });
+    await fs.writeFile(global.fileName, JSON.stringify(json));
+    res.send("Exclusão confirmada");
+
+  } catch (err) {
+    res.status(400).send({
+      error: err.message,
+    });
+  }
 });
 
 router.put("/", (req, res) => {
