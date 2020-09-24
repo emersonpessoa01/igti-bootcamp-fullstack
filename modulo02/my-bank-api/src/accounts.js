@@ -166,7 +166,7 @@ router.post("/transaction", (req, res) => {
         (account) => account.id === params.id
       );
 
-      if((params.value < 0) && ((json.accounts[index].balance - params.value)< 0)) {
+      if((params.value < 0) && ((json.accounts[index].balance + params.value)< 0)) {
         throw new Error("Não há saldo suficiente")
       }
       // res.send(index);
