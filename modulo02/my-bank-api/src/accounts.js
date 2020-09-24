@@ -7,11 +7,13 @@ router.post("/", async (req, res) => {
   try {
     let data = await fs.readFile(global.fileName, "utf8");
     let json = JSON.parse(data);
+
     account = {
       id: json.nextId++,
       ...account,
     };
     json.accounts.push(account);
+
     await fs.writeFile(global.fileName, JSON.stringify(json));
     res.send("Inclusão confirmada");
   } catch (err) {
@@ -21,51 +23,36 @@ router.post("/", async (req, res) => {
   }
 });
 
-router.get("/", (_, res) => {
-  fs.readFile(global.fileName, "utf8", (err, data) => {
-    try {
-      if (!err) {
-        let json = JSON.parse(data);
-        delete json.nextId;
-        res.send(json);
-      } else {
-        res.status(400).send({
-          error: err.message,
-        });
-      }
-    } catch (err) {
-      res.status(400).send({
-        error: err.message,
-      });
-    }
-  });
+router.get("/", async (_, res) => {
+  try {
+    let data = await fs.readFile(global.fileName, "utf8");
+    let json = JSON.parse(data);
+    delete json.nextId;
+    res.send(json);
+  } catch (err) {
+    res.status(400).send({
+      error: err.message,
+    });
+  }
 });
 
-router.get("/:id/", (req, res) => {
-  // res.send('Tudo OK! DEV');
-  // req.params.id;
-  fs.readFile(global.fileName, "utf8", (err, data) => {
-    try {
-      // throw new Error('teste de erro')
-      if (!err) {
-        let json = JSON.parse(data);
-        delete json.nextId;
-        const account = json.accounts.find((account) => {
-          return account.id === parseInt(req.params.id, 10);
-        });
-        // res.send(json);
-        res.send(account);
-      } else {
-        res.status(400).send({
-          error: err.message,
-        });
-      }
-    } catch (err) {
-      res.status(400).send({
-        error: err.message,
-      });
-    }
-  });
+router.get("/:id/", async (req, res) => {
+  try {
+    let data = await fs.readFile(global.fileName, "utf8");
+    let json = JSON.parse(data);
+
+    delete json.nextId;
+    const account = json.accounts.find((account) => {
+      return account.id === parseInt(req.params.id, 10);
+    });
+    // res.send(json);
+    res.send(account);
+    
+  } catch (err) {
+    res.status(400).send({
+      error: err.message,
+    });
+  }
 });
 
 router.delete("/:id", (req, res) => {
