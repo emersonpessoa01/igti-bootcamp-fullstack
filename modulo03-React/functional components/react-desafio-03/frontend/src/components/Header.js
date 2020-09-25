@@ -1,5 +1,6 @@
 import React from "react";
+import css from "./header.module.css"
 
 export default function Header({ children }) {
-  return <h1 style={{ textAlign: "center" }}>{children}</h1>;
+  return <h1 className={css.header}>{children}</h1>;
 }
