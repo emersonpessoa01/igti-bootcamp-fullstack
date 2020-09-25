@@ -1,11 +1,12 @@
 import React from "react";
+import Position from "./Position";
 
-export default function Candidate({ candidate }) {
-  const { id, name, votes } = candidate;
+export default function Candidate({ candidate, position }) {
+  const { name, votes } = candidate;
   return (
     <div>
-      {id} - {name} - {votes}
+      <Position>{position}</Position>
+      {name} - {votes}
     </div>
   );
 }
- 
