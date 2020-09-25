@@ -33,15 +33,13 @@ export default class App extends Component {
     const { candidates } = this.state;
 
     if (candidates.length === 0) {
-      return (
-        <Spinner description="Carregando..." />
-      );
+      return <Spinner description="Carregando..." />;
     }
     return (
-      <div>
+      <div className="container">
         {/* <Header title="Votação" /> */}
         <Header>Votação</Header>
-        <Candidates candidates={candidates}/>
+        <Candidates candidates={candidates} />
       </div>
     );
   }

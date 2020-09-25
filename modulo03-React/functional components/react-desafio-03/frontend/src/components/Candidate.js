@@ -3,11 +3,12 @@ import Info from "./Info";
 import Name from "./Name";
 import Percentage from "./Percentage";
 import Picture from "./Picture";
+import Popularity from "./Popularity";
 import Position from "./Position";
 import Votes from "./Votes";
 
 export default function Candidate({ candidate, position }) {
-  const { id, name, votes, percentage } = candidate;
+  const { id, name, votes, percentage, popularity } = candidate;
   const sourceImage = `${id}.jpg`;
   return (
     <div>
@@ -17,6 +18,7 @@ export default function Candidate({ candidate, position }) {
         <Name>{name}</Name>
         <Votes>{votes}</Votes>
         <Percentage>{percentage}</Percentage>
+        <Popularity value={popularity} />
       </Info>
     </div>
   ); 
