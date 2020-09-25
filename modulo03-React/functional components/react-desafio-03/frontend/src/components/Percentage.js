@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Info({children}) {
+export default function Percentage({children}) {
   return (
     <div>
       {children}
     </div>
-  ) 
+  )
 }
