@@ -1,16 +1,16 @@
 /**
  * Referência ao objeto que formata números
  */
-const numberFormat = Intl.NumberFormat('pt-BR');
+const formatter = Intl.NumberFormat("pt-BR");
 
-function formatNumber(numberToBeFormatted) {
-  return numberFormat.format(numberToBeFormatted);
-}
+const formatNumber = (number) => {
+  return formatter.format(number);
+};
 
-function formatPercentage(numberToBeFormatted) {
-  if (numberToBeFormatted) {
-    return numberToBeFormatted.toFixed(2).replace('.', ',') + '%';
+const formatPercentage = (number) => {
+  if (number) {
+    return number.toFixed(2).replace(".", ",") + "%"; 
   }
-}
+};
 
 export { formatNumber, formatPercentage };
