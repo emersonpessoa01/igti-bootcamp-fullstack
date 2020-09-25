@@ -3,7 +3,7 @@ import Candidate from "./Candidate";
 import Card from "./Card";
 import flipMove from "react-flip-move";
 
-export default function Candidates({ candidates }) {
+export default function Candidates({ candidates, previousVotes }) {
   return (
     <div>
       <flipMove>
@@ -12,7 +12,7 @@ export default function Candidates({ candidates }) {
           return (
             <div key={id}>
               <Card>
-                <Candidate candidate={candidate} position={index + 1} />
+                <Candidate previousVotes={previousVotes} candidate={candidate} position={index + 1} />
               </Card>
             </div>
           );
