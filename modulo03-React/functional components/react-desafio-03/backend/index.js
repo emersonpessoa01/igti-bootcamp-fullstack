@@ -96,7 +96,7 @@ function simulateVoting() {
 
       const votes = generateRandomNumber(minVotes, maxVotes);
 
-      candidate.previousVotes = candidates.votes;
+      candidate.previousVotes = candidate.votes;
       candidate.votes += votes;
     });
   }, CONSTS.INTERVAL_VOTES);

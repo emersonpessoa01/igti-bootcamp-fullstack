@@ -10,6 +10,8 @@ export default class App extends Component {
     this.state = {
       candidates: [],
       previousVotes: [],
+      previousPercentages: [],
+
     };
     this.interval = null;
   }
@@ -23,21 +25,25 @@ export default class App extends Component {
       // })
       const res = await fetch("http://localhost:8080/votes");
       const json = await res.json();
-      // console.log(json); é substuido por: abaixo
+      // con  sole.log(json); é substuido por: abaixo
 
       const previousVotes = this.state.candidates.map(({id, votes})=>{
         return { id, votes}
+      })
+      const previousPercentages = this.state.candidates.map(({id, percentage})=>{
+        return { id, percentage}
       })
       
       this.setState({
         candidates: json.candidates,
         previousVotes,
+        previousPercentages,
       });
     }, 1000);
   }
 
   render() {
-    const { candidates, previousVotes } = this.state;
+    const { candidates, previousVotes, previousPercentages } = this.state;
 
     if (candidates.length === 0) {
       return <Spinner description="Carregando..." />;
@@ -46,7 +52,7 @@ export default class App extends Component {
       <div className="container">
         {/* <Header title="Votação" /> */}
         <Header>Votação</Header>
-        <Candidates previousVotes={previousVotes} candidates={candidates} />
+        <Candidates previousPercentages={previousPercentages} previousVotes={previousVotes} candidates={candidates} />
       </div>
     );
   }

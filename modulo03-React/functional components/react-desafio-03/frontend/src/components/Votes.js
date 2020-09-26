@@ -4,8 +4,8 @@ import CountUp from "react-countup";
 export default function Votes({ value, previous }) {
   return (
     <div>
-      <CountUp start={previous} end={value} duration={1.0} separator=" .">
-        {({ countUpRef}) => (
+      <CountUp start={previous || 0} end={value} duration={0.1} separator=".">
+        {({ countUpRef }) => (
           <div>
             <span ref={countUpRef} />
           </div>

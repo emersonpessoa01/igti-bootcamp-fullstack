@@ -6,11 +6,15 @@ import Picture from "./Picture";
 import Popularity from "./Popularity";
 import Position from "./Position";
 import Votes from "./Votes";
-import css from "./candidate.module.css"
-import { formatPercentage } from "../helpers/format";
+import css from "./candidate.module.css";
 
-export default function Candidate({ candidate, position }) {
-  const { id, name, votes, percentage, popularity, previousVotes } = candidate;
+export default function Candidate({
+  candidate,
+  position,
+  previousVote,
+  previousPercentage,
+}) {
+  const { id, name, votes, percentage, popularity } = candidate;
   const sourceImage = `${id}.jpg`;
   return (
     <div className={css.flexRow}>
@@ -18,10 +22,12 @@ export default function Candidate({ candidate, position }) {
       <Picture sourceImage={sourceImage} description={name} />
       <Info>
         <Name>{name}</Name>
-        <Votes value={votes} previous={previousVotes}/>
-        <Percentage>{formatPercentage(percentage)}</Percentage>
+        <Votes value={votes} previous={previousVote} />
+
+        <Percentage value={percentage} previous={previousPercentage}>{percentage}</Percentage>
+
         <Popularity value={popularity} />
       </Info>
     </div>
-  ); 
+  );
 }
