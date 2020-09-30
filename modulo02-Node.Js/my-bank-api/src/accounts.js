@@ -1,12 +1,15 @@
-const express = require("express");
-const { loggers } = require("winston");
+import express from 'express';
+import { promises } from 'fs';
+
 const router = express.Router();
-const fs = require("fs").promises;
+const readFile = promises.readFile
+const writeFile = promises.writeFile
+
 
 router.post("/", async (req, res) => {
   let account = req.body;
   try {
-    let data = await fs.readFile(global.fileName, "utf8");
+    let data = await readFile(global.fileName, "utf8");
     let json = JSON.parse(data);
 
     account = {
@@ -15,7 +18,7 @@ router.post("/", async (req, res) => {
     };
     json.accounts.push(account);
 
-    await fs.writeFile(global.fileName, JSON.stringify(json));
+    await writeFile(global.fileName, JSON.stringify(json));
     res.send("Inclusão confirmada");
     logger.info(`POST /account - ${JSON.stringify(account)}`);
 
@@ -30,7 +33,7 @@ router.post("/", async (req, res) => {
 
 router.get("/", async (_, res) => {
   try {
-    let data = await fs.readFile(global.fileName, "utf8");
+    let data = await readFile(global.fileName, "utf8");
     let json = JSON.parse(data);
     delete json.nextId;
     res.send(json);
@@ -47,7 +50,7 @@ router.get("/", async (_, res) => {
 
 router.get("/:id/", async (req, res) => {
   try {
-    let data = await fs.readFile(global.fileName, "utf8");
+    let data = await readFile(global.fileName, "utf8");
     let json = JSON.parse(data);
 
     delete json.nextId;
@@ -69,7 +72,7 @@ router.get("/:id/", async (req, res) => {
 
 router.delete("/:id", async (req, res) => {
   try {
-    let data = await fs.readFile(global.fileName, "utf8");
+    let data = await readFile(global.fileName, "utf8");
     let json = JSON.parse(data);
 
     delete json.nextId;
@@ -78,9 +81,9 @@ router.delete("/:id", async (req, res) => {
     });
     json.accounts = account;
     // res.send(account);
-    
-    
-    await fs.writeFile(global.fileName, JSON.stringify(json));
+
+
+    await writeFile(global.fileName, JSON.stringify(json));
     res.send("Exclusão confirmada");
     logger.info(`DELETE /account/:id - ${JSON.stringify(req.params.id)}`);
   } catch (err) {
@@ -95,7 +98,7 @@ router.delete("/:id", async (req, res) => {
 router.put("/", async (req, res) => {
   try {
     let newAccount = req.body;
-    let data = await fs.readFile(global.fileName, "utf8");
+    let data = await readFile(global.fileName, "utf8");
 
     let json = JSON.parse(data);
     let oldIndex = json.accounts.findIndex(
@@ -106,10 +109,10 @@ router.put("/", async (req, res) => {
     // json.accounts[oldIndex].name = newAccount.name;
     //acrescenta somente na propriedade name
 
-    await fs.writeFile(global.fileName, JSON.stringify(json));
+    await writeFile(global.fileName, JSON.stringify(json));
     res.send("Atualização confirmada");
     logger.info(`PUT /account/ - ${JSON.stringify(newAccount)}`);
-    
+
     // res.end();
   } catch (err) {
     res.status(400).send({
@@ -123,7 +126,7 @@ router.put("/", async (req, res) => {
 router.post("/transaction", async (req, res) => {
   try {
     let params = req.body;
-    let data = await fs.readFile(global.fileName, "utf8");
+    let data = await readFile(global.fileName, "utf8");
 
     let json = JSON.parse(data);
     let index = json.accounts.findIndex((account) => account.id === params.id);
@@ -137,7 +140,7 @@ router.post("/transaction", async (req, res) => {
     // json.accounts[index].altura = params.value; //altera altura
     //importante identificar o id para alteração
 
-    await fs.writeFile(global.fileName, JSON.stringify(json));
+    await writeFile(global.fileName, JSON.stringify(json));
     res.send(json.accounts[index]);
     logger.info(`POST /account/transaction - ${JSON.stringify(params)}`);
 
@@ -151,4 +154,5 @@ router.post("/transaction", async (req, res) => {
   }
 });
 
-module.exports = router;
+// module.exports = router;
+export default router;

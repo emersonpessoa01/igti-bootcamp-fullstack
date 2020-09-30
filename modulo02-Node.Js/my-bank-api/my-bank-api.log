@@ -126,3 +126,140 @@
 2020-09-30T17:20:20.312Z [my-bank-api] info: API started! DEV
 2020-09-30T17:21:22.991Z [my-bank-api] info: API started! DEV
 2020-09-30T17:22:27.660Z [my-bank-api] info: DELETE /account/:id - "3"
+2020-09-30T17:44:11.275Z [my-bank-api] info: API started! DEV
+2020-09-30T17:44:40.266Z [my-bank-api] info: API started! DEV
+2020-09-30T17:50:52.144Z [my-bank-api] info: API started! DEV
+2020-09-30T18:45:17.887Z [my-bank-api] info: API started! DEV
+2020-09-30T18:47:14.164Z [my-bank-api] info: API started! DEV
+2020-09-30T18:49:41.407Z [my-bank-api] info: API started! DEV
+2020-09-30T18:57:39.965Z [my-bank-api] info: API started! DEV
+undefined [my-bank-api] info: API started! DEV
+undefined [my-bank-api] info: API started! DEV
+undefined [my-bank-api] info: API started! DEV
+2020-09-30T19:06:36.917Z [my-bank-api] info: API started! DEV
+2020-09-30T19:06:38.665Z [my-bank-api] info: API started! DEV
+2020-09-30T19:28:18.664Z [my-bank-api] info: API started! DEV
+2020-09-30T19:29:13.648Z [my-bank-api] info: API started! DEV
+2020-09-30T19:30:19.817Z [my-bank-api] info: API started! DEV
+2020-09-30T19:30:23.265Z [my-bank-api] info: API started! DEV
+2020-09-30T19:31:04.505Z [my-bank-api] info: API started! DEV
+2020-09-30T19:31:06.797Z [my-bank-api] info: API started! DEV
+2020-09-30T19:31:13.496Z [my-bank-api] info: API started! DEV
+2020-09-30T19:31:36.213Z [my-bank-api] info: API started! DEV
+2020-09-30T19:31:39.690Z [my-bank-api] info: API started! DEV
+2020-09-30T19:33:03.409Z [my-bank-api] info: API started! DEV
+2020-09-30T19:33:36.412Z [my-bank-api] info: API started! DEV
+2020-09-30T19:34:11.407Z [my-bank-api] info: API started! DEV
+2020-09-30T19:34:22.443Z [my-bank-api] info: API started! DEV
+2020-09-30T19:34:24.538Z [my-bank-api] info: API started! DEV
+2020-09-30T19:34:25.909Z [my-bank-api] info: API started! DEV
+30 [my-bank-api] info: API started! DEV
+30 [my-bank-api] info: API started! DEV
+30 [my-bank-api] info: API started! DEV
+30 [my-bank-api] info: API started! DEV
+30 [my-bank-api] info: API started! DEV
+30 [my-bank-api] info: API started! DEV
+30 [my-bank-api] info: API started! DEV
+30 [my-bank-api] info: API started! DEV
+30 [my-bank-api] info: API started! DEV
+30 [my-bank-api] info: API started! DEV
+30 [my-bank-api] info: API started! DEV
+now.getDate() [my-bank-api] info: API started! DEV
+{now.getDate()} [my-bank-api] info: API started! DEV
+30 [my-bank-api] info: API started! DEV
+30 : [my-bank-api] info: API started! DEV
+30 :  [my-bank-api] info: API started! DEV
+30 : undefined [my-bank-api] info: API started! DEV
+30 : undefined [my-bank-api] info: API started! DEV
+30 : function getMonth() { [native code] } [my-bank-api] info: API started! DEV
+30 : 8 [my-bank-api] info: API started! DEV
+30 : 9 [my-bank-api] info: API started! DEV
+30 9 [my-bank-api] info: API started! DEV
+30/ 9 [my-bank-api] info: API started! DEV
+30"/" 9 [my-bank-api] info: API started! DEV
+30  9 [my-bank-api] info: API started! DEV
+30 / 9 [my-bank-api] info: API started! DEV
+30/ 9 [my-bank-api] info: API started! DEV
+30/9 [my-bank-api] info: API started! DEV
+30/ 9 [my-bank-api] info: API started! DEV
+30/ 9 /  [my-bank-api] info: API started! DEV
+30/ 9 / {} [my-bank-api] info: API started! DEV
+30/ 9 / 9 [my-bank-api] info: API started! DEV
+30/ 9 / undefined [my-bank-api] info: API started! DEV
+30/ 9 / undefined [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+undefined [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+undefined [my-bank-api] info: API started! DEV
+undefined [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 17 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 17 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 17 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 17 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 17 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 17  [my-bank-api] info: API started! DEV
+30/ 9 / 2020 17 {} [my-bank-api] info: API started! DEV
+30/ 9 / 2020 17 6 38 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 17:6 46 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 17:6:49 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 17:7:1 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 17:7:3 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 17:7:4 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 17:7:7 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 17:7:14 [my-bank-api] info: API started! DEV
+30/ 9 / 2020 17:7:17 [my-bank-api] info: API started! DEV
+30/ 9/ 2020 17:7:30 [my-bank-api] info: API started! DEV
+30/9/ 2020 17:7:34 [my-bank-api] info: API started! DEV
+30/9/2020 17:7:37 [my-bank-api] info: API started! DEV
+30/9/2020 17:9:49 [my-bank-api] info: API started! DEV
+30/9/2020 17:10:16 [my-bank-api] info: API started! DEV
+30/9/2020 17:11:14 [my-bank-api] info: API started! DEV
+30/9/2020 17:11:16 [my-bank-api] info: API started! DEV
+30/9/2020 17:11:25 [my-bank-api] info: API started! DEV
+30/09/2020 17:11:28 [my-bank-api] info: API started! DEV
+30/09/2020 17:11:34 [my-bank-api] info: API started! DEV
+30/09/2020 17:11:37 [my-bank-api] info: API started! DEV
+30/09/2020 17:11:54 [my-bank-api] info: API started! DEV
+30/09/2020 17:11:56 [my-bank-api] info: API started! DEV
+30/09/2020 17:12:2 [my-bank-api] info: API started! DEV
+30/09/2020 17:12:4 [my-bank-api] info: API started! DEV
+30/09/2020 17:12:10 [my-bank-api] info: API started! DEV
+30/09/2020 17:12:13 [my-bank-api] info: API started! DEV
