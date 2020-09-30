@@ -5,3 +5,124 @@
 2020-09-30T15:19:38.562Z [my-bank-api] info: API started! DEV
 2020-09-30T15:19:46.947Z [my-bank-api] info: API started! DEV
 2020-09-30T15:42:57.006Z [my-bank-api] info: API started! DEV
+2020-09-30T15:46:54.757Z [my-bank-api] info: API started! DEV
+2020-09-30T15:47:06.819Z [my-bank-api] info: API started! DEV
+2020-09-30T15:47:13.027Z [my-bank-api] info: API started! DEV
+2020-09-30T15:47:16.957Z [my-bank-api] info: API started! DEV
+2020-09-30T15:47:19.656Z [my-bank-api] info: API started! DEV
+2020-09-30T15:47:22.671Z [my-bank-api] info: API started! DEV
+2020-09-30T15:47:23.965Z [my-bank-api] info: API started! DEV
+2020-09-30T15:47:36.904Z [my-bank-api] info: API started! DEV
+2020-09-30T15:47:40.131Z [my-bank-api] info: API started! DEV
+2020-09-30T15:48:13.017Z [my-bank-api] info: API started! DEV
+2020-09-30T15:48:14.059Z [my-bank-api] info: API started! DEV
+2020-09-30T15:48:17.471Z [my-bank-api] info: API started! DEV
+2020-09-30T15:48:19.856Z [my-bank-api] info: API started! DEV
+2020-09-30T15:49:24.180Z [my-bank-api] info: API started! DEV
+2020-09-30T15:49:31.164Z [my-bank-api] info: API started! DEV
+2020-09-30T15:49:35.802Z [my-bank-api] info: API started! DEV
+2020-09-30T15:49:37.132Z [my-bank-api] info: API started! DEV
+2020-09-30T15:55:07.669Z [my-bank-api] info: API started! DEV
+2020-09-30T15:56:13.286Z [my-bank-api] info: API started! DEV
+2020-09-30T15:59:46.060Z [my-bank-api] info: API started! DEV
+2020-09-30T16:00:08.295Z [my-bank-api] info: API started! DEV
+2020-09-30T16:00:45.589Z [my-bank-api] info: API started! DEV
+2020-09-30T16:02:38.236Z [my-bank-api] info: API started! DEV
+2020-09-30T16:02:41.098Z [my-bank-api] info: API started! DEV
+2020-09-30T16:02:46.598Z [my-bank-api] info: API started! DEV
+2020-09-30T16:02:54.330Z [my-bank-api] info: API started! DEV
+2020-09-30T16:03:30.949Z [my-bank-api] info: API started! DEV
+2020-09-30T16:03:49.070Z [my-bank-api] info: API started! DEV
+2020-09-30T16:04:00.447Z [my-bank-api] info: API started! DEV
+2020-09-30T16:04:02.535Z [my-bank-api] info: API started! DEV
+2020-09-30T16:04:13.286Z [my-bank-api] info: API started! DEV
+2020-09-30T16:04:39.358Z [my-bank-api] info: POST /account - {"id":7,"name":" Mateus Ferreira Pessoa","balance":600}
+2020-09-30T16:29:48.988Z [my-bank-api] info: API started! DEV
+2020-09-30T16:29:53.057Z [my-bank-api] info: API started! DEV
+2020-09-30T16:30:28.697Z [my-bank-api] info: API started! DEV
+2020-09-30T16:30:33.222Z [my-bank-api] info: API started! DEV
+2020-09-30T16:31:15.077Z [my-bank-api] info: API started! DEV
+2020-09-30T16:31:23.316Z [my-bank-api] info: API started! DEV
+2020-09-30T16:32:04.042Z [my-bank-api] info: API started! DEV
+2020-09-30T16:32:08.311Z [my-bank-api] info: API started! DEV
+2020-09-30T16:32:37.906Z [my-bank-api] info: API started! DEV
+2020-09-30T16:50:24.625Z [my-bank-api] info: API started! DEV
+2020-09-30T16:50:26.441Z [my-bank-api] info: API started! DEV
+2020-09-30T16:52:38.738Z [my-bank-api] info: API started! DEV
+2020-09-30T16:53:36.605Z [my-bank-api] info: API started! DEV
+2020-09-30T16:53:40.244Z [my-bank-api] info: API started! DEV
+2020-09-30T16:53:43.642Z [my-bank-api] info: API started! DEV
+2020-09-30T16:53:46.956Z [my-bank-api] info: API started! DEV
+2020-09-30T16:53:52.071Z [my-bank-api] info: API started! DEV
+2020-09-30T16:53:55.764Z [my-bank-api] info: API started! DEV
+2020-09-30T16:53:58.415Z [my-bank-api] info: API started! DEV
+2020-09-30T16:54:01.709Z [my-bank-api] info: API started! DEV
+2020-09-30T16:54:14.596Z [my-bank-api] info: API started! DEV
+2020-09-30T16:54:20.599Z [my-bank-api] info: API started! DEV
+2020-09-30T16:54:23.113Z [my-bank-api] info: API started! DEV
+2020-09-30T16:54:51.443Z [my-bank-api] info: API started! DEV
+2020-09-30T16:54:57.326Z [my-bank-api] info: API started! DEV
+2020-09-30T16:55:02.730Z [my-bank-api] info: API started! DEV
+2020-09-30T16:55:39.865Z [my-bank-api] info: API started! DEV
+2020-09-30T16:55:42.311Z [my-bank-api] info: API started! DEV
+2020-09-30T16:55:58.168Z [my-bank-api] info: API started! DEV
+2020-09-30T16:55:59.411Z [my-bank-api] info: API started! DEV
+2020-09-30T16:56:01.363Z [my-bank-api] info: API started! DEV
+2020-09-30T16:56:07.183Z [my-bank-api] info: API started! DEV
+2020-09-30T16:56:19.394Z [my-bank-api] info: API started! DEV
+2020-09-30T16:56:46.465Z [my-bank-api] info: API started! DEV
+2020-09-30T16:56:55.395Z [my-bank-api] info: API started! DEV
+2020-09-30T16:57:25.774Z [my-bank-api] info: API started! DEV
+2020-09-30T16:58:37.337Z [my-bank-api] info: API started! DEV
+2020-09-30T16:58:50.864Z [my-bank-api] info: API started! DEV
+2020-09-30T16:58:56.407Z [my-bank-api] info: API started! DEV
+2020-09-30T16:59:10.436Z [my-bank-api] info: API started! DEV
+2020-09-30T16:59:16.776Z [my-bank-api] info: API started! DEV
+2020-09-30T16:59:19.687Z [my-bank-api] info: API started! DEV
+2020-09-30T16:59:30.973Z [my-bank-api] info: API started! DEV
+2020-09-30T17:03:14.146Z [my-bank-api] info: API started! DEV
+2020-09-30T17:03:17.576Z [my-bank-api] info: API started! DEV
+2020-09-30T17:03:20.248Z [my-bank-api] info: API started! DEV
+2020-09-30T17:03:22.395Z [my-bank-api] info: API started! DEV
+2020-09-30T17:03:23.590Z [my-bank-api] info: API started! DEV
+2020-09-30T17:03:25.839Z [my-bank-api] info: API started! DEV
+2020-09-30T17:03:36.570Z [my-bank-api] info: API started! DEV
+2020-09-30T17:03:39.635Z [my-bank-api] info: API started! DEV
+2020-09-30T17:03:45.077Z [my-bank-api] info: API started! DEV
+2020-09-30T17:03:48.210Z [my-bank-api] info: API started! DEV
+2020-09-30T17:04:00.691Z [my-bank-api] info: API started! DEV
+2020-09-30T17:04:04.774Z [my-bank-api] info: API started! DEV
+2020-09-30T17:04:08.147Z [my-bank-api] info: API started! DEV
+2020-09-30T17:04:11.170Z [my-bank-api] info: API started! DEV
+2020-09-30T17:04:26.947Z [my-bank-api] info: API started! DEV
+2020-09-30T17:04:40.780Z [my-bank-api] info: API started! DEV
+2020-09-30T17:05:43.318Z [my-bank-api] info: API started! DEV
+2020-09-30T17:06:01.769Z [my-bank-api] info: API started! DEV
+2020-09-30T17:06:27.723Z [my-bank-api] info: GET /account
+2020-09-30T17:06:59.321Z [my-bank-api] info: GET /account/:id
+2020-09-30T17:07:56.278Z [my-bank-api] info: API started! DEV
+2020-09-30T17:08:00.887Z [my-bank-api] info: API started! DEV
+2020-09-30T17:08:01.628Z [my-bank-api] info: API started! DEV
+2020-09-30T17:08:05.971Z [my-bank-api] info: API started! DEV
+2020-09-30T17:08:07.421Z [my-bank-api] info: API started! DEV
+2020-09-30T17:08:14.567Z [my-bank-api] info: API started! DEV
+2020-09-30T17:08:33.777Z [my-bank-api] info: API started! DEV
+2020-09-30T17:08:41.019Z [my-bank-api] info: GET /account/:id - {"id":5,"name":" Davi Ferreira Pessoa","balance":500}
+2020-09-30T17:10:17.129Z [my-bank-api] info: PUT /account/ - {"id":4,"name":"Davi Ferreira Pessoa ","balance":500,"work":"developer","salary":"$5000","age":46,"altura":1.78,"peso":76}
+2020-09-30T17:11:08.345Z [my-bank-api] info: GET /account
+2020-09-30T17:11:34.999Z [my-bank-api] info: PUT /account/ - {"id":5,"name":"Davi Ferreira Pessoa ","balance":500,"work":"developer","salary":"$5000","age":46,"altura":1.78,"peso":76}
+2020-09-30T17:11:38.496Z [my-bank-api] info: GET /account
+2020-09-30T17:12:50.880Z [my-bank-api] info: API started! DEV
+2020-09-30T17:13:13.003Z [my-bank-api] info: POST /account/transaction - [object Object]
+2020-09-30T17:13:28.803Z [my-bank-api] info: API started! DEV
+2020-09-30T17:13:33.598Z [my-bank-api] info: API started! DEV
+2020-09-30T17:13:35.256Z [my-bank-api] info: API started! DEV
+2020-09-30T17:13:38.617Z [my-bank-api] info: POST /account/transaction - {"id":5,"value":100}
+2020-09-30T17:14:07.589Z [my-bank-api] info: GET /account
+2020-09-30T17:16:27.834Z [my-bank-api] info: API started! DEV
+2020-09-30T17:17:05.413Z [my-bank-api] info: GET /account
+2020-09-30T17:19:20.627Z [my-bank-api] info: API started! DEV
+2020-09-30T17:19:25.998Z [my-bank-api] info: API started! DEV
+2020-09-30T17:20:20.312Z [my-bank-api] info: API started! DEV
+2020-09-30T17:21:22.991Z [my-bank-api] info: API started! DEV
+2020-09-30T17:22:27.660Z [my-bank-api] info: DELETE /account/:id - "3"

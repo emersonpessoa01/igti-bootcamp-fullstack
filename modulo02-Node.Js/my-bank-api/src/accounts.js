@@ -1,4 +1,5 @@
 const express = require("express");
+const { loggers } = require("winston");
 const router = express.Router();
 const fs = require("fs").promises;
 
@@ -16,10 +17,14 @@ router.post("/", async (req, res) => {
 
     await fs.writeFile(global.fileName, JSON.stringify(json));
     res.send("Inclusão confirmada");
+    logger.info(`POST /account - ${JSON.stringify(account)}`);
+
   } catch (err) {
     res.status(400).send({
       error: err.message,
     });
+    logger.info(`POST /account - ${err.message}`);
+
   }
 });
 
@@ -29,10 +34,14 @@ router.get("/", async (_, res) => {
     let json = JSON.parse(data);
     delete json.nextId;
     res.send(json);
+    logger.info("GET /account");
+
   } catch (err) {
     res.status(400).send({
       error: err.message,
     });
+    logger.info(`GET /account - ${err.message}`);
+
   }
 });
 
@@ -47,10 +56,14 @@ router.get("/:id/", async (req, res) => {
     });
     // res.send(json);
     res.send(account);
+    logger.info(`GET /account/:id - ${JSON.stringify(account)}`);
+
   } catch (err) {
     res.status(400).send({
       error: err.message,
     });
+    logger.info(`GET /account/:id - ${err.message}`);
+
   }
 });
 
@@ -64,14 +77,18 @@ router.delete("/:id", async (req, res) => {
       return account.id !== parseInt(req.params.id, 10);
     });
     json.accounts = account;
-    res.send(account);
-
+    // res.send(account);
+    
+    
     await fs.writeFile(global.fileName, JSON.stringify(json));
     res.send("Exclusão confirmada");
+    logger.info(`DELETE /account/:id - ${JSON.stringify(req.params.id)}`);
   } catch (err) {
     res.status(400).send({
       error: err.message,
     });
+    logger.info(`DELETE /account/ - ${err.message}`);
+
   }
 });
 
@@ -91,11 +108,15 @@ router.put("/", async (req, res) => {
 
     await fs.writeFile(global.fileName, JSON.stringify(json));
     res.send("Atualização confirmada");
+    logger.info(`PUT /account/ - ${JSON.stringify(newAccount)}`);
+    
     // res.end();
   } catch (err) {
     res.status(400).send({
       error: err.message,
     });
+    logger.info(`PUT /account/ - ${err.message}`);
+
   }
 });
 
@@ -118,11 +139,15 @@ router.post("/transaction", async (req, res) => {
 
     await fs.writeFile(global.fileName, JSON.stringify(json));
     res.send(json.accounts[index]);
+    logger.info(`POST /account/transaction - ${JSON.stringify(params)}`);
+
     // res.end();
   } catch (err) {
     res.status(400).send({
       error: err.message,
     });
+    logger.info(`POST /account/transactio - ${err.message}`);
+
   }
 });
 
