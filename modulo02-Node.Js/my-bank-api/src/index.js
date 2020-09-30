@@ -1,5 +1,5 @@
 import express from 'express';
-import { promises} from 'fs';
+import { promises } from 'fs';
 import winston from 'winston'
 import accountsRouter from './accounts.js'
 
@@ -14,23 +14,23 @@ const leftPad = (value, count = 2, char = "0") => {
   let stringValue = value.toString();
   let newValue = stringValue;
 
-  if (stringValue.length < count || stringValue.length % 10 ===0) {
+  if (stringValue.length < count || stringValue.length % 10 === 0) {
     for (let i = 0; i < count - stringValue.length; i++) {
       newValue = char + stringValue;
-    } 
+    }
   }
   return newValue;
 };
 
 const now = new Date()
-const timer = `${leftPad(now.getDate())}/${leftPad(now.getMonth()+1)}/${leftPad(now.getFullYear())}`;
+const timer = `${leftPad(now.getDate())}/${leftPad(now.getMonth() + 1)}/${leftPad(now.getFullYear())}`;
 const hours = leftPad(now.getHours());
 const minutes = leftPad(now.getMinutes());
 const seconds = leftPad(now.getSeconds());
 
 const formatter = `${hours}:${minutes}:${seconds}`;
 const tt = formatter.split(":");
-const sec = tt[0] *3600 + tt[1] *60 + tt[2] *1;
+const sec = tt[0] * 3600 + tt[1] * 60 + tt[2] * 1;
 const display = `${timer} ${formatter}`
 
 const { combine, timestamp, label, printf } = winston.format;
@@ -45,11 +45,11 @@ global.logger = winston.createLogger({
   //local para onde serão transportados
   transports: [
     new (winston.transports.Console)(),
-    new (winston.transports.File)({ filename: "my-bank-api.log"})
+    new (winston.transports.File)({ filename: "my-bank-api.log" })
   ],
   //impressão dos logs
   format: combine(
-    label({ label: "my-bank-api"}),
+    label({ label: "my-bank-api" }),
     timestamp(display),
     myFormat
   )

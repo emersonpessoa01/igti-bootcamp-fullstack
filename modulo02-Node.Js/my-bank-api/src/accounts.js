@@ -149,7 +149,7 @@ router.post("/transaction", async (req, res) => {
     res.status(400).send({
       error: err.message,
     });
-    logger.info(`POST /account/transactio - ${err.message}`);
+    logger.info(`POST /account/transaction - ${err.message}`);
 
   }
 });

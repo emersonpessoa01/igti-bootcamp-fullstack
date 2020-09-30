@@ -263,3 +263,11 @@ undefined [my-bank-api] info: API started! DEV
 30/09/2020 17:12:4 [my-bank-api] info: API started! DEV
 30/09/2020 17:12:10 [my-bank-api] info: API started! DEV
 30/09/2020 17:12:13 [my-bank-api] info: API started! DEV
+30/09/2020 17:12:13 [my-bank-api] info: GET /account
+30/09/2020 17:12:13 [my-bank-api] info: POST /account - {"id":1,"name":" Emerson Pessoa","balance":100}
+30/09/2020 17:12:13 [my-bank-api] info: POST /account - {"id":2,"name":" Luciene Ferreira","balance":200}
+30/09/2020 17:12:13 [my-bank-api] info: POST /account - {"id":3,"name":" Ferreira Ferreira","balance":300}
+30/09/2020 17:12:13 [my-bank-api] info: POST /account - {"id":4,"name":" Dominique Ferreira Pessoa","balance":400}
+30/09/2020 17:12:13 [my-bank-api] info: POST /account - {"id":5,"name":" Mateus Ferreira Pessoa","balance":500}
+30/09/2020 17:12:13 [my-bank-api] info: GET /account
+30/09/2020 18:03:32 [my-bank-api] info: API started! DEV
