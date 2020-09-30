@@ -8,23 +8,24 @@ const winston = require("winston");
 global.fileName = "accounts.json";
 
 const { combine, timestamp, label, printf } = winston.format;
-const myFormat = printf(({ timestamp, label, level ,message }) => {
+const myFormat = printf(({ timestamp, label, level, message }) => {
   return `${timestamp} [${label}] ${level}: ${message}`;
 });
 
-global.winston = winston.createlogger({
+global.logger = winston.createLogger({
   level: "silly",
-
   //local para onde serão transportados
   transports: [
-    new winston.transports.Console(),
-    new winston.transports.File(),
-    {
-      filename: my - banck - app.log,
-    },
+    new (winston.transports.Console)(),
+    new (winston.transports.File)({ filename: "my-bank-api.log"})
   ],
   //impressão dos logs
-  format: combine(winston.format),
+  format: combine(
+    label({ label: "my-bank-api"}),
+    timestamp(),
+    myFormat
+  )
+
 });
 
 app.use(express.json());
