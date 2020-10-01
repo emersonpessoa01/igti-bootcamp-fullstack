@@ -2,7 +2,7 @@
 
 ### Enunciado
 
-#### Construa uma aplicação utilizando React Class Component para visualizar países com nome, id, bandeira e população.
+#### Construa uma aplicação utilizando React Hooks para visualizar países com nome, id, bandeira e população.
 
  
 
