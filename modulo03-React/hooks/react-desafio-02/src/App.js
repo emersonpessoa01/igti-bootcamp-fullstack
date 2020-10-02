@@ -1,62 +1,47 @@
-import React, { Component } from "react";
+import React, { useEffect, useState } from "react";
 import Countries from "./components/countries/Countries";
 import Header from "./components/header/Header";
 import css from "./components/countries/countries.module.css"
 
-export default class App extends Component {
-  constructor() {
-    super();
+export default function App() {
+  const [allCountries, setAllCountries] = useState([])
+  const [filteredCountries, setFilteredCountries] = useState([])
+  const [filteredPopulation, setFilteredPopulation] = useState(0)
+  const [filter, setFilter] = useState('')
 
-    this.state = {
-      allCountries: [],
-      filteredCountries: [],
-      filteredPopulation: 0,
-      filter: "",
-    };
-  }
+  useEffect(() => {
+    const getCountries = async () => {
+      const res = await fetch("https://restcountries.eu/rest/v2/all");
+      const json = await res.json();
 
-  async componentDidMount() {
-    const res = await fetch("https://restcountries.eu/rest/v2/all");
-    const json = await res.json();
+      let allCountries = json.map(({ name, numericCode, flag, population }) => {
+        return {
+          id: numericCode,
+          name,
+          filterName: name.toLowerCase(),
+          flag,
+          population,
+        }
+      });
+      // console.log(allCountries)
+      const filteredPopulation = allCountries.reduce(
+        (accumulator, current) => {
+          return accumulator + current.population;
+        },
+        0
+      );
+      setAllCountries(allCountries);
+      setFilteredCountries(Object.assign([], allCountries));
+      setFilteredPopulation(filteredPopulation);
+    }
+    getCountries();
+  }, [])
 
-    const allCountries = json.map(({ name, numericCode, flag, population }) => {
-      return {
-        id: numericCode,
-        name,
-        filterName: name.toLowerCase(),
-        flag,
-        population,
-      };
-    });
-
-    const filteredPopulation = allCountries.reduce(
-      (accumulator, current) => {
-        return accumulator + current.population;
-      },
-      0
-    );
-
-    this.setState({
-      //allConugtries: json,
-      // allCountries: allCountries,
-      allCountries,
-      filteredCountries: Object.assign([], allCountries),
-      filteredPopulation: filteredPopulation,
-      
-    });
-  }
-
-  handleChangeFilter = (evt) => {
-    console.log(evt.target.value);
+  const handleChangeFilter = (evt) => {
     const newText = evt.target.value;
-
-    this.setState({
-      filter: newText,
-    });
-
+    setFilter(newText)
     const filterLowerCase = newText.toLowerCase();
-
-    const filteredCountries = this.state.allCountries.filter((country) => {
+    const filteredCountries = allCountries.filter((country) => {
       return country.filterName.includes(filterLowerCase);
     });
 
@@ -67,33 +52,20 @@ export default class App extends Component {
       0
     );
 
-    this.setState({
-      filteredCountries: filteredCountries,
-      filteredPopulation: filteredPopulation,
-    });
+    setFilteredCountries(filteredCountries);
+    setFilteredPopulation(filteredPopulation);
   };
 
-  render() {
-    const { filteredCountries, filter, filteredPopulation } = this.state;
-    // console.log(allCountries)
-    return (
-      <div className="container">
-        <h1 className={css.title}>React Countries</h1>
-        <Header
-          filter={filter}
-          countryCount={filteredCountries.length}
-          totalPopulation={filteredPopulation}
-          onChangeFilter={this.handleChangeFilter}
-        />
-        <Countries countries={filteredCountries} />
-      </div>
-    );
-  }
+  return (
+    <div className="container">
+      <h1 className={css.title}>React Countries</h1>
+      <Header
+        filter={filter}
+        countryCount={filteredCountries.length}
+        totalPopulation={filteredPopulation}
+        onChangeFilter={handleChangeFilter}
+      />
+      <Countries countries={filteredCountries} />
+    </div>
+  );
 }
-
-// const styles= {
-//   centeredTitle:{
-//     textAlign: 'center',
-//     color: 'blueViolet',
-//   }
-// }
