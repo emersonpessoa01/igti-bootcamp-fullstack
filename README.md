@@ -65,7 +65,7 @@
 funções, estruturas de decisão, estruturas de repetição e manipulação de eventos.<br>
 :heavy_check_mark: Desenvolvimento de APIs
 
-<a href="https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo01"><img src="https://img.shields.io/static/v1?label=javascript&message=modulo1&color=blue&style=for-the-badge&logo=JAVASCRIPT"/></a>
+<a href="https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo01-Fundamentos%20de%20Javascript"><img src="https://img.shields.io/static/v1?label=javascript&message=modulo1&color=blue&style=for-the-badge&logo=JAVASCRIPT"/></a>
 <hr>
 
 #### **Módulo 2** :books:
