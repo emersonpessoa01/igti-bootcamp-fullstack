@@ -47,7 +47,7 @@
      </b>
 </p>
 
-<a href="https://github.com/emersonpessoa01/igti-bootcamp-fullstack"><p align="center">
+<a href="https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo01-Fundamentos%20de%20Javascript"><p align="center">
      <img src="./image/images/githubman.jpg" width="85" alt="githubman">
 </p></a>
 
