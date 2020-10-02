@@ -47,7 +47,7 @@
      </b>
 </p>
 
-<a href="https://github.com/emersonpessoa01/igti-bootcamp-fullstack"><p align="center">
+<a href="https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo01-Fundamentos%20de%20Javascript"><p align="center">
      <img src="./image/images/githubman.jpg" width="85" alt="githubman">
 </p></a>
 
@@ -65,7 +65,7 @@
 funções, estruturas de decisão, estruturas de repetição e manipulação de eventos.<br>
 :heavy_check_mark: Desenvolvimento de APIs
 
-<a href="https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo01"><img src="https://img.shields.io/static/v1?label=javascript&message=modulo1&color=blue&style=for-the-badge&logo=JAVASCRIPT"/></a>
+<a href="https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo01-Fundamentos%20de%20Javascript"><img src="https://img.shields.io/static/v1?label=javascript&message=modulo1&color=blue&style=for-the-badge&logo=JAVASCRIPT"/></a>
 <hr>
 
 #### **Módulo 2** :books:
@@ -81,7 +81,7 @@ funções, estruturas de decisão, estruturas de repetição e manipulação de 
 :heavy_check_mark: Desenvolvimento das operações CRUD.<br>
 :heavy_check_mark: Persistência de Dados em Arqu3vos.<br>
 
-<a href="https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo02"><img src="https://img.shields.io/static/v1?label=node&message=modulo2&color=blue&style=for-the-badge&logo=node"/></a>
+<a href="https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo02-Node.Js"><img src="https://img.shields.io/static/v1?label=node&message=modulo2&color=blue&style=for-the-badge&logo=node.js"/></a>
 ---
 
 #### **Módulo 3** :books:
@@ -100,7 +100,7 @@ funções, estruturas de decisão, estruturas de repetição e manipulação de 
 :heavy_check_mark: Criação de um pequeno projeto.<br>
 :heavy_check_mark: passo-a-passo com React.<br>
 
-<a href="https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo03"><img src="https://img.shields.io/static/v1?label=react&message=modulo3&color=blue&style=for-the-badge&logo=REACT"/></a>
+<a href="https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo03-React"><img src="https://img.shields.io/static/v1?label=react&message=modulo3&color=blue&style=for-the-badge&logo=REACT"/></a>
 
 <hr>
 
