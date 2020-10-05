@@ -23,39 +23,85 @@ const grade_validation = [
   },
 ];
 
+// para converter em toLowerCase()
+// const toLowerCase=(value)=>{
+//   return value.toLowerCase()
+// }
+
 const getAllGrades = async () => {
   const res = await axios.get(api_url);
-  return res;
 
-}
+  const grades = res.data.grades.map(grade => {
+    const { student, type, subject } = grade;
+    return {
+      ...grade,
+      studentToLowerCase: student.toLowerCase(),
+      subjectToLowerCase: subject.toLowerCase(),
+      typeToLowerCase: type.toLowerCase(),
+      isDeleted: false,
 
-const timeStamp = () => {
-  //para ajustar a hora da máquina local
-  const leftPad = (value, count = 2, char = "0") => {
-    let stringValue = value.toString();
-    let newValue = stringValue;
-
-    if (stringValue.length < count || stringValue.length % 10 === 0) {
-      for (let i = 0; i < count - stringValue.length; i++) {
-        newValue = char + stringValue;
-      }
     }
-    return newValue;
-  };
+  })
+  let allStudents = new Set();
+  grades.forEach(grade => allStudents.add(grade.student));
+  allStudents = Array.from(allStudents);
 
-  const now = new Date()
-  const timer = `${leftPad(now.getDate())}/${leftPad(now.getMonth() + 1)}/${leftPad(now.getFullYear())}`;
-  const hours = leftPad(now.getHours());
-  const minutes = leftPad(now.getMinutes());
-  const seconds = leftPad(now.getSeconds());
+  let allSubjects = new Set();
+  grades.forEach(grade => allSubjects.add(grade.subject));
+  allSubjects = Array.from(allSubjects);
 
-  const formatter = `${hours}:${minutes}:${seconds}`;
-  const tt = formatter.split(":");
-  const sec = tt[0] * 3600 + tt[1] * 60 + tt[2] * 1;
-  const display = `${timer} ${formatter}`
+  let allTypes = new Set();
+  grades.forEach(grade => allTypes.add(grade.type));
+  allTypes = Array.from(allTypes);
 
+  const allCombinations = [];
+
+  allStudents.forEach((student) => {
+    allSubjects.forEach((subject) => {
+      allTypes.forEach((type) => {
+        allCombinations.push({
+          student: student,
+          subject: subject,
+          type: type,
+        });
+      });
+    });
+  });
+
+  allCombinations.forEach((combination) => {
+    const { student, subject, type } = combination;
+    console.log(subject);
+    console.log(student);
+    console.log(type)
+    
+    const hasItem = grades.find(item => {
+      item.subject = subject &&
+        item.student === student &&
+        item.type === type;
+    })
+
+    if (!hasItem) {
+      grades.push({
+        id: grades.length + 1,
+        student,
+        studentToLowerCase: student.toLowerCase(),
+        subject,
+        subjectToLowerCase: subject.toLowerCase(),
+        type,
+        typeToLowerCase: type.toLowerCase(),
+        value: 0,
+        isDeleted: true,
+      });
+    }
+  })
+
+    grades.sort((a,b)=>{
+      a.typeToLowerCase.localeCompare(b.typeToLowerCase);
+      a.studentToLowerCase.localeCompare(b.studentToLowerCase);
+      a.subjectToLowerCase.localeCompare(b.subjectToLowerCase);
+    })
+
+  return allCombinations;
 }
-
 
 export { getAllGrades }
-export { timeStamp }

@@ -106,7 +106,7 @@ global.logger = winston.createLogger({
 
 });
 
-app.listen(3001, async () => {
+app.listen(process.env.PORT || 3001, async () => {
   /**
    * Reiniciando o arquivo com os dados
    * simulados. Comente a linha abaixo
