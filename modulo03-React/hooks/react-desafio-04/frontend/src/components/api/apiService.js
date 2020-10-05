@@ -70,12 +70,13 @@ const getAllGrades = async () => {
 
   allCombinations.forEach((combination) => {
     const { student, subject, type } = combination;
-    console.log(subject);
-    console.log(student);
-    console.log(type)
-    
+    // console.log(subject);
+    // console.log(student);
+    // console.log(type)
+
     const hasItem = grades.find(item => {
-      item.subject = subject &&
+      //item.subject = subject &&
+      return subject &&
         item.student === student &&
         item.type === type;
     })
@@ -101,7 +102,8 @@ const getAllGrades = async () => {
       a.subjectToLowerCase.localeCompare(b.subjectToLowerCase);
     })
 
-  return allCombinations;
+  //return allCombinations;
+  return grades;
 }
 
-export { getAllGrades }
+export { getAllGrades }    
