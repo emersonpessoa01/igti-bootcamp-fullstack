@@ -5,10 +5,12 @@
   "main": "index.js",
   "dependencies": {
     "Router": "^2.1.0",
+    "cors": "^2.8.5",
     "elliptic": "^6.5.3",
     "express": "^4.17.1",
     "http-proxy": "^1.18.1",
     "license": "ISC",
+    "swagger-ui-express": "^4.1.4",
     "winston": "^3.3.3"
   },
   "scripts": {
@@ -17,5 +19,5 @@
   },
   "keywords": [],
   "author": "",
-  "type":"module"
+  "type": "module"
 }

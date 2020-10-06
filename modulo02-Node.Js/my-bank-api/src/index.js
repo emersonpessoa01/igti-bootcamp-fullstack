@@ -2,6 +2,9 @@ import express from 'express';
 import { promises } from 'fs';
 import winston from 'winston'
 import accountsRouter from './accounts.js'
+import swaggerUi from 'swagger-ui-express';
+import { swaggerDocument } from "./docs.js";
+import cors from 'cors';
 
 const readFile = promises.readFile
 const writeFile = promises.writeFile
@@ -57,7 +60,10 @@ global.logger = winston.createLogger({
 });
 
 app.use(express.json());
+//com cors libera todos os endpoints
+//app.use(cors());
 app.use("/account", accountsRouter);
+app.use("/doc", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 app.listen(port, async () => {
   try {

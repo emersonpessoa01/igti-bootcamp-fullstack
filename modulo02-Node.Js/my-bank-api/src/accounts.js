@@ -1,5 +1,7 @@
 import express from 'express';
 import { promises } from 'fs';
+//para controla acesso aos endpoints
+import cors from 'cors'
 
 const router = express.Router();
 const readFile = promises.readFile
@@ -56,7 +58,9 @@ router.post("/", async (req, res) => {
   }
 });
 
-router.get("/", async (_, res) => {
+//para controla acesso aos endpoints
+// router.get("/", async (_, res) => {
+router.get("/",cors(), async (_, res) => {
   try {
     let data = await readFile(global.fileName, "utf8");
     let json = JSON.parse(data);
@@ -73,7 +77,9 @@ router.get("/", async (_, res) => {
   }
 });
 
-router.get("/:id/", async (req, res) => {
+//para controla acesso aos endpoints
+// router.get("/:id/", async (req, res) => {
+router.get("/:id/",cors(), async (req, res) => {
   try {
     let data = await readFile(global.fileName, "utf8");
     let json = JSON.parse(data);
