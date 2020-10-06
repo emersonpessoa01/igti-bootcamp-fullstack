@@ -1,6 +1,6 @@
 import express from 'express';
 import { promises } from 'fs';
-//para controla acesso aos endpoints
+//para controla acesso dos endpoints
 import cors from 'cors'
 
 const router = express.Router();
@@ -58,7 +58,7 @@ router.post("/", async (req, res) => {
   }
 });
 
-//para controla acesso aos endpoints
+//para controla acesso dos endpoints
 // router.get("/", async (_, res) => {
 router.get("/",cors(), async (_, res) => {
   try {
@@ -77,7 +77,7 @@ router.get("/",cors(), async (_, res) => {
   }
 });
 
-//para controla acesso aos endpoints
+//para controlar acesso dos endpoints
 // router.get("/:id/", async (req, res) => {
 router.get("/:id/",cors(), async (req, res) => {
   try {

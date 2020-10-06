@@ -60,7 +60,7 @@ global.logger = winston.createLogger({
 });
 
 app.use(express.json());
-//com cors libera todos os endpoints
+//com use cors libera todos os endpoints
 //app.use(cors());
 app.use("/account", accountsRouter);
 app.use("/doc", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
