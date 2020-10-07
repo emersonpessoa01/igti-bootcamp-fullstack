@@ -1,23 +1,23 @@
-import axios from 'axios'
+import axios from "axios";
 
-const api_url = 'http://localhost:3001/grade';
+const api_url = "http://localhost:3001/grade";
 
 const grade_validation = [
   {
     id: 1,
-    gradeType: 'Exercícios',
+    gradeType: "Exercícios",
     minValue: 0,
     maxValue: 10,
   },
   {
     id: 2,
-    gradeType: 'Trabalho Prático',
+    gradeType: "Trabalho Prático",
     minValue: 0,
     maxValue: 40,
   },
   {
     id: 3,
-    gradeType: 'Desafio',
+    gradeType: "Desafio",
     minValue: 0,
     maxValue: 50,
   },
@@ -31,7 +31,7 @@ const grade_validation = [
 const getAllGrades = async () => {
   const res = await axios.get(api_url);
 
-  const grades = res.data.grades.map(grade => {
+  const grades = res.data.grades.map((grade) => {
     const { student, type, subject } = grade;
     return {
       ...grade,
@@ -39,27 +39,27 @@ const getAllGrades = async () => {
       subjectToLowerCase: subject.toLowerCase(),
       typeToLowerCase: type.toLowerCase(),
       isDeleted: false,
+    };
+  });
 
-    }
-  })
   let allStudents = new Set();
-  grades.forEach(grade => allStudents.add(grade.student));
+  grades.forEach((grade) => allStudents.add(grade.student));
   allStudents = Array.from(allStudents);
 
   let allSubjects = new Set();
-  grades.forEach(grade => allSubjects.add(grade.subject));
+  grades.forEach((grade) => allSubjects.add(grade.subject));
   allSubjects = Array.from(allSubjects);
 
   let allTypes = new Set();
-  grades.forEach(grade => allTypes.add(grade.type));
+  grades.forEach((grade) => allTypes.add(grade.type));
   allTypes = Array.from(allTypes);
 
   let maxId = -1;
   grades.forEach(({ id }) => {
     if (id > maxId) {
-      maxId = id
-    };
-  })
+      maxId = id;
+    }
+  });
   let nextId = maxId + 1;
   const allCombinations = [];
   allStudents.forEach((student) => {
@@ -80,7 +80,7 @@ const getAllGrades = async () => {
     // console.log(student);
     // console.log(type)
 
-    const hasItem = grades.find(item => {
+    const hasItem = grades.find((item) => {
       //item.subject = subject &&
       return (
         item.subject === subject &&
@@ -102,16 +102,49 @@ const getAllGrades = async () => {
         isDeleted: true,
       });
     }
-  })
+  });
 
   grades.sort((a, b) => {
     a.typeToLowerCase.localeCompare(b.typeToLowerCase);
     a.studentToLowerCase.localeCompare(b.studentToLowerCase);
     a.subjectToLowerCase.localeCompare(b.subjectToLowerCase);
-  })
+  });
 
   //return allCombinations;
   return grades;
-}
+};
 
-export { getAllGrades }    
+const insertGrade = async (grade) => {
+  const res = await axios.post(api_url, grade);
+  return res.data.id;
+};
+
+const updateGrade = async (grade) => {
+  const res = await axios.put(api_url, grade);
+  return res.data.id;
+};
+
+const deleteGrade = async (grade) => {
+  const res = await axios.delete(`${api_url}/${grade.id}`);
+  return res.data;
+};
+
+const getValidationGradeType = async (gradeType) => {
+  const gradeValidation = grade_validation.find((item) => {
+    return item.gradeType === gradeType;
+  });
+  //ajuda o usuario a validar enquanto tiver
+  //digitando ou inserindo uma nova nota
+  const { minValue, maxValue } = gradeValidation;
+  return {
+    minValue,
+    maxValue,
+  };
+};
+export {
+  getAllGrades,
+  insertGrade,
+  updateGrade,
+  deleteGrade,
+  getValidationGradeType,
+};
