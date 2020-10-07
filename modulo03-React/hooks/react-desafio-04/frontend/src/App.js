@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import * as api from "./components/api/apiService";
+import GradesControl from "./components/GradesControl";
 import Spinner from "./components/Spinner";
 import css from "./components/spinner.module.css";
 
@@ -30,14 +31,28 @@ export default function App() {
     getGrades();
   }, []);
 
+  const handleDelete =()=>{
+    console.log("handleDelete")
+  }
+
+  const handlesPersist = ()=>{
+
+  }
+
+
   return (
     // <div style = {css.flexRow}>
-    <div className = {css.flexRow}>
+    <div>
       <div className="container">
-        <h1 className="center">Controle de notas</h1>
-
+        <h1 className={css.flexRow} align = "center">Controle de notas</h1>
         {/* teste - sendo verdadeiro faca o que sta do lado de ca */}
-        {allGrades.length > 0 && <p className={css.notes}>Notas disponíveis</p>}
+        {allGrades.length > 0 && (
+          <GradesControl
+            grades={allGrades}
+            onDelete={handleDelete}
+            onPersist={handlesPersist}
+          />
+        )}
         {allGrades.length == 0 && <Spinner />}
       </div>
     </div>

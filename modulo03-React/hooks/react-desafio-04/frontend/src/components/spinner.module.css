@@ -5,14 +5,25 @@
   background-color: #35495e
 }
 .flexRow{
-  display: flex;
   flex-direction: row;
   align-items:center;
   justify-content: center;
   font-family: "Righteous", sans-serif;
-  color: white
+  color: white;
+  font-size: 40px;
+}
+.spinner{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  
 }
 .notes{
+  flex-direction: row;
   font-family: "Montserrat", sans-serif;
+  color: white;
   
 }
