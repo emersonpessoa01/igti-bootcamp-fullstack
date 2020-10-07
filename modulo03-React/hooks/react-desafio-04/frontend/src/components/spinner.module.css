@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Righteous&display=swap');
+
+
+*{
+  background-color: #35495e
+}
+.flexRow{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: center;
+  font-family: "Righteous", sans-serif;
+  color: white
+}
+.notes{
+  font-family: "Montserrat", sans-serif;
+  
+}

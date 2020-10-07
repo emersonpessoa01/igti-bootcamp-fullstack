@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import * as api from "./components/api/apiService";
+import Spinner from "./components/Spinner";
+import css from "./components/spinner.module.css";
 
 export default function App() {
   //teste da api
@@ -29,12 +31,24 @@ export default function App() {
   }, []);
 
   return (
-    <div className="container">
-      <h1 className="center">Controle de notas</h1>
+    // <div style = {css.flexRow}>
+    <div className = {css.flexRow}>
+      <div className="container">
+        <h1 className="center">Controle de notas</h1>
 
-      {/* teste - sendo verdadeiro faca o que sta do lado de ca */}
-      {allGrades.length > 0 && <p>Notas disponíveis</p>}
-      {allGrades.length == 0 && <p>Carregando notas...</p>}
+        {/* teste - sendo verdadeiro faca o que sta do lado de ca */}
+        {allGrades.length > 0 && <p className={css.notes}>Notas disponíveis</p>}
+        {allGrades.length == 0 && <Spinner />}
+      </div>
     </div>
   );
 }
+
+// const styles = {
+//   flexRow:{
+//     display:'flex',
+//     fleDirection: 'row',
+//     alignItems: 'center',
+//     justifyContent: 'center'.
+//   }
+// }
