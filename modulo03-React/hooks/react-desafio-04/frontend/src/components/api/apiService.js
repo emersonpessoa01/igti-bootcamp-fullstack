@@ -1,17 +1,18 @@
+//utilização dos axios
 import axios from "axios";
 
-const api_url = "http://localhost:3001/grade";
+const API_URL = "http://localhost:3001/grade/";
 
-const grade_validation = [
+const GRADE_VALIDATION = [
   {
     id: 1,
-    gradeType: "Exercícios",
+    gradeType: "'Exercícios'",
     minValue: 0,
     maxValue: 10,
   },
   {
     id: 2,
-    gradeType: "Trabalho Prático",
+    gradeType: "Trabalho",
     minValue: 0,
     maxValue: 40,
   },
@@ -23,21 +24,15 @@ const grade_validation = [
   },
 ];
 
-// para converter em toLowerCase()
-// const toLowerCase=(value)=>{
-//   return value.toLowerCase()
-// }
-
 const getAllGrades = async () => {
-  const res = await axios.get(api_url);
-
+  const res = await axios.get(API_URL);
   const grades = res.data.grades.map((grade) => {
-    const { student, type, subject } = grade;
+    const { student, subject, type } = grade;
     return {
       ...grade,
-      studentToLowerCase: student.toLowerCase(),
-      subjectToLowerCase: subject.toLowerCase(),
-      typeToLowerCase: type.toLowerCase(),
+      studentLowerCase: student.toLowerCase(),
+      subjectLowerCase: subject.toLowerCase(),
+      typeLowerCase: type.toLowerCase(),
       isDeleted: false,
     };
   });
@@ -50,9 +45,22 @@ const getAllGrades = async () => {
   grades.forEach((grade) => allSubjects.add(grade.subject));
   allSubjects = Array.from(allSubjects);
 
-  let allTypes = new Set();
-  grades.forEach((grade) => allTypes.add(grade.type));
-  allTypes = Array.from(allTypes);
+  let allGradeTypes = new Set();
+  grades.forEach((grade) => allGradeTypes.add(grade.type));
+  allGradeTypes = Array.from(allGradeTypes);
+
+  const allCombinations = [];
+  allStudents.forEach((student) => {
+    allSubjects.forEach((subject) => {
+      allGradeTypes.forEach((type) => {
+        allCombinations.push({
+          student,
+          subject,
+          type,
+        });
+      });
+    });
+  });
 
   let maxId = -1;
   grades.forEach(({ id }) => {
@@ -60,91 +68,71 @@ const getAllGrades = async () => {
       maxId = id;
     }
   });
+
   let nextId = maxId + 1;
-  const allCombinations = [];
-  allStudents.forEach((student) => {
-    allSubjects.forEach((subject) => {
-      allTypes.forEach((type) => {
-        allCombinations.push({
-          student: student,
-          subject: subject,
-          type: type,
-        });
-      });
-    });
-  });
 
   allCombinations.forEach((combination) => {
     const { student, subject, type } = combination;
-    // console.log(subject);
     // console.log(student);
-    // console.log(type)
+    // console.log(subject);
+    // console.log(type);
 
-    const hasItem = grades.find((item) => {
-      //item.subject = subject &&
+    const hasItem = grades.find((grade) => {
       return (
-        item.subject === subject &&
-        item.student === student &&
-        item.type === type
+        grade.subject === subject &&
+        grade.student === student &&
+        grade.type === type
       );
     });
-
     if (!hasItem) {
       grades.push({
         id: nextId++,
-        student,
-        studentToLowerCase: student.toLowerCase(),
-        subject,
-        subjectToLowerCase: subject.toLowerCase(),
-        type,
-        typeToLowerCase: type.toLowerCase(),
+        studentLowerCase: student.toLowerCase(),
+        subjectLowerCase: subject.toLowerCase(),
+        typeLowerCase: type.toLowerCase(),
         value: 0,
         isDeleted: true,
       });
     }
   });
 
-  grades.sort((a, b) => {
-    a.typeToLowerCase.localeCompare(b.typeToLowerCase);
-    a.studentToLowerCase.localeCompare(b.studentToLowerCase);
-    a.subjectToLowerCase.localeCompare(b.subjectToLowerCase);
-  });
+  grades.sort((a, b) => a.typeLowerCase.localeCompare(b.typeLowerCase));
+  grades.sort((a, b) => a.subjectLowerCase.localeCompare(b.subjectLowerCase));
+  grades.sort((a, b) => a.studentLowerCase.localeCompare(b.studentLowerCase));
 
-  //return allCombinations;
+  // return res;
+  // return grades ;
+  // return allStudents;
+  // return allSubjects;
+  // return allGradeTypes;
+  // return allCombinations;
   return grades;
 };
 
 const insertGrade = async (grade) => {
-  const res = await axios.post(api_url, grade);
+  const res = await axios.post(API_URL, grade);
   return res.data.id;
 };
 
 const updateGrade = async (grade) => {
-  const res = await axios.put(api_url, grade);
-  return res.data.id;
-};
-
-const deleteGrade = async (grade) => {
-  const res = await axios.delete(`${api_url}/${grade.id}`);
+  const res = await axios.put(API_URL, grade);
   return res.data;
 };
 
-const getValidationGradeType = async (gradeType) => {
-  const gradeValidation = grade_validation.find((item) => {
-    return item.gradeType === gradeType;
-  });
-  //ajuda o usuario a validar enquanto tiver
-  //digitando ou inserindo uma nova nota
-  const { minValue, maxValue } = gradeValidation;
+const deleteGrade = async (grade) => {
+  const res = await axios.delete(`${API_URL}/${grade.id}`);
+  return res.data;
+};
+
+const getValidationFromGradeType = ((gradeType) => {
+  const gradeValidation = GRADE_VALIDATION.find(item => item.gradeType === gradeType)
+  
+  const { minValue, maxValue } = gradeValidation
   return {
     minValue,
     maxValue,
-  };
-};
-export {
-  getAllGrades,
-  insertGrade,
-  updateGrade,
-  deleteGrade,
-  getValidationGradeType,
-};
+
+  }
+});
+
+export { getAllGrades };
