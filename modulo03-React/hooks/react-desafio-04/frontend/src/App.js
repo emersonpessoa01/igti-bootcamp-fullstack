@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import css from "./components/spinner.module.css"
 
 import * as api from "./components/api/ApiService";
 import GradesControl from "./components/GradesControl";
@@ -39,7 +40,7 @@ export default function App() {
 
   return (
     <div>
-      <h1 className="center">Controle de notas</h1>
+      <h1 className={css.flexRow} align="center">Controle de notas</h1>
       {allGrades.length > 0 && (
         <GradesControl
           grades={allGrades}
