@@ -3,6 +3,46 @@ import React from "react";
 export default function GradesControl({ grades, onDelete, onPersist }) {
   // return <div>Grades Control</div>;
   // return <div>{JSON.stringify(grades)}</div>;
+  const tableGrades = [];
+
+  let currentStudent = grades[0].student;
+  let currentSubject = grades[0].subject;
+  let currentGrades = [];
+  let id = 1;
+  
+  grades.forEach(grade => {
+    if(grade.subject !== currentSubject){
+      tableGrades.push({
+        id: id++,
+        student: currentStudent,
+        subject: currentSubject,
+        grades: currentGrades,
+
+      })
+
+      currentSubject = grade.subject;
+      currentGrades = [];
+    }
+
+    if(grade.student !== currentStudent){
+      currentStudent = grade.student;
+    }
+
+    currentGrades.push(grade);
+  })
+
+  //apos o loop devemos inserir o
+  //o ultimo elemento
+  tableGrades.push({
+    id: id++,
+    student: currentStudent,
+    subject: currentSubject,
+    grades: currentGrades,
+
+  })
+
+  console.log(tableGrades)
+
   return (
     <div className='container'>
       <table className="striped">
