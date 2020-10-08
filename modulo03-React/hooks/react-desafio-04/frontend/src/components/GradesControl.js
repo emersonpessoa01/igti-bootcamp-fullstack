@@ -45,7 +45,9 @@ export default function GradesControl({ grades, onDelete, onPersist }) {
 
   return (
     <div className='container'>
-      <table className="striped">
+      {tableGrades.map(tableGrade=>{
+      return (
+        <table className="striped" key={tableGrade.id}>
         <thead>
           <tr>
             <th>Aluno</th>
@@ -57,7 +59,7 @@ export default function GradesControl({ grades, onDelete, onPersist }) {
           </tr>
         </thead>
         <tbody>
-          {grades.map(({id, subject, student, type, value, idDeleted}) =>{
+          {tableGrade.grades.map(({id, subject, student, type, value, idDeleted}) =>{
             return (
               <tr key={id}>
               <td>{subject}</td>
@@ -72,6 +74,9 @@ export default function GradesControl({ grades, onDelete, onPersist }) {
         </tbody>
         <tfoot></tfoot>
       </table>
-    </div>
+
+      )
+      })}
+          </div>
   );
 }
