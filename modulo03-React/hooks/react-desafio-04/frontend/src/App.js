@@ -31,20 +31,18 @@ export default function App() {
     getGrades();
   }, []);
 
-  const handleDelete =()=>{
-    console.log("handleDelete")
-  }
+  const handleDelete = () => {
+    console.log("handleDelete");
+  };
 
-  const handlesPersist = ()=>{
-
-  }
-
+  const handlesPersist = () => {};
 
   return (
     // <div style = {css.flexRow}>
-    <div>
       <div className="container">
-        <h1 className={css.flexRow} align = "center">Controle de notas</h1>
+        <h1 className={css.flexRow} align="center">
+          Controle de notas
+        </h1>
         {/* teste - sendo verdadeiro faca o que sta do lado de ca */}
         {allGrades.length > 0 && (
           <GradesControl
@@ -55,7 +53,6 @@ export default function App() {
         )}
         {allGrades.length == 0 && <Spinner />}
       </div>
-    </div>
   );
 }
 
