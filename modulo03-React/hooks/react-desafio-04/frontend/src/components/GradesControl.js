@@ -68,8 +68,8 @@ export default function GradesControl({ grades, onDelete, onPersist }) {
                   ({ id, subject, student, type, value, isDeleted }) => {
                     return (
                       <tr key={id}>
-                        <td>{subject}</td>
                         <td>{student}</td>
+                        <td>{subject}</td>
                         <td>{type}</td>
                         <td>{isDeleted ? "-" : value}</td>
                         <td >
