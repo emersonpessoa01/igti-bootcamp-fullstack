@@ -72,13 +72,17 @@ export default function GradesControl({ grades, onDelete, onPersist }) {
                         <td>{student}</td>
                         <td>{type}</td>
                         <td>{isDeleted ? "-" : value}</td>
-                        <td>
+                        <td >
                           <div>
+                            <span>
                             <Actions
                               onActionClick={handleActionClick}
                               id={id}
                               type={isDeleted ? "add" : "edit"}
                             />
+                            </span>
+                            
+                            <span>
                             {!isDeleted && (
                               <Actions
                                 onActionClick={handleActionClick}
@@ -86,6 +90,8 @@ export default function GradesControl({ grades, onDelete, onPersist }) {
                                 type="delete"
                               />
                             )}
+                            </span>
+                            
                           </div>
                         </td>
                       </tr>
@@ -101,3 +107,4 @@ export default function GradesControl({ grades, onDelete, onPersist }) {
     </div>
   );
 }
+
