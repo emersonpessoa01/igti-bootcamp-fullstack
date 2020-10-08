@@ -1,4 +1,5 @@
 import React from "react";
+import Actions from "./Actions";
 
 export default function GradesControl({ grades, onDelete, onPersist }) {
   // return <div>Grades Control</div>;
@@ -9,27 +10,26 @@ export default function GradesControl({ grades, onDelete, onPersist }) {
   let currentSubject = grades[0].subject;
   let currentGrades = [];
   let id = 1;
-  
-  grades.forEach(grade => {
-    if(grade.subject !== currentSubject){
+
+  grades.forEach((grade) => {
+    if (grade.subject !== currentSubject) {
       tableGrades.push({
         id: id++,
         student: currentStudent,
         subject: currentSubject,
         grades: currentGrades,
-
-      })
+      });
 
       currentSubject = grade.subject;
       currentGrades = [];
     }
 
-    if(grade.student !== currentStudent){
+    if (grade.student !== currentStudent) {
       currentStudent = grade.student;
     }
 
     currentGrades.push(grade);
-  })
+  });
 
   //apos o loop devemos inserir o
   //o ultimo elemento
@@ -38,45 +38,49 @@ export default function GradesControl({ grades, onDelete, onPersist }) {
     student: currentStudent,
     subject: currentSubject,
     grades: currentGrades,
+  });
 
-  })
-
-  console.log(tableGrades)
+  console.log(tableGrades);
 
   return (
-    <div className='container'>
-      {tableGrades.map(({id, grades})=>{
-      return (
-        <table className="striped" key={id}>
-        <thead>
-          <tr>
-            <th>Aluno</th>
-            <th>Disciplina</th>
-            <th>Avaliação</th>
-            <th>Notas</th>
-            <th>&nbsp;</th>
-            <th>&nbsp;</th>
-          </tr>
-        </thead>
-        <tbody>
-          {grades.map(({id, subject, student, type, value, idDeleted}) =>{
-            return (
-              <tr key={id}>
-              <td>{subject}</td>
-              <td>{student}</td>
-              <td>{type}</td>
-              <td>{value}</td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
-            </tr>
-            )
-          })}
-        </tbody>
-        <tfoot></tfoot>
-      </table>
+    <div className="container">
+      {tableGrades.map(({ id, grades }) => {
+        return (
+          <table className="striped" key={id}>
+            <thead>
+              <tr>
+                <th style={{ width: "20%" }}>Aluno</th>
+                <th style={{ width: "20%" }}>Disciplina</th>
+                <th style={{ width: "20%" }}>Avaliação</th>
+                <th style={{ width: "20%" }}>Notas</th>
+                <th style={{ width: "20%" }}>Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              {grades.map(
+                ({ id, subject, student, type, value, isDeleted }) => {
+                  return (
+                    <tr key={id}>
+                      <td>{subject}</td>
+                      <td>{student}</td>
+                      <td>{type}</td>
+                      <td>{isDeleted ? "-" : value}</td>
+                      <td>
+                        <div>
+                        <Actions type={isDeleted ? "add" : "edit"} />
+                        <Actions type="delete" />
 
-      )
+                        </div>
+                      </td>
+                    </tr>
+                  );
+                }
+              )}
+            </tbody>
+            <tfoot></tfoot>
+          </table>
+        );
       })}
-          </div>
+    </div>
   );
 }
