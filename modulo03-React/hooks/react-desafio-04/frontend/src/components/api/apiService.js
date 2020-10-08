@@ -133,6 +133,6 @@ const getValidationFromGradeType = ((gradeType) => {
     maxValue,
 
   }
-});
+}); 
 
-export { getAllGrades };
+export { getAllGrades, insertGrade, updateGrade, deleteGrade, getValidationFromGradeType };
