@@ -67,15 +67,23 @@ router.put("/", async (req, res) => {
     json.grades[oldIndex] = newGrade; //acrescenta em todos mediante o id
     // json.accounts[oldIndex].name = newAccount.name;
     //acrescenta somente na propriedade name
-      
+
+    // if(oldIndex === -1){
+    //   throw new Error('ID inexistente')
+    // }
+
     // if(newGrade.student){
     //   json.grades[oldIndex].student = newGrade.student; 
     // }
-      
+
+    // console.log(newGrade.student)
+    // console.log(oldIndex)
+    
+
     await writeFile(global.fileName, JSON.stringify(json));
     // res.send("Atualização confirmada");
     res.send(json.grades[oldIndex]);
-    // logger.info(`PUT /grade/ - ${JSON.stringify(newGrade)}`);
+    logger.info(`PUT /grade/ - ${JSON.stringify(newGrade)}`);
 
     // res.end();
   } catch (err) {
@@ -86,5 +94,6 @@ router.put("/", async (req, res) => {
 
   }
 });
+
 
 export default router;
