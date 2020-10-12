@@ -60,9 +60,7 @@ router.put("/", async (req, res) => {
     let data = await readFile(global.fileName, "utf8");
 
     let json = JSON.parse(data);
-    let oldIndex = json.grades.findIndex(
-      (grade) => grade.id === newGrade.id
-    );
+    let oldIndex = json.grades.findIndex((grade) => grade.id === newGrade.id);
     // res.send(oldIndex);
     json.grades[oldIndex] = newGrade; //acrescenta em todos mediante o id
     // json.accounts[oldIndex].name = newAccount.name;
@@ -73,14 +71,12 @@ router.put("/", async (req, res) => {
     // }
 
     // if(newGrade.student){
-    //   json.grades[oldIndex].student = newGrade.student; 
+    //   json.grades[oldIndex].student = newGrade.student;
     // }
 
     // console.log(newGrade.student)
     // console.log(oldIndex)
-    
 
-    await writeFile(global.fileName, JSON.stringify(json));
     // res.send("Atualização confirmada");
     res.send(json.grades[oldIndex]);
     logger.info(`PUT /grade/ - ${JSON.stringify(newGrade)}`);
@@ -91,9 +87,69 @@ router.put("/", async (req, res) => {
       error: err.message,
     });
     logger.info(`PUT /grade/ - ${err.message}`);
-
   }
 });
 
+router.get("/", async (_, res) => {
+  try {
+    let data = await readFile(global.fileName, "utf8");
+    let json = JSON.parse(data);
+    delete json.nextId;
+
+    res.send(json);
+    logger.info("GET / grade");
+  } catch (err) {
+    send.status(400).send({
+      message: err.message,
+    });
+    logger.error(`GET /grade/ - ${err.message}`);
+  }
+});
+
+router.get("/:id", async (req, res) => {
+  try {
+    let json = JSON.parse(await readFile(global.fileName, "utf8"));
+
+    delete json.nextId;
+    let grade = json.grades.find(
+      (grade) => grade.id === parseInt(req.params.id)
+    );
+    if (grade) {
+      res.send(grade);
+      logger.info(`GET /grade/:id - ${JSON.stringify(grade)}`);
+    } else {
+      res.send("ID não encontrada");
+      // throw new Error("ID inexistente")
+    }
+  } catch (err) {
+    res.send(400).send({
+      error: err.message,
+    });
+    logger.info(`GET /grade/ - ${err.message}`);
+  }
+});
+
+router.post("/totalStudentAndSubject", async (req, res) => {
+  try{
+    let params = req.body;
+  let json = JSON.parse(await readFile(global.fileName, "utf8"));
+  
+  const grades = json.grades.filter(
+    (grade) =>
+      grade.student === params.student && grade.subject === params.subject
+  );
+  
+  let total = grades.reduce((acc, curr)=> acc + curr.value, 0); 
+
+  // res.send(grades);
+  res.send({total});//retorna json
+  logger.info(`POST/grade/totalStudentAndSubject - ${JSON.stringify(`total: ${total}`)}`)
+  }catch(err){
+    res.status(400).send({
+      error: err.message,
+    })
+    logger.info(`POST/grade/totalStudentAndSubject - ${err.message}`)
+  }
+});
 
 export default router;
