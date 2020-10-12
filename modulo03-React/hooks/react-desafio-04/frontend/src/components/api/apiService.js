@@ -1,4 +1,3 @@
-//utilização dos axios
 import axios from "axios";
 
 const API_URL = "http://localhost:3001/grade/";
@@ -6,13 +5,13 @@ const API_URL = "http://localhost:3001/grade/";
 const GRADE_VALIDATION = [
   {
     id: 1,
-    gradeType: "'Exercícios'",
+    gradeType: "Exercícios",
     minValue: 0,
     maxValue: 10,
   },
   {
     id: 2,
-    gradeType: "Trabalho",
+    gradeType: "Trabalho Prático",
     minValue: 0,
     maxValue: 40,
   },
@@ -26,8 +25,10 @@ const GRADE_VALIDATION = [
 
 const getAllGrades = async () => {
   const res = await axios.get(API_URL);
+
   const grades = res.data.grades.map((grade) => {
     const { student, subject, type } = grade;
+
     return {
       ...grade,
       studentLowerCase: student.toLowerCase(),
@@ -49,6 +50,14 @@ const getAllGrades = async () => {
   grades.forEach((grade) => allGradeTypes.add(grade.type));
   allGradeTypes = Array.from(allGradeTypes);
 
+  let maxId = -1;
+  grades.forEach(({ id }) => {
+    if (id > maxId) {
+      maxId = id;
+    }
+  });
+  let nextId = maxId + 1;
+
   const allCombinations = [];
   allStudents.forEach((student) => {
     allSubjects.forEach((subject) => {
@@ -62,21 +71,7 @@ const getAllGrades = async () => {
     });
   });
 
-  let maxId = -1;
-  grades.forEach(({ id }) => {
-    if (id > maxId) {
-      maxId = id;
-    }
-  });
-
-  let nextId = maxId + 1;
-
-  allCombinations.forEach((combination) => {
-    const { student, subject, type } = combination;
-    // console.log(student);
-    // console.log(subject);
-    // console.log(type);
-
+  allCombinations.forEach(({ student, subject, type }) => {
     const hasItem = grades.find((grade) => {
       return (
         grade.subject === subject &&
@@ -84,11 +79,15 @@ const getAllGrades = async () => {
         grade.type === type
       );
     });
+
     if (!hasItem) {
       grades.push({
         id: nextId++,
+        student,
         studentLowerCase: student.toLowerCase(),
-        subjectLowerCase: subject.toLowerCase(),
+        subject,
+        subjectLowerCase: student.toLowerCase(),
+        type,
         typeLowerCase: type.toLowerCase(),
         value: 0,
         isDeleted: true,
@@ -98,14 +97,8 @@ const getAllGrades = async () => {
 
   grades.sort((a, b) => a.typeLowerCase.localeCompare(b.typeLowerCase));
   grades.sort((a, b) => a.subjectLowerCase.localeCompare(b.subjectLowerCase));
-  grades.sort((a, b) => a.studentLowerCase.localeCompare(b.studentLowerCase));
+  grades.sort((a, b) => a.student.localeCompare(b.student));
 
-  // return res;
-  // return grades ;
-  // return allStudents;
-  // return allSubjects;
-  // return allGradeTypes;
-  // return allCombinations;
   return grades;
 };
 
@@ -125,14 +118,21 @@ const deleteGrade = async (grade) => {
 };
 
 const getValidationFromGradeType = ((gradeType) => {
-  const gradeValidation = GRADE_VALIDATION.find(item => item.gradeType === gradeType)
-  
-  const { minValue, maxValue } = gradeValidation
+  const gradeValidation = GRADE_VALIDATION.find(
+    (item) => item.gradeType === gradeType
+  );
+
+  const { minValue, maxValue } = gradeValidation;
   return {
     minValue,
     maxValue,
+  };
+});
 
-  }
-}); 
-
-export { getAllGrades, insertGrade, updateGrade, deleteGrade, getValidationFromGradeType };
+export {
+  getAllGrades,
+  insertGrade,
+  updateGrade,
+  deleteGrade,
+  getValidationFromGradeType,
+};
