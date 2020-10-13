@@ -6,6 +6,7 @@ import * as api from "./api/ApiService";
 Modal.setAppElement("#root");
 
 export default function ModalGrade({ onSave, onClose, selectedGrade }) {
+  const {student, subject, type}= selectedGrade;
 
   const [gradeValue, setGradeValue] = useState(selectedGrade.value);
   const [gradeValidation, setGradeValidation] = useState({});
@@ -41,9 +42,43 @@ export default function ModalGrade({ onSave, onClose, selectedGrade }) {
     }
   }
 
+  const handleFormSubmit=(evt)=>{}
+
+  const handlGradeChange=(evt)=>{}
+
   return (
     <div>
-      <Modal isOpen={true} />
+      <Modal isOpen={true}>
+        <form onSubmit={handleFormSubmit}></form>
+
+        <div className="input-field">
+          <input id="inputName" type="text" value={student} readOnly />
+          <label className="active" htmlFor="inputName">
+            Nome do aluno:
+          </label>
+        </div>
+
+        <div className="input-field">
+          <input id="inputSubject" type="text" value={subject} readOnly />
+          <label className="active" htmlFor="inputSubject">
+            Disciplina:
+          </label>
+        </div>
+
+        <div className="input-field">
+          <input id="inputType" type="text" value={type} readOnly />
+          <label className="active" htmlFor="inputType">
+            Tipo de avaliação:
+          </label>
+        </div>
+
+        <div className="input-field">
+          <input id="inputGrade" type="number" min={gradeValidation.minValue} max={gradeValidation.maxValue} step="1" autoFocus
+          value={gradeValue} onChange={handlGradeChange} />
+
+          <label className="active" htmlFor="inputGrade">Nota</label>
+        </div>
+      </Modal>
     </div>
   );
 }

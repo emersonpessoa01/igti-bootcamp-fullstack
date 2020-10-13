@@ -53,6 +53,7 @@ export default function App() {
   };
 
   const handlePersistData = () => {};
+  
   const handleClose = () => {
     setIsModalOpen(false);
   };
