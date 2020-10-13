@@ -49,6 +49,8 @@ export default function GradesControl({ grades, onDelete, onPersist }) {
     if(type === "delete"){
       onDelete(grade)
     }
+
+    onPersist(grade)
   };
 
   return (

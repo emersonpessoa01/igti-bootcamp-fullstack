@@ -4,12 +4,12 @@
  * e flexível que o comando fetch. Uso
  * bastante para POST, PUT e DELETE
  */
-import axios from 'axios';
+import axios from "axios";
 
 /**
  * Link da API
  */
-const API_URL = 'http://localhost:3001/grade/';
+const API_URL = "http://localhost:3001/grade/";
 
 /**
  * Array com regras para
@@ -18,19 +18,19 @@ const API_URL = 'http://localhost:3001/grade/';
 const GRADE_VALIDATION = [
   {
     id: 1,
-    gradeType: 'Exercícios',
+    gradeType: "Exercícios",
     minValue: 0,
     maxValue: 10,
   },
   {
     id: 2,
-    gradeType: 'Trabalho Prático',
+    gradeType: "Trabalho Prático",
     minValue: 0,
     maxValue: 40,
   },
   {
     id: 3,
-    gradeType: 'Desafio',
+    gradeType: "Desafio",
     minValue: 0,
     maxValue: 50,
   },
@@ -168,31 +168,31 @@ async function getAllGrades() {
 /**
  * Inserção no back end
  */
-async function insertGrade(grade) {
-  const response = await axios.post(API_URL, grade);
-  return response.data.id;
-}
+const insertGrade = async (grade) => {
+  const res = await axios.post(API_URL, grade);
+  return res.data.id;
+};
 
 /**
  * Atualização no back end
  */
-async function updateGrade(grade) {
-  const response = await axios.put(API_URL, grade);
-  return response.data;
-}
+const updateGrade = async (grade) => {
+  const res = await axios.put(API_URL, grade);
+  return res.data;
+};
 
 /**
  * Exclusão no back end
  */
-async function deleteGrade(grade) {
-  const response = await axios.delete(`${API_URL}/${grade.id}`);
-  return response.data;
-}
+const deleteGrade = async (grade) => {
+  const res = await axios.delete(`${API_URL}/${grade.id}`);
+  return res.data;
+};
 
 /**
  * Obtendo validação a partir do tipo
  */
-async function getValidationFromGradeType(gradeType) {
+const getValidationFromGradeType = (gradeType) => {
   const gradeValidation = GRADE_VALIDATION.find(
     (item) => item.gradeType === gradeType
   );
@@ -203,7 +203,7 @@ async function getValidationFromGradeType(gradeType) {
     minValue,
     maxValue,
   };
-}
+};
 
 /**
  * Tornando todas as funções
