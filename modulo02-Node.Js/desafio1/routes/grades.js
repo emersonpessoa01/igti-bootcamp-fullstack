@@ -130,25 +130,121 @@ router.get("/:id", async (req, res) => {
 });
 
 router.post("/totalStudentAndSubject", async (req, res) => {
-  try{
+  try {
     let params = req.body;
-  let json = JSON.parse(await readFile(global.fileName, "utf8"));
-  
-  const grades = json.grades.filter(
-    (grade) =>
-      grade.student === params.student && grade.subject === params.subject
-  );
-  
-  let total = grades.reduce((acc, curr)=> acc + curr.value, 0); 
+    let json = JSON.parse(await readFile(global.fileName, "utf8"));
 
-  // res.send(grades);
-  res.send({total});//retorna json
-  logger.info(`POST/grade/totalStudentAndSubject - ${JSON.stringify(`total: ${total}`)}`)
-  }catch(err){
+    const grades = json.grades.filter(
+      (grade) =>
+        grade.student === params.student && grade.subject === params.subject
+    );
+
+    let total = grades.reduce((acc, curr) => acc + curr.value, 0);
+
+    // res.send(grades);
+    res.send({ total }); //retorna json
+    logger.info(
+      `POST/grade/totalStudentAndSubject - ${JSON.stringify(`total: ${total}`)}`
+    );
+  } catch (err) {
     res.status(400).send({
       error: err.message,
+    });
+    logger.info(`POST/grade/totalStudentAndSubject - ${err.message}`);
+  }
+});
+
+router.post("/best", async (req, res) => {
+  try {
+    let json = JSON.parse(await readFile(global.fileName, "utf8"));
+    
+    let grades = json.grades.filter(
+      (grade) =>
+        grade.subject === req.body.subject && grade.type === req.body.type
+    );
+
+    if (!grades.length) {
+      throw new Error(
+        "Não foram encontrados registros para os parâmetros informados"
+      );
+    }
+
+    // grades.sort((a, b) => a.value.localeCompare(b.value));
+
+    
+    grades.sort((a,b)=>{
+    if(a.value < b.value) return 1;
+    if(a.value > b.value) return -1;
+    else return 0;
     })
-    logger.info(`POST/grade/totalStudentAndSubject - ${err.message}`)
+
+    //pegar as três primeira melhores notas
+    let threeBest= grades.slice(0,3);
+
+    // res.send(grades);
+    res.send(threeBest);
+
+  } catch (err) {
+    res.status(400).send({
+      error: err.message,
+    });
+    logger.info(`POST/bestGrade - ${err.message}`);
+  }
+});
+
+router.get("/average/:subject/:type", async (req, res) => {
+  // console.log(req.params.subject);
+  // console.log(req.params.type);
+
+  try {
+    const json = JSON.parse(await readFile(global.fileName, "utf8"));
+    const grades = json.grades.filter(
+      (grade) =>
+        grade.subject === req.params.subject && grade.type === req.params.type
+    );
+
+    if (!grades.length) {
+      throw new Error(
+        "Não foram encontrados parâmetros dos registros informados"
+      );
+    }
+
+    const total = grades.reduce((acc, curr) => acc + curr.value, 0);
+
+    const average = total / grades.length;
+
+    // res.send({ total });
+    // res.send({ average });
+    res.send({ grades });
+
+    logger.info(`GET/average/subject - ${JSON.stringify(`Média: ${average}`)}`);
+  } catch (err) {
+    res.status(400).send({
+      error: err.message,
+    });
+    logger.info(`POST/grade/totalStudentAndSubject - ${err.message}`);
+  }
+});
+
+router.delete("/:id", async (req, res) => {
+  try {
+    let json = JSON.parse(await readFile(global.fileName, "utf8"));
+
+    delete json.nextId;
+    let grade = json.grades.filter(
+      (grade) => grade.id !== parseInt(req.params.id, 10)
+    );
+    json.grades = grade;
+
+    await writeFile(global.fileName, JSON.stringify(json));
+
+    res.send("Exclusão confirmada");
+    logger.info(`DELETE /grade/:id - ${JSON.stringify(req.params.id)}`);
+  } catch (err) {
+    res.status(400).send({
+      error: err.message,
+    });
+    logger.info(`DELETE /grade/ - ${err.message}`);
   }
 });
 
