@@ -2,23 +2,28 @@ import React, { useEffect, useState } from "react";
 import Modal from "react-modal";
 import * as api from "./api/ApiService";
 
-
 Modal.setAppElement("#root");
 
 export default function ModalGrade({ onSave, onClose, selectedGrade }) {
-  const {student, subject, type}= selectedGrade;
+  const { student, subject, type } = selectedGrade;
 
   const [gradeValue, setGradeValue] = useState(selectedGrade.value);
   const [gradeValidation, setGradeValidation] = useState({});
   const [errorMessage, setErrorMessage] = useState("");
 
   useEffect(() => {
-    const validation = api.getValidationFromGradeType(selectedGrade.type)
-    setGradeValidation(validation);
+    const getValidation = async () => {
+      const validation = await api.getValidationFromGradeType(
+        selectedGrade.type
+      );
+      setGradeValidation(validation);
+    };
+
+    getValidation();
   }, [selectedGrade.type]);
 
   useEffect(() => {
-    const {minValue, maxValue} = gradeValidation;
+    const { minValue, maxValue } = gradeValidation;
     if (gradeValue < minValue || gradeValue > maxValue) {
       setErrorMessage(
         `o valor da nota deve ser entre ${minValue} e ${maxValue}(inclusive)`
@@ -30,25 +35,42 @@ export default function ModalGrade({ onSave, onClose, selectedGrade }) {
   }, [gradeValue, gradeValidation]);
 
   useEffect(() => {
-    document.addEventListener('keydown',handleKeyDown);
+    document.addEventListener("keydown", handleKeyDown);
     return () => {
-      document.removeEventListener('keydown',handleKeyDown);
-    }
-  })
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  });
 
-  const handleKeyDown =(evt)=>{
-    if(evt.key === "Escape"){
+  const handleKeyDown = (evt) => {
+    if (evt.key === "Escape") {
       onClose(null);
     }
-  }
+  };
 
-  const handleFormSubmit=(evt)=>{}
+  const handleFormSubmit = (evt) => {};
+  const handleClose = () => {
+    onClose(null);
+  };
 
-  const handlGradeChange=(evt)=>{}
+  const handleGradeChange = (evt) => {
+    // console.log(evt.target.value)
+    //  console.log(gradeValidation);
+    setGradeValue(+evt.target.value);
+  };
 
   return (
     <div>
       <Modal isOpen={true}>
+        <div style={styles.flexRow}>
+          <span style={styles.title}>Manutenção de notas</span>&nbsp;&nbsp;
+          <button
+            className="waves-effect waves-light btn-small red dark-4"
+            onClick={handleClose}
+          >
+            x
+          </button>
+        </div>
+
         <form onSubmit={handleFormSubmit}></form>
 
         <div className="input-field">
@@ -73,12 +95,51 @@ export default function ModalGrade({ onSave, onClose, selectedGrade }) {
         </div>
 
         <div className="input-field">
-          <input id="inputGrade" type="number" min={gradeValidation.minValue} max={gradeValidation.maxValue} step="1" autoFocus
-          value={gradeValue} onChange={handlGradeChange} />
+          <input
+            id="inputGrade"
+            type="number"
+            min={gradeValidation.minValue}
+            max={gradeValidation.maxValue}
+            step="1"
+            autoFocus
+            value={gradeValue}
+            onChange={handleGradeChange}
+          />
 
-          <label className="active" htmlFor="inputGrade">Nota</label>
+          <label className="active" htmlFor="inputGrade">
+            Nota
+          </label>
+        </div>
+
+        <div style={styles.flexRow}>
+          <button
+            className="waves-effect waves-ligth btn small"
+            disabled={errorMessage.trim() !== ""}
+          >
+            Salvar
+          </button>
+          <span style={styles.errorMessage}>{errorMessage}</span>
         </div>
       </Modal>
     </div>
   );
 }
+
+const styles = {
+  flexRow: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    marginBottom: "40px",
+  },
+
+  title: {
+    fontSize: "1.3rem",
+    fontWeight: "bold",
+  },
+  errorMessage:{
+    color: "red",
+    fontWeight: "bold",
+  }
+};

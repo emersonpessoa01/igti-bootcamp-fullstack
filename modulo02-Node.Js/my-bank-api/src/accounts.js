@@ -136,8 +136,9 @@ router.put("/", async (req, res) => {
       (account) => account.id === newAccount.id
     );
     // res.send(oldIndex);
-    json.accounts[oldIndex] = newAccount; //acrescenta em todos mediante o id
-    // json.accounts[oldIndex].name = newAccount.name;
+    // json.accounts[oldIndex] = newAccount; //acrescenta em todos mediante o id
+    json.accounts[oldIndex].name = newAccount.name;
+    json.accounts[oldIndex] = newAccount;
     //acrescenta somente na propriedade name
 
     await writeFile(global.fileName, JSON.stringify(json));

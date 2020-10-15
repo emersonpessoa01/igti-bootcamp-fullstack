@@ -339,3 +339,65 @@ undefined [my-bank-api] info: API started! DEV
 06/10/2020 17:53:30 [my-bank-api] info: API started! DEV
 06/10/2020 17:53:40 [my-bank-api] info: API started! DEV
 06/10/2020 17:53:47 [my-bank-api] info: API started! DEV
+14/10/2020 15:39:57 [my-bank-api] info: API started! DEV
+14/10/2020 15:39:57 [my-bank-api] info: GET /account
+14/10/2020 15:39:57 [my-bank-api] info: GET /account/:id - {"id":7,"name":"Fernando Pessoa","balance":700,"timestamp":"06/10/2020 17:06:46"}
+14/10/2020 15:39:57 [my-bank-api] info: PUT /account/ - {"id":8,"name":"Fernando Pessoa","balance":700,"timestamp":"06/10/2020 17:06:46"}
+14/10/2020 15:39:57 [my-bank-api] info: PUT /account/ - {"id":8,"name":"Fernando Pessoa da Silva","balance":700,"timestamp":"06/10/2020 17:06:46"}
+14/10/2020 15:39:57 [my-bank-api] info: PUT /account/ - {"id":8,"name":"Fernando Pessoa da Silva","balance":700,"timestamp":"06/10/2020 17:06:46"}
+14/10/2020 15:47:59 [my-bank-api] info: API started! DEV
+14/10/2020 15:48:07 [my-bank-api] info: API started! DEV
+14/10/2020 15:48:17 [my-bank-api] info: API started! DEV
+14/10/2020 15:48:17 [my-bank-api] info: PUT /account/ - {"id":8,"name":"Fernando Pessoa da Silva","balance":700,"timestamp":"06/10/2020 17:06:46"}
+14/10/2020 15:48:17 [my-bank-api] info: POST /account - {"id":8,"name":"Fernando Pessoa da Silva","balance":800,"timestamp":"14/10/2020 15:48:17"}
+14/10/2020 15:50:51 [my-bank-api] info: API started! DEV
+14/10/2020 15:51:16 [my-bank-api] info: API started! DEV
+14/10/2020 15:51:19 [my-bank-api] info: API started! DEV
+14/10/2020 15:51:19 [my-bank-api] info: PUT /account/ - {"id":8,"name":"Fernando Antônio Pessoa da Silva","balance":700,"timestamp":"06/10/2020 17:06:46"}
+14/10/2020 15:52:16 [my-bank-api] info: API started! DEV
+14/10/2020 15:52:20 [my-bank-api] info: API started! DEV
+14/10/2020 15:52:25 [my-bank-api] info: API started! DEV
+14/10/2020 15:54:25 [my-bank-api] info: API started! DEV
+14/10/2020 15:54:37 [my-bank-api] info: API started! DEV
+14/10/2020 15:54:41 [my-bank-api] info: API started! DEV
+14/10/2020 15:54:42 [my-bank-api] info: API started! DEV
+14/10/2020 15:55:34 [my-bank-api] info: API started! DEV
+14/10/2020 15:55:37 [my-bank-api] info: API started! DEV
+14/10/2020 15:55:41 [my-bank-api] info: API started! DEV
+14/10/2020 15:56:16 [my-bank-api] info: API started! DEV
+14/10/2020 15:56:32 [my-bank-api] info: API started! DEV
+14/10/2020 15:56:34 [my-bank-api] info: API started! DEV
+14/10/2020 15:56:38 [my-bank-api] info: API started! DEV
+14/10/2020 15:56:44 [my-bank-api] info: API started! DEV
+14/10/2020 15:56:48 [my-bank-api] info: API started! DEV
+14/10/2020 15:56:49 [my-bank-api] info: API started! DEV
+14/10/2020 15:56:55 [my-bank-api] info: API started! DEV
+14/10/2020 15:56:56 [my-bank-api] info: API started! DEV
+14/10/2020 15:57:18 [my-bank-api] info: API started! DEV
+14/10/2020 15:57:19 [my-bank-api] info: API started! DEV
+14/10/2020 15:57:50 [my-bank-api] info: API started! DEV
+14/10/2020 15:58:09 [my-bank-api] info: API started! DEV
+14/10/2020 15:58:09 [my-bank-api] info: GET /account
+14/10/2020 15:58:09 [my-bank-api] info: PUT /account/ - Cannot access 'json' before initialization
+14/10/2020 16:00:05 [my-bank-api] info: API started! DEV
+14/10/2020 16:00:05 [my-bank-api] info: PUT /account/ - Cannot access 'json' before initialization
+14/10/2020 16:00:43 [my-bank-api] info: API started! DEV
+14/10/2020 16:00:46 [my-bank-api] info: API started! DEV
+14/10/2020 16:00:46 [my-bank-api] info: PUT /account/ - Cannot access 'json' before initialization
+14/10/2020 16:00:46 [my-bank-api] info: PUT /account/ - Cannot access 'json' before initialization
+14/10/2020 16:00:46 [my-bank-api] info: PUT /account/ - Cannot access 'json' before initialization
+14/10/2020 16:02:26 [my-bank-api] info: API started! DEV
+14/10/2020 16:02:34 [my-bank-api] info: API started! DEV
+14/10/2020 16:02:37 [my-bank-api] info: API started! DEV
+14/10/2020 16:02:37 [my-bank-api] info: PUT /account/ - Cannot access 'json' before initialization
+14/10/2020 16:02:37 [my-bank-api] info: PUT /account/ - Cannot set property 'name' of undefined
+14/10/2020 16:03:23 [my-bank-api] info: API started! DEV
+14/10/2020 16:03:23 [my-bank-api] info: GET /account
+14/10/2020 16:03:23 [my-bank-api] info: PUT /account/ - {"id":8,"name":"Fernando Antônio Pessoa da Silva","balance":850,"timestamp":"06/10/2020 17:06:46"}
+14/10/2020 16:06:02 [my-bank-api] info: API started! DEV
+14/10/2020 16:06:06 [my-bank-api] info: API started! DEV
+14/10/2020 16:06:06 [my-bank-api] info: GET /account
+14/10/2020 16:06:06 [my-bank-api] info: PUT /account/ - {"id":8,"name":"Fernando Antônio Pessoa da Silva","balance":850,"timestamp":"06/10/2020 17:06:46"}
+14/10/2020 16:06:06 [my-bank-api] info: PUT /account/ - {"id":8,"name":"Fernando Antônio Pessoa da Silva","balance":900,"timestamp":"06/10/2020 17:06:46"}
+14/10/2020 16:06:06 [my-bank-api] info: PUT /account/ - Cannot set property 'name' of undefined
+14/10/2020 16:06:06 [my-bank-api] info: PUT /account/ - {"id":8,"name":"Fernando Antônio Pessoa da Silva ok","balance":900,"timestamp":"06/10/2020 17:06:46"}
