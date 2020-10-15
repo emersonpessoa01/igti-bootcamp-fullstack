@@ -70,7 +70,7 @@ export default function GradesControl({ grades, onDelete, onPersist }) {
         const gradeStyle =
           finalGrades >= 70 ? styles.goodGrade : styles.badGrade;
         return (
-          <table styles={styles.table} className="striped center" key={id}>
+          <table styles={styles.table} className="responsive-table center" key={id}>
             <thead className={css.notes}>
               <tr>
                 <th style={{ width: "20%" }}>Aluno</th>
