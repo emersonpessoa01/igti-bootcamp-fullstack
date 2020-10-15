@@ -1,31 +1,19 @@
-import React from 'react';
-import css from "./spinner.module.css"
+import React from "react";
+import css from "./spinner.module.css";
 
 /**
  * Componente para exibir um spinner
  * em tela. Útil para indicar ao usuário
  * que algo está sendo processado
  */
-export default function Spinner({ description = 'Aguarde...' }) {
+export default function Spinner({ description = "Aguarde..." }) {
   return (
-    <div className={css.spinner}>
-      <div className="preloader-wrapper small active">
-        <div className="spinner-layer spinner-blue-only">
-          <div className="circle-clipper left">
-            <div className="circle"></div>
-          </div>
-          <div className="gap-patch">
-            <div className="circle"></div>
-          </div>
-          <div className="circle-clipper right">
-            <div className="circle"></div>
-          </div>
+    <div className="container">
+      <div className={css.spinner}>
+        <div class="progress">
+          <div class="indeterminate"></div>
         </div>
       </div>
-
-      <span style={{ marginLeft: '10px', fontSize: '1.2rem' }}>
-        {description}
-      </span>
     </div>
   );
 }
@@ -41,6 +29,8 @@ export default function Spinner({ description = 'Aguarde...' }) {
 //   },
 // };
 
-{/* <span style={{ marginLeft: '10px', fontSize: '1.2rem' }}>
+{
+  /* <span style={{ marginLeft: '10px', fontSize: '1.2rem' }}>
         {description}
-      </span> */}
+      </span> */
+}
