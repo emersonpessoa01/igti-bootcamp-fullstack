@@ -45,12 +45,22 @@ export default function GradesControl({ grades, onDelete, onPersist }) {
   console.log(tableGrades);
 
   const handleActionClick = (id, type) => {
-    const grade = grades.find(grade => grade.id === id);
-    if(type === "delete"){
-      onDelete(grade)
-    }
+    const grade = grades.find((grade) => grade.id === id);
 
-    onPersist(grade)
+    //menos comun no mercado
+    // if (type === "delete") {
+    //   onDelete(grade);
+    //   //return;
+    // } else {
+    //   onPersist(grade);
+    // }
+    
+    if (type === "delete") {
+      onDelete(grade);
+      return;
+    }
+      onPersist(grade);
+
   };
 
   return (
@@ -105,9 +115,9 @@ export default function GradesControl({ grades, onDelete, onPersist }) {
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
-                <td style={{textAlign:"right"}}>Total:</td>
+                <td style={{ textAlign: "right" }}><strong>Total:</strong></td>
                 <td>
-                  <span style={gradeStyle}>{finalGrades}</span>
+                  <div style={gradeStyle}>{finalGrades}</div>
                 </td>
               </tr>
             </tfoot>
@@ -120,15 +130,42 @@ export default function GradesControl({ grades, onDelete, onPersist }) {
 
 const styles = {
   goodGrade: {
-    fontWeight: "bold",
-    color: "green",
+    // fontWeight: "bold",
+    // color: "green",
+    background:"#006600",
+      color:"#fff",
+      width:"30px",
+      height:"30px",
+      
+      lineHeight:"30px",
+      verticalAlign:"middle",
+      textAlign:"center",
+      fontSize:"20px",
+
+      borderRadius:"50%",
+      mozBorderRadius:"50%",
+      webkitBorderRadius:"50%",
   },
   badGrade: {
-    fontWeight: "bold",
-    color: "red",
+    // fontWeight: "bold",
+    // color: "red",
+      background:"#fa0c01",
+      color:"#fff",
+      width:"30px",
+      height:"30px",
+      
+      lineHeight:"30px",
+      verticalAlign:"middle",
+      textAlign:"center",
+      fontSize:"20px",
+
+      borderRadius:"50%",
+      mozBorderRadius:"50%",
+      webkitBorderRadius:"50%",
+      
   },
   table: {
-    margin: "20px", 
+    margin: "20px",
     padding: "10px",
   },
 };

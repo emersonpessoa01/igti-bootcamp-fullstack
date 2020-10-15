@@ -5,7 +5,7 @@ import * as api from "./api/ApiService";
 Modal.setAppElement("#root");
 
 export default function ModalGrade({ onSave, onClose, selectedGrade }) {
-  const { student, subject, type } = selectedGrade;
+  const { student,id, subject, type } = selectedGrade;
 
   const [gradeValue, setGradeValue] = useState(selectedGrade.value);
   const [gradeValidation, setGradeValidation] = useState({});
@@ -47,8 +47,18 @@ export default function ModalGrade({ onSave, onClose, selectedGrade }) {
     }
   };
 
-  const handleFormSubmit = (evt) => {};
-  const handleClose = () => {
+  const handleFormSubmit = (evt) => {
+    evt.preventDefault();
+
+    const formData = {
+      id,
+      newValue: gradeValue,
+    }
+
+    onSave(formData)
+  };
+
+  const handleModalClose = () => {
     onClose(null);
   };
 
@@ -65,61 +75,61 @@ export default function ModalGrade({ onSave, onClose, selectedGrade }) {
           <span style={styles.title}>Manutenção de notas</span>&nbsp;&nbsp;
           <button
             className="waves-effect waves-light btn-small red dark-4"
-            onClick={handleClose}
+            onClick={handleModalClose}
           >
             x
           </button>
         </div>
 
-        <form onSubmit={handleFormSubmit}></form>
+        <form onSubmit={handleFormSubmit}>
+          <div className="input-field">
+            <input id="inputName" type="text" value={student} readOnly />
+            <label className="active" htmlFor="inputName">
+              Nome do aluno:
+            </label>
+          </div>
 
-        <div className="input-field">
-          <input id="inputName" type="text" value={student} readOnly />
-          <label className="active" htmlFor="inputName">
-            Nome do aluno:
-          </label>
-        </div>
+          <div className="input-field">
+            <input id="inputSubject" type="text" value={subject} readOnly />
+            <label className="active" htmlFor="inputSubject">
+              Disciplina:
+            </label>
+          </div>
 
-        <div className="input-field">
-          <input id="inputSubject" type="text" value={subject} readOnly />
-          <label className="active" htmlFor="inputSubject">
-            Disciplina:
-          </label>
-        </div>
+          <div className="input-field">
+            <input id="inputType" type="text" value={type} readOnly />
+            <label className="active" htmlFor="inputType">
+              Tipo de avaliação:
+            </label>
+          </div>
 
-        <div className="input-field">
-          <input id="inputType" type="text" value={type} readOnly />
-          <label className="active" htmlFor="inputType">
-            Tipo de avaliação:
-          </label>
-        </div>
+          <div className="input-field">
+            <input
+              id="inputGrade"
+              type="number"
+              min={gradeValidation.minValue}
+              max={gradeValidation.maxValue}
+              step="1"
+              autoFocus
+              value={gradeValue}
+              onChange={handleGradeChange}
+            />
 
-        <div className="input-field">
-          <input
-            id="inputGrade"
-            type="number"
-            min={gradeValidation.minValue}
-            max={gradeValidation.maxValue}
-            step="1"
-            autoFocus
-            value={gradeValue}
-            onChange={handleGradeChange}
-          />
+            <label className="active" htmlFor="inputGrade">
+              Nota
+            </label>
+          </div>
 
-          <label className="active" htmlFor="inputGrade">
-            Nota
-          </label>
-        </div>
-
-        <div style={styles.flexRow}>
-          <button
-            className="waves-effect waves-ligth btn small"
-            disabled={errorMessage.trim() !== ""}
-          >
-            Salvar
-          </button>
-          <span style={styles.errorMessage}>{errorMessage}</span>
-        </div>
+          <div style={styles.flexRow}>
+            <button
+              className="waves-effect waves-ligth btn small"
+              disabled={errorMessage.trim() !== ""}
+            >
+              Salvar
+            </button>
+            <span style={styles.errorMessage}>{errorMessage}</span>
+          </div>
+        </form>
       </Modal>
     </div>
   );
@@ -138,8 +148,8 @@ const styles = {
     fontSize: "1.3rem",
     fontWeight: "bold",
   },
-  errorMessage:{
+  errorMessage: {
     color: "red",
     fontWeight: "bold",
-  }
+  },
 };
