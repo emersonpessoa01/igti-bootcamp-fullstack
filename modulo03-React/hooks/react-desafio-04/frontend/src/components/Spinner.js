@@ -14,6 +14,9 @@ export default function Spinner({ description = "Aguarde..." }) {
           <div class="indeterminate"></div>
         </div>
       </div>
+      <span className={css.spinner}>
+        {description}
+      </span>
     </div>
   );
 }
