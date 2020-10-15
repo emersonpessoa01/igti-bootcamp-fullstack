@@ -3,6 +3,7 @@ import * as api from "./components/api/ApiService";
 import GradesControl from "./components/GradesControl";
 import ModalGrade from "./components/ModalGrade";
 import Spinner from "./components/Spinner";
+import css from "./components/spinner.module.css"
 
 export default function App() {
   //teste da api
@@ -77,7 +78,7 @@ export default function App() {
 
   return (
     <div>
-      <h1 className="center">Controle de notas</h1>
+      <h1 align="center" className={css.flexRow}>Controle de notas</h1>
 
       {allGrades.length === 0 && <Spinner />}
       {allGrades.length > 0 && (

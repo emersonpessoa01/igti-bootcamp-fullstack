@@ -1,5 +1,6 @@
 import React from "react";
 import Action from "./Action";
+import css from "./spinner.module.css";
 
 /**
  * Componente para montar tabelas
@@ -54,24 +55,23 @@ export default function GradesControl({ grades, onDelete, onPersist }) {
     // } else {
     //   onPersist(grade);
     // }
-    
+
     if (type === "delete") {
       onDelete(grade);
       return;
     }
-      onPersist(grade);
-
+    onPersist(grade);
   };
 
   return (
-    <div className="cont ainer">
+    <div className="container">
       {tableGrades.map(({ id, grades }) => {
         const finalGrades = grades.reduce((acc, curr) => acc + curr.value, 0);
         const gradeStyle =
           finalGrades >= 70 ? styles.goodGrade : styles.badGrade;
         return (
           <table styles={styles.table} className="striped center" key={id}>
-            <thead>
+            <thead className={css.notes}>
               <tr>
                 <th style={{ width: "20%" }}>Aluno</th>
                 <th style={{ width: "20%" }}>Disciplina</th>
@@ -80,7 +80,7 @@ export default function GradesControl({ grades, onDelete, onPersist }) {
                 <th style={{ width: "20%" }}>Ações</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody className={css.notes}>
               {grades.map(
                 ({ id, student, subject, type, value, isDeleted }) => {
                   return (
@@ -115,7 +115,9 @@ export default function GradesControl({ grades, onDelete, onPersist }) {
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
-                <td style={{ textAlign: "right" }}><strong>Total:</strong></td>
+                <td style={{ textAlign: "right", color: "white" }}>
+                  <strong>Total:</strong>
+                </td>
                 <td>
                   <div style={gradeStyle}>{finalGrades}</div>
                 </td>
@@ -132,37 +134,36 @@ const styles = {
   goodGrade: {
     // fontWeight: "bold",
     // color: "green",
-    background:"#006600",
-      color:"#fff",
-      width:"30px",
-      height:"30px",
-      
-      lineHeight:"30px",
-      verticalAlign:"middle",
-      textAlign:"center",
-      fontSize:"20px",
+    background: "#006600",
+    color: "#fff",
+    width: "30px",
+    height: "30px",
 
-      borderRadius:"50%",
-      mozBorderRadius:"50%",
-      webkitBorderRadius:"50%",
+    lineHeight: "30px",
+    verticalAlign: "middle",
+    textAlign: "center",
+    fontSize: "20px",
+
+    borderRadius: "50%",
+    mozBorderRadius: "50%",
+    webkitBorderRadius: "50%",
   },
   badGrade: {
     // fontWeight: "bold",
     // color: "red",
-      background:"#fa0c01",
-      color:"#fff",
-      width:"30px",
-      height:"30px",
-      
-      lineHeight:"30px",
-      verticalAlign:"middle",
-      textAlign:"center",
-      fontSize:"20px",
+    background: "#fa0c01",
+    color: "#fff",
+    width: "30px",
+    height: "30px",
 
-      borderRadius:"50%",
-      mozBorderRadius:"50%",
-      webkitBorderRadius:"50%",
-      
+    lineHeight: "30px",
+    verticalAlign: "middle",
+    textAlign: "center",
+    fontSize: "20px",
+
+    borderRadius: "50%",
+    mozBorderRadius: "50%",
+    webkitBorderRadius: "50%",
   },
   table: {
     margin: "20px",

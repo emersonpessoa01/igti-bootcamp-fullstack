@@ -1,4 +1,5 @@
 import React from 'react';
+import css from "./spinner.module.css"
 
 /**
  * Componente para exibir um spinner
@@ -7,7 +8,7 @@ import React from 'react';
  */
 export default function Spinner({ description = 'Aguarde...' }) {
   return (
-    <div style={styles.flexRow}>
+    <div className={css.spinner}>
       <div className="preloader-wrapper small active">
         <div className="spinner-layer spinner-blue-only">
           <div className="circle-clipper left">
@@ -29,11 +30,17 @@ export default function Spinner({ description = 'Aguarde...' }) {
   );
 }
 
-const styles = {
-  flexRow: {
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-};
+// const styles = {
+//   flexRow: {
+//     display: 'flex',
+//     flexDirection: 'row',
+//     alignItems: 'center',
+//     justifyContent: 'center',
+//     fontfamily: "Montserrat",
+//     color: "white",
+//   },
+// };
+
+{/* <span style={{ marginLeft: '10px', fontSize: '1.2rem' }}>
+        {description}
+      </span> */}
