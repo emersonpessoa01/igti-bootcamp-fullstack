@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Modal from "react-modal";
 import * as api from "./api/ApiService";
+import css from "./spinner.module.css";
 
 Modal.setAppElement("#root");
 
@@ -83,28 +84,28 @@ export default function ModalGrade({ onSave, onClose, selectedGrade }) {
 
         <form onSubmit={handleFormSubmit}>
           <div className="input-field">
-            <input id="inputName" type="text" value={student} readOnly />
+            <input className={css.spinner} id="inputName" type="text" value={student} readOnly />
             <label className="active" htmlFor="inputName">
               Nome do aluno:
             </label>
           </div>
 
           <div className="input-field">
-            <input id="inputSubject" type="text" value={subject} readOnly />
+            <input className={css.spinner} id="inputSubject" type="text" value={subject} readOnly />
             <label className="active" htmlFor="inputSubject">
               Disciplina:
             </label>
           </div>
 
           <div className="input-field">
-            <input id="inputType" type="text" value={type} readOnly />
+            <input className={css.spinner} id="inputType" type="text" value={type} readOnly />
             <label className="active" htmlFor="inputType">
               Tipo de avaliação:
             </label>
           </div>
 
           <div className="input-field">
-            <input
+            <input style={styles.nota}
               id="inputGrade"
               type="number"
               min={gradeValidation.minValue}
@@ -147,9 +148,14 @@ const styles = {
   title: {
     fontSize: "1.3rem",
     fontWeight: "bold",
+    color: "#fff",
   },
   errorMessage: {
     color: "red",
     fontWeight: "bold",
   },
+
+  nota:{
+    color:"#fff"
+  }
 };
