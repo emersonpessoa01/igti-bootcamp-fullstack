@@ -31,65 +31,7 @@ const tt = formatter.split(":");
 const sec = tt[0] * 3600 + tt[1] * 60 + tt[2] * 1;
 const display = `${timer} ${formatter}`;
 
-router.post("/", async (req, res) => {
-  let grade = req.body;
-  try {
-    let data = await readFile(global.fileName, "utf8");
-    let json = JSON.parse(data);
-
-    grade = {
-      id: json.nextId++,
-      ...grade,
-      timestamp: display,
-    };
-    json.grades.push(grade);
-
-    await writeFile(global.fileName, JSON.stringify(json));
-    res.send("Inclusão confirmada");
-    logger.info(`POST /grade - ${JSON.stringify(grade)}`);
-  } catch (err) {
-    res.status(400).send({
-      error: err.message,
-    });
-  }
-});
-
-router.put("/", async (req, res) => {
-  try {
-    let newGrade = req.body;
-    let data = await readFile(global.fileName, "utf8");
-
-    let json = JSON.parse(data);
-    let oldIndex = json.grades.findIndex((grade) => grade.id === newGrade.id);
-    // res.send(oldIndex);
-    json.grades[oldIndex] = newGrade; //acrescenta em todos mediante o id
-    // json.accounts[oldIndex].name = newAccount.name;
-    //acrescenta somente na propriedade name
-
-    // if(oldIndex === -1){
-    //   throw new Error('ID inexistente')
-    // }
-
-    // if(newGrade.student){
-    //   json.grades[oldIndex].student = newGrade.student;
-    // }
-
-    // console.log(newGrade.student)
-    // console.log(oldIndex)
-
-    // res.send("Atualização confirmada");
-    res.send(json.grades[oldIndex]);
-    logger.info(`PUT /grade/ - ${JSON.stringify(newGrade)}`);
-
-    // res.end();
-  } catch (err) {
-    res.status(400).send({
-      error: err.message,
-    });
-    logger.info(`PUT /grade/ - ${err.message}`);
-  }
-});
-
+//busca total do grades
 router.get("/", async (_, res) => {
   try {
     let data = await readFile(global.fileName, "utf8");
@@ -106,6 +48,7 @@ router.get("/", async (_, res) => {
   }
 });
 
+//busca pelo id
 router.get("/:id", async (req, res) => {
   try {
     let json = JSON.parse(await readFile(global.fileName, "utf8"));
@@ -118,7 +61,7 @@ router.get("/:id", async (req, res) => {
       res.send(grade);
       logger.info(`GET /grade/:id - ${JSON.stringify(grade)}`);
     } else {
-      res.send("ID não encontrada");
+      res.send("ID não encontrado");
       // throw new Error("ID inexistente")
     }
   } catch (err) {
@@ -129,7 +72,98 @@ router.get("/:id", async (req, res) => {
   }
 });
 
+//buscando a média pelo student e subject
+router.get("/average/:subject/:type", async (req, res) => {
+  // console.log(req.params.subject);
+  // console.log(req.params.type);
 
+  try {
+    const json = JSON.parse(await readFile(global.fileName, "utf8"));
+    const grades = json.grades.filter(
+      (grade) =>
+        grade.subject === req.params.subject && grade.type === req.params.type
+    );
+
+    if (!grades.length) {
+      throw new Error(
+        "Não foram encontrados parâmetros dos registros informados"
+      );
+    }
+
+    const total = grades.reduce((acc, curr) => acc + curr.value, 0);
+
+    const average = total / grades.length;
+
+    const formatter = Intl.NumberFormat("pt-BR");
+    const numberFormat = (number) => {
+      return formatter.format(number);
+    };
+
+    res.send({ grades });
+
+    logger.info(
+      `GET/average/subject - ${JSON.stringify(
+        `Média: ${numberFormat(average.toFixed(2))}`
+      )}`
+    );
+  } catch (err) {
+    res.status(400).send({
+      error: err.message,
+    });
+    logger.info(`POST/grade/averageStudentAndSubject - ${err.message}`);
+  }
+});
+
+//busca do student pelo nome
+router.get("/average/:student", async (req, res) => {
+  // console.log(req.params.subject);
+  // console.log(req.params.type);
+
+  try {
+    const json = JSON.parse(await readFile(global.fileName, "utf8"));
+    const grades = json.grades.filter(
+      (grade) => grade.student === req.params.student
+    );
+
+    if (!grades.length) {
+      throw new Error(
+        "Não foram encontrados parâmetros dos registros informados"
+      );
+    }
+
+    res.send({ grades });
+
+    logger.info(`GET/average/subject - ${JSON.stringify(grades)}`);
+  } catch (err) {
+    res.status(400).send({
+      error: err.message,
+    });
+    logger.info(`POST/grade/averageStudentAndSubject - ${err.message}`);
+  }
+});
+
+router.post("/", async (req, res) => {
+  let grade = req.body;
+  try {
+    let data = await readFile(global.fileName, "utf8");
+    let json = JSON.parse(data);
+
+    grade = {
+      id: json.nextId++,
+      ...grade,
+      timestamp: display,
+    };
+    json.grades.push(grade);
+
+    await writeFile(global.fileName, JSON.stringify(json));
+    res.send("Inclusão realizada com sucesso");
+    logger.info(`POST /grade - ${JSON.stringify(grade)}`);
+  } catch (err) {
+    res.status(400).send({
+      error: err.message,
+    });
+  }
+});
 
 router.post("/totalStudentAndSubject", async (req, res) => {
   try {
@@ -159,7 +193,7 @@ router.post("/totalStudentAndSubject", async (req, res) => {
 router.post("/best", async (req, res) => {
   try {
     let json = JSON.parse(await readFile(global.fileName, "utf8"));
-    
+
     let grades = json.grades.filter(
       (grade) =>
         grade.subject === req.body.subject && grade.type === req.body.type
@@ -173,19 +207,17 @@ router.post("/best", async (req, res) => {
 
     // grades.sort((a, b) => a.value.localeCompare(b.value));
 
-    
-    grades.sort((a,b)=>{
-    if(a.value < b.value) return 1;
-    if(a.value > b.value) return -1;
-    else return 0;
-    })
+    grades.sort((a, b) => {
+      if (a.value < b.value) return 1;
+      if (a.value > b.value) return -1;
+      else return 0;
+    });
 
     //pegar as três primeiras melhores notas
-    let threeBest= grades.slice(0,3);
+    let threeBest = grades.slice(0, 3);
 
     // res.send(grades);
     res.send(threeBest);
-
   } catch (err) {
     res.status(400).send({
       error: err.message,
@@ -194,46 +226,32 @@ router.post("/best", async (req, res) => {
   }
 });
 
-router.get("/average/:subject/:type", async (req, res) => {
-  // console.log(req.params.subject);
-  // console.log(req.params.type);
-
+router.put("/", async (req, res) => {
   try {
-    const json = JSON.parse(await readFile(global.fileName, "utf8"));
-    const grades = json.grades.filter(
-      (grade) =>
-        grade.subject === req.params.subject && grade.type === req.params.type
+    let newGrade = req.body;
+    let data = await readFile(global.fileName, "utf8");
+
+    let json = JSON.parse(data);
+    let oldIndex = json.grades.findIndex(
+      (grade) => grade.id === newGrade.id
     );
+    // res.send(oldIndex);
+    // json.accounts[oldIndex] = newAccount; //acrescenta em todos mediante o id
+    json.grades[oldIndex].name = newGrade.name;
+    json.grades[oldIndex] = newGrade;
+    //acrescenta somente na propriedade name
 
-    if (!grades.length) {
-      throw new Error(
-        "Não foram encontrados parâmetros dos registros informados"
-      );
-    }
+    await writeFile(global.fileName, JSON.stringify(json));
+    res.send("Atualização realizada com sucesso");
+    logger.info(`PUT /grade/ - ${JSON.stringify(newGrade)}`);
 
-    const total = grades.reduce((acc, curr) => acc + curr.value, 0);
-
-    const average = total / grades.length;
-
-    const formatter = Intl.NumberFormat("pt-BR");
-    const numberFormat = (number)=>{
-      return formatter.format(number)
-    }
-
-    // const twoDecimal = ()=>{
-    //   return 
-    // }
-
-    // res.send({ total });
-    // res.send({ average });
-    res.send({ grades });
-
-    logger.info(`GET/average/subject - ${JSON.stringify(`${numberFormat(average.toFixed(2))}`)}`);
+    // res.end();
   } catch (err) {
     res.status(400).send({
       error: err.message,
     });
-    logger.info(`POST/grade/totalStudentAndSubject - ${err.message}`);
+    logger.info(`PUT /grade/ - ${err.message}`);
+
   }
 });
 
@@ -248,8 +266,8 @@ router.delete("/:id", async (req, res) => {
     json.grades = grade;
 
     await writeFile(global.fileName, JSON.stringify(json));
+    res.send("Exclusão realizada com sucesso");
 
-    res.send("Exclusão confirmada");
     logger.info(`DELETE /grade/:id - ${JSON.stringify(req.params.id)}`);
   } catch (err) {
     res.status(400).send({

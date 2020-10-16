@@ -163,7 +163,7 @@ export const swaggerDocument = {
         },
         "subject": {
           "type": "integer",
-          "example": "02 - Node"
+          "example": "01 - JavaScript"
         },
         "type":{
           "type": "integer",
@@ -171,7 +171,7 @@ export const swaggerDocument = {
         },
         "value":{
           "type": "integer",
-          "example": 5,
+          "example": 15,
         },
 
       }
@@ -181,7 +181,7 @@ export const swaggerDocument = {
       "properties": {
         "id": {
           "type": "integer",
-          "example": 2
+          "example": 1
         },
         "student": {
           "type": "string",
@@ -189,7 +189,7 @@ export const swaggerDocument = {
         },
         "subject": {
           "type": "integer",
-          "example": "02 - Node"
+          "example": "01 - JavaScript"
         },
         "type":{
           "type": "integer",
@@ -197,7 +197,7 @@ export const swaggerDocument = {
         },
         "value":{
           "type": "integer",
-          "example": 5,
+          "example": 15,
         },
       }
     }
