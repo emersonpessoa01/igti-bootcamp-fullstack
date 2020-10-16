@@ -129,6 +129,8 @@ router.get("/:id", async (req, res) => {
   }
 });
 
+
+
 router.post("/totalStudentAndSubject", async (req, res) => {
   try {
     let params = req.body;
@@ -178,7 +180,7 @@ router.post("/best", async (req, res) => {
     else return 0;
     })
 
-    //pegar as três primeira melhores notas
+    //pegar as três primeiras melhores notas
     let threeBest= grades.slice(0,3);
 
     // res.send(grades);
@@ -213,11 +215,20 @@ router.get("/average/:subject/:type", async (req, res) => {
 
     const average = total / grades.length;
 
+    const formatter = Intl.NumberFormat("pt-BR");
+    const numberFormat = (number)=>{
+      return formatter.format(number)
+    }
+
+    // const twoDecimal = ()=>{
+    //   return 
+    // }
+
     // res.send({ total });
     // res.send({ average });
     res.send({ grades });
 
-    logger.info(`GET/average/subject - ${JSON.stringify(`Média: ${average}`)}`);
+    logger.info(`GET/average/subject - ${JSON.stringify(`${numberFormat(average.toFixed(2))}`)}`);
   } catch (err) {
     res.status(400).send({
       error: err.message,

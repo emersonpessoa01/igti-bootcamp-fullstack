@@ -2,6 +2,8 @@ import express from "express";
 import gradesRouter from "./routes/grades.js";
 import winston from 'winston';
 import { promises } from 'fs';
+import swaggerUi from 'swagger-ui-express';
+import { swaggerDocument } from "./routes/docs.js";
 
 const readFile = promises.readFile
 const writeFile = promises.writeFile
@@ -46,7 +48,7 @@ global.logger = winston.createLogger({
   //local para onde serão transportados
   transports: [
     new (winston.transports.Console)(),
-    new (winston.transports.File)({ filename: "my-bank-api.log" })
+    new (winston.transports.File)({ filename: "desafio1.log" })
   ],
   //impressão dos logs
   format: combine(
@@ -63,17 +65,20 @@ app.use(express.json());
 //todas as requisições que chegar no /grade.
 //Eu quero seja redirecioando para o gradesRouter
 app.use("/grade", gradesRouter);
+app.use("/doc", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+
 app.listen(port, async () => {
   try {
     await readFile(global.fileName, "utf8");
     logger.info("API started! DEV");
   } catch (err) {
-    grade = {
-      id: json.nextId++,
-      ...grade,
+    const grade = {
+      nextId: 1,
+      accounts: [],
     };
     json.grades.push(grade);
-    writeFile(global.fileName, JSON.stringify(initialJson)).catch((err) => {
+    
+    writeFile(global.fileName, JSON.stringify(grade)).catch((err) => {
       logger.error(err);
     });
   }
