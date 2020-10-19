@@ -22,7 +22,7 @@ const leftPad = (value, count = 2, char = "0") => {
 
 //conversão do JSON timestamp em data e hora normais
 const handleClickButton = () => {
-  const now = new Date("2020-09-07T22:37:58.582077");
+  const now = new Date(44075);
 
   let hours = leftPad(now.getHours());
   let minutes = leftPad(now.getMinutes());
@@ -38,7 +38,9 @@ const handleClickButton = () => {
 
   console.log(clickArray);
   render(totalSeconds);
+  console.log(formattedTime)
 };
+
 
 const render = (totalSeconds) => {
   const ul = document.querySelector("#data");

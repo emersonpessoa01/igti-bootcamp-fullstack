@@ -1,5 +1,3 @@
-let clickArray = [];
-
 window.addEventListener("load", start);
 
 function start() {
@@ -20,42 +18,21 @@ const leftPad = (value, count = 2, char = "0") => {
     return newValue;
   };
 
-  //conversão do JSON timestamp em data e hora normais
+  //conversão do JSON timestamp em datas e horas normais
 const handleClickButton=()=>{
-  const now = new Date("2020-09-07T22:37:58.582077");
-  // const now = new Date(44075);
+  // const now = new Date("2020-09-07T22:37:58.582077");
+  const now = new Date(44075);
   let formattedDate =`
     ${leftPad(now.getDate())}/${leftPad(now.getMonth() + 1)}/${now.getFullYear()} às`;
   let hours = leftPad(now.getHours());
   let minutes = leftPad(now.getMinutes());
   let seconds = leftPad(now.getSeconds());
-  let formattedTime = `${hours}:${minutes}:${seconds}`;
+  let milliSeconds = leftPad(now.getMilliseconds(),3);
+  let formattedTime = `${hours}:${minutes}:${seconds}:${milliSeconds}`;
 
-  formattedDate = `${formattedDate} ${formattedTime}`;
+  formatted = `${formattedDate} ${formattedTime}`;
 
-  clickArray.push(formattedDate);
-
-  console.log(clickArray);
-  render(formattedDate);
+  console.log(formatted);
 }
 
 
-const render=(formattedDate)=>{
-    const ul = document.querySelector("#data");
-    const li = document.createElement("li");
-
-    li.innerHTML = formattedDate;
-    ul.appendChild(li);
-}
-// function render() {
-//   const ul = document.querySelector("#data");
-//   ul.innerHTML = "";
-
-//   let lis = "";
-
-//   clickArray.map((item) => {
-//     lis += `<li>${item}</li>`;
-//   });
-
-//   ul.innerHTML = lis;
-// }
