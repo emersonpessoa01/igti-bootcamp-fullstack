@@ -8,8 +8,8 @@ export default function Installments({ data }) {
         // console.log(`Montante:${item.amount}`)
         //  return <span key={id}>{amount}</span>;
         const { id } = item;
-        return <Installment key={id} data={id} />;
-      })}
+        return <Installment key={id} data={item} />;
+      })} 
     </div>
   );
 }
