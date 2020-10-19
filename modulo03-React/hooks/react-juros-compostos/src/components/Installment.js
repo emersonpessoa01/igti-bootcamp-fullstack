@@ -32,8 +32,8 @@ export default function Installment({ data }) {
   return (
     <div className="col s6 m3 l2">
       <div style={styles.flexRow}>
-        <div style={{ marginRight: "5px" }}>
-          <strong>{id}</strong>
+        <div style={styles.circle}>
+          {id}
         </div>
         <div>
           <div className={classCapital}>
@@ -64,4 +64,18 @@ const styles = {
     padding: "4px",
     margin: "4px",
   },
+  circle: {
+    marginRight:"5px",
+    backgroundColor:"#fa0c01",
+    color:"#fff",
+    width:"60px",
+    height:"60px",
+    lineHeight:"60px",
+    verticalAlign:"middle",
+    textAlign:"center",
+    fontSize:"30px",
+
+    
+  }
 };
+
