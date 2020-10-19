@@ -2,62 +2,64 @@ import React, { useState, useEffect } from "react";
 import Form from "./components/Form";
 
 export default function App() {
-  const [initialValue, setInitialValue] = useState(1000);
-  const [monthlyInterest, setMonthlyInterest] = useState(1);
-  const [monthlyPeriod, setMonthlyPeriod] = useState(1);
+  const [capital, setCapital] = useState(0);
+  const [interest, setInterest] = useState(0);
+  const [period, setPeriod] = useState(0);
   const [installments, setInstallments] = useState([]);
 
   useEffect(() => {
-    calculteInterest(initialValue, monthlyInterest, monthlyPeriod);
-  }, [initialValue, monthlyInterest, monthlyPeriod]);
+    calculteInterest(capital, interest, period);
+  }, [capital, interest, period]);
 
-  const calculteInterest = (initialValue, monthlyInterest, monthlyPeriod) => {
+  const calculteInterest = (capital, interest, period) => {
     const newInstallments = [];
 
     let currentId = 1;
-    let currentValue = initialValue;
-    let percentage = 0;
+    let currentCapital = capital;
+    let rate = 0;
 
-    for (let i = 0; i <= monthlyPeriod; i++) {
-      const percentageValue = (currentValue * monthlyInterest) / 100;
+    for (let i = 1; i <= period; i++) {
+      const percentCapital = (currentCapital * interest) / 100;
 
-      currentValue =
-        monthlyInterest >= 0
-          ? currentValue + percentageValue
-          : currentValue - percentageValue;
-      percentage = (currentValue / initialValue - 1)/100;
-        
+      currentCapital =
+        interest >= 0
+          ? currentCapital + percentCapital
+          : currentCapital - percentCapital;
+      rate = ((currentCapital / capital) ** 1 / i - 1) / 100;
+
       newInstallments.push({
         id: currentId++,
-        value: currentValue,
-        difference: currentValue - initialValue,
-        percentage,
-        profit: monthlyInterest > 0,
+        value: currentCapital,
+        difference: currentCapital - capital,
+        rate,
+        profit: interest > 0,
       });
-
-      setInstallments(newInstallments);
     }
+    setInstallments(newInstallments);
   };
 
-  const handleChangeData = (newValue, newInterest, newPeriod) => {
-    if (newValue !== null) {
-      setInitialValue(newValue);
+  const handleChangeData = (newCapital, newInterest, newPeriod) => {
+    if (newCapital !== null) {
+      setCapital(newCapital);
       return;
     }
-    if (newValue !== null) {
-      setMonthlyInterest(newInterest);
+    if (newInterest !== null) {
+      setInterest(newInterest);
       return;
     }
 
-    setMonthlyPeriod(newPeriod);
+    if (newPeriod !== null) {
+      setPeriod(newPeriod);
+      return;
+    }
   };
 
   return (
-    <div>
+    <div className="container center">
       <h1>React Juros Compostos</h1>
 
       <Form
-        data={{ initialValue, monthlyInterest, monthlyPeriod}}
+        data={{ capital, interest, period }}
         onChangeData={handleChangeData}
       />
     </div>
