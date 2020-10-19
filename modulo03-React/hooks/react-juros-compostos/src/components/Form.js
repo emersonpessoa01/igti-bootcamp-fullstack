@@ -5,7 +5,7 @@ export default function Form({ data, onChangeData }) {
 
   return (
     <div className="center row">
-      <div className="col input-field s6 m4 l3">
+      <div className="col input-field s6 m3 l6">
         <input
           id="inputCapital"
           autoFocus

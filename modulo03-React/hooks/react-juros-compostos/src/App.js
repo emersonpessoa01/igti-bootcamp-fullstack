@@ -30,7 +30,7 @@ export default function App() {
         id: currentId++,
         amount,
         difference: (amount - capital).toFixed(2),
-        rate: rate.toFixed(2),
+        rate: rate.toFixed(2).replace(".",","),
         profit: interest > 0,
       });
     }
@@ -56,9 +56,9 @@ export default function App() {
   };
 
   return (
-    <div>
-      <div className="container center">
-        <h1>React Juros Compostos</h1>
+    <div className="container center">
+      <div>
+        <h1 className="center">React - Juros Compostos</h1>
 
         <Form
           data={{ capital, interest, period }}
