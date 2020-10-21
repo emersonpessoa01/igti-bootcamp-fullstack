@@ -12,7 +12,7 @@ const createFile = async () => {
 
   states.forEach(async(state) =>{
       const stateCities = cities.filter(city => city.Estado === state.ID);
-      await writeFile(`./${state.Sigla}.json`, JSON.stringify(stateCities))
+      await writeFile(`./states/${state.Sigla}.json`, JSON.stringify(stateCities))
   })
   
 };
