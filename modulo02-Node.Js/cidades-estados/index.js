@@ -57,18 +57,36 @@ const getStateWithMoreCities = async () => {
   let states = JSON.parse(await readFile("Estados.json", "utf8"));
   const list = [];
 
-  states.forEach(async(state) => {
-    let uf = state.Sigla
-    let count = await getCitiesCount(uf)
+  states.forEach(async (state) => {
+    let uf = state.Sigla;
+    let count = await getCitiesCount(uf);
     // let qtd = {
     //   uf: state.Sigla,
     //   count,
     // }
     list.push({
-      uf:`${uf}`,
-      count:`${count} cidades`
-    }) 
-    console.log(list);
-  })
+      uf,
+      count,
+    });
+
+    //ordenando do maior para o menor
+    list.sort((b, a) => {
+      if (a.count < b.count) return -1;
+      else if (a.count > b.count) return 1;
+      else return 0;
+    });
+
+    //Selecionando os 5 primeiro Estados com maior município
+    //list.slice(0,5)//pega de 0 até 5a posição
+    const result = [];
+
+    list.slice(0, 5).forEach(({ uf, count }) => {
+      return result.push(`${uf}: ${count} ${count > 1 ? "cidades" : "cidade"}`);
+    });
+
+    console.log("3 - UF dos cinco estados que mais possuem cidades:");
+    // console.log(list.slice(0, 5));
+    console.log(result);
+  });
 };
 getStateWithMoreCities();
