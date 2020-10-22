@@ -1,6 +1,3 @@
-// método que imprima no console um array com a cidade de maior nome de cada estado
-// allStatesBiggerCityName();
-
 //método que imprima no console um array com a cidade de menor nome de cada estado
 // allStatesShorterCityName();
 
@@ -38,9 +35,9 @@ createFile();
 const getCitiesCount = async (uf) => {
   let cities = JSON.parse(await readFile(`./states/${uf}.json`, "utf8"));
   // console.log(cities);
-  // console.log(
-  //   `UF: ${uf}, count: ${cities.length} cidades`
-  // );
+  console.log(
+    `UF: ${uf}, count: ${cities.length} cidades`
+  );
   return cities.length;
 };
 // getCitiesCount("PA");
@@ -50,7 +47,7 @@ getCitiesCount(); //QUANTIDADE CIDADE DE "PA"
 // statesMoreCities();
 
 const getStateWithMoreCities = async (more) => {
-  let states = JSON.parse(await readFile("Estados.json", "utf8"));
+  let states = JSON.parse(await readFile(statesFile, "utf8"));
   const list = [];
 
   states.forEach(async (state) => {
@@ -93,3 +90,39 @@ const getStateWithMoreCities = async (more) => {
 getStateWithMoreCities(true);
 getStateWithMoreCities(false);
 
+// método que imprima no console um array com a cidade de maior nome de cada estado
+// allStatesBiggerCityName();
+const getBiggerName = async (uf) => {
+  let cities = JSON.parse(await readFile(`./states/${uf}.json`, "utf8"));
+
+  let result;
+
+  cities.forEach((city) => {
+    if (!result) result = city;
+    else if (city.Nome.length > result.Nome.length) result = city;
+    else if (
+      city.Nome.length === result.Nome.length &&
+      city.Nome.length < result.Nome.length
+    )
+      result = city;
+    // console.log(cities);
+  });
+
+  return result;
+};
+getBiggerName();
+
+const getBiggerCityName = async () => {
+  let states = JSON.parse(await readFile("Estados.json"));
+
+  let result = [];
+  states.forEach(async (state) => {
+    let uf = state.Sigla;
+    let city = await getBiggerName(uf);
+    result.push(`${city.Nome} - ${uf}`);
+
+    console.log(result);
+  });
+};
+
+getBiggerCityName();
