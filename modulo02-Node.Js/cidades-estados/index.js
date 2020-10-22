@@ -47,6 +47,7 @@ const getCitiesCount = async (uf) => {
   // );
   return cities.length;
 };
+// getCitiesCount("PA");
 getCitiesCount(); //QUANTIDADE CIDADE DE "PA"
 
 // método que imprima no console um array com o UF dos cinco estados que mais possuem cidades
@@ -57,14 +58,15 @@ const getStateWithMoreCities = async () => {
   const list = [];
 
   states.forEach(async(state) => {
-    let count = await getCitiesCount(state.Sigla)
+    let uf = state.Sigla
+    let count = await getCitiesCount(uf)
     // let qtd = {
     //   uf: state.Sigla,
     //   count,
     // }
     list.push({
-      uf: `${state.Sigla}`,
-      count: `${count}`
+      uf:`${uf}`,
+      count:`${count} cidades`
     }) 
     console.log(list);
   })
