@@ -1,6 +1,3 @@
-// método que imprima no console um array com o UF dos cinco estados que menos possuem cidades
-// statesLessCities();
-
 // método que imprima no console um array com a cidade de maior nome de cada estado
 // allStatesBiggerCityName();
 
@@ -81,12 +78,51 @@ const getStateWithMoreCities = async () => {
     const result = [];
 
     list.slice(0, 5).forEach(({ uf, count }) => {
-      return result.push(`${uf}: ${count} ${count > 1 ? "cidades" : "cidade"}`);
+      return result.push(`${uf}: ${count}`);
     });
 
-    console.log("3 - UF dos cinco estados que mais possuem cidades:");
+    console.log("3 - UF dos cinco Estados que MAIS possuem cidades:");
     // console.log(list.slice(0, 5));
     console.log(result);
   });
 };
 getStateWithMoreCities();
+
+// método que imprima no console um array com o UF dos cinco estados que menos possuem cidades
+// statesLessCities();
+
+const getStateWithAnyLessCities = async () => {
+  let states = JSON.parse(await readFile("Estados.json", "utf8"));
+  const list = [];
+
+  states.forEach(async (state) => {
+    let uf = state.Sigla;
+    let count = await getCitiesCount(uf);
+
+    list.push({
+      uf,
+      count,
+    });
+
+    //ordenando do menor para o maior
+    list.sort((a, b) => {
+      if (a.count < b.count) return -1;
+      else if (a.count > b.count) return 1;
+      else return 0;
+    });
+
+    //Selecionando os 5 primeiro Estados com maior município
+    const result = [];
+    list.slice(0, 5).forEach(({ uf, count }) => {
+      return result.push({
+        uf,
+        count,
+      });
+    });
+
+    console.log("4 - UF dos cinco Estados que MENOS possuem cidades");
+    console.log(result);
+  });
+};
+
+getStateWithAnyLessCities();
