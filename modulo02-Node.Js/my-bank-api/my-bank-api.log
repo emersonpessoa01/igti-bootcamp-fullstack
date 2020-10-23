@@ -401,3 +401,84 @@ undefined [my-bank-api] info: API started! DEV
 14/10/2020 16:06:06 [my-bank-api] info: PUT /account/ - {"id":8,"name":"Fernando Antônio Pessoa da Silva","balance":900,"timestamp":"06/10/2020 17:06:46"}
 14/10/2020 16:06:06 [my-bank-api] info: PUT /account/ - Cannot set property 'name' of undefined
 14/10/2020 16:06:06 [my-bank-api] info: PUT /account/ - {"id":8,"name":"Fernando Antônio Pessoa da Silva ok","balance":900,"timestamp":"06/10/2020 17:06:46"}
+16/10/2020 10:56:40 [my-bank-api] info: API started! DEV
+16/10/2020 10:56:40 [my-bank-api] info: GET /account
+16/10/2020 10:56:40 [my-bank-api] info: GET /account
+16/10/2020 10:56:40 [my-bank-api] info: GET /account
+16/10/2020 10:56:40 [my-bank-api] info: GET /account
+16/10/2020 10:56:40 [my-bank-api] info: POST /account - {"id":9,"name":"Emerson Pessoa","balance":150,"timestamp":"16/10/2020 10:56:40"}
+16/10/2020 10:56:40 [my-bank-api] info: GET /account
+16/10/2020 11:14:12 [my-bank-api] info: API started! DEV
+16/10/2020 11:14:57 [my-bank-api] info: API started! DEV
+16/10/2020 11:14:57 [my-bank-api] info: GET /account
+16/10/2020 11:39:57 [my-bank-api] info: API started! DEV
+16/10/2020 11:47:23 [my-bank-api] info: API started! DEV
+16/10/2020 11:47:35 [my-bank-api] info: API started! DEV
+16/10/2020 11:47:39 [my-bank-api] info: API started! DEV
+16/10/2020 11:47:43 [my-bank-api] info: API started! DEV
+16/10/2020 11:47:49 [my-bank-api] info: API started! DEV
+16/10/2020 11:47:58 [my-bank-api] info: API started! DEV
+16/10/2020 11:48:08 [my-bank-api] info: API started! DEV
+16/10/2020 11:48:16 [my-bank-api] info: API started! DEV
+16/10/2020 11:48:18 [my-bank-api] info: API started! DEV
+16/10/2020 11:48:28 [my-bank-api] info: API started! DEV
+16/10/2020 11:50:35 [my-bank-api] info: API started! DEV
+16/10/2020 11:51:21 [my-bank-api] info: API started! DEV
+16/10/2020 11:53:30 [my-bank-api] info: API started! DEV
+16/10/2020 11:53:40 [my-bank-api] info: API started! DEV
+16/10/2020 11:54:46 [my-bank-api] info: API started! DEV
+16/10/2020 11:54:49 [my-bank-api] info: API started! DEV
+16/10/2020 11:55:10 [my-bank-api] info: API started! DEV
+16/10/2020 11:55:17 [my-bank-api] info: API started! DEV
+16/10/2020 11:55:19 [my-bank-api] info: API started! DEV
+16/10/2020 11:55:51 [my-bank-api] info: API started! DEV
+16/10/2020 11:55:59 [my-bank-api] info: API started! DEV
+16/10/2020 11:56:07 [my-bank-api] info: API started! DEV
+16/10/2020 11:56:21 [my-bank-api] info: API started! DEV
+16/10/2020 11:56:39 [my-bank-api] info: API started! DEV
+16/10/2020 11:56:41 [my-bank-api] info: API started! DEV
+16/10/2020 11:56:42 [my-bank-api] info: API started! DEV
+16/10/2020 11:56:44 [my-bank-api] info: API started! DEV
+16/10/2020 11:56:48 [my-bank-api] info: API started! DEV
+16/10/2020 11:57:00 [my-bank-api] info: API started! DEV
+16/10/2020 11:57:21 [my-bank-api] info: API started! DEV
+16/10/2020 11:57:29 [my-bank-api] info: API started! DEV
+16/10/2020 11:57:32 [my-bank-api] info: API started! DEV
+16/10/2020 11:57:41 [my-bank-api] info: API started! DEV
+16/10/2020 11:57:48 [my-bank-api] info: API started! DEV
+16/10/2020 11:58:00 [my-bank-api] info: API started! DEV
+16/10/2020 11:58:10 [my-bank-api] info: API started! DEV
+16/10/2020 11:58:22 [my-bank-api] info: API started! DEV
+16/10/2020 11:58:28 [my-bank-api] info: API started! DEV
+16/10/2020 11:58:42 [my-bank-api] info: API started! DEV
+16/10/2020 11:58:49 [my-bank-api] info: API started! DEV
+16/10/2020 11:59:03 [my-bank-api] info: API started! DEV
+16/10/2020 12:00:29 [my-bank-api] info: API started! DEV
+16/10/2020 12:00:32 [my-bank-api] info: API started! DEV
+16/10/2020 12:00:52 [my-bank-api] info: API started! DEV
+16/10/2020 12:01:07 [my-bank-api] info: API started! DEV
+16/10/2020 12:01:50 [my-bank-api] info: API started! DEV
+16/10/2020 12:03:08 [my-bank-api] info: API started! DEV
+16/10/2020 12:03:26 [my-bank-api] info: API started! DEV
+16/10/2020 12:03:43 [my-bank-api] info: API started! DEV
+16/10/2020 12:03:50 [my-bank-api] info: API started! DEV
+16/10/2020 12:04:09 [my-bank-api] info: API started! DEV
+16/10/2020 12:04:27 [my-bank-api] info: API started! DEV
+16/10/2020 12:06:03 [my-bank-api] info: API started! DEV
+16/10/2020 12:06:03 [my-bank-api] info: GET /account/:id - {"id":9,"name":"Emerson Pessoa","balance":150,"timestamp":"16/10/2020 10:56:40"}
+16/10/2020 12:06:03 [my-bank-api] info: DELETE /account/:id - "9"
+23/10/2020 17:39:48 [my-bank-api] info: API started! DEV
+23/10/2020 17:39:48 [my-bank-api] info: GET /account
+23/10/2020 18:02:38 [my-bank-api] info: API started! DEV
+23/10/2020 18:02:38 [my-bank-api] info: GET /account
+23/10/2020 18:02:38 [my-bank-api] info: POST /account - {"id":null,"name":"Rosangela Pessoa","balance":1000,"timestamp":"23/10/2020 18:02:37"}
+23/10/2020 18:02:38 [my-bank-api] info: GET /account
+23/10/2020 18:02:38 [my-bank-api] info: POST /account - {"id":0,"name":"Rosangela Pessoa da Silva","balance":1100,"timestamp":"23/10/2020 18:02:37"}
+23/10/2020 18:02:38 [my-bank-api] info: GET /account
+23/10/2020 18:02:38 [my-bank-api] info: POST /account - {"id":9,"name":"Rosangela Pessoa da Silva","balance":1100,"timestamp":"23/10/2020 18:02:37"}
+23/10/2020 18:02:38 [my-bank-api] info: POST /account - {"id":9,"name":"Rosangela Pessoa da Silva","balance":1100,"timestamp":"23/10/2020 18:02:37"}
+23/10/2020 18:02:38 [my-bank-api] info: GET /account
+23/10/2020 18:02:38 [my-bank-api] info: POST /account - {"id":0,"name":"Rosangela Pessoa da Silva","balance":1200,"timestamp":"23/10/2020 18:02:37"}
+23/10/2020 18:02:38 [my-bank-api] info: GET /account
+23/10/2020 18:02:38 [my-bank-api] info: POST /account - {"id":1,"name":"Rosangela Pessoa da Silva","balance":1300,"timestamp":"23/10/2020 18:02:37"}
+23/10/2020 18:02:38 [my-bank-api] info: GET /account
