@@ -1,2 +1,2 @@
-## Repositório "backup projeto-base". A fim de agilizar o processo de criação para início de cada projeto.
+## Realizando conversão da aplicação Podcast Javascript puro para React.
 
