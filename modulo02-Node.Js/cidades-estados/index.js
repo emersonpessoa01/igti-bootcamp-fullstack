@@ -36,12 +36,13 @@ const getCitiesCount = async (uf) => {
   return cities.length;
 };
 // getCitiesCount("PA");
-getCitiesCount("PA"); //QUANTIDADE CIDADE DE "PA"
+getCitiesCount(); //QUANTIDADE CIDADE DE "PA"
 
 //3 -  método que imprima no console um array com o UF dos cinco estados que mais possuem cidades
 // statesMoreCities();
 
-const getStateWithMoreCities = async (more) => {
+// const getStateWithMoreCities = async (more) => {
+const getStateWithMoreCities = async () => {
   let states = JSON.parse(await readFile(statesFile, "utf8"));
   const list = [];
 
@@ -99,7 +100,6 @@ const getStateWithAnyLessCities = async (more) => {
     //Selecionando os 5 primeiro Estados com maior município
     //list.slice(0,5)//pega de 0 até 5a posição
     const result = [];
-
     list.slice(-5).forEach(({ uf, count }) => {
       return result.push({ uf, count });
     });
@@ -119,7 +119,6 @@ const getBiggerName = async (uf) => {
   let cities = JSON.parse(await readFile(`./states/${uf}.json`, "utf8"));
 
   let result;
-
   cities.forEach((city) => {
     if (!result) result = city;
     else if (city.Nome.length > result.Nome.length) result = city;
@@ -141,10 +140,10 @@ const getBiggerCityName = async () => {
   let result = [];
   states.forEach(async (state) => {
     let uf = state.Sigla;
-    let city = await getBiggerName(uf);
-    result.push(`${city.Nome} - ${uf}`);
+    let city = (await getBiggerName(uf)).Nome;
+    result.push(`${city} - ${uf}`);
 
-    console.log("4 - cidades de maiores nome ");
+    console.log("4 - cidades com maiores nomes ");
     console.log(result);
   });
 };
@@ -158,7 +157,6 @@ const getSmallName = async (uf) => {
   let cities = JSON.parse(await readFile(`./states/${uf}.json`, "utf8"));
 
   let result;
-
   cities.forEach((city) => {
     if (!result) result = city;
     else if (city.Nome.length < result.Nome.length) result = city;
@@ -178,17 +176,17 @@ const getSmallCityName = async (bigger) => {
   let states = JSON.parse(await readFile("Estados.json"));
 
   let result = [];
-  states.forEach(async (state) => {
+  states.map(async (state) => {
     let uf = state.Sigla;
     let city;
     if (bigger) {
-      city = await getBiggerName(uf);
+      city = (await getBiggerName(uf)).Nome;
     } else {
-      city = await getSmallName(uf);
+      city = (await getSmallName(uf)).Nome;
     }
-    result.push(`${city.Nome} - ${uf}`);
+    result.push(`${city} - ${uf}`);
 
-    console.log("5 - cidades de menores nome ");
+    console.log("5 - cidades com menores nomes ");
     console.log(result);
   });
 };
