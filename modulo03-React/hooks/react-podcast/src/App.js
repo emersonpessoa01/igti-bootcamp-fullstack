@@ -28,10 +28,22 @@ export default class App extends Component {
   }
 
   render() {
-    
     return (
       <div>
-        <p>Fala dev..beleza!</p>
+        <h1>React componentDidUpdate</h1>
+
+        <input
+          type="text"
+          placeholder="Digite aqui"
+          value={paragraph1}
+          oncChange={this.handleParagraph1}
+        />
+        <input
+          type="text"
+          placeholder="Digite aqui"
+          value={paragraph2}
+          oncChange={this.handleParagraph2}
+        />
       </div>
     );
   }
