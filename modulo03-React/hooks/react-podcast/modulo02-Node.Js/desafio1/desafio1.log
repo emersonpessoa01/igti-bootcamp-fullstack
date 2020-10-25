@@ -1,0 +1,583 @@
+16/10/2020 12:36:36 [desafio1] info: API started! DEV
+16/10/2020 12:39:16 [desafio1] info: API started! DEV
+16/10/2020 12:39:26 [desafio1] info: API started! DEV
+16/10/2020 12:39:34 [desafio1] info: API started! DEV
+16/10/2020 12:39:36 [desafio1] info: API started! DEV
+16/10/2020 12:39:39 [desafio1] info: API started! DEV
+16/10/2020 12:39:51 [desafio1] info: API started! DEV
+16/10/2020 12:39:53 [desafio1] info: API started! DEV
+16/10/2020 12:39:59 [desafio1] info: API started! DEV
+16/10/2020 12:40:12 [desafio1] info: API started! DEV
+16/10/2020 12:40:17 [desafio1] info: API started! DEV
+16/10/2020 12:40:25 [desafio1] info: API started! DEV
+16/10/2020 12:40:29 [desafio1] info: API started! DEV
+16/10/2020 12:40:46 [desafio1] info: API started! DEV
+16/10/2020 12:40:48 [desafio1] info: API started! DEV
+16/10/2020 12:42:07 [desafio1] info: API started! DEV
+16/10/2020 12:42:07 [desafio1] info: GET / grade
+16/10/2020 12:42:07 [desafio1] info: POST /grade - {"id":1,"student":"Loiane Groner","subject":"02 - Node","type":"Fórum","value":15,"timestamp":"16/10/2020 12:42:06"}
+16/10/2020 12:42:07 [desafio1] info: GET /grade/:id - {"id":1,"student":"Loiane Groner","subject":"02 - Node","type":"Fórum","value":15,"timestamp":"16/10/2020 12:42:06"}
+16/10/2020 14:11:59 [desafio1] info: API started! DEV
+16/10/2020 14:13:19 [desafio1] info: API started! DEV
+16/10/2020 14:13:29 [desafio1] info: API started! DEV
+16/10/2020 14:13:47 [desafio1] info: API started! DEV
+16/10/2020 14:13:52 [desafio1] info: API started! DEV
+16/10/2020 14:14:01 [desafio1] info: API started! DEV
+16/10/2020 14:14:17 [desafio1] info: API started! DEV
+16/10/2020 14:14:23 [desafio1] info: API started! DEV
+16/10/2020 14:14:31 [desafio1] info: API started! DEV
+16/10/2020 14:14:34 [desafio1] info: API started! DEV
+16/10/2020 14:14:43 [desafio1] info: API started! DEV
+16/10/2020 14:15:02 [desafio1] info: API started! DEV
+16/10/2020 14:15:10 [desafio1] info: API started! DEV
+16/10/2020 14:15:12 [desafio1] info: API started! DEV
+16/10/2020 14:15:14 [desafio1] info: API started! DEV
+16/10/2020 14:15:17 [desafio1] info: API started! DEV
+16/10/2020 14:15:19 [desafio1] info: API started! DEV
+16/10/2020 14:15:24 [desafio1] info: API started! DEV
+16/10/2020 14:15:24 [desafio1] info: GET / grade
+16/10/2020 14:15:24 [desafio1] info: GET / grade
+16/10/2020 14:15:24 [desafio1] info: GET / grade
+16/10/2020 14:15:24 [desafio1] info: GET / grade
+16/10/2020 14:15:24 [desafio1] info: GET / grade
+16/10/2020 14:15:24 [desafio1] info: GET / grade
+16/10/2020 14:15:24 [desafio1] info: GET / grade
+16/10/2020 14:15:24 [desafio1] info: GET / grade
+16/10/2020 14:15:24 [desafio1] info: GET / grade
+16/10/2020 14:15:24 [desafio1] info: GET / grade
+16/10/2020 14:15:24 [desafio1] info: GET / grade
+16/10/2020 14:23:31 [desafio1] info: API started! DEV
+16/10/2020 14:23:49 [desafio1] info: API started! DEV
+16/10/2020 14:23:59 [desafio1] info: API started! DEV
+16/10/2020 14:24:02 [desafio1] info: API started! DEV
+16/10/2020 14:24:22 [desafio1] info: API started! DEV
+16/10/2020 14:24:45 [desafio1] info: API started! DEV
+16/10/2020 14:25:04 [desafio1] info: API started! DEV
+16/10/2020 14:25:12 [desafio1] info: API started! DEV
+16/10/2020 14:25:16 [desafio1] info: API started! DEV
+16/10/2020 14:25:28 [desafio1] info: API started! DEV
+16/10/2020 14:25:31 [desafio1] info: API started! DEV
+16/10/2020 14:25:41 [desafio1] info: API started! DEV
+16/10/2020 14:25:44 [desafio1] info: API started! DEV
+16/10/2020 14:25:46 [desafio1] info: API started! DEV
+16/10/2020 14:26:15 [desafio1] info: API started! DEV
+16/10/2020 14:26:20 [desafio1] info: API started! DEV
+16/10/2020 14:26:35 [desafio1] info: API started! DEV
+16/10/2020 14:26:37 [desafio1] info: API started! DEV
+16/10/2020 14:26:43 [desafio1] info: API started! DEV
+16/10/2020 14:28:28 [desafio1] info: API started! DEV
+16/10/2020 14:28:39 [desafio1] info: API started! DEV
+16/10/2020 14:28:45 [desafio1] info: API started! DEV
+16/10/2020 14:29:31 [desafio1] info: API started! DEV
+16/10/2020 14:29:46 [desafio1] info: API started! DEV
+16/10/2020 14:29:50 [desafio1] info: API started! DEV
+16/10/2020 14:29:52 [desafio1] info: API started! DEV
+16/10/2020 14:29:53 [desafio1] info: API started! DEV
+16/10/2020 14:29:54 [desafio1] info: API started! DEV
+16/10/2020 14:30:18 [desafio1] info: API started! DEV
+16/10/2020 14:30:21 [desafio1] info: API started! DEV
+16/10/2020 14:30:23 [desafio1] info: API started! DEV
+16/10/2020 14:30:26 [desafio1] info: API started! DEV
+16/10/2020 14:30:28 [desafio1] info: API started! DEV
+16/10/2020 14:30:32 [desafio1] info: API started! DEV
+16/10/2020 14:30:33 [desafio1] info: API started! DEV
+16/10/2020 14:30:55 [desafio1] info: API started! DEV
+16/10/2020 14:30:57 [desafio1] info: API started! DEV
+16/10/2020 14:31:03 [desafio1] info: API started! DEV
+16/10/2020 14:31:06 [desafio1] info: API started! DEV
+16/10/2020 14:31:44 [desafio1] info: API started! DEV
+16/10/2020 14:31:46 [desafio1] info: API started! DEV
+16/10/2020 14:31:49 [desafio1] info: API started! DEV
+16/10/2020 14:31:59 [desafio1] info: API started! DEV
+16/10/2020 14:32:04 [desafio1] info: API started! DEV
+16/10/2020 14:32:10 [desafio1] info: API started! DEV
+16/10/2020 14:32:13 [desafio1] info: API started! DEV
+16/10/2020 14:32:14 [desafio1] info: API started! DEV
+16/10/2020 14:32:15 [desafio1] info: API started! DEV
+16/10/2020 14:32:20 [desafio1] info: API started! DEV
+16/10/2020 14:32:22 [desafio1] info: API started! DEV
+16/10/2020 14:32:25 [desafio1] info: API started! DEV
+16/10/2020 14:32:35 [desafio1] info: API started! DEV
+16/10/2020 14:32:55 [desafio1] info: API started! DEV
+16/10/2020 14:32:59 [desafio1] info: API started! DEV
+16/10/2020 14:32:59 [desafio1] info: GET /grade/:id - {"id":1,"student":"Loiane Groner","subject":"02 - Node","type":"Fórum","value":15,"timestamp":"16/10/2020 12:42:06"}
+16/10/2020 14:37:16 [desafio1] info: API started! DEV
+16/10/2020 14:37:22 [desafio1] info: API started! DEV
+16/10/2020 14:37:25 [desafio1] info: API started! DEV
+16/10/2020 14:37:26 [desafio1] info: API started! DEV
+16/10/2020 14:37:38 [desafio1] info: API started! DEV
+16/10/2020 14:37:39 [desafio1] info: API started! DEV
+16/10/2020 14:37:42 [desafio1] info: API started! DEV
+16/10/2020 14:37:45 [desafio1] info: API started! DEV
+16/10/2020 14:37:51 [desafio1] info: API started! DEV
+16/10/2020 14:37:58 [desafio1] info: API started! DEV
+16/10/2020 14:38:09 [desafio1] info: API started! DEV
+16/10/2020 14:38:23 [desafio1] info: API started! DEV
+16/10/2020 14:38:26 [desafio1] info: API started! DEV
+16/10/2020 14:38:27 [desafio1] info: API started! DEV
+16/10/2020 14:38:29 [desafio1] info: API started! DEV
+16/10/2020 14:38:33 [desafio1] info: API started! DEV
+16/10/2020 14:38:36 [desafio1] info: API started! DEV
+16/10/2020 14:39:08 [desafio1] info: API started! DEV
+16/10/2020 14:39:08 [desafio1] info: GET /grade/:id - {"id":2,"student":"Loiane Groner","subject":"02 - Node","type":"Fórum","value":5,"timestamp":"2020-05-19T18:21:24.964Z"}
+16/10/2020 14:40:59 [desafio1] info: API started! DEV
+16/10/2020 14:47:43 [desafio1] info: API started! DEV
+16/10/2020 14:47:54 [desafio1] info: API started! DEV
+16/10/2020 14:48:03 [desafio1] info: API started! DEV
+16/10/2020 14:48:22 [desafio1] info: API started! DEV
+16/10/2020 14:48:23 [desafio1] info: API started! DEV
+16/10/2020 14:51:16 [desafio1] info: API started! DEV
+16/10/2020 14:51:18 [desafio1] info: API started! DEV
+16/10/2020 14:51:35 [desafio1] info: API started! DEV
+16/10/2020 14:51:38 [desafio1] info: API started! DEV
+16/10/2020 14:51:41 [desafio1] info: API started! DEV
+16/10/2020 14:51:55 [desafio1] info: API started! DEV
+16/10/2020 14:52:01 [desafio1] info: API started! DEV
+16/10/2020 14:52:04 [desafio1] info: API started! DEV
+16/10/2020 14:52:06 [desafio1] info: API started! DEV
+16/10/2020 14:52:19 [desafio1] info: API started! DEV
+16/10/2020 14:52:29 [desafio1] info: API started! DEV
+16/10/2020 14:53:06 [desafio1] info: API started! DEV
+16/10/2020 14:55:44 [desafio1] info: API started! DEV
+16/10/2020 14:56:02 [desafio1] info: API started! DEV
+16/10/2020 14:56:14 [desafio1] info: API started! DEV
+16/10/2020 14:56:27 [desafio1] info: API started! DEV
+16/10/2020 14:56:30 [desafio1] info: API started! DEV
+16/10/2020 14:57:22 [desafio1] info: API started! DEV
+16/10/2020 14:57:38 [desafio1] info: API started! DEV
+16/10/2020 14:57:45 [desafio1] info: API started! DEV
+16/10/2020 14:57:55 [desafio1] info: API started! DEV
+16/10/2020 14:58:05 [desafio1] info: API started! DEV
+16/10/2020 14:58:48 [desafio1] info: API started! DEV
+16/10/2020 14:58:59 [desafio1] info: API started! DEV
+16/10/2020 14:59:22 [desafio1] info: API started! DEV
+16/10/2020 15:01:38 [desafio1] info: API started! DEV
+16/10/2020 15:02:04 [desafio1] info: API started! DEV
+16/10/2020 15:02:06 [desafio1] info: API started! DEV
+16/10/2020 15:02:15 [desafio1] info: API started! DEV
+16/10/2020 15:02:24 [desafio1] info: API started! DEV
+16/10/2020 15:02:41 [desafio1] info: API started! DEV
+16/10/2020 15:02:44 [desafio1] info: API started! DEV
+16/10/2020 15:02:46 [desafio1] info: API started! DEV
+16/10/2020 15:02:46 [desafio1] info: GET / grade
+16/10/2020 15:11:27 [desafio1] info: API started! DEV
+16/10/2020 15:12:11 [desafio1] info: API started! DEV
+16/10/2020 15:13:00 [desafio1] info: API started! DEV
+16/10/2020 15:24:50 [desafio1] info: API started! DEV
+16/10/2020 15:25:06 [desafio1] info: API started! DEV
+16/10/2020 15:25:09 [desafio1] info: API started! DEV
+16/10/2020 15:25:09 [desafio1] info: GET /grade/ - {"id":null,"student":"Loiane Groner 01","subject":"02 - Node","timestamp":"16/10/2020 12:20:30"}
+16/10/2020 15:25:09 [desafio1] info: GET /grade/ - {"id":null,"student":"Loiane Groner 01","subject":"02 - Node","timestamp":"16/10/2020 12:20:30"}
+16/10/2020 15:25:09 [desafio1] info: GET / grade
+16/10/2020 15:27:03 [desafio1] info: API started! DEV
+16/10/2020 15:27:05 [desafio1] info: API started! DEV
+16/10/2020 15:27:12 [desafio1] info: API started! DEV
+16/10/2020 15:27:59 [desafio1] info: API started! DEV
+16/10/2020 15:27:59 [desafio1] info: GET /grade/ - {"id":null,"student":"Loiane Groner 01","subject":"02 - Node","timestamp":"16/10/2020 12:20:30"}
+16/10/2020 15:28:25 [desafio1] info: API started! DEV
+16/10/2020 15:28:25 [desafio1] info: GET /grade/:id - {"id":1,"student":"Loiane Groner","subject":"02 - Node","type":"Fórum","value":15,"timestamp":"16/10/2020 12:42:06"}
+16/10/2020 15:28:25 [desafio1] info: GET / grade
+16/10/2020 15:51:34 [desafio1] error: writeFile is not defined
+16/10/2020 15:51:34 [desafio1] info: API started!
+16/10/2020 16:04:24 [desafio1] info: API started! DEV
+16/10/2020 16:04:24 [desafio1] info: GET / grade
+16/10/2020 16:04:24 [desafio1] info: GET/average/subject - "Média: 10.333333333333334"
+16/10/2020 16:09:30 [desafio1] info: API started! DEV
+16/10/2020 16:11:35 [desafio1] info: API started! DEV
+16/10/2020 16:11:37 [desafio1] info: API started! DEV
+16/10/2020 16:11:40 [desafio1] info: API started! DEV
+16/10/2020 16:11:42 [desafio1] info: API started! DEV
+16/10/2020 16:11:44 [desafio1] info: API started! DEV
+16/10/2020 16:11:45 [desafio1] info: API started! DEV
+16/10/2020 16:11:49 [desafio1] info: API started! DEV
+16/10/2020 16:11:51 [desafio1] info: API started! DEV
+16/10/2020 16:11:53 [desafio1] info: API started! DEV
+16/10/2020 16:12:07 [desafio1] info: API started! DEV
+16/10/2020 16:12:11 [desafio1] info: API started! DEV
+16/10/2020 16:12:14 [desafio1] info: API started! DEV
+16/10/2020 16:12:21 [desafio1] info: API started! DEV
+16/10/2020 16:12:25 [desafio1] info: API started! DEV
+16/10/2020 16:12:30 [desafio1] info: API started! DEV
+16/10/2020 16:12:33 [desafio1] info: API started! DEV
+16/10/2020 16:12:35 [desafio1] info: API started! DEV
+16/10/2020 16:12:54 [desafio1] info: API started! DEV
+16/10/2020 16:13:12 [desafio1] info: API started! DEV
+16/10/2020 16:13:43 [desafio1] info: API started! DEV
+16/10/2020 16:15:11 [desafio1] info: API started! DEV
+16/10/2020 16:15:38 [desafio1] info: API started! DEV
+16/10/2020 16:15:39 [desafio1] info: API started! DEV
+16/10/2020 16:15:41 [desafio1] info: API started! DEV
+16/10/2020 16:15:42 [desafio1] info: API started! DEV
+16/10/2020 16:15:42 [desafio1] info: GET/average/subject - "Média: 10.333333333333334"
+16/10/2020 16:16:32 [desafio1] info: API started! DEV
+16/10/2020 16:16:49 [desafio1] info: API started! DEV
+16/10/2020 16:17:00 [desafio1] info: API started! DEV
+16/10/2020 16:17:00 [desafio1] info: GET/average/subject - "10.333333333333334"
+16/10/2020 16:17:17 [desafio1] info: API started! DEV
+16/10/2020 16:17:25 [desafio1] info: API started! DEV
+16/10/2020 16:17:26 [desafio1] info: API started! DEV
+16/10/2020 16:17:26 [desafio1] info: GET/average/subject - "10,333"
+16/10/2020 16:17:57 [desafio1] info: API started! DEV
+16/10/2020 16:17:57 [desafio1] info: GET/average/subject - "10.333333333333334"
+16/10/2020 16:18:08 [desafio1] info: API started! DEV
+16/10/2020 16:19:19 [desafio1] info: API started! DEV
+16/10/2020 16:19:21 [desafio1] info: API started! DEV
+16/10/2020 16:19:23 [desafio1] info: API started! DEV
+16/10/2020 16:19:50 [desafio1] info: API started! DEV
+16/10/2020 16:19:50 [desafio1] info: GET/average/subject - "10,333"
+16/10/2020 16:20:02 [desafio1] info: API started! DEV
+16/10/2020 16:20:14 [desafio1] info: API started! DEV
+16/10/2020 16:20:30 [desafio1] info: API started! DEV
+16/10/2020 16:20:35 [desafio1] info: API started! DEV
+16/10/2020 16:21:17 [desafio1] info: API started! DEV
+16/10/2020 16:21:30 [desafio1] info: API started! DEV
+16/10/2020 16:21:32 [desafio1] info: API started! DEV
+16/10/2020 16:21:34 [desafio1] info: API started! DEV
+16/10/2020 16:21:35 [desafio1] info: API started! DEV
+16/10/2020 16:21:39 [desafio1] info: API started! DEV
+16/10/2020 16:21:59 [desafio1] info: API started! DEV
+16/10/2020 16:23:53 [desafio1] info: API started! DEV
+16/10/2020 16:23:55 [desafio1] info: API started! DEV
+16/10/2020 16:23:56 [desafio1] info: API started! DEV
+16/10/2020 16:23:58 [desafio1] info: API started! DEV
+16/10/2020 16:24:05 [desafio1] info: API started! DEV
+16/10/2020 16:24:05 [desafio1] info: GET/average/subject - "10,33"
+16/10/2020 16:25:42 [desafio1] info: API started! DEV
+16/10/2020 16:25:42 [desafio1] info: GET/average/subject - "Média: 10,33"
+16/10/2020 16:27:17 [desafio1] info: API started! DEV
+16/10/2020 16:27:19 [desafio1] info: API started! DEV
+16/10/2020 16:27:23 [desafio1] info: API started! DEV
+16/10/2020 16:27:29 [desafio1] info: API started! DEV
+16/10/2020 16:27:34 [desafio1] info: API started! DEV
+16/10/2020 16:27:36 [desafio1] info: API started! DEV
+16/10/2020 16:27:45 [desafio1] info: API started! DEV
+16/10/2020 16:27:47 [desafio1] info: API started! DEV
+16/10/2020 16:28:00 [desafio1] info: API started! DEV
+16/10/2020 16:28:22 [desafio1] info: API started! DEV
+16/10/2020 16:28:26 [desafio1] info: API started! DEV
+16/10/2020 16:28:35 [desafio1] info: API started! DEV
+16/10/2020 16:28:35 [desafio1] info: GET/average/subject - "Média: 10,33"
+16/10/2020 16:28:57 [desafio1] info: API started! DEV
+16/10/2020 16:29:46 [desafio1] info: API started! DEV
+16/10/2020 16:29:48 [desafio1] info: API started! DEV
+16/10/2020 16:29:51 [desafio1] info: API started! DEV
+16/10/2020 16:30:08 [desafio1] info: API started! DEV
+16/10/2020 16:30:39 [desafio1] info: API started! DEV
+16/10/2020 16:30:40 [desafio1] info: API started! DEV
+16/10/2020 16:30:44 [desafio1] info: API started! DEV
+16/10/2020 16:30:50 [desafio1] info: API started! DEV
+16/10/2020 16:31:17 [desafio1] info: API started! DEV
+16/10/2020 16:31:19 [desafio1] info: API started! DEV
+16/10/2020 16:31:23 [desafio1] info: API started! DEV
+16/10/2020 16:31:26 [desafio1] info: API started! DEV
+16/10/2020 16:31:28 [desafio1] info: API started! DEV
+16/10/2020 16:31:37 [desafio1] info: API started! DEV
+16/10/2020 16:31:42 [desafio1] info: API started! DEV
+16/10/2020 16:31:47 [desafio1] info: API started! DEV
+16/10/2020 16:31:47 [desafio1] info: GET/average/subject - "Média: 12,29"
+16/10/2020 16:59:31 [desafio1] info: API started! DEV
+16/10/2020 16:59:45 [desafio1] info: API started! DEV
+16/10/2020 16:59:53 [desafio1] info: API started! DEV
+16/10/2020 16:59:57 [desafio1] info: API started! DEV
+16/10/2020 17:00:55 [desafio1] info: API started! DEV
+16/10/2020 17:00:58 [desafio1] info: API started! DEV
+16/10/2020 17:00:59 [desafio1] info: API started! DEV
+16/10/2020 17:00:59 [desafio1] info: GET/average/subject - [{"id":37,"student":"Rodrigo Branas","subject":"01 - JavaScript","type":"Fórum","value":6,"timestamp":"2020-05-19T18:21:25.211Z"},{"id":38,"student":"Rodrigo Branas","subject":"02 - Node","type":"Fórum","value":16,"timestamp":"2020-05-19T18:21:25.217Z"},{"id":39,"student":"Rodrigo Branas","subject":"03 - React","type":"Fórum","value":3,"timestamp":"2020-05-19T18:21:25.225Z"},{"id":40,"student":"Rodrigo Branas","subject":"04 - MongoDB","type":"Fórum","value":2,"timestamp":"2020-05-19T18:21:25.232Z"},{"id":41,"student":"Rodrigo Branas","subject":"01 - JavaScript","type":"Trabalho Prático","value":13,"timestamp":"2020-05-19T18:21:25.240Z"},{"id":42,"student":"Rodrigo Branas","subject":"02 - Node","type":"Trabalho Prático","value":18,"timestamp":"2020-05-19T18:21:25.247Z"},{"id":43,"student":"Rodrigo Branas","subject":"03 - React","type":"Trabalho Prático","value":6,"timestamp":"2020-05-19T18:21:25.253Z"},{"id":44,"student":"Rodrigo Branas","subject":"04 - MongoDB","type":"Trabalho Prático","value":28,"timestamp":"2020-05-19T18:21:25.260Z"},{"id":45,"student":"Rodrigo Branas","subject":"01 - JavaScript","type":"Desafio","value":16,"timestamp":"2020-05-19T18:21:25.266Z"},{"id":46,"student":"Rodrigo Branas","subject":"02 - Node","type":"Desafio","value":44,"timestamp":"2020-05-19T18:21:25.272Z"},{"id":47,"student":"Rodrigo Branas","subject":"03 - React","type":"Desafio","value":36,"timestamp":"2020-05-19T18:21:25.278Z"},{"id":48,"student":"Rodrigo Branas","subject":"04 - MongoDB","type":"Desafio","value":45,"timestamp":"2020-05-19T18:21:25.284Z"}]
+16/10/2020 17:01:57 [desafio1] info: API started! DEV
+16/10/2020 17:02:00 [desafio1] info: API started! DEV
+16/10/2020 17:02:03 [desafio1] info: API started! DEV
+16/10/2020 17:02:09 [desafio1] info: API started! DEV
+16/10/2020 17:02:17 [desafio1] info: API started! DEV
+16/10/2020 17:02:25 [desafio1] info: API started! DEV
+16/10/2020 17:02:37 [desafio1] info: API started! DEV
+16/10/2020 17:02:41 [desafio1] info: API started! DEV
+16/10/2020 17:02:45 [desafio1] info: API started! DEV
+16/10/2020 17:07:59 [desafio1] info: API started! DEV
+16/10/2020 17:08:01 [desafio1] info: API started! DEV
+16/10/2020 17:08:06 [desafio1] info: API started! DEV
+16/10/2020 17:08:21 [desafio1] info: API started! DEV
+16/10/2020 17:08:24 [desafio1] info: API started! DEV
+16/10/2020 17:08:30 [desafio1] info: API started! DEV
+16/10/2020 17:08:33 [desafio1] info: API started! DEV
+16/10/2020 17:09:01 [desafio1] info: API started! DEV
+16/10/2020 17:09:28 [desafio1] info: API started! DEV
+16/10/2020 17:09:31 [desafio1] info: API started! DEV
+16/10/2020 17:10:06 [desafio1] info: API started! DEV
+16/10/2020 17:10:09 [desafio1] info: API started! DEV
+16/10/2020 17:10:09 [desafio1] info: POST/grade/totalStudentAndSubject - Não foram encontrados parâmetros dos registros informados
+16/10/2020 17:12:45 [desafio1] info: API started! DEV
+16/10/2020 17:12:50 [desafio1] info: API started! DEV
+16/10/2020 17:13:37 [desafio1] info: API started! DEV
+16/10/2020 17:13:39 [desafio1] info: API started! DEV
+16/10/2020 17:14:39 [desafio1] info: API started! DEV
+16/10/2020 17:14:39 [desafio1] info: GET /grade/:id - {"id":1,"student":"Loiane Groner","subject":"01 - JavaScript","type":"Fórum","value":15,"timestamp":"2020-05-19T18:21:24.958Z"}
+16/10/2020 17:15:06 [desafio1] info: API started! DEV
+16/10/2020 17:15:06 [desafio1] info: GET/average/subject - [{"id":1,"student":"Loiane Groner","subject":"01 - JavaScript","type":"Fórum","value":15,"timestamp":"2020-05-19T18:21:24.958Z"},{"id":5,"student":"Loiane Groner","subject":"01 - JavaScript","type":"Trabalho Prático","value":21,"timestamp":"2020-05-19T18:21:24.981Z"},{"id":9,"student":"Loiane Groner","subject":"01 - JavaScript","type":"Desafio","value":5,"timestamp":"2020-05-19T18:21:25.004Z"},{"id":13,"student":"Roberta Arcoverde","subject":"01 - JavaScript","type":"Fórum","value":13,"timestamp":"2020-05-19T18:21:25.032Z"},{"id":17,"student":"Roberta Arcoverde","subject":"01 - JavaScript","type":"Trabalho Prático","value":12,"timestamp":"2020-05-19T18:21:25.059Z"},{"id":21,"student":"Roberta Arcoverde","subject":"01 - JavaScript","type":"Desafio","value":16,"timestamp":"2020-05-19T18:21:25.084Z"},{"id":25,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Fórum","value":9,"timestamp":"2020-05-19T18:21:25.113Z"},{"id":29,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Trabalho Prático","value":2,"timestamp":"2020-05-19T18:21:25.157Z"},{"id":33,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Desafio","value":25,"timestamp":"2020-05-19T18:21:25.184Z"},{"id":37,"student":"Rodrigo Branas","subject":"01 - JavaScript","type":"Fórum","value":6,"timestamp":"2020-05-19T18:21:25.211Z"},{"id":41,"student":"Rodrigo Branas","subject":"01 - JavaScript","type":"Trabalho Prático","value":13,"timestamp":"2020-05-19T18:21:25.240Z"},{"id":45,"student":"Rodrigo Branas","subject":"01 - JavaScript","type":"Desafio","value":16,"timestamp":"2020-05-19T18:21:25.266Z"},{"id":52,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Fórum","value":9,"timestamp":"2020-06-12T19:48:23.578Z"},{"id":53,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Fórum","value":10,"timestamp":"2020-06-12T19:50:26.303Z"}]
+16/10/2020 17:15:06 [desafio1] info: GET/average/subject - [{"id":1,"student":"Loiane Groner","subject":"01 - JavaScript","type":"Fórum","value":15,"timestamp":"2020-05-19T18:21:24.958Z"},{"id":5,"student":"Loiane Groner","subject":"01 - JavaScript","type":"Trabalho Prático","value":21,"timestamp":"2020-05-19T18:21:24.981Z"},{"id":9,"student":"Loiane Groner","subject":"01 - JavaScript","type":"Desafio","value":5,"timestamp":"2020-05-19T18:21:25.004Z"},{"id":13,"student":"Roberta Arcoverde","subject":"01 - JavaScript","type":"Fórum","value":13,"timestamp":"2020-05-19T18:21:25.032Z"},{"id":17,"student":"Roberta Arcoverde","subject":"01 - JavaScript","type":"Trabalho Prático","value":12,"timestamp":"2020-05-19T18:21:25.059Z"},{"id":21,"student":"Roberta Arcoverde","subject":"01 - JavaScript","type":"Desafio","value":16,"timestamp":"2020-05-19T18:21:25.084Z"},{"id":25,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Fórum","value":9,"timestamp":"2020-05-19T18:21:25.113Z"},{"id":29,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Trabalho Prático","value":2,"timestamp":"2020-05-19T18:21:25.157Z"},{"id":33,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Desafio","value":25,"timestamp":"2020-05-19T18:21:25.184Z"},{"id":37,"student":"Rodrigo Branas","subject":"01 - JavaScript","type":"Fórum","value":6,"timestamp":"2020-05-19T18:21:25.211Z"},{"id":41,"student":"Rodrigo Branas","subject":"01 - JavaScript","type":"Trabalho Prático","value":13,"timestamp":"2020-05-19T18:21:25.240Z"},{"id":45,"student":"Rodrigo Branas","subject":"01 - JavaScript","type":"Desafio","value":16,"timestamp":"2020-05-19T18:21:25.266Z"},{"id":52,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Fórum","value":9,"timestamp":"2020-06-12T19:48:23.578Z"},{"id":53,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Fórum","value":10,"timestamp":"2020-06-12T19:50:26.303Z"}]
+16/10/2020 17:15:06 [desafio1] info: GET / grade
+16/10/2020 17:15:06 [desafio1] info: GET/average/subject - [{"id":1,"student":"Loiane Groner","subject":"01 - JavaScript","type":"Fórum","value":15,"timestamp":"2020-05-19T18:21:24.958Z"},{"id":5,"student":"Loiane Groner","subject":"01 - JavaScript","type":"Trabalho Prático","value":21,"timestamp":"2020-05-19T18:21:24.981Z"},{"id":9,"student":"Loiane Groner","subject":"01 - JavaScript","type":"Desafio","value":5,"timestamp":"2020-05-19T18:21:25.004Z"},{"id":13,"student":"Roberta Arcoverde","subject":"01 - JavaScript","type":"Fórum","value":13,"timestamp":"2020-05-19T18:21:25.032Z"},{"id":17,"student":"Roberta Arcoverde","subject":"01 - JavaScript","type":"Trabalho Prático","value":12,"timestamp":"2020-05-19T18:21:25.059Z"},{"id":21,"student":"Roberta Arcoverde","subject":"01 - JavaScript","type":"Desafio","value":16,"timestamp":"2020-05-19T18:21:25.084Z"},{"id":25,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Fórum","value":9,"timestamp":"2020-05-19T18:21:25.113Z"},{"id":29,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Trabalho Prático","value":2,"timestamp":"2020-05-19T18:21:25.157Z"},{"id":33,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Desafio","value":25,"timestamp":"2020-05-19T18:21:25.184Z"},{"id":37,"student":"Rodrigo Branas","subject":"01 - JavaScript","type":"Fórum","value":6,"timestamp":"2020-05-19T18:21:25.211Z"},{"id":41,"student":"Rodrigo Branas","subject":"01 - JavaScript","type":"Trabalho Prático","value":13,"timestamp":"2020-05-19T18:21:25.240Z"},{"id":45,"student":"Rodrigo Branas","subject":"01 - JavaScript","type":"Desafio","value":16,"timestamp":"2020-05-19T18:21:25.266Z"},{"id":52,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Fórum","value":9,"timestamp":"2020-06-12T19:48:23.578Z"},{"id":53,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Fórum","value":10,"timestamp":"2020-06-12T19:50:26.303Z"}]
+16/10/2020 17:15:06 [desafio1] info: GET/average/subject - [{"id":1,"student":"Loiane Groner","subject":"01 - JavaScript","type":"Fórum","value":15,"timestamp":"2020-05-19T18:21:24.958Z"},{"id":5,"student":"Loiane Groner","subject":"01 - JavaScript","type":"Trabalho Prático","value":21,"timestamp":"2020-05-19T18:21:24.981Z"},{"id":9,"student":"Loiane Groner","subject":"01 - JavaScript","type":"Desafio","value":5,"timestamp":"2020-05-19T18:21:25.004Z"},{"id":13,"student":"Roberta Arcoverde","subject":"01 - JavaScript","type":"Fórum","value":13,"timestamp":"2020-05-19T18:21:25.032Z"},{"id":17,"student":"Roberta Arcoverde","subject":"01 - JavaScript","type":"Trabalho Prático","value":12,"timestamp":"2020-05-19T18:21:25.059Z"},{"id":21,"student":"Roberta Arcoverde","subject":"01 - JavaScript","type":"Desafio","value":16,"timestamp":"2020-05-19T18:21:25.084Z"},{"id":25,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Fórum","value":9,"timestamp":"2020-05-19T18:21:25.113Z"},{"id":29,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Trabalho Prático","value":2,"timestamp":"2020-05-19T18:21:25.157Z"},{"id":33,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Desafio","value":25,"timestamp":"2020-05-19T18:21:25.184Z"},{"id":37,"student":"Rodrigo Branas","subject":"01 - JavaScript","type":"Fórum","value":6,"timestamp":"2020-05-19T18:21:25.211Z"},{"id":41,"student":"Rodrigo Branas","subject":"01 - JavaScript","type":"Trabalho Prático","value":13,"timestamp":"2020-05-19T18:21:25.240Z"},{"id":45,"student":"Rodrigo Branas","subject":"01 - JavaScript","type":"Desafio","value":16,"timestamp":"2020-05-19T18:21:25.266Z"},{"id":52,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Fórum","value":9,"timestamp":"2020-06-12T19:48:23.578Z"},{"id":53,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Fórum","value":10,"timestamp":"2020-06-12T19:50:26.303Z"}]
+16/10/2020 17:19:13 [desafio1] info: API started! DEV
+16/10/2020 17:19:13 [desafio1] info: GET/average/subject - "Média: 10,33"
+16/10/2020 17:23:04 [desafio1] info: API started! DEV
+16/10/2020 17:23:08 [desafio1] info: API started! DEV
+16/10/2020 17:23:15 [desafio1] info: API started! DEV
+16/10/2020 17:23:15 [desafio1] info: GET/average/subject - [{"id":1,"student":"Loiane Groner","subject":"01 - JavaScript","type":"Fórum","value":15,"timestamp":"2020-05-19T18:21:24.958Z"},{"id":5,"student":"Loiane Groner","subject":"01 - JavaScript","type":"Trabalho Prático","value":21,"timestamp":"2020-05-19T18:21:24.981Z"},{"id":9,"student":"Loiane Groner","subject":"01 - JavaScript","type":"Desafio","value":5,"timestamp":"2020-05-19T18:21:25.004Z"},{"id":13,"student":"Roberta Arcoverde","subject":"01 - JavaScript","type":"Fórum","value":13,"timestamp":"2020-05-19T18:21:25.032Z"},{"id":17,"student":"Roberta Arcoverde","subject":"01 - JavaScript","type":"Trabalho Prático","value":12,"timestamp":"2020-05-19T18:21:25.059Z"},{"id":21,"student":"Roberta Arcoverde","subject":"01 - JavaScript","type":"Desafio","value":16,"timestamp":"2020-05-19T18:21:25.084Z"},{"id":25,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Fórum","value":9,"timestamp":"2020-05-19T18:21:25.113Z"},{"id":29,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Trabalho Prático","value":2,"timestamp":"2020-05-19T18:21:25.157Z"},{"id":33,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Desafio","value":25,"timestamp":"2020-05-19T18:21:25.184Z"},{"id":37,"student":"Rodrigo Branas","subject":"01 - JavaScript","type":"Fórum","value":6,"timestamp":"2020-05-19T18:21:25.211Z"},{"id":41,"student":"Rodrigo Branas","subject":"01 - JavaScript","type":"Trabalho Prático","value":13,"timestamp":"2020-05-19T18:21:25.240Z"},{"id":45,"student":"Rodrigo Branas","subject":"01 - JavaScript","type":"Desafio","value":16,"timestamp":"2020-05-19T18:21:25.266Z"},{"id":52,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Fórum","value":9,"timestamp":"2020-06-12T19:48:23.578Z"},{"id":53,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Fórum","value":10,"timestamp":"2020-06-12T19:50:26.303Z"}]
+16/10/2020 17:23:45 [desafio1] info: API started! DEV
+16/10/2020 17:23:46 [desafio1] info: API started! DEV
+16/10/2020 17:24:01 [desafio1] info: API started! DEV
+16/10/2020 17:24:10 [desafio1] info: API started! DEV
+16/10/2020 17:24:10 [desafio1] info: GET/average/subject - "Média: 10,33"
+16/10/2020 17:24:30 [desafio1] info: API started! DEV
+16/10/2020 17:24:42 [desafio1] info: API started! DEV
+16/10/2020 17:24:58 [desafio1] info: API started! DEV
+16/10/2020 17:25:14 [desafio1] info: API started! DEV
+16/10/2020 17:25:14 [desafio1] info: GET/average/subject - [{"id":1,"student":"Loiane Groner","subject":"01 - JavaScript","type":"Fórum","value":15,"timestamp":"2020-05-19T18:21:24.958Z"},{"id":5,"student":"Loiane Groner","subject":"01 - JavaScript","type":"Trabalho Prático","value":21,"timestamp":"2020-05-19T18:21:24.981Z"},{"id":9,"student":"Loiane Groner","subject":"01 - JavaScript","type":"Desafio","value":5,"timestamp":"2020-05-19T18:21:25.004Z"},{"id":13,"student":"Roberta Arcoverde","subject":"01 - JavaScript","type":"Fórum","value":13,"timestamp":"2020-05-19T18:21:25.032Z"},{"id":17,"student":"Roberta Arcoverde","subject":"01 - JavaScript","type":"Trabalho Prático","value":12,"timestamp":"2020-05-19T18:21:25.059Z"},{"id":21,"student":"Roberta Arcoverde","subject":"01 - JavaScript","type":"Desafio","value":16,"timestamp":"2020-05-19T18:21:25.084Z"},{"id":25,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Fórum","value":9,"timestamp":"2020-05-19T18:21:25.113Z"},{"id":29,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Trabalho Prático","value":2,"timestamp":"2020-05-19T18:21:25.157Z"},{"id":33,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Desafio","value":25,"timestamp":"2020-05-19T18:21:25.184Z"},{"id":37,"student":"Rodrigo Branas","subject":"01 - JavaScript","type":"Fórum","value":6,"timestamp":"2020-05-19T18:21:25.211Z"},{"id":41,"student":"Rodrigo Branas","subject":"01 - JavaScript","type":"Trabalho Prático","value":13,"timestamp":"2020-05-19T18:21:25.240Z"},{"id":45,"student":"Rodrigo Branas","subject":"01 - JavaScript","type":"Desafio","value":16,"timestamp":"2020-05-19T18:21:25.266Z"},{"id":52,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Fórum","value":9,"timestamp":"2020-06-12T19:48:23.578Z"},{"id":53,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Fórum","value":10,"timestamp":"2020-06-12T19:50:26.303Z"}]
+16/10/2020 17:25:36 [desafio1] info: API started! DEV
+16/10/2020 17:25:39 [desafio1] info: API started! DEV
+16/10/2020 17:25:40 [desafio1] info: API started! DEV
+16/10/2020 17:26:16 [desafio1] info: API started! DEV
+16/10/2020 17:26:16 [desafio1] info: GET/average/subject - "Média: 10,33"
+16/10/2020 17:26:48 [desafio1] info: API started! DEV
+16/10/2020 17:26:51 [desafio1] info: API started! DEV
+16/10/2020 17:27:20 [desafio1] info: API started! DEV
+16/10/2020 17:27:25 [desafio1] info: API started! DEV
+16/10/2020 17:27:36 [desafio1] info: API started! DEV
+16/10/2020 17:27:40 [desafio1] info: API started! DEV
+16/10/2020 17:27:44 [desafio1] info: API started! DEV
+16/10/2020 17:27:46 [desafio1] info: API started! DEV
+16/10/2020 17:27:52 [desafio1] info: API started! DEV
+16/10/2020 17:28:04 [desafio1] info: API started! DEV
+16/10/2020 17:28:14 [desafio1] info: API started! DEV
+16/10/2020 17:28:24 [desafio1] info: API started! DEV
+16/10/2020 17:28:32 [desafio1] info: API started! DEV
+16/10/2020 17:28:32 [desafio1] info: GET/average/subject - [{"id":1,"student":"Loiane Groner","subject":"01 - JavaScript","type":"Fórum","value":15,"timestamp":"2020-05-19T18:21:24.958Z"},{"id":2,"student":"Loiane Groner","subject":"02 - Node","type":"Fórum","value":5,"timestamp":"2020-05-19T18:21:24.964Z"},{"id":3,"student":"Loiane Groner","subject":"03 - React","type":"Fórum","value":14,"timestamp":"2020-05-19T18:21:24.970Z"},{"id":4,"student":"Loiane Groner","subject":"04 - MongoDB","type":"Fórum","value":2,"timestamp":"2020-05-19T18:21:24.975Z"},{"id":5,"student":"Loiane Groner","subject":"01 - JavaScript","type":"Trabalho Prático","value":21,"timestamp":"2020-05-19T18:21:24.981Z"},{"id":6,"student":"Loiane Groner","subject":"02 - Node","type":"Trabalho Prático","value":24,"timestamp":"2020-05-19T18:21:24.987Z"},{"id":7,"student":"Loiane Groner","subject":"03 - React","type":"Trabalho Prático","value":2,"timestamp":"2020-05-19T18:21:24.993Z"},{"id":8,"student":"Loiane Groner","subject":"04 - MongoDB","type":"Trabalho Prático","value":30,"timestamp":"2020-05-19T18:21:24.999Z"},{"id":9,"student":"Loiane Groner","subject":"01 - JavaScript","type":"Desafio","value":5,"timestamp":"2020-05-19T18:21:25.004Z"},{"id":10,"student":"Loiane Groner","subject":"02 - Node","type":"Desafio","value":18,"timestamp":"2020-05-19T18:21:25.012Z"},{"id":11,"student":"Loiane Groner","subject":"03 - React","type":"Desafio","value":40,"timestamp":"2020-05-19T18:21:25.019Z"},{"id":12,"student":"Loiane Groner","subject":"04 - MongoDB","type":"Desafio","value":44,"timestamp":"2020-05-19T18:21:25.025Z"},{"id":50,"student":"Loiane Groner","subject":"03 - React","timestamp":"2020-06-12T19:13:15.965Z"}]
+16/10/2020 17:28:32 [desafio1] info: GET / grade
+16/10/2020 17:28:32 [desafio1] info: GET/average/subject - [{"id":13,"student":"Roberta Arcoverde","subject":"01 - JavaScript","type":"Fórum","value":13,"timestamp":"2020-05-19T18:21:25.032Z"},{"id":14,"student":"Roberta Arcoverde","subject":"02 - Node","type":"Fórum","value":16,"timestamp":"2020-05-19T18:21:25.039Z"},{"id":15,"student":"Roberta Arcoverde","subject":"03 - React","type":"Fórum","value":1,"timestamp":"2020-05-19T18:21:25.047Z"},{"id":16,"student":"Roberta Arcoverde","subject":"04 - MongoDB","type":"Fórum","value":7,"timestamp":"2020-05-19T18:21:25.053Z"},{"id":17,"student":"Roberta Arcoverde","subject":"01 - JavaScript","type":"Trabalho Prático","value":12,"timestamp":"2020-05-19T18:21:25.059Z"},{"id":18,"student":"Roberta Arcoverde","subject":"02 - Node","type":"Trabalho Prático","value":21,"timestamp":"2020-05-19T18:21:25.066Z"},{"id":19,"student":"Roberta Arcoverde","subject":"03 - React","type":"Trabalho Prático","value":7,"timestamp":"2020-05-19T18:21:25.072Z"},{"id":20,"student":"Roberta Arcoverde","subject":"04 - MongoDB","type":"Trabalho Prático","value":20,"timestamp":"2020-05-19T18:21:25.077Z"},{"id":21,"student":"Roberta Arcoverde","subject":"01 - JavaScript","type":"Desafio","value":16,"timestamp":"2020-05-19T18:21:25.084Z"},{"id":22,"student":"Roberta Arcoverde","subject":"02 - Node","type":"Desafio","value":9,"timestamp":"2020-05-19T18:21:25.090Z"},{"id":23,"student":"Roberta Arcoverde","subject":"03 - React","type":"Desafio","value":15,"timestamp":"2020-05-19T18:21:25.098Z"},{"id":24,"student":"Roberta Arcoverde","subject":"04 - MongoDB","type":"Desafio","value":14,"timestamp":"2020-05-19T18:21:25.106Z"}]
+16/10/2020 17:30:47 [desafio1] info: API started! DEV
+16/10/2020 17:33:31 [desafio1] info: API started! DEV
+16/10/2020 17:33:33 [desafio1] info: API started! DEV
+16/10/2020 17:33:36 [desafio1] info: API started! DEV
+16/10/2020 17:33:41 [desafio1] info: API started! DEV
+16/10/2020 17:33:44 [desafio1] info: API started! DEV
+16/10/2020 17:34:29 [desafio1] info: API started! DEV
+16/10/2020 17:34:43 [desafio1] info: API started! DEV
+16/10/2020 17:34:44 [desafio1] info: API started! DEV
+16/10/2020 17:37:10 [desafio1] info: API started! DEV
+16/10/2020 17:37:27 [desafio1] info: API started! DEV
+16/10/2020 17:37:29 [desafio1] info: API started! DEV
+16/10/2020 17:37:30 [desafio1] info: API started! DEV
+16/10/2020 17:37:30 [desafio1] info: GET/average/subject - [{"id":13,"student":"Roberta Arcoverde","subject":"01 - JavaScript","type":"Fórum","value":13,"timestamp":"2020-05-19T18:21:25.032Z"},{"id":14,"student":"Roberta Arcoverde","subject":"02 - Node","type":"Fórum","value":16,"timestamp":"2020-05-19T18:21:25.039Z"},{"id":15,"student":"Roberta Arcoverde","subject":"03 - React","type":"Fórum","value":1,"timestamp":"2020-05-19T18:21:25.047Z"},{"id":16,"student":"Roberta Arcoverde","subject":"04 - MongoDB","type":"Fórum","value":7,"timestamp":"2020-05-19T18:21:25.053Z"},{"id":17,"student":"Roberta Arcoverde","subject":"01 - JavaScript","type":"Trabalho Prático","value":12,"timestamp":"2020-05-19T18:21:25.059Z"},{"id":18,"student":"Roberta Arcoverde","subject":"02 - Node","type":"Trabalho Prático","value":21,"timestamp":"2020-05-19T18:21:25.066Z"},{"id":19,"student":"Roberta Arcoverde","subject":"03 - React","type":"Trabalho Prático","value":7,"timestamp":"2020-05-19T18:21:25.072Z"},{"id":20,"student":"Roberta Arcoverde","subject":"04 - MongoDB","type":"Trabalho Prático","value":20,"timestamp":"2020-05-19T18:21:25.077Z"},{"id":21,"student":"Roberta Arcoverde","subject":"01 - JavaScript","type":"Desafio","value":16,"timestamp":"2020-05-19T18:21:25.084Z"},{"id":22,"student":"Roberta Arcoverde","subject":"02 - Node","type":"Desafio","value":9,"timestamp":"2020-05-19T18:21:25.090Z"},{"id":23,"student":"Roberta Arcoverde","subject":"03 - React","type":"Desafio","value":15,"timestamp":"2020-05-19T18:21:25.098Z"},{"id":24,"student":"Roberta Arcoverde","subject":"04 - MongoDB","type":"Desafio","value":14,"timestamp":"2020-05-19T18:21:25.106Z"}]
+16/10/2020 17:38:17 [desafio1] info: API started! DEV
+16/10/2020 17:38:41 [desafio1] info: API started! DEV
+16/10/2020 17:38:43 [desafio1] info: API started! DEV
+16/10/2020 17:40:09 [desafio1] info: API started! DEV
+16/10/2020 17:41:16 [desafio1] info: API started! DEV
+16/10/2020 17:41:33 [desafio1] info: API started! DEV
+16/10/2020 17:41:34 [desafio1] info: API started! DEV
+16/10/2020 17:42:36 [desafio1] info: API started! DEV
+16/10/2020 17:43:03 [desafio1] info: API started! DEV
+16/10/2020 17:43:06 [desafio1] info: API started! DEV
+16/10/2020 17:43:06 [desafio1] info: GET /grade/:id - {"id":1,"student":"Loiane Groner","subject":"01 - JavaScript","type":"Fórum","value":15,"timestamp":"2020-05-19T18:21:24.958Z"}
+16/10/2020 17:45:10 [desafio1] info: API started! DEV
+16/10/2020 17:45:38 [desafio1] info: API started! DEV
+16/10/2020 17:45:57 [desafio1] info: API started! DEV
+16/10/2020 17:46:03 [desafio1] info: API started! DEV
+16/10/2020 17:46:13 [desafio1] info: API started! DEV
+16/10/2020 17:46:17 [desafio1] info: API started! DEV
+16/10/2020 17:46:21 [desafio1] info: API started! DEV
+16/10/2020 17:46:27 [desafio1] info: API started! DEV
+16/10/2020 17:46:33 [desafio1] info: API started! DEV
+16/10/2020 17:46:35 [desafio1] info: API started! DEV
+16/10/2020 17:46:41 [desafio1] info: API started! DEV
+16/10/2020 17:46:49 [desafio1] info: API started! DEV
+16/10/2020 17:46:58 [desafio1] info: API started! DEV
+16/10/2020 17:47:03 [desafio1] info: API started! DEV
+16/10/2020 17:47:16 [desafio1] info: API started! DEV
+16/10/2020 17:47:21 [desafio1] info: API started! DEV
+16/10/2020 17:47:55 [desafio1] info: API started! DEV
+16/10/2020 17:48:42 [desafio1] info: API started! DEV
+16/10/2020 17:49:00 [desafio1] info: API started! DEV
+16/10/2020 17:49:14 [desafio1] info: API started! DEV
+16/10/2020 17:49:14 [desafio1] info: GET / grade
+16/10/2020 17:50:33 [desafio1] info: API started! DEV
+16/10/2020 17:51:04 [desafio1] info: API started! DEV
+16/10/2020 17:51:23 [desafio1] info: API started! DEV
+16/10/2020 17:51:34 [desafio1] info: API started! DEV
+16/10/2020 17:51:46 [desafio1] info: API started! DEV
+16/10/2020 17:51:46 [desafio1] info: GET / grade
+16/10/2020 17:51:46 [desafio1] info: POST /grade - {"id":54,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Fórum","value":54,"timestamp":"16/10/2020 17:51:45"}
+16/10/2020 17:51:46 [desafio1] info: PUT /grade/ - {"id":1,"student":"Loiane Groner - Emerson Pessoa","subject":"01 - JavaScript","type":"Fórum","value":15}
+16/10/2020 17:51:46 [desafio1] info: PUT /grade/ - {"id":1,"student":"Loiane Groner - ok","subject":"01 - JavaScript","type":"Fórum","value":15}
+16/10/2020 17:51:46 [desafio1] info: PUT /grade/ - {"id":1,"student":"Loiane Groner","subject":"01 - JavaScript","type":"Fórum","value":15}
+16/10/2020 17:51:46 [desafio1] info: PUT /grade/ - {"id":1,"student":"Loiane Groner","subject":"01 - JavaScript","type":"Fórum","value":15,"timestamp":"2020-05-19T18:21:24.958Z"}
+16/10/2020 17:51:46 [desafio1] info: GET /grade/:id - {"id":1,"student":"Loiane Groner","subject":"01 - JavaScript","type":"Fórum","value":15,"timestamp":"2020-05-19T18:21:24.958Z"}
+16/10/2020 17:51:46 [desafio1] info: GET /grade/:id - {"id":54,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Fórum","value":54,"timestamp":"16/10/2020 17:51:45"}
+16/10/2020 18:03:56 [desafio1] info: API started! DEV
+16/10/2020 18:03:56 [desafio1] info: DELETE /grade/:id - "55"
+16/10/2020 18:03:56 [desafio1] info: GET / grade
+16/10/2020 18:03:56 [desafio1] info: DELETE /grade/:id - "60"
+16/10/2020 18:06:18 [desafio1] info: API started! DEV
+16/10/2020 18:06:27 [desafio1] info: API started! DEV
+16/10/2020 18:06:29 [desafio1] info: API started! DEV
+16/10/2020 18:06:34 [desafio1] info: API started! DEV
+16/10/2020 18:06:37 [desafio1] info: API started! DEV
+16/10/2020 18:06:41 [desafio1] info: API started! DEV
+16/10/2020 18:07:09 [desafio1] info: API started! DEV
+16/10/2020 18:07:11 [desafio1] info: API started! DEV
+16/10/2020 18:07:14 [desafio1] info: API started! DEV
+16/10/2020 18:07:19 [desafio1] info: API started! DEV
+16/10/2020 18:07:29 [desafio1] info: API started! DEV
+16/10/2020 18:07:32 [desafio1] info: API started! DEV
+16/10/2020 18:07:54 [desafio1] info: API started! DEV
+16/10/2020 18:07:57 [desafio1] info: API started! DEV
+16/10/2020 18:08:00 [desafio1] info: API started! DEV
+16/10/2020 18:08:03 [desafio1] info: API started! DEV
+16/10/2020 18:08:05 [desafio1] info: API started! DEV
+16/10/2020 18:08:16 [desafio1] info: API started! DEV
+16/10/2020 18:08:18 [desafio1] info: API started! DEV
+16/10/2020 18:08:19 [desafio1] info: API started! DEV
+16/10/2020 18:08:23 [desafio1] info: API started! DEV
+16/10/2020 18:08:23 [desafio1] info: DELETE /grade/:id - "60"
+16/10/2020 18:09:11 [desafio1] info: API started! DEV
+16/10/2020 18:09:11 [desafio1] info: DELETE /grade/:id - "60"
+16/10/2020 18:11:36 [desafio1] info: API started! DEV
+16/10/2020 18:11:39 [desafio1] info: API started! DEV
+16/10/2020 18:11:39 [desafio1] info: DELETE /grade/ - grades is not defined
+16/10/2020 18:12:13 [desafio1] info: API started! DEV
+16/10/2020 18:12:13 [desafio1] info: DELETE /grade/ - grades is not defined
+16/10/2020 18:12:38 [desafio1] info: API started! DEV
+16/10/2020 18:12:41 [desafio1] info: API started! DEV
+16/10/2020 18:12:41 [desafio1] info: DELETE /grade/:id - "60"
+16/10/2020 18:13:16 [desafio1] info: API started! DEV
+16/10/2020 18:13:16 [desafio1] info: DELETE /grade/:id - "60"
+16/10/2020 18:13:27 [desafio1] info: API started! DEV
+16/10/2020 18:13:30 [desafio1] info: API started! DEV
+16/10/2020 18:13:38 [desafio1] info: API started! DEV
+16/10/2020 18:13:38 [desafio1] info: DELETE /grade/ - Não foram encontrados parâmetros dos registros informados
+16/10/2020 18:14:02 [desafio1] info: API started! DEV
+16/10/2020 18:14:02 [desafio1] info: DELETE /grade/:id - "60"
+16/10/2020 18:14:11 [desafio1] info: API started! DEV
+16/10/2020 18:14:11 [desafio1] info: DELETE /grade/ - Não foram encontrados parâmetros dos registros informados
+16/10/2020 18:16:05 [desafio1] info: API started! DEV
+16/10/2020 18:16:09 [desafio1] info: API started! DEV
+16/10/2020 18:16:15 [desafio1] info: API started! DEV
+16/10/2020 18:16:19 [desafio1] info: API started! DEV
+16/10/2020 18:16:24 [desafio1] info: API started! DEV
+16/10/2020 18:16:29 [desafio1] info: API started! DEV
+16/10/2020 18:16:29 [desafio1] info: DELETE /grade/ - Id inexistente
+16/10/2020 18:16:29 [desafio1] info: DELETE /grade/ - Id inexistente
+16/10/2020 18:17:59 [desafio1] info: API started! DEV
+16/10/2020 18:18:01 [desafio1] info: API started! DEV
+16/10/2020 18:18:04 [desafio1] info: API started! DEV
+16/10/2020 18:18:06 [desafio1] info: API started! DEV
+16/10/2020 18:18:35 [desafio1] info: API started! DEV
+16/10/2020 18:18:43 [desafio1] info: API started! DEV
+16/10/2020 18:18:48 [desafio1] info: API started! DEV
+16/10/2020 18:18:50 [desafio1] info: API started! DEV
+16/10/2020 18:18:52 [desafio1] info: API started! DEV
+16/10/2020 18:18:52 [desafio1] info: DELETE /grade/ - Id inexistente
+16/10/2020 18:18:52 [desafio1] info: POST /grade - {"id":null,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Fórum","value":54,"timestamp":"16/10/2020 18:18:52"}
+16/10/2020 18:18:52 [desafio1] info: GET / grade
+16/10/2020 18:18:52 [desafio1] info: GET / grade
+16/10/2020 18:21:22 [desafio1] info: API started! DEV
+16/10/2020 18:21:35 [desafio1] info: API started! DEV
+16/10/2020 18:21:35 [desafio1] info: POST /grade - {"id":null,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Fórum","value":54,"timestamp":"16/10/2020 18:21:34"}
+16/10/2020 18:21:35 [desafio1] info: GET / grade
+16/10/2020 18:21:35 [desafio1] info: GET / grade
+16/10/2020 18:21:35 [desafio1] info: POST /grade - {"id":null,"student":"Roberto Achar","subject":"01 - JavaScript","timestamp":"16/10/2020 18:21:34"}
+16/10/2020 18:21:35 [desafio1] info: GET / grade
+16/10/2020 18:21:35 [desafio1] info: POST /grade - {"id":0,"student":"Roberto Achar","subject":"01 - JavaScript","timestamp":"16/10/2020 18:21:34"}
+16/10/2020 18:21:35 [desafio1] info: GET / grade
+16/10/2020 18:21:35 [desafio1] info: POST/grade/totalStudentAndSubject - "total: 47"
+16/10/2020 18:21:35 [desafio1] info: GET / grade
+16/10/2020 18:21:35 [desafio1] info: POST /grade - {"id":1,"student":"Roberto Achar","subject":"01 - JavaScript","timestamp":"16/10/2020 18:21:34"}
+16/10/2020 18:21:35 [desafio1] info: GET / grade
+16/10/2020 18:21:35 [desafio1] info: GET / grade
+16/10/2020 18:21:35 [desafio1] info: POST /grade - {"id":54,"student":"Roberto Achar","subject":"01 - JavaScript","timestamp":"16/10/2020 18:21:34"}
+16/10/2020 18:21:35 [desafio1] info: DELETE /grade/ - Id inexistente
+16/10/2020 18:59:40 [desafio1] info: API started! DEV
+16/10/2020 18:59:40 [desafio1] info: POST /grade - {"id":null,"student":"Roberto Achar","subject":"01 - JavaScript","timestamp":"16/10/2020 18:59:38"}
+16/10/2020 18:59:40 [desafio1] info: POST /grade - {"id":null,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Fórum","value":9,"timestamp":"16/10/2020 18:59:38"}
+16/10/2020 18:59:40 [desafio1] info: GET / grade
+16/10/2020 19:04:31 [desafio1] info: API started! DEV
+16/10/2020 19:04:31 [desafio1] info: GET / grade
+16/10/2020 19:04:31 [desafio1] info: DELETE /grade/ - Id inexistente
+16/10/2020 19:04:31 [desafio1] info: POST /grade - {"id":null,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Fórum","value":54,"timestamp":"16/10/2020 19:04:31"}
+16/10/2020 19:04:31 [desafio1] info: GET / grade
+16/10/2020 19:04:31 [desafio1] info: DELETE /grade/ - Id inexistente
+16/10/2020 19:04:31 [desafio1] info: DELETE /grade/ - Id inexistente
+16/10/2020 19:06:50 [desafio1] info: API started! DEV
+16/10/2020 19:06:53 [desafio1] info: API started! DEV
+16/10/2020 19:06:55 [desafio1] info: API started! DEV
+16/10/2020 19:06:58 [desafio1] info: API started! DEV
+16/10/2020 19:07:01 [desafio1] info: API started! DEV
+16/10/2020 19:07:03 [desafio1] info: API started! DEV
+16/10/2020 19:07:10 [desafio1] info: API started! DEV
+16/10/2020 19:21:54 [desafio1] info: API started! DEV
+16/10/2020 19:21:54 [desafio1] info: GET / grade
+16/10/2020 19:21:54 [desafio1] info: GET /grade/:id - {"id":1,"student":"Loiane Groner","subject":"01 - JavaScript","type":"Fórum","value":15,"timestamp":"2020-05-19T18:21:24.958Z"}
+16/10/2020 19:21:54 [desafio1] info: GET/average/subject - "Média: 10,33"
+16/10/2020 19:25:22 [desafio1] info: API started! DEV
+16/10/2020 19:25:58 [desafio1] info: API started! DEV
+16/10/2020 19:26:09 [desafio1] info: API started! DEV
+16/10/2020 19:26:10 [desafio1] info: API started! DEV
+16/10/2020 19:26:15 [desafio1] info: API started! DEV
+16/10/2020 19:26:18 [desafio1] info: API started! DEV
+16/10/2020 19:26:31 [desafio1] info: API started! DEV
+16/10/2020 19:26:52 [desafio1] info: API started! DEV
+16/10/2020 19:26:53 [desafio1] info: API started! DEV
+16/10/2020 19:27:20 [desafio1] info: API started! DEV
+16/10/2020 19:27:35 [desafio1] info: API started! DEV
+16/10/2020 19:27:40 [desafio1] info: API started! DEV
+16/10/2020 19:27:57 [desafio1] info: API started! DEV
+16/10/2020 19:28:11 [desafio1] info: API started! DEV
+16/10/2020 19:28:14 [desafio1] info: API started! DEV
+16/10/2020 19:28:19 [desafio1] info: API started! DEV
+16/10/2020 19:28:19 [desafio1] info: GET/average/subject - [{"id":13,"student":"Roberta Arcoverde","subject":"01 - JavaScript","type":"Fórum","value":13,"timestamp":"2020-05-19T18:21:25.032Z"},{"id":14,"student":"Roberta Arcoverde","subject":"02 - Node","type":"Fórum","value":16,"timestamp":"2020-05-19T18:21:25.039Z"},{"id":15,"student":"Roberta Arcoverde","subject":"03 - React","type":"Fórum","value":1,"timestamp":"2020-05-19T18:21:25.047Z"},{"id":16,"student":"Roberta Arcoverde","subject":"04 - MongoDB","type":"Fórum","value":7,"timestamp":"2020-05-19T18:21:25.053Z"},{"id":17,"student":"Roberta Arcoverde","subject":"01 - JavaScript","type":"Trabalho Prático","value":12,"timestamp":"2020-05-19T18:21:25.059Z"},{"id":18,"student":"Roberta Arcoverde","subject":"02 - Node","type":"Trabalho Prático","value":21,"timestamp":"2020-05-19T18:21:25.066Z"},{"id":19,"student":"Roberta Arcoverde","subject":"03 - React","type":"Trabalho Prático","value":7,"timestamp":"2020-05-19T18:21:25.072Z"},{"id":20,"student":"Roberta Arcoverde","subject":"04 - MongoDB","type":"Trabalho Prático","value":20,"timestamp":"2020-05-19T18:21:25.077Z"},{"id":21,"student":"Roberta Arcoverde","subject":"01 - JavaScript","type":"Desafio","value":16,"timestamp":"2020-05-19T18:21:25.084Z"},{"id":22,"student":"Roberta Arcoverde","subject":"02 - Node","type":"Desafio","value":9,"timestamp":"2020-05-19T18:21:25.090Z"},{"id":23,"student":"Roberta Arcoverde","subject":"03 - React","type":"Desafio","value":15,"timestamp":"2020-05-19T18:21:25.098Z"},{"id":24,"student":"Roberta Arcoverde","subject":"04 - MongoDB","type":"Desafio","value":14,"timestamp":"2020-05-19T18:21:25.106Z"}]
+16/10/2020 19:29:15 [desafio1] info: API started! DEV
+16/10/2020 19:29:19 [desafio1] info: API started! DEV
+16/10/2020 19:29:30 [desafio1] info: API started! DEV
+16/10/2020 19:29:32 [desafio1] info: API started! DEV
+16/10/2020 19:29:32 [desafio1] info: POST /grade - {"id":54,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Fórum","value":54,"timestamp":"16/10/2020 19:29:32"}
+16/10/2020 19:29:32 [desafio1] info: GET / grade
+16/10/2020 19:29:32 [desafio1] info: PUT /grade/ - {"id":1,"student":"Loiane Groner ok","subject":"01 - JavaScript","type":"Fórum","value":15,"timestamp":"2020-05-19T18:21:24.958Z"}
+16/10/2020 19:36:10 [desafio1] info: API started! DEV
+16/10/2020 19:36:33 [desafio1] info: API started! DEV
+16/10/2020 19:36:49 [desafio1] info: API started! DEV
+16/10/2020 19:36:53 [desafio1] info: API started! DEV
+16/10/2020 19:37:11 [desafio1] info: API started! DEV
+16/10/2020 19:37:31 [desafio1] info: API started! DEV
+16/10/2020 19:38:04 [desafio1] info: API started! DEV
+16/10/2020 19:38:12 [desafio1] info: API started! DEV
+16/10/2020 19:39:18 [desafio1] info: API started! DEV
+16/10/2020 19:39:30 [desafio1] info: API started! DEV
+16/10/2020 19:39:32 [desafio1] info: API started! DEV
+16/10/2020 19:39:32 [desafio1] info: PUT /grade/ - {"id":1,"student":"Loiane Groner ok","subject":"01 - JavaScript","type":"Fórum","value":15,"timestamp":"2020-05-19T18:21:24.958Z"}
+16/10/2020 19:39:32 [desafio1] info: GET / grade
+16/10/2020 19:44:12 [desafio1] info: API started! DEV
+16/10/2020 19:44:12 [desafio1] info: PUT /grade/ - {"id":1,"student":"Loiane Groner","subject":"01 - JavaScript","type":"Fórum","value":15,"timestamp":"2020-05-19T18:21:24.958Z"}
+16/10/2020 19:45:01 [desafio1] info: API started! DEV
+16/10/2020 19:45:01 [desafio1] info: PUT /grade/ - {"id":1,"student":"Loiane Groner","subject":"01 - JavaScript","type":"Desafio","value":15,"timestamp":"2020-05-19T18:21:24.958Z"}
+16/10/2020 19:45:01 [desafio1] info: PUT /grade/ - {"id":1,"student":"Loiane Groner","subject":"01 - JavaScript","type":"Fórum","value":15,"timestamp":"2020-05-19T18:21:24.958Z"}
+16/10/2020 19:45:01 [desafio1] info: GET / grade
+16/10/2020 19:46:33 [desafio1] info: API started! DEV
+16/10/2020 19:46:36 [desafio1] info: API started! DEV
+16/10/2020 19:46:43 [desafio1] info: API started! DEV
+16/10/2020 19:46:45 [desafio1] info: API started! DEV
+16/10/2020 19:46:45 [desafio1] info: DELETE /grade/:id - "54"
+16/10/2020 19:46:45 [desafio1] info: GET / grade
+16/10/2020 19:48:20 [desafio1] info: API started! DEV
+16/10/2020 19:48:26 [desafio1] info: API started! DEV
+16/10/2020 19:48:26 [desafio1] info: POST /grade - {"id":null,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Fórum","value":54,"timestamp":"16/10/2020 19:48:25"}
+16/10/2020 19:48:26 [desafio1] info: GET / grade
+16/10/2020 19:48:26 [desafio1] info: GET / grade
+16/10/2020 19:51:17 [desafio1] info: API started! DEV
+16/10/2020 19:51:17 [desafio1] info: POST /grade - {"id":null,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Fórum","value":54,"timestamp":"16/10/2020 19:51:16"}
+16/10/2020 19:51:17 [desafio1] info: GET / grade
+16/10/2020 19:51:17 [desafio1] info: POST /grade - {"id":0,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Fórum","value":54,"timestamp":"16/10/2020 19:51:16"}
+16/10/2020 19:51:17 [desafio1] info: GET / grade
+16/10/2020 19:51:17 [desafio1] info: GET / grade
+16/10/2020 19:51:17 [desafio1] info: POST /grade - {"id":54,"student":"Roberto Achar","subject":"01 - JavaScript","type":"Fórum","value":54,"timestamp":"16/10/2020 19:51:16"}
+16/10/2020 19:51:17 [desafio1] info: GET / grade
+16/10/2020 19:51:17 [desafio1] info: DELETE /grade/:id - "54"
