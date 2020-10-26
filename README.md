@@ -25,14 +25,14 @@
 [<img src="./image/gifs/desafio_1.gif" width="95%" alt="desafio01"> <br><sub> DESAFIO01 </sub>](https://emersonpessoa01.github.io/desafio01/) <br> [<sub>(View code)</sub>](https://github.com/emersonpessoa01/desafio01) | [<img src="image/gifs/desafio1.gif" width="95%"  alt="desafio1"><br><sub> DESAFIO1 </sub>](https://emersonpessoa01.github.io/desafio1/) <br> [<sub>(View code)</sub>](https://github.com/emersonpessoa01/desafio1)  |
 | :---: | :---: |
 
-[<img src="./image/gifs/rangerColor.gif" width="95%" alt="crud"><br><sub> RANGER SLIDERS </sub>](https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo01/rangerSliders) | [<img src="image/gifs/jsperfomatico.gif" width="95%"  alt="color-selector"><br><sub>JAVASCRIPT PERFORMÁTICO</sub>](https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo03/javascript-perfomatico) |
+[<img src="./image/gifs/rangerColor.gif" width="95%" alt="crud"><br><sub> RANGER SLIDERS </sub>](https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo01-Fundamentos%20de%20Javascript/rangerSliders) | [<img src="image/gifs/jsperfomatico.gif" width="95%"  alt="color-selector"><br><sub>JAVASCRIPT PERFORMÁTICO</sub>](https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo03-React/javascript-perfomatico) |
 | :---: | :---: |
 
-[<img src="./image/gifs/radio-podcast_2.gif" width="90%" alt="radio-podcast"> <br><sub> RÁDIO PODCAST </sub>](https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo01/rangerSliders) | [<img src="./image/gifs/CRUD.gif" width="150%" alt="crud"><br><sub> CRUD </sub>](https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo01/CRUD) |
+[<img src="./image/gifs/radio-podcast_2.gif" width="90%" alt="radio-podcast"> <br><sub> RÁDIO PODCAST </sub>](https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo01-Fundamentos%20de%20Javascript/radio-podcast) | [<img src="./image/gifs/CRUD.gif" width="150%" alt="crud"><br><sub> CRUD </sub>](https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo01-Fundamentos%20de%20Javascript/CRUD) |
 | :---: | :---: |
 
 
-[<img src="image/gifs/color-selector.gif" width="95%"  alt="color-selector"><br><sub> COLOR SELECTOR </sub>](https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo01/color-selector) |
+[<img src="image/gifs/color-selector.gif" width="95%"  alt="color-selector"><br><sub> COLOR SELECTOR </sub>](https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo01-Fundamentos%20de%20Javascript/color-selector) |
 | :---: |
 
 
@@ -124,7 +124,6 @@ funções, estruturas de decisão, estruturas de repetição e manipulação de 
 :heavy_check_mark: Fechamento: Entrega do Desafio Final. :trophy:
 
 ---
-
 
 
 
