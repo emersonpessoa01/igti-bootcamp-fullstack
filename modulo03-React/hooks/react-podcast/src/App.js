@@ -25,12 +25,18 @@ export default class App extends Component {
   //_ = props anterior
   //this.state = estado atual
   componentDidUpdate(_, previousState) {
-    const { paragraph1: oldParagraph1 } = previousState;
-    const { paragraph1 } = this.state;
+    const {
+      paragraph1: oldParagraph1,
+      paragraph2: oldParagraph2,
+    } = previousState;
+    const { paragraph1, paragraph2 } = this.state;
 
     if (oldParagraph1 !== paragraph1) {
       console.log("componetDidUpdate");
       document.title = this.state.paragraph1.length;
+    }
+    if (oldParagraph2 !== paragraph2) {
+      this.setState({ sum: paragraph2.length });
     }
   }
   // componentDidUpdate( ) {
@@ -57,9 +63,9 @@ export default class App extends Component {
           value={paragraph2}
           onChange={this.handleParagraph2}
         />
-        <p>parágrafo 1: {paragraph1}</p>
-        <p>parágrafo 2: {paragraph2}</p>
-        <p>Quantidades de caracteres do parágrafo 2: {sum}</p>
+        <p><b>parágrafo (1)</b>: {paragraph1}</p>
+        <p><b>parágrafo (2)</b>: {paragraph2}</p>
+        <p>Quantidades de caracteres do<b> parágrafo (2)</b> = <b>{sum}</b></p>
       </div>
     );
   }
