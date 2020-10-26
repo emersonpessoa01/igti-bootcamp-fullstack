@@ -21,6 +21,7 @@ export default class App extends Component {
       paragraph2: evt.target.value,
     });
   };
+  
 
   componentDidUpdate(_, previousState) {
     const { paragraph1: oldParagraph1 } = previousState;
@@ -52,7 +53,7 @@ export default class App extends Component {
         />
         <p>parágrafo 1: {paragraph1}</p>
         <p>parágrafo 2: {paragraph2}</p>
-        <p>Quantidades de caracteres do parágrafo 2: {sum}</p>
+        {/* <p>Quantidades de caracteres do parágrafo 2: {sum}</p> */}
       </div>
     );
   }
