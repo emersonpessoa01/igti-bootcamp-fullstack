@@ -11,8 +11,8 @@ em cima de um arquivo json, inclusive permite fazer as requisições HTTP:
 GET, POST, PUT, DELETE e outros.
 
 Incluir no package.json uma sessão de script: <br>
-` "scripts" :{ <br>
-    "server": "json-server --watch db.json --port 3001  " <>br
+` "scripts" :{
+    "server": "json-server --watch db.json --port 3001  "
   } `<br>
   
   `-yarn server(após incluir o script)`
