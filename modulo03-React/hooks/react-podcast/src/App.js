@@ -21,9 +21,10 @@ export default class App extends Component {
       paragraph2: evt.target.value,
     });
   };
-
+//
   componentDidUpdate( ) {
       console.log("componetDidUpdate");
+      document.title = this.state.paragraph1.length
   }
 
   render() {
