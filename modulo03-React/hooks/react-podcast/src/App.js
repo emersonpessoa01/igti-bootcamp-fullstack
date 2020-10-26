@@ -13,6 +13,12 @@ export default class App extends Component {
     };
   }
 
+  // handleStationChange=(newStation) => {
+  handleStationChange=(evt) => {
+    const newStation = evt.target.value;
+    this.setState({ selectedStation: newStation})
+  }
+
   render() {
     const { selectedStation } = this.state;
     return (
@@ -22,7 +28,9 @@ export default class App extends Component {
           <Title> React Radio Podcasts</Title>
         </h1>
 
-        <Station value={selectedStation} />
+        <Station
+          value={selectedStation} onStationChange={this.handleStationChange}
+        />
       </div>
     );
   }
