@@ -21,11 +21,22 @@ export default class App extends Component {
       paragraph2: evt.target.value,
     });
   };
-//
-  componentDidUpdate( ) {
+  //presviousState = estado anterior
+  //_ = props anterior
+  //this.state = estado atual
+  componentDidUpdate(_, previousState) {
+    const { paragraph1: oldParagraph1 } = previousState;
+    const { paragraph1 } = this.state;
+
+    if (oldParagraph1 !== paragraph1) {
       console.log("componetDidUpdate");
-      document.title = this.state.paragraph1.length
+      document.title = this.state.paragraph1.length;
+    }
   }
+  // componentDidUpdate( ) {
+  //     console.log("componetDidUpdate");
+  //     document.title = this.state.paragraph1.length
+  // }
 
   render() {
     const { paragraph1, paragraph2, sum } = this.state;
