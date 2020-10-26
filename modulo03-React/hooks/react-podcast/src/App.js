@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Podcast from "./components/Podcast";
 import Station from "./components/Station";
 import Title from "./components/Title";
 
@@ -31,6 +32,8 @@ export default class App extends Component {
         <Station
           value={selectedStation} onStationChange={this.handleStationChange}
         />
+
+        < Podcast />
       </div>
     );
   }
