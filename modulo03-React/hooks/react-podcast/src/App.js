@@ -1,34 +1,39 @@
-import React, { Component } from "react";
+import React, { Component, setState} from "react";
 
 export default class App extends Component {
   constructor() {
     super();
-    
+
     this.state = {
       paragraph1: "",
       paragraph2: "",
       sum: 0,
+    };
+  }
+
+  handleComponentDidUpdate1 = (evt) => {
+    setState({
+      paragraph1: evt.target.value,
+    });
+  };
+  handleComponentDidUpdate2 = (evt) => {
+    setState({
+      paragraph2: evt.target.value,
+    });
+  };
+
+  componentDidUpdate(_, previousState) {
+    const { paragraph1: oldParagraph1 } = previousState;
+    const { paragraph1 } = this.state;
+
+    if (oldParagraph1 !== paragraph1) {
+      console.log("componetDidUpdate");
+      document.title = this.state.paragraph1.length;
     }
   }
 
-  handleComponentDidUpdate1=(evt) => {
-    setState({
-	paragraph1: evt.target.value
-	})
-  }
-  handleComponentDidUpdate2=(evt) => {
-    setState({
-	paragraph2: evt.target.value
-	})
-  }
-
-  componentDidUpdate(_, previousState) {
-    console.log("componetDidUpdate")
-	document.title = this.state.paragraph1.length
-  }
-
   render() {
-    const { paragraph1, paragraph2, value} =this.state
+    const { paragraph1, paragraph2, value } = this.state;
 
     return (
       <div>
@@ -45,12 +50,10 @@ export default class App extends Component {
           value={paragraph2}
           onChange={this.handleComponentDidUpdate2}
         />
-	<p>parágrafo 1: {paragraph1}</p>
-	<p>parágrafo 2: {paragraph2}</p>
-	<p>Quantidades de caracteres do parágrafo 2: {sum}</p>
+        <p>parágrafo 1: {paragraph1}</p>
+        <p>parágrafo 2: {paragraph2}</p>
+        <p>Quantidades de caracteres do parágrafo 2: {sum}</p>
       </div>
     );
   }
 }
-
-
