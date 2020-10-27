@@ -6,12 +6,33 @@ import Title from "./components/Title";
 export default class App extends Component {
   constructor() {
     super();
-
+    //todo objeto{} vazio é verdadeira´.Ele é truthy
     this.state = {
       selectedStation: "88.5",
-      selectedPodcast: {},
+      selectedPodcast: null,
       podcasts: [],
     };
+  }
+
+  //serva para apenas uma requição
+  componentDidMount = async () => {
+    const res = await fetch("http://localhost:3001/podcasts");
+    const json = await res.json();
+
+    console.log(json);
+    this.setState({ podcasts: json });
+  };
+
+  componentDidUpdate(_, previousState) {
+    const { selectedStation: oldStation } = previousState;
+    const { selectedStation, podcasts } = this.state;
+
+    const selectedPodcast = podcasts.find(
+      (Podcast) => Podcast.id === selectedStation
+    );
+    if (oldStation !== selectedStation) {
+      this.setState({ selectedPodcast });
+    }
   }
 
   // handleStationChange=(newStation) => {
@@ -21,7 +42,7 @@ export default class App extends Component {
   };
 
   render() {
-    const { selectedStation } = this.state;
+    const { selectedStation, selectedPodcast } = this.state;
     return (
       <div className="container">
         {/* <h1><Title value="React Radio Podcasts" /></h1> */}
@@ -32,7 +53,7 @@ export default class App extends Component {
           value={selectedStation}
           onStationChange={this.handleStationChange}
         />
-        <Podcast />
+        <Podcast value={selectedPodcast} />
       </div>
     );
   }

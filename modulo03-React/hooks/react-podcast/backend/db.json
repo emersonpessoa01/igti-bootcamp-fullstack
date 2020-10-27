@@ -1,14 +1,14 @@
 {
   "podcasts": [
     {
-      "id": "88.5",
+      "id": "88.8",
       "img": "1.jpg",
       "title": "Syntax",
       "description": "[Inglês] Desenvolvimento Javascript em geral. Apresentado por Wes Bos e Scott Teacher."
     },
 
     {
-      "id": "90",
+      "id": "90.5",
       "img": "2.jpg",
       "title": "Falaaa Dev!!!",
       "description": "Desenvolvimento Javascript em geral. Apresentado pelo pessoal da Rocketseat com uma das melhores tecnologias em programação."
