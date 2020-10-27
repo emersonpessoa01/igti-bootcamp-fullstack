@@ -15,10 +15,10 @@ export default class App extends Component {
   }
 
   // handleStationChange=(newStation) => {
-  handleStationChange=(evt) => {
+  handleStationChange = (evt) => {
     const newStation = evt.target.value;
-    this.setState({ selectedStation: newStation})
-  }
+    this.setState({ selectedStation: newStation });
+  };
 
   render() {
     const { selectedStation } = this.state;
@@ -28,12 +28,11 @@ export default class App extends Component {
         <h1>
           <Title> React Radio Podcasts</Title>
         </h1>
-
         <Station
-          value={selectedStation} onStationChange={this.handleStationChange}
+          value={selectedStation}
+          onStationChange={this.handleStationChange}
         />
-
-        < Podcast />
+        <Podcast />
       </div>
     );
   }
