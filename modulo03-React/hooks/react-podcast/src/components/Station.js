@@ -15,7 +15,7 @@ export default class Station extends Component {
           type="range"
           value={value}
           min="88.5"
-          max="93.1"
+          max="90"
           step="0.1"
           // onChange={this.handleInputChange}
           onChange={onStationChange}

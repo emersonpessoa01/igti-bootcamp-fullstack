@@ -6,11 +6,11 @@ import Title from "./components/Title";
 export default class App extends Component {
   constructor() {
     super();
-    //todo objeto{} vazio é verdadeira´.Ele é truthy
+    //todo objeto{} vazio é verdadeirável.Ele é truthy
     this.state = {
-      selectedStation: "88.5",
-      selectedPodcast: null,
-      podcasts: [],
+      selectedStation: "00.0", //frequencia
+      selectedPodcast: null, //input
+      podcasts: [], //arrays
     };
   }
 
@@ -20,7 +20,7 @@ export default class App extends Component {
     const json = await res.json();
 
     console.log(json);
-    this.setState({ podcasts: json });
+    this.setState({ podcasts: json, selectedStation: "88.5" });
   };
 
   componentDidUpdate(_, previousState) {

@@ -1,11 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 export default class Podcast extends Component {
   render() {
-    return (
-      <div>
-      {this.props.value || "nenhum podcast" }
-      </div>
-    )
+    const { value } = this.props;
+    // return <div>{JSON.stringify(value) || "nenhum podcast"}</div>;
+    return <div>{JSON.stringify(value) || "nenhum podcast"}</div>;
   }
 }
+  
