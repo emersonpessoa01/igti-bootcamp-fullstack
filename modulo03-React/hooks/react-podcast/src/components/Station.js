@@ -8,9 +8,12 @@ export default class Station extends Component {
 
   render() {
     const { value, onStationChange } = this.props;
+    const { stationStyle } = styles;
+
     return (
-      <div>
-        <input type="text" value={value} readOnly />
+      <div className="center">
+        <input style={stationStyle} type="text" value={value} readOnly />
+
         <input
           type="range"
           value={value}
@@ -24,3 +27,13 @@ export default class Station extends Component {
     );
   }
 }
+
+const styles = {
+  stationStyle: {
+    border: "1px solid lightgray",
+    borderRadius: "5px",
+    width: "300px",
+    textAlign: "center",
+    shadowRadius: "50px",
+  },
+};
