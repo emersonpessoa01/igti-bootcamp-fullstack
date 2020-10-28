@@ -12,7 +12,7 @@ export default class Podcast extends Component {
     // return <div>{JSON.stringify(value) || "nenhum podcast"}</div>;
     return (
       <div className="center">
-        <img style={imageStyle} src={`./img/${img}`} />
+        <img style={imageStyle} src={`./img/${img}`} alt="podCasts" />
         <p>{title}</p>
         <p>{description}</p>
       </div>
