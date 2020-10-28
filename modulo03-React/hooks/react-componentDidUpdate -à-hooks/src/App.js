@@ -14,6 +14,7 @@ export default function App() {
   //     sum: 0,
   //   };
   // }
+  
   const handleParagraph1 = (evt) => {
     const newText = evt.target.value;
     setParagraph1(newText);
