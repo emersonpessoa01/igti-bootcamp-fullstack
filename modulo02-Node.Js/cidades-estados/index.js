@@ -55,13 +55,13 @@ const getStateWithMoreCities = async () => {
     });
 
     //ordenando do maior para o menor
-    list.sort((a, b) => {
+    list.sort((b,a) => {
       if (a.count < b.count) return -1;
       else if (a.count > b.count) return 1;
       else return 0;
     });
 
-    //Selecionando os 5 primeiro Estados com maior município
+    //Selecionando os 5 primeiro Estados com maior quantidade de município
     //list.slice(0,5)//pega de 0 até 5a posição
     const result = [];
 
@@ -71,7 +71,7 @@ const getStateWithMoreCities = async () => {
 
     // console.log(list.slice(0, 5));
     // console.log("5 primeiro Estados com MENOR/MAIOR município -")
-    console.log("3 - MENORES MUNICíPIO");
+    console.log("3.1 - MAIORES MUNICíPIO");
     console.log(result);
   });
 };
@@ -90,7 +90,7 @@ const getStateWithAnyLessCities = async (more) => {
       count,
     });
 
-    //ordenando do maior para o menor
+    //ordenando do menor para o maior
     list.sort((a, b) => {
       if (a.count < b.count) return -1;
       else if (a.count > b.count) return 1;
@@ -106,7 +106,7 @@ const getStateWithAnyLessCities = async (more) => {
 
     // console.log(list.slice(0, 5));
     // console.log("5 primeiro Estados com MENOR/MAIOR município -")
-    console.log("3 - MAIORES MUNICíPIO");
+    console.log("3.2 - MENORES MUNICíPIO");
     console.log(result);
   });
 };
@@ -180,9 +180,9 @@ const getSmallCityName = async (bigger) => {
     let uf = state.Sigla;
     let city;
     if (bigger) {
-      city = (await getBiggerName(uf)).Nome;
+      city = (await getBiggerName(uf)).Nome; //MAIOR NOME DE CIDADE
     } else {
-      city = (await getSmallName(uf)).Nome;
+      city = (await getSmallName(uf)).Nome; //MENOR NOME DE CIDADE
     }
     result.push(`${city} - ${uf}`);
 
