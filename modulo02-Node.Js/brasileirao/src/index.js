@@ -13,8 +13,15 @@ const init = async () => {
       times.push({ time: visitante, pontuacao: 0 });
     });
 
-    //pegar cada rodada e executar alguma coisa pra elas
-
+    //preenchendo a pontuacao de times no array de times
+    //iterar rodada: pegar cada rodada e executar alguma coisa pra elas
+    data.forEach(rodada =>{
+      rodada.partidas.forEach(partida =>{
+        if(partida.placar_mandante> partida.placar_visitante){
+          times.findIndex(item => item.time ===partida.placar_mandante)
+        }
+      })
+    })
     console.log(times);
   } catch (err) {
     console.log(err);
