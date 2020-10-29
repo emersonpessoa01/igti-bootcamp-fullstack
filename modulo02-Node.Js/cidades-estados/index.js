@@ -1,9 +1,3 @@
-// método que imprima no console a cidade de maior nome entre todos os estados
-// biggerNameCity()
-
-// método que imprima no console a cidade de menor nome entre todos os estados
-// shortNameCity()
-
 import { promises } from "fs";
 
 const readFile = promises.readFile;
@@ -55,13 +49,13 @@ const getStateWithMoreCities = async () => {
     });
 
     //ordenando do maior para o menor
-    list.sort((b,a) => {
+    list.sort((a, b) => {
       if (a.count < b.count) return -1;
       else if (a.count > b.count) return 1;
       else return 0;
     });
 
-    //Selecionando os 5 primeiro Estados com maior quantidade de município
+    //Selecionando os 5 primeiro Estados com maior município
     //list.slice(0,5)//pega de 0 até 5a posição
     const result = [];
 
@@ -71,7 +65,7 @@ const getStateWithMoreCities = async () => {
 
     // console.log(list.slice(0, 5));
     // console.log("5 primeiro Estados com MENOR/MAIOR município -")
-    console.log("3.1 - MAIORES MUNICíPIO");
+    console.log("3 - MENORES MUNICíPIO");
     console.log(result);
   });
 };
@@ -90,7 +84,7 @@ const getStateWithAnyLessCities = async (more) => {
       count,
     });
 
-    //ordenando do menor para o maior
+    //ordenando do maior para o menor
     list.sort((a, b) => {
       if (a.count < b.count) return -1;
       else if (a.count > b.count) return 1;
@@ -106,7 +100,7 @@ const getStateWithAnyLessCities = async (more) => {
 
     // console.log(list.slice(0, 5));
     // console.log("5 primeiro Estados com MENOR/MAIOR município -")
-    console.log("3.2 - MENORES MUNICíPIO");
+    console.log("3 - MAIORES MUNICíPIO");
     console.log(result);
   });
 };
@@ -162,10 +156,9 @@ const getSmallName = async (uf) => {
     else if (city.Nome.length < result.Nome.length) result = city;
     else if (
       city.Nome.length === result.Nome.length &&
-      city.Nome.length < result.Nome.length
+      city.Nome.toLowerCase() < result.Nome.toLowerCase()
     )
       result = city;
-    // console.log(cities);
   });
 
   return result;
@@ -175,20 +168,68 @@ getSmallName();
 const getSmallCityName = async (bigger) => {
   let states = JSON.parse(await readFile("Estados.json"));
 
-  let result = [];
+  let list = [];
   states.map(async (state) => {
     let uf = state.Sigla;
     let city;
     if (bigger) {
-      city = (await getBiggerName(uf)).Nome; //MAIOR NOME DE CIDADE
+      city = (await getBiggerName(uf)).Nome;
     } else {
-      city = (await getSmallName(uf)).Nome; //MENOR NOME DE CIDADE
+      city = (await getSmallName(uf)).Nome;
     }
-    result.push(`${city} - ${uf}`);
+    list.push(`${city} - ${uf}`);
 
     console.log("5 - cidades com menores nomes ");
-    console.log(result);
+    console.log(list);
   });
 };
 
 getSmallCityName();
+
+// método que imprima no console a cidade de maior nome entre todos os estados
+// biggerNameCity()
+
+const getBiggerNameIntoCity = async () => {
+  let cities = JSON.parse(await readFile("Estados.json"));
+  let list = [];
+
+  cities.forEach(async (state) => {
+    let uf = state.Sigla;
+    let city = await getBiggerName(uf);
+
+    list.push({ name: city.Nome, uf: state.Sigla });
+
+    const result = list.reduce((acc, curr) => {
+      if (acc.name.length > curr.name.length) return acc;
+      else if (acc.name.length < curr.name.length) return curr;
+      else return acc.name.toLowerCase() < curr.name.toLowerCase() ? acc : curr;
+    });
+    console.log("6 - Cidade de maior nome entre todos os estados");
+    console.log(`${result.name} -  ${result.uf}`);
+  });
+};
+
+getBiggerNameIntoCity();
+
+const getSmallerNameIntoCity = async () => {
+  let cities = JSON.parse(await readFile("Estados.json"));
+  let list = [];
+
+  cities.forEach(async (state) => {
+    let uf = state.Sigla;
+    let city = await getSmallName(uf);
+
+    list.push({ name: city.Nome, uf: state.Sigla });
+
+    const result = list.reduce((acc, curr) => {
+      if (acc.name.length < curr.name.length) return acc;
+      else if (acc.name.length > curr.name.length) return curr;
+      else return acc.name.toLowerCase() < curr.name.toLowerCase() ? acc : curr;
+    });
+    console.log("7 - Cidade de menor nome entre todos os estados");
+    console.log(`${result.name} -  ${result.uf}`);
+  });
+};
+getSmallerNameIntoCity();
+// método que imprima no console a cidade de menor nome entre todos os estados
+// shortNameCity()
