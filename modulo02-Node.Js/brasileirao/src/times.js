@@ -44,8 +44,8 @@ const init = async () => {
             timeVisitante.pontuacao = +3;
             times[indexVisitante] = timeVisitante;
           } else {
-            timeMandante.pontuacao += 1;
-            timeVisitante.pontuacao += 1;
+            timeMandante.pontuacao += 1; //empate
+            timeVisitante.pontuacao += 1;//empate
             times[indexMandante] = timeMandante;
             times[indexVisitante] = timeVisitante;
           }
@@ -53,7 +53,7 @@ const init = async () => {
       );
     });
 
-    //Ordenar times pela pontuaçao em ordem crescenter
+    //Ordenar times pela pontuaçao em ordem decrescente
     times.sort((a, b) => {
       return b.pontuacao - a.pontuacao;
     });
