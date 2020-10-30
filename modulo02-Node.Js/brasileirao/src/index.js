@@ -1,16 +1,16 @@
-//converter eme uma API
+//converter em uma API
 import express from "express";
 import { promises } from "fs";
 
 const { readFile, writeFile } = promises;
+
 //criando instancia express
 const app = express();
 
 //informando ao express utilizar json
 app.use(express.json());
-
-app.get("/", (req, res) => {
-  res.send("fala dev");
+app.get("/times/campeao", (req, res) => {
+  res.send(retornaCampeao());
 });
 
 const init = async () => {
@@ -64,10 +64,15 @@ const init = async () => {
     //gravar os dados do array times em arquivo
     await writeFile("times.json", JSON.stringify(times));
 
-    console.log(times);
+    // console.log(times);
     // console.log(times[0]);//imprimindo somente o time campeao
   } catch (err) {
     console.log(err);
   }
 };
 init();
+
+const retornaCampeao= async ()=>{
+  return times[0]
+}
+retornaCampeao();
