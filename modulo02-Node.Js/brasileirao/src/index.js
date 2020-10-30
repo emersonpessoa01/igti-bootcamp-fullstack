@@ -48,13 +48,18 @@ const init = async () => {
 
     //Ordenar times pela pontuaçao em ordem crescenter
     times.sort((a, b)=>{
-      return a.pontuacao - b.pontuacao; 
+      return b.pontuacao - a.pontuacao; 
       
     })
 
+    //gravar os dados do array times em arquivo
+    await writeFile("times.json", JSON.stringify(times))
+
+
 
     console.log(times);
-  } catch (err) {
+    // console.log(times[0]);//imprimindo somente o time campeao
+  } catch (err) { 
     console.log(err);
   }
 };
