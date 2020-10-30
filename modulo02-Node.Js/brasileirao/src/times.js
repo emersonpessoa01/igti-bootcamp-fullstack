@@ -4,9 +4,13 @@ const { readFile, writeFile } = promises;
 
 const router = express.Router();
 
-router.get("/", (_, res) => {
-  res.send(retornaCampeao());
+router.get("/",async (_, res) => {
+  res.send(await retornaCampeao());
 });
+
+
+
+
 
 const times = [];
 
@@ -68,8 +72,10 @@ const init = async () => {
 };
 init();
 
-const retornaCampeao = () => {
-  return times[0];
+const retornaCampeao = async () => {
+  // return times[0];
+  const data = JSON.parse(await readFile("times.json", "utf8"));
+  return data[0]
 };
 retornaCampeao();
 
