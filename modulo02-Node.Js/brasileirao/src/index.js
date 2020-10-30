@@ -13,12 +13,16 @@ app.get("/times/campeao", (req, res) => {
   res.send(retornaCampeao());
 });
 
+app.listen(3000, () => {
+  console.log("FALA DEV");
+});
+
+const times = [];
 const init = async () => {
   try {
     const data = JSON.parse(await readFile("2003.json"));
 
     //montando array de times
-    const times = [];
     data[0].partidas.forEach(({ mandante, visitante }) => {
       times.push({ time: mandante, pontuacao: 0 });
       times.push({ time: visitante, pontuacao: 0 });
@@ -72,7 +76,7 @@ const init = async () => {
 };
 init();
 
-const retornaCampeao= async ()=>{
-  return times[0]
-}
+const retornaCampeao = () => {
+  return times[0];
+};
 retornaCampeao();
