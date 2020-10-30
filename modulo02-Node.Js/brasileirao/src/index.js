@@ -45,6 +45,14 @@ const init = async () => {
         }
       );
     });
+
+    //Ordenar times pela pontuaçao em ordem crescenter
+    times.sort((a, b)=>{
+      return a.pontuacao - b.pontuacao; 
+      
+    })
+
+
     console.log(times);
   } catch (err) {
     console.log(err);
