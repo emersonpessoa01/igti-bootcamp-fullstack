@@ -38,6 +38,9 @@ const init = async () => {
           } else {
             timeMandante.pontuacao += 1;
             timeVisitante.pontuacao += 1;
+            times[indexMandante] = timeMandante
+            times[indexVisitante] = timeVisitante;
+
           }
         }
       );
