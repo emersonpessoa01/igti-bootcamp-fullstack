@@ -1,6 +1,17 @@
+//converter eme uma API
+import express from "express";
 import { promises } from "fs";
 
 const { readFile, writeFile } = promises;
+//criando instancia express
+const app = express();
+
+//informando ao express utilizar json
+app.use(express.json());
+
+app.get("/", (req, res) => {
+  res.send("fala dev");
+});
 
 const init = async () => {
   try {
@@ -25,41 +36,37 @@ const init = async () => {
           ); //encontrar posicao para pontuar o mandante
           const indexVisitante = times.findIndex(
             (item) => item.time === visitante
-          );//pontuar visitante
-          let timeMandante = times[indexMandante];//atualizar no array
-          let timeVisitante = times[indexVisitante];//atualizar no array
+          ); //pontuar visitante
+          let timeMandante = times[indexMandante]; //atualizar no array
+          let timeVisitante = times[indexVisitante]; //atualizar no array
 
           if (placar_mandante > placar_visitante) {
             timeMandante.pontuacao += 3;
-            times[indexMandante] = timeMandante
+            times[indexMandante] = timeMandante;
           } else if (placar_visitante > placar_mandante) {
             timeVisitante.pontuacao = +3;
-            times[indexVisitante] = timeVisitante
+            times[indexVisitante] = timeVisitante;
           } else {
             timeMandante.pontuacao += 1;
             timeVisitante.pontuacao += 1;
-            times[indexMandante] = timeMandante
+            times[indexMandante] = timeMandante;
             times[indexVisitante] = timeVisitante;
-
           }
         }
       );
     });
 
     //Ordenar times pela pontuaçao em ordem crescenter
-    times.sort((a, b)=>{
-      return b.pontuacao - a.pontuacao; 
-      
-    })
+    times.sort((a, b) => {
+      return b.pontuacao - a.pontuacao;
+    });
 
     //gravar os dados do array times em arquivo
-    await writeFile("times.json", JSON.stringify(times))
-
-
+    await writeFile("times.json", JSON.stringify(times));
 
     console.log(times);
     // console.log(times[0]);//imprimindo somente o time campeao
-  } catch (err) { 
+  } catch (err) {
     console.log(err);
   }
 };
