@@ -1,15 +1,12 @@
 import express from "express";
 import { promises } from "fs";
-const { readFile, writeFile } = promises;
 
+const { readFile, writeFile } = promises;
 const router = express.Router();
 
 router.get("/",async (_, res) => {
   res.send(await retornaCampeao());
 });
-
-
-
 
 
 const times = [];
