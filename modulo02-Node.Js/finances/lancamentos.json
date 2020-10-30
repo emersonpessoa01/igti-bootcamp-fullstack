@@ -1,1 +1,6 @@
-{"nextId":1,"lancamentos":[]}
+{
+  "nextId": 2,
+  "lancamentos": [
+    { "id": 1, "valor": -10, "categoria": "salário", "data": "30/10/2020" }
+  ]
+}

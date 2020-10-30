@@ -12,7 +12,7 @@ const port = 3000;
 const app = express();
 
 app.use(express.json());
-app.use("/lancamentos/receita", lancamentosRouter)
+app.use("/lancamentos", lancamentosRouter)
 
 app.listen(port, async () => {
 try {
