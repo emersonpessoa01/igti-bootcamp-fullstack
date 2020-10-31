@@ -1,3 +1,4 @@
+import moment from "moment";
 import express from "express";
 import { promises } from "fs";
 import calc from "../calculos.js"; //cal exportado como padrao
@@ -55,13 +56,59 @@ router.post("/despesa", async (req, res) => {
   }
 });
 
-const totalMes = async(mes)=>{
-  const json = JSON.parse(await readFile(global.fileName, "utf8"));
+// const totalMes = async (mes) => {
+//   const json = JSON.parse(await readFile(global.fileName, "utf8"));
+//   let lancamentos = json.lancamentos.filter((lancamento) => {
+//     let m = moment(lancamento.data, "DD/MM/YYYY").month() + 1 === mes;
+//     return m === mes;
+//   });
+//   lancamentos = lancamentos.map((lancamento) => {
+//     return lancamento.valor;
+//   });
 
-  let lancamentos = json.lancamentos.filter(lancamento=>{
-    return lancamento.data === mes;
+//   return {total: calc.somatorio(lancamentos)}
+// };
+// totalMes();
+
+const dataCompleta = async()=>{
+  const leftPad = (value, count = 2, char = "0") => {
+    let stringValue = value.toString();
+    let newValue = stringValue;
+  
+    if (stringValue.length < count || stringValue.length % 10 === 0) {
+      for (let i = 0; i < count - stringValue.length; i++) {
+        newValue = char + stringValue;
+      }
+    }
+    return newValue;
+  };
+  
+  const now = new Date();
+  const timer = `${leftPad(now.getDate())}/${leftPad(now.getMonth()+1)}/${leftPad(now.getFullYear())}`
+  const hours = leftPad(now.getHours());
+  const minutes = leftPad(now.getMinutes());
+  const seconds = leftPad(now.getSeconds());
+  const formatted = `${hours}:${minutes}:${seconds}`;
+  const display = `${timer} - ${formatted}`
+
+  router.get('/dataCompleta', async (req, res)=>{
+    const json = JSON.parse(await readFile(global.fileName, "utf8"));
+
+    let lancamento = req.body;
+
+    lancamento = {
+      id: json.nextId++,
+      ...lancamento, display
+        }
+    json.lancamentos.push(lancamento);
+
+    await writeFile(global.fileName,JSON.stringify(json))
+    res.send(lancamento)
+    
   })
 }
+dataCompleta()
+
 
 export default router;
 //module.exports = router;

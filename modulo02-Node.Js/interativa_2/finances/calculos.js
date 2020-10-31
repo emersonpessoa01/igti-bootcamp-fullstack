@@ -12,5 +12,5 @@ const somatorio = (array) => {
 };
 
 
-export default { media, somatorio} //exportado como padrao
+export default { media, somatorio } //exportado como padrao
 //export { media , somatorio} --exportado sem ser padrao
