@@ -6,15 +6,14 @@ import calc from "../calculos.js"; //cal exportado como padrao
 const { readFile, writeFile } = promises;
 const router = express.Router();
 
-router.get("/totalMes", (req, res) => {
-  res.send({valor: calc.somatorio([1,2,3,4])});
+router.get("/totalMes/mes", (req, res) => {
+  res.send({ valor: calc.somatorio([1, 2, 3]) });
 });
-
 
 router.post("/receita", async (req, res) => {
   let lancamento = req.body;
   try {
-    let json = JSON.parse(await readFile("lancamentos.json"));
+    let json = JSON.parse(await readFile(global.fileName, "utf8"));
     // delete json.nextId;
 
     lancamento = {
@@ -23,7 +22,7 @@ router.post("/receita", async (req, res) => {
     };
     json.lancamentos.push(lancamento);
 
-    await writeFile("lancamentos.json", JSON.stringify(json));
+    await writeFile(global.fileName, JSON.stringify(json));
     res.send(lancamento);
   } catch (err) {
     res.status(400).send({
@@ -35,7 +34,7 @@ router.post("/receita", async (req, res) => {
 router.post("/despesa", async (req, res) => {
   let lancamento = req.body;
   try {
-    let json = JSON.parse(await readFile("lancamentos.json"));
+    let json = JSON.parse(await readFile(global.fileName, "utf8"));
     // delete json.nextId;
 
     lancamento = {
@@ -45,7 +44,7 @@ router.post("/despesa", async (req, res) => {
     lancamento.valor = lancamento.valor * -1;
     json.lancamentos.push(lancamento);
 
-    await writeFile("lancamentos.json", JSON.stringify(json));
+    await writeFile(global.fileName, JSON.stringify(json));
     // res.end()
     // res.send("Inclusão realizado com sucesso")
     res.send(lancamento);
@@ -55,6 +54,14 @@ router.post("/despesa", async (req, res) => {
     });
   }
 });
+
+const totalMes = async(mes)=>{
+  const json = JSON.parse(await readFile(global.fileName, "utf8"));
+
+  let lancamentos = json.lancamentos.filter(lancamento=>{
+    return lancamento.data === mes;
+  })
+}
 
 export default router;
 //module.exports = router;

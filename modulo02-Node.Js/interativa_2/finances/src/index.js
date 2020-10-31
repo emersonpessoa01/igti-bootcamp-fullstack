@@ -10,6 +10,8 @@ import lancamentosRouter from "./lancamentos.js"
 const { writeFile } = promises;
 const app = express();
 
+global.fileName = "lancamentos.json"
+
 app.use(express.json());
 app.use("/lancamentos", lancamentosRouter)
 

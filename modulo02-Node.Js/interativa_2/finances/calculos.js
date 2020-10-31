@@ -11,5 +11,6 @@ const somatorio = (array) => {
   return sum;
 };
 
+
 export default { media, somatorio} //exportado como padrao
 //export { media , somatorio} --exportado sem ser padrao
