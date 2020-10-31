@@ -16,8 +16,6 @@ router.post("/receita", async (req, res) => {
     json.lancamentos.push(lancamento);
 
     await writeFile("lancamentos.json", JSON.stringify(json));
-    // res.end()
-    // res.send("Inclusão realizado com sucesso")
     res.send(lancamento)
   } catch (err) {
     res.status(400).send({

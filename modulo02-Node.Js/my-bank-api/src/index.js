@@ -4,12 +4,12 @@ import winston from 'winston'
 import accountsRouter from './accounts.js'
 import swaggerUi from 'swagger-ui-express';
 import { swaggerDocument } from "./docs.js";
-import cors from 'cors';
+// import cors from 'cors';
 
 const readFile = promises.readFile
 const writeFile = promises.writeFile
 const app = express();
-const port = 3001;
+const port = 3014;
 
 global.fileName = "accounts.json";
 

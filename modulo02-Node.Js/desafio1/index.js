@@ -9,7 +9,6 @@ const readFile = promises.readFile
 const writeFile = promises.writeFile
 
 const app = express();
-const port = process.env.PORT || 3000;
 
 global.fileName = "grades.json";
 
@@ -67,7 +66,7 @@ app.use(express.json());
 app.use("/grade", gradesRouter);
 app.use("/doc", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
-app.listen(port, async () => {
+app.listen(3010, async () => {
   try {
     await readFile(global.fileName, "utf8");
     logger.info("API started! DEV");

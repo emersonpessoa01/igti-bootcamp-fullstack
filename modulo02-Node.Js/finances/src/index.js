@@ -8,13 +8,12 @@ import { promises } from "fs";
 import lancamentosRouter from "./lancamentos.js"
 
 const { writeFile } = promises;
-const port = 3000;
 const app = express();
 
 app.use(express.json());
 app.use("/lancamentos", lancamentosRouter)
 
-app.listen(port, async () => {
+app.listen(3015, async () => {
 try {
     const initialJson = {
       nextId: 1,
@@ -29,4 +28,4 @@ try {
 }
   console.log("Fala Dev");
 });
-  
+ 

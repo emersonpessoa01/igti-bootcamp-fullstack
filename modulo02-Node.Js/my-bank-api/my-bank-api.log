@@ -509,3 +509,17 @@ undefined [my-bank-api] info: API started! DEV
 24/10/2020 17:33:18 [my-bank-api] info: API started! DEV
 24/10/2020 17:33:18 [my-bank-api] info: GET /account
 24/10/2020 17:36:24 [my-bank-api] info: GET /account
+31/10/2020 11:39:10 [my-bank-api] info: API started! DEV
+31/10/2020 11:48:29 [my-bank-api] info: API started! DEV
+31/10/2020 11:49:11 [my-bank-api] info: API started! DEV
+31/10/2020 12:39:34 [my-bank-api] info: API started! DEV
+31/10/2020 11:49:11 [my-bank-api] info: GET /account
+31/10/2020 12:39:34 [my-bank-api] info: GET /account
+31/10/2020 12:39:34 [my-bank-api] info: POST /account - {"id":1,"name":"Emerson Pessoa","balance":100,"timestamp":"31/10/2020 12:39:34"}
+31/10/2020 12:39:34 [my-bank-api] info: POST /account - {"id":2,"name":"Luciene Ferreira","balance":200,"timestamp":"31/10/2020 12:39:34"}
+31/10/2020 12:39:34 [my-bank-api] info: POST /account - {"id":3,"name":"Fernanda Ferreira","balance":200,"timestamp":"31/10/2020 12:39:34"}
+31/10/2020 12:39:34 [my-bank-api] info: POST /account - {"id":4,"name":"Dominique Pessoa Ferreira","balance":200,"timestamp":"31/10/2020 12:39:34"}
+31/10/2020 12:39:34 [my-bank-api] info: POST /account - {"id":5,"name":"Mateus Pessoa Ferreira","balance":200,"timestamp":"31/10/2020 12:39:34"}
+31/10/2020 12:39:34 [my-bank-api] info: DELETE /account/:id - "4"
+31/10/2020 12:39:34 [my-bank-api] info: DELETE /account/:id - "5"
+31/10/2020 12:39:34 [my-bank-api] info: POST /account/transaction - {"id":3,"value":100}

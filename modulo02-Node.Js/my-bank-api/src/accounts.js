@@ -46,7 +46,10 @@ router.post("/", async (req, res) => {
     json.accounts.push(account);
 
     await writeFile(global.fileName, JSON.stringify(json));
-    res.send("Inclusão confirmada");
+    // res.send("Inclusão confirmada");
+    res.send(account)
+
+
     logger.info(`POST /account - ${JSON.stringify(account)}`);
 
   } catch (err) {
@@ -59,8 +62,8 @@ router.post("/", async (req, res) => {
 });
 
 //para controla acesso dos endpoints
-// router.get("/", async (_, res) => {
-router.get("/",cors(), async (_, res) => {
+router.get("/", async (_, res) => {
+// router.get("/",cors(), async (_, res) => {
   try {
     let data = await readFile(global.fileName, "utf8");
     let json = JSON.parse(data);
