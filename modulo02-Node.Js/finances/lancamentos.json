@@ -1,7 +1,0 @@
-{
-  "nextId": 3,
-  "lancamentos": [
-    { "id": 1, "valor": 10, "categoria": "salário", "data": "31/10/2020" },
-    { "id": 2, "valor": -10, "categoria": "salário", "data": "30/10/2020" }
-  ]
-}
