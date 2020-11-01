@@ -60,12 +60,12 @@ const styles = {
   classBadCapital:{
     color:"#DD0031"
   },
-  classGoodRate:{
-    color: "#02569B"
-  },
-  classBadRate:{
-    color:"#FF2D20"
-  },
+  // classGoodRate:{
+  //   color: "#02569B"
+  // },
+  // classBadRate:{
+  //   color:"#FF2D20"
+  // },
 
   flexRow: {
     display: "flex",

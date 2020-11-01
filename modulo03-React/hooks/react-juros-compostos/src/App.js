@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Form from "./components/Form";
 import Installments from "./components/Installments";
+import css from "./components/app.module.css";
 
 export default function App() {
   const [capital, setCapital] = useState(1000);
@@ -13,7 +14,7 @@ export default function App() {
   }, [capital, interest, period]);
 
   const calculteInterest = (capital, interest, period) => {
-    const newInstallments = [];//array de novas parcelas
+    const newInstallments = []; //array de novas parcelas
 
     let currentId = 1;
     let amount = capital;
@@ -25,9 +26,9 @@ export default function App() {
       const percentCapital = (amount * Math.abs(interest)) / 100;
 
       //se o juros% for maior ou igual a zero.Retorne montante + capitalJuros.Senao, montante - capitalJuros
-            amount =
+      amount =
         interest >= 0 ? amount + percentCapital : amount - percentCapital;
-      
+
       //taxe de juros
       rate = (amount / capital - 1) * 100;
 
@@ -35,7 +36,7 @@ export default function App() {
         id: currentId++,
         amount,
         difference: (amount - capital).toFixed(2),
-        rate: rate.toFixed(2).replace(".",","),
+        rate: rate.toFixed(2).replace(".", ","),
         profit: interest > 0,
       });
     }
@@ -64,7 +65,7 @@ export default function App() {
   return (
     <div className="container center">
       <div>
-        <h1 className="center">React - Juros Compostos</h1>
+        <h1 className={css.headerName}>React - Juros Compostos</h1>
 
         <Form
           data={{ capital, interest, period }}
@@ -76,3 +77,4 @@ export default function App() {
     </div>
   );
 }
+
