@@ -1,25 +1,25 @@
 export const swaggerDocument = {
   "swagger": "2.0",
   "info": {
-    "description": "My Bank API description",
+    "description": "Finances description",
     "version": "1.0.0",
-    "title": "My Bank API"
+    "title": "Finances API"
   },
-  "host": "localhost:3000",
+  "host": "localhost:3015",
   "tags": [
     {
-      "name": "account",
-      "description": "Account management"
+      "name": "lancamentos",
+      "description": "Lancamentos management"
     }
   ],
   "paths": {
-    "/account": {
+    "/lancamentos": {
       "get": {
         "tags": [
-          "account"
+          "lancamentos"
         ],
-        "summary": "Get existing accounts",
-        "description": "Get existing accounts description",
+        "summary": "Get existing lancamentos",
+        "description": "Get existing lancamentos description",
         "produces": [
           "application/json"
         ],
@@ -29,7 +29,7 @@ export const swaggerDocument = {
             "schema": {
               "type": "array",
               "items": {
-                "$ref": "#/definitions/Account"
+                "$ref": "#/definitions/Lancamentos"
               }
             }
           },
@@ -40,10 +40,10 @@ export const swaggerDocument = {
       },
       "post": {
         "tags": [
-          "account"
+          "lancamentos"
         ],
-        "summary": "Create new accounts",
-        "description": "Create new accounts with the received parameters",
+        "summary": "Create new lancamentos",
+        "description": "Create new lancamentos with the received parameters",
         "consumes": [
           "application/json"
         ],
@@ -51,10 +51,10 @@ export const swaggerDocument = {
           {
             "in": "body",
             "name": "body",
-            "description": "Account object",
+            "description": "Lancamentos object",
             "required": true,
             "schema": {
-              "$ref": "#/definitions/Account"
+              "$ref": "#/definitions/Lancamentos"
             }
           }
         ],
@@ -69,10 +69,10 @@ export const swaggerDocument = {
       },
       "put": {
         "tags": [
-          "account"
+          "lancamentos"
         ],
-        "summary": "Updated account",
-        "description": "Updated account exists.",
+        "summary": "Updated lancamentos",
+        "description": "Updated lancamentos exists.",
         "produces": [
           "application/json"
         ],
@@ -80,10 +80,10 @@ export const swaggerDocument = {
           {
             "in": "body",
             "name": "body",
-            "description": "Account object",
+            "description": "lancamentos object",
             "required": true,
             "schema": {
-              "$ref": "#/definitions/AccountUser"
+              "$ref": "#/definitions/lancamentosUser"
             }
           }
         ],
@@ -94,13 +94,13 @@ export const swaggerDocument = {
         }
       }
     },
-    "/account/{id}": {
+    "/lancamentos/{id}": {
       "get": {
         "tags": [
-          "account"
+          "lancamentos"
         ],
-        "summary": "Get existing accounts",
-        "description": "Get existing accounts description",
+        "summary": "Get existing lancamentos",
+        "description": "Get existing lancamentos description",
         "produces": [
           "application/json"
         ],
@@ -108,7 +108,7 @@ export const swaggerDocument = {
           {
             "name": "id",
             "in": "path",
-            "description": "ID of account",
+            "description": "ID of lancamentos",
             "required": true,
             "type": "integer",
             "format": "int64"
@@ -118,7 +118,7 @@ export const swaggerDocument = {
           "200": {
             "description": "Successsfull operation",
             "schema": {
-              "$ref": "#/definitions/Account"
+              "$ref": "#/definitions/Lancamentos"
             }
           },
           "400": {
@@ -128,15 +128,15 @@ export const swaggerDocument = {
       },
       "delete": {
         "tags": [
-          "account"
+          "lancamentos"
         ],
-        "summary": "Delete existing accounts",
-        "description": "Delete existing accounts description",
+        "summary": "Delete existing lancamentos",
+        "description": "Delete existing lancamentos description",
         "parameters": [
           {
             "name": "id",
             "in": "path",
-            "description": "ID of account",
+            "description": "ID of lancamentos",
             "required": true,
             "type": "integer",
             "format": "int64"
@@ -154,7 +154,7 @@ export const swaggerDocument = {
     }
   },
   "definitions": {
-    "Account": {
+    "Lancamentos": {
       "type": "object",
       "properties": {
         "name": {
@@ -167,7 +167,7 @@ export const swaggerDocument = {
         }
       }
     },
-    "AccountUser": {
+    "LancamentosUser": {
       "type": "object",
       "properties": {
         "id": {
