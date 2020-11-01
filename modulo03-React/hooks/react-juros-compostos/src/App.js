@@ -13,17 +13,22 @@ export default function App() {
   }, [capital, interest, period]);
 
   const calculteInterest = (capital, interest, period) => {
-    const newInstallments = [];
+    const newInstallments = [];//array de novas parcelas
 
     let currentId = 1;
     let amount = capital;
     let rate = 0;
 
+    //fazendo um iteracao das parcelas comecando com menor ou igual a 1
     for (let i = 1; i <= period; i++) {
+      //juros em capital = montante x juros%
       const percentCapital = (amount * Math.abs(interest)) / 100;
 
-      amount =
+      //se o juros% for maior ou igual a zero.Retorne montante + capitalJuros.Senao, montante - capitalJuros
+            amount =
         interest >= 0 ? amount + percentCapital : amount - percentCapital;
+      
+      //taxe de juros
       rate = (amount / capital - 1) * 100;
 
       newInstallments.push({
@@ -39,6 +44,7 @@ export default function App() {
     console.log(newInstallments);
   };
 
+  //funcao aguardando event.target.value para executar e gerar novo montante, novo juros e novas parcelas
   const handleChangeData = (newCapital, newInterest, newPeriod) => {
     if (newCapital !== null) {
       setCapital(newCapital);
