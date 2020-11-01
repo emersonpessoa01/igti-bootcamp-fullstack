@@ -55,9 +55,16 @@ export default function Installment({ data }) {
 
 const styles = {
   classGoodCapital:{
-    color: "#02569B"},
+    color: "#02569B"
+  },
   classBadCapital:{
     color:"#DD0031"
+  },
+  classGoodRate:{
+    color: "#02569B"
+  },
+  classBadRate:{
+    color:"#FF2D20"
   },
 
   flexRow: {
