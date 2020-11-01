@@ -22,20 +22,21 @@ export default function Installment({ data }) {
   const { id, amount, difference, rate, profit } = data;
 
   const classGoodCapital = "green-text darken-4";
-  const classGoodRate = "blue-text darken-4" ;
+  const classGoodRate = "blue-text darken-4";
   const classBadCapital = "red-text darken-4";
   const classBadRate = "orange-text darken-4";
 
   const classCapital = profit ? classGoodCapital : classBadCapital;
   const classRate = profit ? classGoodRate : classBadRate;
-  
+
+  const gradeStyle = profit > 0 ? styles.circleGreen : styles.circleRed;
 
   return (
     <div className="col s6 m3 l2" style={styles.flexRow}>
-      {/* <div>{profit ? `<div style={styles.circleGreen}>${id}</div>`:`<div style={styles.circleGreen}>${id}</div>`}*/}
-      <div style={styles.circleGreen}>{id}</div>
+      {/* <div>{profit >= 0 ? `<div style={styles.circleGreen}>${id}</div>`:`<div style={styles.circleRed}>${id}</div>` }*/}
+  <div style={gradeStyle}>{id}</div>
 
-      <div >
+      <div>
         <div style={styles.alignFonts}>
           <div className={classCapital}>
             <strong>{formatNumber(amount)}</strong>
@@ -91,7 +92,7 @@ const styles = {
     height: "32px",
     borderRadius: "50%",
     float: "left",
-    
+
     // margin: "4px",
     // fontSize: "30px",
     fontWeight: "bold",
@@ -115,7 +116,7 @@ const styles = {
     fontWeight: "bold",
   },
 
-  alignFonts:{
+  alignFonts: {
     alignItems: "left",
-  }
+  },
 };
