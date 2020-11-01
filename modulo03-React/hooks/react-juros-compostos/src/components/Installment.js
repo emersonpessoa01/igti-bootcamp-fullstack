@@ -21,12 +21,12 @@ const formatterPositiveNegative = (number) => {
 export default function Installment({ data }) {
   const { id, amount, difference, rate, profit } = data;
 
-  const classGoodCapital = "green-text darken-4";
+  // const classGoodCapital = "green-text darken-4";
+  // const classBadCapital = "red-text darken-4";
   const classGoodRate = "blue-text darken-4";
-  const classBadCapital = "red-text darken-4";
   const classBadRate = "orange-text darken-4";
 
-  const classCapital = profit ? classGoodCapital : classBadCapital;
+  const classCapital = profit ? styles.classGoodCapital : styles.classBadCapital;
   const classRate = profit ? classGoodRate : classBadRate;
 
   const gradeStyle = profit > 0 ? styles.circleGreen : styles.circleRed;
@@ -38,10 +38,10 @@ export default function Installment({ data }) {
 
       <div>
         <div style={styles.alignFonts}>
-          <div className={classCapital}>
+          <div style={classCapital}>
             <strong>{formatNumber(amount)}</strong>
           </div>
-          <div className={classCapital}>
+          <div style={classCapital}>
             <strong>{formatterPositiveNegative(difference)}</strong>
           </div>
           <div className={classRate}>
@@ -54,6 +54,12 @@ export default function Installment({ data }) {
 }
 
 const styles = {
+  classGoodCapital:{
+    color: "#02569B"},
+  classBadCapital:{
+    color:"#DD0031"
+  },
+
   flexRow: {
     display: "flex",
     flexRow: "row",
