@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 //construindo array de 60 numeros
 const getEmptyArray = () => {
@@ -21,10 +21,22 @@ const getEmptyArray = () => {
 
 //funcao que vai gera numero aleatorio entre 1 a 60
 const generateNumber = (from = 1, to = 60) => {
-  return Math.random() * 60; // pega num de 0 a 1 e multiplica por 60
+  return Math.max(from, Math.ceil(Math.random() * to)); // pega num de 0 a 1 e multiplica por 60 e arredonda pra cima
 };
 
+//numbers: vetor de numeros de 1 a 60
+//sixNumbersSort: 6 numeros sorteados;
+//isCalculating: booleano
+//limit: quantidade de sorteios p/ ser definido;
 export default function App() {
+  //numbers,sixNumberSort,sixNumbersSort, isCalculating
+  const [numbers, setNumbers] = useState(getEmptyArray());
+  const [sixNumbersSort, setSixNumbersSort] = useState([]);
+  const [isCalculating, setIsCalculating] = useState(false);
+  const [limit, setLimit] = useState(1)
+
+  console.log(numbers)
+
   return (
     <div className="container">
       <h1 className="center">React Megasena</h1>
