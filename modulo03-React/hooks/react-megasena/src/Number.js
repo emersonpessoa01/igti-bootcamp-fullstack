@@ -1,20 +1,21 @@
-import React from 'react'
+import React from "react";
 
-export default function Number({number}) {
-  const{description, value, count} = number;
+export default function Number({ number }) {
+  const { description, value, count } = number;
+  const { containerStyle, numberStyle, badgeContainer, badgeStyle } = styles;
 
   return (
-    <div>
+    <div style={containerStyle}>
       <span>{description}</span>
       <span>{count}</span>
     </div>
-  )
+  );
 }
 
-const styles ={
-  container: {
+const styles = {
+  containerStyle: {
     border: "1px solid lightgray",
-    borderRadius:"4px",
+    borderRadius: "4px",
     padding: "4px",
     margin: "5px",
 
@@ -23,15 +24,12 @@ const styles ={
     alignItems: "flex-start",
     justifyContent: "space-between",
     width: "80px",
-    flexWrap: "wrap",
-
   },
 
-  number: {
+  numberStyle: {
     fontSize: "1.5rem",
     fontWeight: "bold",
     marginRight: "10px",
-
   },
 
   badgeContainer: {
@@ -41,15 +39,15 @@ const styles ={
     borderRadius: "50%",
     backgroundColor: "#DD0031",
 
-    padding: '4px',
-    display:"flex",
+    padding: "4px",
+    display: "flex",
     alignItems: "center",
     justifyContent: "center",
   },
 
-  badgeStyle:{
-    fontSize:"0.8rem",
-    fontWeight:"bold",
+  badgeStyle: {
+    fontSize: "0.8rem",
+    fontWeight: "bold",
     color: "white",
-  }
-}
+  },
+};
