@@ -51,5 +51,6 @@ const styles = {
     fontSize: "0.8rem",
     fontWeight: "bold",
     color: "white",
+    fontSize: "15px"
   },
 };

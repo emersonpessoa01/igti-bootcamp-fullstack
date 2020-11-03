@@ -34,7 +34,7 @@ const generateNumber = (from = 1, to = 60) => {
 export default function App() {
   //numbers,sixNumberSort,sixNumbersSort, isCalculating
   const [numbers, setNumbers] = useState(getEmptyArray());
-  const [sixNumbersSort, setSixNumbersSort] = useState([]);
+  const [sixNumbersSort, setSixNumbersSort] = useState([1,2,3,4,5,6]);
   const [isCalculating, setIsCalculating] = useState(false);
   const [limit, setLimit] = useState(1);
 
@@ -65,7 +65,7 @@ export default function App() {
         onButtonClick={handleInitSort}
       />
       <Numbers numbers={numbers} />
-      <SixNumbers />
+      <SixNumbers numbers={sixNumbersSort}/>
     </div>
   );
 }
