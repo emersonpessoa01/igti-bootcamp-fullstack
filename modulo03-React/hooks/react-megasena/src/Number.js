@@ -6,8 +6,10 @@ export default function Number({ number }) {
 
   return (
     <div style={containerStyle}>
-      <span>{description}</span>
-      <span>{count}</span>
+      <span style={numberStyle}>{description}</span>
+      <span style={badgeContainer}>
+        <span style={badgeStyle}>{count}</span>
+      </span>
     </div>
   );
 }
