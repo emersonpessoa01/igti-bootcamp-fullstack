@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import Form from "./components/Form";
+import Numbers from "./components/Numbers";
+import SixNumbers from "./SixNumbers";
 
 //construindo array de 60 numeros
 const getEmptyArray = () => {
@@ -35,11 +38,26 @@ export default function App() {
   const [isCalculating, setIsCalculating] = useState(false);
   const [limit, setLimit] = useState(1)
 
-  console.log(numbers)
+  // console.log(numbers)
+
+  const handleLimitChange = (newLimit) =>{
+    setLimit(newLimit )
+  }
+
+  const handleInitSort = () =>{
+    setNumbers(getEmptyArray());
+    setSixNumbersSort([]);
+    setIsCalculating(true)
+  }
 
   return (
     <div className="container">
       <h1 className="center">React Megasena</h1>
+
+      <Form limit={limit} />
+      < Numbers />
+      < SixNumbers />
+      
     </div>
   );
 }
