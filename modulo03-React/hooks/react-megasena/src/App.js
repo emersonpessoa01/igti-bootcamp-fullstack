@@ -36,28 +36,32 @@ export default function App() {
   const [numbers, setNumbers] = useState(getEmptyArray());
   const [sixNumbersSort, setSixNumbersSort] = useState([]);
   const [isCalculating, setIsCalculating] = useState(false);
-  const [limit, setLimit] = useState(1)
+  const [limit, setLimit] = useState(1);
 
   // console.log(numbers)
 
-  const handleLimitChange = (newLimit) =>{
-    setLimit(newLimit )
-  }
+  // const handleLimitChange = (newLimit) =>{
+  //   setLimit(newLimit )
+  // }
+  //
+  const handleLimitChange = (event) => {
+    const number = Number(event.target.value);
+    setLimit(number);
+  };
 
-  const handleInitSort = () =>{
+  const handleInitSort = () => {
     setNumbers(getEmptyArray());
     setSixNumbersSort([]);
-    setIsCalculating(true)
-  }
+    setIsCalculating(true);
+  };
 
   return (
     <div className="container">
       <h1 className="center">React Megasena</h1>
 
-      <Form limit={limit} />
-      < Numbers />
-      < SixNumbers />
-      
+      <Form limit={limit} onLimitChange={handleLimitChange} />
+      <Numbers />
+      <SixNumbers />
     </div>
   );
 }
