@@ -1,9 +1,12 @@
 import React from 'react'
 
-export default function Number() {
+export default function Number({number}) {
+  const{description, value, count} = number;
+
   return (
     <div>
-      Number
+      <span>{description}</span>
+      <span>{count}</span>
     </div>
   )
 }
