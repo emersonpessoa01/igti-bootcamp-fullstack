@@ -1,11 +1,13 @@
 import React from "react";
 
-export default function Number({ number }) {
+export default function Number({ number, picked }) {
   const { description, count } = number;
   const { containerStyle, numberStyle, badgeContainer, badgeStyle } = styles;
 
+  const pickedStyle = picked ? {backgroundColor: "#81ecec"}: {}
+
   return (
-    <div style={containerStyle}>
+    <div style={{...containerStyle, ...pickedStyle}}>
       <span style={numberStyle}>{description}</span>
       <span style={badgeContainer}>
         <span style={badgeStyle}>{count}</span>

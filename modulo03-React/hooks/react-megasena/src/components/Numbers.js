@@ -1,16 +1,18 @@
 import React from "react";
 import Number from "../Number";
 
-export default function Numbers({ numbers }) {
+export default function Numbers({ numbers, pickedNumbers }) {
   const { container } = styles;
 
   return (
     <div style={container}>
       {numbers.map((number) => {
-        return <Number key={number.id} number={number} />;
+
+        const isPicked = pickedNumbers.some(item => item === number.value);
+        return <Number key={number.id} number={number} picked={isPicked} />;
       })}
     </div>
-  );
+   );
 }
 
 const styles = {
