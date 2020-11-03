@@ -1,6 +1,8 @@
 import React from "react";
 
-export default function Form({ limit, onLimitChange }) {
+export default function Form({ data, onLimitChange, onButtonClick }) {
+
+  const { limit, isCalculating} = data;
   // const handleInputChange = (event) => {
   //   const number = Number(event.target.value);
   //   onLimitChange(number);
@@ -22,14 +24,17 @@ export default function Form({ limit, onLimitChange }) {
           value={limit}
           // onChange={handleInputChange}
           onChange={onLimitChange}
-          
         />
         <label style={inputStyle} className="active" htmlFor="inputLimit">
           Quantidades de sorteios
         </label>
       </div>
 
-      <button style={inputRight} className="waves-effect waves-light btn">
+      <button
+        style={inputRight}
+        className="waves-effect waves-light btn"
+        onClick={onButtonClick}
+      >
         Calcular
       </button>
     </div>

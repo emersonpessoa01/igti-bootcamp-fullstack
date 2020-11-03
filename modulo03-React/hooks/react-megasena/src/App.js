@@ -59,7 +59,11 @@ export default function App() {
     <div className="container">
       <h1 className="center">React Megasena</h1>
 
-      <Form limit={limit} onLimitChange={handleLimitChange} />
+      <Form
+        data={{ limit, isCalculating }}
+        onLimitChange={handleLimitChange}
+        onButtonClick={handleInitSort}
+      />
       <Numbers />
       <SixNumbers />
     </div>
