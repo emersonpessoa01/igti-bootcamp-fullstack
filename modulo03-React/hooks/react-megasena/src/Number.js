@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Number({ number }) {
-  const { description, value, count } = number;
+  const { description, count } = number;
   const { containerStyle, numberStyle, badgeContainer, badgeStyle } = styles;
 
   return (
@@ -29,7 +29,7 @@ const styles = {
   },
 
   numberStyle: {
-    fontSize: "1.5rem",
+    fontSize: "1.2rem",
     fontWeight: "bold",
     marginRight: "10px",
   },
@@ -46,9 +46,7 @@ const styles = {
     alignItems: "center",
     justifyContent: "center",
   },
-
   badgeStyle: {
-    fontSize: "0.8rem",
     fontWeight: "bold",
     color: "white",
     fontSize: "15px"

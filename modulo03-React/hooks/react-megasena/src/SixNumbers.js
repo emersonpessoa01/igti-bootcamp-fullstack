@@ -11,7 +11,7 @@ export default function SixNumbers({ numbers }) {
 
   return (
     <div>
-      <p>
+      <p style ={{fontSize: "1.2rem"}}>
         <strong>Números sorteados: </strong> {textNumbers}
       </p>
     </div>

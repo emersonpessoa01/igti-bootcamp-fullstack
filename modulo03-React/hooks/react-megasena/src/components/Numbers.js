@@ -15,6 +15,7 @@ export default function Numbers({ numbers }) {
 
 const styles = {
   container: {
+    marginBottom:"1px",
     display: "flex",
     flexDirection: "row",
     alignItems: "flex-start",
