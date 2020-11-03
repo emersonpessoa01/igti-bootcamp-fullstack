@@ -1,9 +1,15 @@
 import React from 'react'
+import Number from '../Number'
 
-export default function s() {
+
+export default function Numbers({numbers}) {
   return (
     <div>
-      Numbers
+      {numbers.map(number => {
+        return (
+          < Number key={number.id}/>
+        )
+      })}
     </div>
   )
 }
