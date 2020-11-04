@@ -38,12 +38,7 @@ export default function App() {
   const [isCalculating, setIsCalculating] = useState(false);
   const [limit, setLimit] = useState(1);
 
-  // console.log(numbers)
-
-  // const handleLimitChange = (newLimit) =>{
-  //   setLimit(newLimit )
-  // }
-  //
+  
   useEffect(() => {
     const interval = setInterval(() => {
       if (pickedNumbers.length === 6) {
@@ -70,10 +65,18 @@ export default function App() {
     return () => clearInterval(interval);
   }, [isCalculating, limit, numbers, pickedNumbers]);
 
+  //executando event precisar receber parametros do filho
   const handleLimitChange = (event) => {
     const number = Number(event.target.value);
     setLimit(number);
   };
+
+  // console.log(numbers)
+  // funcao executando parametros recebidos do props filho
+  // const handleLimitChange = (newLimit) =>{
+  //   setLimit(newLimit )
+  // }
+  //
 
   const handleInitSort = () => {
     setNumbers(getEmptyArray());
