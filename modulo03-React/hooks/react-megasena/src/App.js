@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Form from "./components/Form";
 import Numbers from "./components/Numbers";
 import SixNumbers from "./SixNumbers";
@@ -38,8 +38,13 @@ export default function App() {
   const [isCalculating, setIsCalculating] = useState(false);
   const [limit, setLimit] = useState(1);
 
-  
+  const canRun = useRef(false)
+
   useEffect(() => {
+    if(!canRun.current){
+      return;
+    }
+
     const interval = setInterval(() => {
       if (pickedNumbers.length === 6) {
         setIsCalculating(false);
@@ -61,7 +66,7 @@ export default function App() {
       setPickedNumbers(newPickedNumbers)
 
 
-    }, 4);
+    }, 10);
     return () => clearInterval(interval);
   }, [isCalculating, limit, numbers, pickedNumbers]);
 
@@ -81,6 +86,7 @@ export default function App() {
   const handleInitSort = () => {
     setNumbers(getEmptyArray());
     setPickedNumbers([]);
+    canRun.current =true;
     setIsCalculating(true);
   };
 
