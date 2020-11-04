@@ -90,9 +90,11 @@ export default function App() {
     setIsCalculating(true);
   };
 
+  const {fontReact} = styles;
   return (
+
     <div className="container">
-      <h1 className="center">React Megasena</h1>
+      <h1 style={fontReact} className="center">React Megasena</h1>
       <Form
         data={{ limit, isCalculating }}
         onLimitChange={handleLimitChange}
@@ -102,4 +104,11 @@ export default function App() {
       <SixNumbers numbers={pickedNumbers} />
     </div>
   );
+}
+
+const styles = {
+  fontReact: {
+    fontFamily: "Poppins",
+    color:"#008080"
+  }
 }
