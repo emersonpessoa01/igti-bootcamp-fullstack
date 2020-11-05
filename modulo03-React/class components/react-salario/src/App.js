@@ -23,7 +23,7 @@ export default class App extends Component {
     const { fullSalary } = this.state;
 
     const salaryObject = calculateSalaryFrom(fullSalary);
-    // console.log(salaryObject)
+    console.log(salaryObject)
 
     const {
       baseINSS,
