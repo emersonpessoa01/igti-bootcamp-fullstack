@@ -1,0 +1,2 @@
+# React class component à React hooks:
+-Consiste em capturar valores no teclado e renderizar na tela do usuário
