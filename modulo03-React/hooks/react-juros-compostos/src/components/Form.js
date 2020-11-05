@@ -14,7 +14,8 @@ export default function Form({ data, onChangeData }) {
           min="0"
           step="50"
           onChange={(evt) => {
-            onChangeData(+evt.target.value, null, null);
+          onChangeData(+evt.target.value, null, null);
+
           }}
         />
         <label htmlFor="inputCapital" className="active">
@@ -31,7 +32,8 @@ export default function Form({ data, onChangeData }) {
           max="12"
           step="0.1"
           onChange={(evt) => {
-            onChangeData(null, +evt.target.value, null);
+          onChangeData(null, +evt.target.value, null);
+
           }}
         />
         <label htmlFor="inputInterest" className="active">
@@ -47,7 +49,8 @@ export default function Form({ data, onChangeData }) {
           min="0"
           step="1"
           onChange={(evt) => {
-            onChangeData(null, null, +evt.target.value);
+          onChangeData(null, null, +evt.target.value);
+
           }}
         />
         <label htmlFor="inputPeriod" className="active">

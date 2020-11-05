@@ -26,52 +26,45 @@ export default function Installment({ data }) {
   const classGoodRate = "blue-text darken-4";
   const classBadRate = "orange-text darken-4";
 
-  const classCapital = profit ? styles.classGoodCapital : styles.classBadCapital;
+  const classCapital = profit
+    ? styles.classGoodCapital
+    : styles.classBadCapital;
   const classRate = profit ? classGoodRate : classBadRate;
 
   const gradeStyle = profit > 0 ? styles.circleGreen : styles.circleRed;
 
   return (
-    <div className="col s6 m3 l2" style={styles.flexRow}>
-      {/* <div>{profit >= 0 ? `<div style={styles.circleGreen}>${id}</div>`:`<div style={styles.circleRed}>${id}</div>` }*/}
-  <div style={gradeStyle}>{id}</div>
-
+    <div className="col s6 m4 l3" style={styles.flexRow}>
+      <div style={gradeStyle}>{id}</div>
       <div>
-        <div style={styles.alignFonts}>
-          <div style={classCapital}>
-            <strong>{formatNumber(amount)}</strong>
+          <div style={styles.alignFonts}>
+            <div style={classCapital}>
+              <strong>Montante:{formatNumber(amount)}</strong>
+            </div>
+            <div style={classCapital}>
+              <strong>Juros:{formatterPositiveNegative(difference)}</strong>
+            </div>
+            <div className={classRate}>
+              <strong>Taxa:{rate}%</strong>
+            </div>
           </div>
-          <div style={classCapital}>
-            <strong>{formatterPositiveNegative(difference)}</strong>
-          </div>
-          <div className={classRate}>
-            <strong>{rate}%</strong>
-          </div>
-        </div>
       </div>
     </div>
   );
 }
 
 const styles = {
-  classGoodCapital:{
-    color: "#02569B"
+  classGoodCapital: {
+    color: "#02569B",
   },
-  classBadCapital:{
-    color:"#DD0031"
+  classBadCapital: {
+    color: "#DD0031",
   },
-  // classGoodRate:{
-  //   color: "#02569B"
-  // },
-  // classBadRate:{
-  //   color:"#FF2D20"
-  // },
 
   flexRow: {
     display: "flex",
     flexRow: "row",
     alignItems: "center",
-    justifyContent: "flex-start",
 
     border: "1px solid lightgray",
     borderRadius: "4px",
@@ -79,19 +72,7 @@ const styles = {
     margin: "4px",
   },
   circleGreen: {
-    // marginRight: "5px",
-    // backgroundColor: "#fa0c01",
-    // color: "#fff",
-    // width: "60px",
-    // height: "30px",
-    // lineHeight: "60px",
     verticalAlign: "middle",
-    // textAlign: "",
-    // fontSize: "30px",
-
-    // bordeRadius: "50%",
-    // mozBorderRadius: "50%",
-    // webkitBorderRadius: "50%",
     margin: 0,
     padding: 0,
     listStyle: "none",
@@ -106,10 +87,7 @@ const styles = {
     borderRadius: "50%",
     float: "left",
 
-    // margin: "4px",
-    // fontSize: "30px",
     fontWeight: "bold",
-    // color: "#555",
   },
   circleRed: {
     verticalAlign: "middle",
