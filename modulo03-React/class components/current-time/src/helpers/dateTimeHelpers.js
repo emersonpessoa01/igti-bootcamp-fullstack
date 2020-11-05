@@ -35,7 +35,6 @@ const getNewTimestamp = () => {
     result += '.'
     result += leftPad(now.getMilliseconds(), 3);
 
-
     return result;
 
 }
