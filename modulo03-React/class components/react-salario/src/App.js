@@ -31,6 +31,9 @@ export default class App extends Component {
       baseIRPF,
       discountIRPF,
       netSalary,
+      percentageINSS,
+      percentageIRPF,
+      percentageNetSalary,
     } = salaryObject;
 
     return (
@@ -43,7 +46,23 @@ export default class App extends Component {
           />
         </div>
         <div className="row">
-          <InputReadOnly lable="Base INSS" value={salaryObject.baseINSS} />
+          <InputReadOnly label="Base INSS" value={baseINSS} />
+          <InputReadOnly
+            label="Desconto INSS"
+            value={discountINSS}
+            percentage={percentageINSS}
+          />
+          <InputReadOnly label="Base IRPF" value={baseIRPF} />
+          <InputReadOnly
+            label="Desconto IRPF"
+            value={discountIRPF}
+            percentage={percentageIRPF}
+          />
+          <InputReadOnly
+            label="Salário Líquido"
+            value={netSalary}
+            percentage={percentageNetSalary}
+          />
         </div>
       </div>
     );

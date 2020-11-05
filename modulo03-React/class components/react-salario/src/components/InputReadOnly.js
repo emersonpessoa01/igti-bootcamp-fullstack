@@ -2,10 +2,10 @@ import React, { Component } from "react";
 
 export default class InputReadOnly extends Component {
   render() {
-    const { color = "black", value, percentage, label } = this.props;
+    const { color = "black", value, percentage = 0, label } = this.props;
     // console.log(this.props)
-
-    const formatterValue = `${value} (${percentage})`;
+    const formattedPercentage = percentage > 0 ? `(${percentage})` : "";
+    const formatterValue = `${value} ${formattedPercentage}`;
     // console.log(formatterValue)
 
     return (

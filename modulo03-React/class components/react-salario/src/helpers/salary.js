@@ -37,11 +37,10 @@ function round(value) {
 }
 
 function calculateDiscountINSS(baseINSS) {
-  
   if (baseINSS > 6101.07) {
     return 713.1;
   }
-  
+
   let discountINSS = 0;
   for (var i = 0; i < INSS_TABLE.length; i++) {
     var currentItem = INSS_TABLE[i];
@@ -94,8 +93,9 @@ function calculateSalaryFrom(fullSalary) {
 
   const netSalary = baseINSS - discountINSS - discountIRPF;
 
-  const percentageINSS = +(discountINSS / fullSalary * 100).toFixed(2)
-  const percentageIRPF = +(discountIRPF / fullSalary * 100).toFixed(2)
+  const percentageINSS = +((discountINSS / fullSalary) * 100).toFixed(2);
+  const percentageIRPF = +((discountIRPF / fullSalary) * 100).toFixed(2);
+  const percentageNetSalary = +((netSalary / fullSalary) * 100).toFixed(2);
 
   return {
     baseINSS,
@@ -105,6 +105,7 @@ function calculateSalaryFrom(fullSalary) {
     netSalary,
     percentageINSS,
     percentageIRPF,
+    percentageNetSalary,
   };
 }
 
