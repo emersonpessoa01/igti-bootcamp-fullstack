@@ -1,8 +1,14 @@
 import React, { Component } from "react";
 
 export default class InputFullSalary extends Component {
+  // handleInputChange=(event) => {
+  //   const newValue = +event.target.value
+  //   this.props.onSalaryChange(newValue)
+  // }
+
+
   render() {
-    const { currentValue } = this.props;
+    const { currentValue, onSalaryChange } = this.props;
 
     return (
       <div className="input-field col 12">
@@ -11,7 +17,8 @@ export default class InputFullSalary extends Component {
           id="inputFullSalary"
           type="number"
           value={currentValue}
-          onChange={this.handleInputChange}
+          // onChange={this.handleInputChange}
+          onChange={onSalaryChange}
           min="1000"
           step="100"
         />
