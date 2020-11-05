@@ -11,7 +11,7 @@ export default class InputFullSalary extends Component {
     const { currentValue, onSalaryChange } = this.props;
 
     return (
-      <div className="input-field col 12">
+      <div className="input-field col s12 m6 l3">
         <input
           autoFocus
           id="inputFullSalary"
