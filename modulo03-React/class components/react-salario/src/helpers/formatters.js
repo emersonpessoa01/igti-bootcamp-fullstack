@@ -5,19 +5,16 @@ const moneyFormatter = Intl.NumberFormat("pt-BR", {
   currency: "BRL",
 });
 
-const formatterNumber=(number)=>{
+const formatterNumber = (number) => {
   return numberFormatter.format(number);
-}
+};
 
-const formatterMoney=(number)=>{
+const formatterMoney = (number) => {
   return moneyFormatter.format(number);
-}
+};
 
-const formatPercentage=(number)=>{
-  return `${number.toFixed(2).replace(",", "")}%`
-}
+const formatPercentage = (number) => {
+  return `${number.toFixed(2).replace(",", "")}%`;
+};
 
-export { formatterMoney, formatPercentage}
-
-
-
+export { formatterMoney, formatPercentage };
