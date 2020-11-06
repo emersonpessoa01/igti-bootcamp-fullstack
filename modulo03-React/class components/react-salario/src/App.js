@@ -1,11 +1,13 @@
 import React, { Component } from "react";
-import InputFullSalary from "./components/InputFullSalary";
-import InputReadOnly from "./components/InputReadOnly";
 import { calculateSalaryFrom } from "./helpers/salary";
 
-const COLOR_INSS = "#e67e22"
-const COLOR_IRPF = "#FF2D20"
-const COLOR_NET_SALARY = "#16a085"
+import InputFullSalary from "./components/InputFullSalary";
+import InputReadOnly from "./components/InputReadOnly";
+import ProportionalBar from "./components/ProportionalBar";
+
+const COLOR_INSS = "#FF2D20";
+const COLOR_IRPF = "#DD0031";
+const COLOR_NET_SALARY = "#16a085";
 
 export default class App extends Component {
   constructor() {
@@ -27,7 +29,7 @@ export default class App extends Component {
     const { fullSalary } = this.state;
 
     const salaryObject = calculateSalaryFrom(fullSalary);
-    console.log(salaryObject)
+    console.log(salaryObject);
 
     const {
       baseINSS,
@@ -43,7 +45,7 @@ export default class App extends Component {
     return (
       <div className="container">
         <h1>React Salário</h1>
-       
+
         <div className="row">
           <InputFullSalary
             currentValue={fullSalary}
@@ -76,8 +78,12 @@ export default class App extends Component {
             percentage={percentageNetSalary}
             color={COLOR_NET_SALARY}
           />
-
         </div>
+        <ProportionalBar
+          inss={percentageINSS}
+          irpf={percentageIRPF}
+          netSalary={percentageNetSalary}
+        />
       </div>
     );
   }
