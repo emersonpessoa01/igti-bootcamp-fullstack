@@ -44,7 +44,12 @@ export default class App extends Component {
 
     return (
       <div className="container">
-        <h1 className="center" style={{color: "#02569B", fontFamily: 'Righteous'}} >React - Salário</h1>
+        <h1
+          className="center"
+          style={{ color: "#02569B", fontFamily: "Montserrat" }}
+        >
+          React - Salário
+        </h1>
 
         <div className="row">
           <InputFullSalary
@@ -56,14 +61,14 @@ export default class App extends Component {
         <div className="row">
           <InputReadOnly label="Base INSS" value={baseINSS} />
 
+          <InputReadOnly label="Base IRPF" value={baseIRPF} />
+
           <InputReadOnly
             label="Desconto INSS"
             value={discountINSS}
             percentage={percentageINSS}
             color={COLOR_INSS}
           />
-
-          <InputReadOnly label="Base IRPF" value={baseIRPF} />
 
           <InputReadOnly
             label="Desconto IRPF"
