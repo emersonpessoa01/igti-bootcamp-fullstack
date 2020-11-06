@@ -44,7 +44,7 @@ export default class App extends Component {
 
     return (
       <div className="container">
-        <h1 className="center" style={{color: "#16a085"}} >React - Salário</h1>
+        <h1 className="center" style={{color: "#02569B", fontFamily: 'Righteous'}} >React - Salário</h1>
 
         <div className="row">
           <InputFullSalary
