@@ -4,7 +4,7 @@ import InputReadOnly from "./components/InputReadOnly";
 import { calculateSalaryFrom } from "./helpers/salary";
 
 const COLOR_INSS = "#e67e22"
-const COLOR_IRPF = "#c0392b"
+const COLOR_IRPF = "#FF2D20"
 const COLOR_NET_SALARY = "#16a085"
 
 export default class App extends Component {
