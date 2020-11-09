@@ -102,8 +102,7 @@ const dataCompleta = async () => {
 
     lancamento = {
       id: json.nextId++,
-      ...lancamento,
-      display,
+      ...lancamento,data
     };
     json.lancamentos.push(lancamento);
 

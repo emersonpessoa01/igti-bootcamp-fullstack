@@ -36,8 +36,31 @@ export const swaggerDocument = {
       },
     },
 
-    "/lancamentos/receita": {
+    "/lancamentos/dataCompleta": {
       get: {
+        tags: ["lancamentos"],
+        summary: "Get existing lancamentos",
+        description: "Get existing lancamentos description",
+        produces: ["application/json"],
+        responses: {
+          200: {
+            description: "Successsfull operation",
+            schema: {
+              type: "array",
+              items: {
+                $ref: "#/definitions/Lancamentos",
+              },
+            },
+          },
+          400: {
+            description: "Error occurred",
+          },
+        },
+      },
+    },
+
+    "/lancamentos/receita": {
+      post: {
         tags: ["lancamentos"],
         summary: "Get existing lancamentos",
         description: "Get existing lancamentos description",
