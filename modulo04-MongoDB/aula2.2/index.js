@@ -12,11 +12,12 @@ client.connect(async (err) => {
   const collection = client.db("api").collection("account");
 
   // const documents = await collection.find().toArray();
+  //buscando documents
   const documents = await collection.find().toArray();
   console.log(documents);
 
   //conectar como  adm na base de dados p/ visualizar as base existentes
-  //obter listas dos bancos no servidor conectado
+  //obtendo listas dos bancos no servidor conectado
   const databaselist = await client.db().admin().listDatabases();
   console.log("Databases:");
 
@@ -26,3 +27,4 @@ client.connect(async (err) => {
 
   client.close();
 });
+ 
