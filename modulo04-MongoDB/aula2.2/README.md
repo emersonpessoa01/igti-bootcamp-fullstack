@@ -1,5 +1,5 @@
 # nodejs_projeto-base
 
 `-npm init -y`<br>
-`-npm i mongo`<br>
+`-npm install mongodb`<br>
 
