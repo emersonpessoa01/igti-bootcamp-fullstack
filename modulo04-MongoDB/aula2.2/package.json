@@ -1,7 +1,7 @@
 {
   "name": "aula2.2",
   "version": "1.0.0",
-  "description": "`-npm init -y`<br> `-npm install mongodb`<br>",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

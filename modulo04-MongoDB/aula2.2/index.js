@@ -8,11 +8,21 @@ const client = new MongoClient(uri, {
 });
 
 client.connect(async (err) => {
-  const collection = client.db("grades").collection("student");
+  //obtendo collection account
+  const collection = client.db("api").collection("account");
 
   // const documents = await collection.find().toArray();
-  const documents = await collection.find().toArray({subject:"Recursos Humanos"});
+  const documents = await collection.find().toArray();
   console.log(documents);
+
+  //conectar como  adm na base de dados p/ visualizar as base existentes
+  //obter listas dos bancos no servidor conectado
+  const databaselist = await client.db().admin().listDatabases();
+  console.log("Databases:");
+
+  databaselist.databases.forEach(({ name }) => {
+    console.log(`- ${name}`);
+  });
 
   client.close();
 });
