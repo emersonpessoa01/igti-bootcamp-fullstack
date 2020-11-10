@@ -10,8 +10,8 @@ import mongoose from "mongoose";
 // })
 
 // conectar ao MongoDB pelo mongoose
-await mongoose.connect(
-  "mongodb+srv://emersonpessoa:salmo119@cluster0.cginj.mongodb.net/api?retryWrites=true&w=majority",
+mongoose.connect(
+  "mongodb+srv://emersonpessoa:salmo119@cluster0.cginj.mongodb.net/grades?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -24,19 +24,40 @@ const studentSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  balance:{
+  subject: {
+    type: String,
+    required: true,
+  },
+  type: {
+    type: String,
+    required: true,
+  },
+  value: {
     type: Number,
     required: true,
   },
-  conta:{
-    type: Number,
-    required: true,
-  },
-  agencia:{
-    type: Number,
-    required: true,
+  lastModified: {
+    type: Date,
+    default: Date.now(),
   },
 });
 
 //definindo modelo da collection
-mongoose.model("Student",studentSchema)
+mongoose.model("student", studentSchema);
+
+const student = mongoose.model("student");
+
+//criando  um novo objeto dentro da collection
+new student({
+  name: "Paulo Assis",
+  subject: "Matematica",
+  type: "Trabalho Pratico",
+  value: 22,
+})
+  .save()
+  .then(() => {
+    console.log("Documento inserido");
+  })
+  .catch((err) => {
+    console.log("Falha ao inserir o documento");
+  });
