@@ -38,4 +38,5 @@ const studentSchema = mongoose.Schema({
   },
 });
 
+//definindo modelo da collection
 mongoose.model("Student",studentSchema)
