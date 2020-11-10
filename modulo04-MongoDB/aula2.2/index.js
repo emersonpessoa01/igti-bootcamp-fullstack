@@ -10,7 +10,8 @@ const client = new MongoClient(uri, {
 client.connect(async (err) => {
   const collection = client.db("grades").collection("student");
 
-  const documents = await collection.find().toArray();
+  // const documents = await collection.find().toArray();
+  const documents = await collection.find().toArray({subject:"Recursos Humanos"});
   console.log(documents);
 
   client.close();
