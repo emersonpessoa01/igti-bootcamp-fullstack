@@ -10,13 +10,19 @@ import mongoose from "mongoose";
 // })
 
 // conectar ao MongoDB pelo mongoose
-mongoose.connect(
-  "mongodb+srv://emersonpessoa:salmo119@cluster0.cginj.mongodb.net/grades?retryWrites=true&w=majority",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+(async () => {
+  try {
+    await mongoose.connect(
+      "mongodb+srv://emersonpessoa:salmo119@cluster0.cginj.mongodb.net/grades?retryWrites=true&w=majority",
+      {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+      }
+    );
+  } catch (err) {
+    console.log("Erro ao conectar no MongoDB");
   }
-);
+})();
 
 //criacao do modelo
 const studentSchema = mongoose.Schema({
@@ -43,7 +49,7 @@ const studentSchema = mongoose.Schema({
 });
 
 //definindo modelo da collection
-mongoose.model("student", studentSchema);
+mongoose.model("student", studentSchema, "student");
 
 const student = mongoose.model("student");
 
