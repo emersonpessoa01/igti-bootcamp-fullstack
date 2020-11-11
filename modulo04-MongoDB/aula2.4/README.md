@@ -1,7 +1,7 @@
-# nodejs_projeto-base
+# aula2.4
+- Criação da rota student<br>
+- 
 
 `-npm init -y`<br>
-`-npm install express`<br>
-`-npm install nodemon`<br>
-`-npm install mongoose`<br>
+`-npm install express nodemon mongoose`<br>
 
