@@ -19,6 +19,7 @@ import mongoose from "mongoose";
         useUnifiedTopology: true,
       }
     );
+    console.log("Conectado ao MongoDb Atlas")
   } catch (err) {
     console.log("Erro ao conectar no MongoDB");
   }
@@ -55,10 +56,10 @@ const student = mongoose.model("student");
 
 //criando  um novo objeto dentro da collection
 new student({
-  name: "Paulo Assis",
-  subject: "Matematica",
+  name: "Vangel Pessoa",
+  subject: "React Native",
   type: "Trabalho Pratico",
-  value: 22,
+  value: 100,
 })
   .save()
   .then(() => {
