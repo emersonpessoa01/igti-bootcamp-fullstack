@@ -1,4 +1,4 @@
-//interface para o controller que faz tratamento de persistenca de dados
+//interface para o controller,sendo que o mesmo faz tratamento de persistenca de dados
 import express from "express";
 import { studentModel } from "./models/student.js";
 
@@ -29,10 +29,26 @@ app.post("/", async (req, res) => {
 
 app.delete("/:id", async (req, res) => {
   try {
-    const student = await studentModel.findOneAndDelete({ "_id": req.params.id });
+    const student = await studentModel.findOneAndDelete({ _id: req.params.id });
 
     if (!student) throw new Error("Documento não encontrado na coleção");
     res.send("Ok Dev - Documento deletado");
+  } catch (err) {
+    res.status(400).send({ message: err.message });
+  }
+});
+
+app.patch("/:id", async (req, res) => {
+  try {
+    const student = await studentModel.findOneAndUpdate(
+      { _id: req.params.id },
+      req.body,
+      { new: true } //retorna um novo documento
+    );
+
+    if (!student) throw new Error("Documento não encontrado");
+
+    res.send(student);
   } catch (err) {
     res.status(400).send({ message: err.message });
   }
