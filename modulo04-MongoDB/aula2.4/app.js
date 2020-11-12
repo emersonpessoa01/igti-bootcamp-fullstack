@@ -5,12 +5,6 @@ import { studentRouter } from "./routes/studentRouter.js";
 require("dotenv").config();
 // import dotenv from "dotenv";
 
-
-//criando variaveis de ambiente
-// process.env.USER_DB = "emersonpessoa"
-
-
-
 //Conexao com o MongoDB
 (async () => {
   try {
