@@ -81,7 +81,62 @@ export const swaggerDocument = {
         },
       },
     },
+
+    "/lancamentos/despesa": {
+      post: {
+        tags: ["lancamentos"],
+        summary: "Get existing lancamentos",
+        description: "Get existing lancamentos description",
+        produces: ["application/json"],
+        responses: {
+          200: {
+            description: "Successsfull operation",
+            schema: {
+              type: "array",
+              items: {
+                $ref: "#/definitions/Lancamentos",
+              },
+            },
+          },
+          400: {
+            description: "Error occurred",
+          },
+        },
+      },
+    },
   },
+  definitions: {
+    Lancamentos: {
+      type: "object",
+      properties: {
+        function: {
+          type: "number",
+          example: "Somatorio",
+        },
+        Valor: {
+          type: "integer",
+          example: [1, 2, 3],
+        },
+      },
+    },
+  },
+
+  definitions: {
+    Lancamentos: {
+      type: "object",
+      properties: {
+        id: {
+          type: "number",
+          example: 1,
+        },
+        Data: {
+          type: "integer",
+          example: "data - hora"
+        },
+      },
+    },
+  },
+
   definitions: {
     Lancamentos: {
       type: "object",
@@ -100,7 +155,31 @@ export const swaggerDocument = {
         },
         Data: {
           type: "integer",
-          example: new Date(),
+          example: "Data - hora",
+        },
+      },
+    },
+  },
+
+  definitions: {
+    Lancamentos: {
+      type: "object",
+      properties: {
+        id: {
+          type: "number",
+          example: 1,
+        },
+        Valor: {
+          type: "integer",
+          example: -10,
+        },
+        Categoria: {
+          type: "integer",
+          example: "Salario",
+        },
+        Data: {
+          type: "integer",
+          example: "Data - hora",
         },
       },
     },
