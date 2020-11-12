@@ -3,5 +3,5 @@
 - Criado rotas get, post, delete e patch
 
 `-npm init -y`<br>
-`-npm install express nodemon mongoose`<br>
+`-npm install express nodemon mongoose dotenv`<br>
 
