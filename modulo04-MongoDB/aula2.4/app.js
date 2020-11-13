@@ -13,7 +13,7 @@ dotenv.config();
 (async () => {
   try {
     await mongoose.connect(
-      "mongodb+srv://emersonpessoa:salmo119@cluster0.cginj.mongodb.net/grades?retryWrites=true&w=majority",
+      "mongodb+srv://{$USERDB}:{$PWDDB}@cluster0.cginj.mongodb.net/grades?retryWrites=true&w=majority",
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,
