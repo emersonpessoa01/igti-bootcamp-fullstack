@@ -32,7 +32,7 @@ app.delete("/:id", async (req, res) => {
     const student = await studentModel.findOneAndDelete({ _id: req.params.id });
 
     if (!student) throw new Error("Documento não encontrado na coleção");
-    res.send("Ok Dev - Documento deletado");
+    res.send(`Ok Dev - Documento deletado : ${student}`);
   } catch (err) {
     res.status(400).send({ message: err.message });
   }
