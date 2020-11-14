@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h4 align="center">
      <b>Bootcamp FullStack Developer - IGTI maio/2020</b><sup>:copyright:</sup>
 </h4>
@@ -136,3 +137,7 @@ funções, estruturas de decisão, estruturas de repetição e manipulação de 
 
 
 
+=======
+"start": "nodemon -r dotenv/config --experimental-modules app.js",
+    "dev": "node -r dotenv/config app.js"
+>>>>>>> f0b7fd6066158ac6f36f02aa375e24639883f58c

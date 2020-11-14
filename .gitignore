@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -27,3 +28,6 @@ node_modules
 node_modules
 node_modules
 modulo03-React/functional components/react-count-02
+=======
+node_modules
+>>>>>>> f0b7fd6066158ac6f36f02aa375e24639883f58c
