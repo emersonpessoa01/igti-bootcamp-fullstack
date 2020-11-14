@@ -26,8 +26,7 @@ import { studentRouter } from "./routes/studentRouter.js";
 const app = express();
 app.use(express.json());
 app.use("/student", studentRouter);
-const port = 3001;
 
-app.listen(port, () => {
+app.listen(process.env.PORT || 8080, () => {
   console.log("Fala Dev -- API STARTED");
 });
