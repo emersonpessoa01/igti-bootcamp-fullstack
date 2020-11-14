@@ -5,8 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon -r dotenv/config --experimental-modules app.js",
-    "dev": "node -r dotenv/config app.js"
+    "start": "node -r dotenv/config --experimental-modules app.js",
+    "dev": "node -r dotenv/config -- app.js"
   },
   "keywords": [],
   "author": "",
