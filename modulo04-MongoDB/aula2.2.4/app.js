@@ -1,8 +1,8 @@
 import express from 'express'
 import mongoose from "mongoose";
 import { studentRouter } from "./routes/studentRouter.js";
-// import dotenv from 'dotenv';
-// dotenv.config();
+import dotenv from 'dotenv';
+dotenv.config();
 
 //criando variaveis de ambiente
 // process.env.USER_DB = "emersonpessoa"
