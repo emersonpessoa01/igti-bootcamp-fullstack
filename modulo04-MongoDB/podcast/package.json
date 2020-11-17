@@ -1,0 +1,23 @@
+{
+  "name": "podcast",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -r dotenv/config --experimental-modules app.js",
+    "dev": "node -r dotenv/config -- app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.14",
+    "mongoose-date-format": "^1.2.0",
+    "nodemon": "^2.0.6",
+    "swagger-ui-express": "^4.1.4"
+  },
+  "type": "module"
+}
