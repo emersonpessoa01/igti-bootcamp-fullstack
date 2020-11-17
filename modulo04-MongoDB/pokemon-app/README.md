@@ -9,3 +9,6 @@
 
 ### Install:
 * yarn add serve ou npm install serve<br>
+
+### package.json
+- "start": "serve -s build"
