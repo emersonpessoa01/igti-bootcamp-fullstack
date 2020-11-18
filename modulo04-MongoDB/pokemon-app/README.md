@@ -6,7 +6,8 @@
 * heroku login<br>
 * heroku create <br>
 * heroku apps:rename <nome_app> <br>
-* git init
+* git init<br>
+* heroku git:remote -am "deploy"
 
 ### Install:
 * yarn add serve ou npm install serve<br>
