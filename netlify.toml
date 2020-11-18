@@ -1,4 +1,0 @@
-[build]
-base = "."
-commnad = "npm run build"
-publish = "./build/"
