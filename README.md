@@ -9,7 +9,7 @@
 <hr>
 
 #### Developers:
-[<img src="image/images/EmePessoa.jpeg" width=90 ><br><sub> Emerson Pessoa </sub>](https://github.com/emersonpessoa01) | [<img src="image/images/githubman.jpg" width=90 ><br><sub> Git Ironman </sub>](https://github.com/emersonpessoa01) | [<img src="image/gifs/octocat.gif" width=90 ><br><sub> Octocat Nerd </sub>](https://github.com/emersonpessoa01) | [<img src="image/gifs/master-yoda.gif" width=115  heigth=120><br><sub> Mestre Yoda </sub>](https://github.com/emersonpessoa01) | [<img src="image/gifs/lucas-Skywalker.gif" width=115  heigth=120><br><sub> Lucas Skywalker </sub>](https://github.com/emersonpessoa01)
+[<img src="image/images/EmePessoa.jpeg" width=90 ><br><sub> Emerson Pessoa </sub>](https://github.com/emersonpessoa01) | [<img src="image/images/githubman.jpg" width=90 ><br><sub> Git Ironman </sub>](https://github.com/emersonpessoa01) | [<img src="image/gifs/octocat.gif" width=90 ><br><sub> Octocat Nerd </sub>](https://github.com/emersonpessoa01) | [<img src="image/gifs/master-yoda.gif" width=115  heigth=120><br><sub> Mestre Yoda </sub>](https://github.com/emersonpessoa01) | [<img src="image/gifs/lucas-SkyWalker.gif" width=115  heigth=120><br><sub> Lucas Skywalker </sub>](https://github.com/emersonpessoa01)
 | :---: | :---: | :---: | :---: | :---: |
      
 <hr>
