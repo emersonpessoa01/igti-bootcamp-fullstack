@@ -120,6 +120,7 @@ funções, estruturas de decisão, estruturas de repetição e manipulação de 
 :heavy_check_mark: Principais comandos do Git.<br>
 :heavy_check_mark: Como publicar aplicações no Github.<br>
 
+<a href="https://github.com/emersonpessoa01/igti-bootcamp-fullstack/tree/master/modulo04-MongoDB"><img src="https://img.shields.io/static/v1?label=mongo&message=modulo4&color=blue&style=for-the-badge&logo=mongodb"/></a>
 ---
 
 #### **Módulo 5** :books:
@@ -130,13 +131,3 @@ funções, estruturas de decisão, estruturas de repetição e manipulação de 
 :heavy_check_mark: Fechamento: Entrega do Desafio Final. :trophy:
 
 ---
-
-
-
-
-
-
-=======
-"start": "nodemon -r dotenv/config --experimental-modules app.js",
-    "dev": "node -r dotenv/config app.js"
->>>>>>> f0b7fd6066158ac6f36f02aa375e24639883f58c
