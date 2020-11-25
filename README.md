@@ -130,7 +130,7 @@ funções, estruturas de decisão, estruturas de repetição e manipulação de 
 :heavy_check_mark: Como implantar aplicações no Heroku.<br>
 :heavy_check_mark: Fechamento: Entrega do Desafio Final. :trophy: <br>
 
-<a href="https://github.com/emersonpessoa01"><img src="https://img.shields.io/static/v1?label=github&message=modulo5&color=blue&style=for-the-badge&logo=github"/></a>
+<a href="https://github.com/emersonpessoa01"><img src="https://img.shields.io/static/v1?label=heroku&message=modulo5&color=blue&style=for-the-badge&logo=heroku"/></a>
 
 
 ---
