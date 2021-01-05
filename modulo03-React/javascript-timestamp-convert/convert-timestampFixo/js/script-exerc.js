@@ -27,7 +27,6 @@ const handleClickButton=()=>{
   let formattedDate =`
     ${leftPad(now.getDate())}/${leftPad(now.getMonth() + 1)}/${now.getFullYear()} às`;
   let hours = leftPad(now.getHours());
-  let minutes = leftPad(now.getMinutes());
   let seconds = leftPad(now.getSeconds());
   let formattedTime = `${hours}:${minutes}:${seconds}`;
 
