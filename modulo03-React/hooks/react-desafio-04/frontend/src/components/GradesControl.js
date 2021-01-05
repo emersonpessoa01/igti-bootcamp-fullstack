@@ -74,7 +74,7 @@ export default function GradesControl({ grades, onDelete, onPersist }) {
             <thead className={css.notes}>
               <tr>
                 <th style={{ width: "20%" }}>Aluno</th>
-                <th style={{ width: "20%" }}>Disciplina</th>
+ ys               <th style={{ width: "20%" }}>Disciplina</th>
                 <th style={{ width: "20%" }}>Avaliação</th>
                 <th style={{ width: "20%" }}>Nota</th>
                 <th style={{ width: "20%" }}>Ações</th>

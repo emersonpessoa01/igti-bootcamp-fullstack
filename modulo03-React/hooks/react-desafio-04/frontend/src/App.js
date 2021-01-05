@@ -1,5 +1,5 @@
 import React, { useLayoutEffect, useState } from "react";
-import * as api from "./components/api/ApiService";
+import * as api from "./components/api/apiService";
 import GradesControl from "./components/GradesControl";
 import ModalGrade from "./components/ModalGrade";
 import Spinner from "./components/Spinner";

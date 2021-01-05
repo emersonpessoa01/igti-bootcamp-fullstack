@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Modal from "react-modal";
-import * as api from "./api/ApiService";
+import * as api from "./api/apiService";
 import css from "./spinner.module.css";
 
 Modal.setAppElement("#root");
